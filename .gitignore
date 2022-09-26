@@ -1,0 +1,4 @@
+*.zip
+system/*/*
+mods/*/*
+META-INF/scripts/xbin/*

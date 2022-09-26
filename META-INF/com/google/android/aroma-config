@@ -1,0 +1,261 @@
+##################################################
+ini_set("force_colorspace", "rgba");
+ini_set("transition", "stack");
+ini_set("rom_name",             "Feather Project");
+ini_set("rom_version",          "S10e_v2.2");
+ini_set("rom_author",           "Raptor 9");
+ini_set("rom_device",           "Galaxy A20");
+ini_set("rom_date",             "25/Sep/2022");
+ini_set("force_colorspace","rgba");
+anisplash(1,
+"splash/splash_01", 80,
+"splash/splash_02", 80,
+"splash/splash_03", 80,
+"splash/splash_04", 80,
+"splash/splash_05", 80,
+"splash/splash_06", 80,
+"splash/splash_07", 80,
+"splash/splash_08", 80,
+"splash/splash_09", 80,
+"splash/splash_10", 80,
+"splash/splash_11", 80,
+"splash/splash_12", 80,
+"splash/splash_13", 80,
+"splash/splash_14", 80,
+"splash/splash_15", 80,
+"splash/splash_16", 80,
+"splash/splash_17", 80,
+"splash/splash_18", 80,
+"splash/splash_19", 80,
+"splash/splash_20", 50,
+"splash/splash_21", 80,
+"splash/splash_22", 80,
+"splash/splash_23", 80,
+"splash/splash_24", 80,
+"splash/splash_25", 80,
+"splash/splash_26", 80,
+"splash/splash_27", 80,
+"splash/splash_28", 500);
+####################################################
+fontresload( "0", "ttf/smooth.ttf", "14" );
+fontresload( "1", "ttf/brief.ttf", "18" );
+####################################################
+theme("lime");
+####################################################
+#ROM INFORMATION
+####################################################
+ini_set("text_next", "Next ");
+viewbox(
+    " ",
+    "<b>Aroma Installer: \n"+
+    "It will guide you to configure your Rom installation.\n\n\n\n\n\n</b>"+
+    "<b>About Rom</b>\n"+
+    "Name: <#selectbg_g>"+ini_get("rom_name")+"</#>\n"+
+    "Version: <#selectbg_g>"+ini_get("rom_version")+"</#>\n"+
+    "Developer: <#selectbg_g>"+ini_get("rom_author")+"</#>\n"+
+    "Device: <#selectbg_g>"+ini_get("rom_device")+"</#>\n\n\n\n"+
+    "Press Next to continue...",
+    "@home"
+);
+##################################################
+textbox(
+    "",
+    "<b>ROM Changelog</b>",
+    "@lic",
+    resread("changelog.txt")
+);
+###################################################
+###################################################
+ini_set("text_next", " ");
+ini_set("icon_next", "@none");
+menubox(
+    "",
+    "<b>Select your Install Method</b>",
+    "@install",
+    "configs.prop",
+
+     #-------------------------+-----------------[ Menubox Items ]-------------------------+---------------#
+     # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
+     #-------------------------+-----------------------------------------------------------+---------------#  
+  
+    "Install + Configure",   "This will Install the Rom and also Allow you to Configure",    "@none",      
+    "Configure Only",        "This will Not install Rom just Allow you to Add/Remove Apps, Once Debloated can't be added back",         "@none"    
+
+);
+###############################################
+#################################Mods Menu#########
+ini_set("text_next", "Next ");
+checkbox(
+  #-- Title
+    " ",
+  
+  #-- Sub Title
+    "<b>Selected Applications will be Removed (De-Bloat)</b>",
+  
+  #-- Icon:
+    "@nuke",
+  
+  #-- Will be saved in 
+    "dump.prop",
+  
+  #-----------------------------------[ Selectbox With Group ]-----------------------------------#
+
+     "Choose Apps to be Removed (Debloat List)",                "",                                 2,
+     "Samsung Account",              "Basic Samsung Account Functionality",        0,
+     "FM Radio",              "Listening to the classic Radio",                 1,
+     "Edge Tools",                "CocktailBar Tool, One hand, Edge",             0,
+     "Portrait Effect",                 "Functionality to add Portrait Effect",                      0,
+     "Device Care",                  "Samsung Device Care for Configuring device",      0,
+     "Finder",                       "For Searches all around the device",                                 0,
+     "Dynamic LockScreen",     "Changing Wallpapers on Lock screen",              0,
+	 "Samsung Dex",                  "Dex on PC Functionality",                      0,
+	 "SamsungDeviceHealthManager",   "Needed for battery stats, Controls device",   0
+	);
+###############################################
+ini_set("text_next", "Next ");
+checkbox(
+  #-- Title
+    " ",
+  
+  #-- Sub Title
+    "<b>Selected Applications will be installed as System Apps</b>",
+	
+  #-- Icon:
+    "@magk",
+  
+  #-- Will be saved in 
+    "pump.prop",
+  
+  #-----------------------------------[ Selectbox With Group ]-----------------------------------#
+
+     "Choose Apps to be Installed as System Apps:",                "",      2,
+     "Smart View",         "Smart View functionality",              1,
+     "Secure Folder",          "Samsung Secure Folder",                              0,
+     "ARCore",                 "Samsung ARCore",                               0,
+     "Weather",                 "Samsung Weather",                                0,
+     "Dual Messenger",         "For App Cloning, Dual apps",                         0,
+     "Digital Wellbeing",      "Shows how much u use device",                           0,
+	 "Routines",               "Samsung Bixby Routines like Tasker",                          0,
+	 "Game Tools",             "GOS, Game Tools",                           0,
+	 "Emergency Mode",         "Emergency Battery Saving",                  1
+	);
+###############################################
+     
+ini_set("text_next", "Next ");
+checkbox(
+  #-- Title
+    " ",
+  
+  #-- Sub Title
+    "<b>Selected Applications will be installed as System Apps</b>",
+  
+  #-- Icon:
+    "@magk",
+  
+  #-- Will be saved in /tmp/aroma/mag.prop
+    "pumpit.prop",
+  
+  #-----------------------------------[ Selectbox With Group ]-----------------------------------#
+
+     "Choose Apps to be Installed as System Apps:",                "",                 2,
+     "QuickBoard",         "Media and Devices in QS Panel",                                 0,
+     "Galaxy Store",              "Samsung's store",                                      0,
+     "Samsung Cloud",             "Samsung Cloud Core",                                0,
+     "Full Setup Wizard",      "Enable to use full Setup Wizard for restoring data from google",                        0,
+     "Smart Suggestions",   "Suggest Replies on Notifications",             1,
+	 "Bixby",               "Samsung's Version of Google Assistant",                      0,
+	 "Private Compute Services",   "Android 12 AOSP AI stuff",             0,
+	 "Samsung Smart Switch",   "For Creating Backups",             0
+	);
+###############################################
+###############################################
+     
+ini_set("text_next", "Next ");
+checkbox(
+  #-- Title
+    " ",
+  
+  #-- Sub Title
+    "<b>Selected your preferred Modifications to be applied</b>",
+  
+  #-- Icon:
+    "@magk",
+  
+  #-- Will be saved in /tmp/aroma/mag.prop
+    "mods.prop",
+  
+  #-----------------------------------[ Selectbox With Group ]-----------------------------------#
+
+     "Choose Modifications to be Applied:",                "",                 2,
+     "AOSP Bootanimation",   "Switch to AOSP Bootanimation",             0,
+	 "Disable Global Soundbooster",               "Sound Booster will only be applied to Media. Fixes issue with Very loud Whatsapp video call",                      1,
+	 "Flagship Blur",               "It Will Enable Live BLUR, Can cause Significant Performance drop.",                      0,
+	 "Standard Blur",               "Standard BLUR, reverts the above.",                      1,
+	 "Dual Speaker (Beta)",   "Use Earpice as a Secondary Speaker",             0
+	);
+###############################################
+
+ini_set("text_next", " ");
+ini_set("icon_next", "@none");
+menubox(
+    "",
+    "<b>Select your Preferred Kernel</b>",
+    "@install",
+    "kernel.prop",
+
+     #-------------------------+-----------------[ Menubox Items ]-------------------------+---------------#
+     # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
+     #-------------------------+-----------------------------------------------------------+---------------#  
+  
+    "Eureka 8.0",   "Eureka Kernel R8.0 Permissive",    "@none",      
+    "Eureka 9.0",   "Eureka Kernel R9.0 Permissive",    "@none",      
+    "Eureka 9.0",   "Eureka Kernel R9.0 Enforcing, Working OK so far, Dex working without touchpad",         "@none",    
+    "Eureka 11.0",  "Eureka Kernel R11.0 Enforcing, Causes App crashes, Dex working with touchpad",         "@none",
+    "Don't install kernel",  "Will not install any kernel",         "@none"    
+
+);
+###############################################
+###############################################
+
+ini_set("text_next", " ");
+ini_set("icon_next", "@none");
+menubox(
+    "",
+    "<b>Select your Preferred Keyboard</b>",
+    "@install",
+    "keys.prop",
+
+     #-------------------------+-----------------[ Menubox Items ]-------------------------+---------------#
+     # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
+     #-------------------------+-----------------------------------------------------------+---------------#  
+  
+    "Samsung Keyboard OneUI4",   "Samsung Keyboard from OneUI4, from S10e",    "@honeyboard",      
+    "Samsung Keyboard OneUI5",   "Samsung Keyboard from OneUI5, little issue with clipboard",    "@honeyboard",      
+    "Google Keyboard Lite",   "Trimmed version of Google KeyBoard with less annoying features",         "@gboard",    
+    "Google Keyboard Full",  "Standard Google KeyBoard with full features",         "@gboard",
+    "Don't install keyboard",  "Are you nuts?",         "@none"    
+
+);
+###############################################
+# LICENSE PAGE
+###############################################
+ini_set("text_next", "Install");
+agreebox(
+    "",
+    "<b>Read The Terms Of Use Carefully!</b>",
+    "@lic",
+    resread("agreement.txt"),
+    "I Agree with these Terms and Conditions",
+    "<@center>You must accept the terms and conditions</@>"
+);
+########################################INSTALLATION################################################################################
+ini_set("text_next", "Exit");
+setvar("retstatus",
+  install(
+      " ",
+      "<b>Flashing the rom.</b>\n"+
+      "Please wait...",
+      "@install",
+      "Installation finished!"
+  )
+);

@@ -1,0 +1,134 @@
+#S10e #a20 #S #Oneui4 
+
+Changelog v2.2.1 
+- Reverted some oneui5 apps back 
+- Kernel updated to 11.0 beta2
+- Possible fix for device care auto restart issue
+
+Changelog v2.2
+- Updated base to G970FXXSGHVI1
+- Security patch August 2022
+- OneUI 5 apps updated to beta 3 @gollo99
+- Added back some apps
+- SSRM Tuning, this should help with High temp during charge
+- Added Bixby
+- Added 5g+ logo @gollo99
+- Added LTE Only mode
+- Oneui5 apps by Default
+- S22 Wallpapers
+- AOD is enabled
+- AOD Now working on lockscreen (with some clocks)
+- Tuning to reduce heat when using R9.0
+- New Keyboard Selector
+- Now Flagship Blur Optional
+
+
+Changelog v2.1 
+- Fixed Bluetooth Calls
+- AOD Disabled
+- Video Player fixed
+- Video Trimmer fixed 
+- Photo Remaster Fixed
+- Potrait Mode Fixed
+- GoogleAR Apps now works
+- Dex Keyboard Fixed
+- Reapplied DRM fix @derick
+- OneUI 5 apps updated to beta2 @gollo99
+- Selinux patches
+- CameraLight Sensor changed
+- Some Useless Apps Removed
+- Re-Tuned Boost Patterns Battery+
+- Fixed a issue where image loading was taking very long time
+- Fonts Nuked
+- Added Option to bypass Setup Wizard
+- New Kernel Selector
+
+Changelog v2.0
+- Updated to July Update
+- Source G970FXXUFHVG4
+- Reverted to original Eureka
+- Eureka 10.1 HMP included 
+- Magisk 25.2 included 
+- Fixed Proximity during Calls
+- Added Camera Light Sensor
+- Auto Brightness Now works
+- Fixed Codecs
+- Fixed Camera
+- Face Unlock works
+- RamPlus Nuked
+- Updated Audio hal
+- Switched to OneUI4 SoundAlive
+- Option to install OneUI5 Apps @gollo99
+- Option to Use Eureka 8.0
+- Option to switch aosp bootanimation
+- Samsung's new bootanimation added when using aosp bootanimation
+
+Changelog v1.9 
+- More optimised list Selection in Aroma
+- Some compatibility improvements
+- Added Hybrid Radio @xnavis
+- Switched to aosp bootanimation
+- located at /product/media/bootanimation.zip
+- Added Dolby config from S10e
+- Sound is now boosted by default
+- Merged latest issues
+- Annoying data popup removed
+- Call crashes fixed
+- Camera Effect fixed
+
+
+Changelog v1.8 
+- Source G970FXXSFHVF1 
+- Patch June 2022   
+- Eureka 10.1 HMP included 
+- Magisk 25.1 included 
+- Bluetooth Improved 
+- Bluetooth Library Patched 
+- Secure folder patched 
+- GPS Fixed 
+- Radio improved 
+- Permissions Fixed 
+- Volte fixed @xnavis  
+- DRM fixed @xnavis 
+- Chrome Audio fixed @xnavis  
+- Fingerprint lag fixed @xnavis  
+- Screen off Audio is now fixed 
+- Product included with tweaks 
+- New Improved installer 
+- F2FS Support for / Data 
+- EXT4 still works 
+- Clean flash recommended 
+ 
+Included Tweaks 
+- Enabled Call Recording for all csc 
+- Enabled LTEONLY mode 
+- Shutter Sound Optional 
+- Don't Pause Music during Camera 
+- Enabled more Camera features 
+- Real-time network speed in the status bar​ 
+- Extra dim toggle in QS​ 
+- Enhanced processing in quick toggle​ 
+- New edge lighting styles​ 
+- 300+ fonts​ available in aroma
+- Option to Switch to SDcardFS 
+- Video brightness settings in advanced features 
+- Guide on how to force reboot in the power menu​ 
+- High End(Flagship-level) launcher animations​ 
+- Enabled Camera Privacy 
+- Camera Privacy in QS tile 
+​- Volte QS tile​ 
+- Switched to AOSP Brightness 
+- Switched to Interactive 
+- Switched to lz4 
+ 
+Bugs  
+- AOD 
+ 
+Credits 
+- @kevios12 vendor pro 
+- @neel0210 vendor pro 
+- @FlorinelulX123 
+- @Subodhkr360 tweaks
+- @chatur2709 kernel 
+- @el0xren tweaks
+- mojave0 for aroma theme
