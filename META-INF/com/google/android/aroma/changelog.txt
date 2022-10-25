@@ -1,9 +1,42 @@
 #S10e #a20 #S #Oneui4 
 
+Changelog v2.4
+- Updated base to G970FXXUGHVJ1
+- Security Patch 1 October 2022
+- Overhauled Audio Hal (All issues regarding audio should be resolved now)
+- Integrated working GPUWatch.
+- Graphic amendments reverted.
+- Pre-installed video gallery.
+- Light lmk activated.
+- Optional little throttle up to 1352.
+- Restored dpi.
+- Profiling switched off.
+- No 5g+ at the moment.
+- Integrated Extended Power Menu mod. Configure at  Settings>Advanced Features>Global action settings
+- Switch to lzo.
+- Changed scalers, normalize sharpness.
+- Switched to a51 wallpapers.
+- Full AOD activated. Some clocks still buggy
+
+Changelog v2.3
+- Kernel updated to R11.0 beta 3
+- Added Samsung Quick Share patch (beta)
+- Adapted OneUI Lmk for kernel R11.0
+- Changes to memory management, Holds more apps in recent
+- Changes to graphics renderer, better system animations. do let me know the changes in games if any
+- Reduced Screen Density
+- Fix to Smart Switch
+- Fixed device care auto restart issue
+- Possible fix for bt call, issue on some models
+- OneUI 5 Calculator & Music @gollo99
+- 5G+ mod optional
+
+Changelog v2.2.2
+- Fixed a heating issue
+
 Changelog v2.2.1 
-- Reverted some oneui5 apps back 
+- Reverted some oneui5 apps
 - Kernel updated to 11.0 beta2
-- Possible fix for device care auto restart issue
 
 Changelog v2.2
 - Updated base to G970FXXSGHVI1

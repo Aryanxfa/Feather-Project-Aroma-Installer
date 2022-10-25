@@ -1,5 +1,7 @@
 <b>TERMS AND CONDITIONS</b>
 
+•I am not responsible for any kind of damage and or harm caused to your device by using this rom.
+•I assume you may know the risks of proceeding.
 •Your warranty is now void.
 •You no longer can use some knox
 •You choose to do this modification 
@@ -16,8 +18,7 @@
 @amarullz for Aroma Installer.
 @Exnos 8890 for Lime Theme
 @el0xren for Csc Tweaks
-@3arthur6 For Bluetooth lib patcher.
-@BlassGO for unlimited theme Patch
+@3arthur6 For Bluetooth lib patcher
 * Your warranty is now void. * 
 You do this at your own risk! 
 

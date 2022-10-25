@@ -2,10 +2,10 @@
 ini_set("force_colorspace", "rgba");
 ini_set("transition", "stack");
 ini_set("rom_name",             "Feather Project");
-ini_set("rom_version",          "S10e_v2.2");
+ini_set("rom_version",          "S10e_v2.4");
 ini_set("rom_author",           "Raptor 9");
 ini_set("rom_device",           "Galaxy A20");
-ini_set("rom_date",             "25/Sep/2022");
+ini_set("rom_date",             "30/Sep/2022");
 ini_set("force_colorspace","rgba");
 anisplash(1,
 "splash/splash_01", 80,
@@ -58,12 +58,6 @@ viewbox(
     "@home"
 );
 ##################################################
-textbox(
-    "",
-    "<b>ROM Changelog</b>",
-    "@lic",
-    resread("changelog.txt")
-);
 ###################################################
 ###################################################
 ini_set("text_next", " ");
@@ -100,16 +94,17 @@ checkbox(
   
   #-----------------------------------[ Selectbox With Group ]-----------------------------------#
 
-     "Choose Apps to be Removed (Debloat List)",                "",                                 2,
+     "Choose Apps to be Removed (Debloat List)",               "",                                 2,
      "Samsung Account",              "Basic Samsung Account Functionality",        0,
-     "FM Radio",              "Listening to the classic Radio",                 1,
+     "FM Radio",              "Listening to the classic Radio",                 0,
      "Edge Tools",                "CocktailBar Tool, One hand, Edge",             0,
      "Portrait Effect",                 "Functionality to add Portrait Effect",                      0,
      "Device Care",                  "Samsung Device Care for Configuring device",      0,
      "Finder",                       "For Searches all around the device",                                 0,
      "Dynamic LockScreen",     "Changing Wallpapers on Lock screen",              0,
 	 "Samsung Dex",                  "Dex on PC Functionality",                      0,
-	 "SamsungDeviceHealthManager",   "Needed for battery stats, Controls device",   0
+	 "SamsungDeviceHealthManager",   "Needed for battery stats, Controls device",  0,
+	 "Nearby Share",   "Don't select if you use Smart View, Google Home or Quick Share",  0
 	);
 ###############################################
 ini_set("text_next", "Next ");
@@ -129,7 +124,8 @@ checkbox(
   #-----------------------------------[ Selectbox With Group ]-----------------------------------#
 
      "Choose Apps to be Installed as System Apps:",                "",      2,
-     "Smart View",         "Smart View functionality",              1,
+     "Smart View",         "Smart View functionality",              0,
+     "Quick Share",         "Transfer files between Samsung Devices",              0,
      "Secure Folder",          "Samsung Secure Folder",                              0,
      "ARCore",                 "Samsung ARCore",                               0,
      "Weather",                 "Samsung Weather",                                0,
@@ -137,7 +133,7 @@ checkbox(
      "Digital Wellbeing",      "Shows how much u use device",                           0,
 	 "Routines",               "Samsung Bixby Routines like Tasker",                          0,
 	 "Game Tools",             "GOS, Game Tools",                           0,
-	 "Emergency Mode",         "Emergency Battery Saving",                  1
+	 "Emergency Mode",         "Emergency Battery Saving",                  0
 	);
 ###############################################
      
@@ -161,10 +157,11 @@ checkbox(
      "QuickBoard",         "Media and Devices in QS Panel",                                 0,
      "Galaxy Store",              "Samsung's store",                                      0,
      "Samsung Cloud",             "Samsung Cloud Core",                                0,
-     "Full Setup Wizard",      "Enable to use full Setup Wizard for restoring data from google",                        0,
+     "Setup Wizard",      "Enable to use full Setup Wizard for restoring data from google",                        1,
      "Smart Suggestions",   "Suggest Replies on Notifications",             1,
-	 "Bixby",               "Samsung's Version of Google Assistant",                      0,
-	 "Private Compute Services",   "Android 12 AOSP AI stuff",             0,
+	 "Bixby",               "Samsung's Version of Google Assistant. Lot of performance drop",                      0,
+	 "Private Compute Services",   "Live Captions etc",             0,
+	 "Auto Hotspot (Beta)",   "Turn on hotspot remotely with Samsung",             0,
 	 "Samsung Smart Switch",   "For Creating Backups",             0
 	);
 ###############################################
@@ -188,9 +185,11 @@ checkbox(
 
      "Choose Modifications to be Applied:",                "",                 2,
      "AOSP Bootanimation",   "Switch to AOSP Bootanimation",             0,
-	 "Disable Global Soundbooster",               "Sound Booster will only be applied to Media. Fixes issue with Very loud Whatsapp video call",                      1,
+	 "Disable Global Soundbooster",               "(Deprecated) Sound Booster will only be applied to Media. Fixes issue with Very loud Whatsapp video call",                      0,
 	 "Flagship Blur",               "It Will Enable Live BLUR, Can cause Significant Performance drop.",                      0,
-	 "Standard Blur",               "Standard BLUR, reverts the above.",                      1,
+	 "Standard Blur",               "Standard BLUR, Reverts the above.",                      0,
+	 "Throttle little to 1352",     "Less heat similar performance",                      0,
+	 "Remove throttle",             "Removes throttle, Reverts the above.",                      0,
 	 "Dual Speaker (Beta)",   "Use Earpice as a Secondary Speaker",             0
 	);
 ###############################################
@@ -209,8 +208,8 @@ menubox(
   
     "Eureka 8.0",   "Eureka Kernel R8.0 Permissive",    "@none",      
     "Eureka 9.0",   "Eureka Kernel R9.0 Permissive",    "@none",      
-    "Eureka 9.0",   "Eureka Kernel R9.0 Enforcing, Working OK so far, Dex working without touchpad",         "@none",    
-    "Eureka 11.0",  "Eureka Kernel R11.0 Enforcing, Causes App crashes, Dex working with touchpad",         "@none",
+    "Eureka 9.0",   "Eureka Kernel R9.0 Enforcing",         "@none",    
+    "Eureka 11.0",  "Eureka Kernel R11.0 Enforcing, Dex working with touchpad",         "@none",
     "Don't install kernel",  "Will not install any kernel",         "@none"    
 
 );
@@ -254,7 +253,7 @@ setvar("retstatus",
   install(
       " ",
       "<b>Flashing the rom.</b>\n"+
-      "Please wait...",
+      "<b>Please wait...</b>",
       "@install",
       "Installation finished!"
   )
