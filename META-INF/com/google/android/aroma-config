@@ -254,6 +254,12 @@ menubox(
 
 );
 ###############################################
+textbox(
+    "",
+    "<b>ROM Changelog</b>",
+    "@lic",
+    resread("changelog.txt")
+);
 # LICENSE PAGE
 ###############################################
 ini_set("text_next", "Install");
