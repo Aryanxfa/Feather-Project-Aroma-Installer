@@ -7,8 +7,8 @@ ui_print("      -> Big cores: 520 - 2080     ");
 ui_print("      -> Little cores: 546 - 1690  ");
 ui_print("      -> GPU Freq: 343 - 1300      ");
 ui_print("  OS      : OneUI 4.1 | Android 12 ");
-ui_print("  Security Patch : August 2022     ");
-ui_print("  Version: S10e_v2.4               ");
+ui_print("  Security Patch : October 2022    ");
+ui_print("  Version: S10e_v2.4.1             ");
 ui_print("  by @RiskyEagle                   ");
 ui_print("===================================");
 ################################################################################
