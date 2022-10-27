@@ -206,12 +206,13 @@ menubox(
      # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
      #-------------------------+-----------------------------------------------------------+---------------#  
   
-    "Default LMK",   "Default LMK ui smooth af. Kills too much",    "@none",      
+    "Default LMK",   "Default Samsung LMK ui smooth. Kills much",    "@none",      
     "Lite LMK",   "Light LMK smooth, kill when required",    "@none",      
     "Very Light LMK",   "Very light LMK. can cause lags.",         "@none",    
     "No LMK",  "This will cause lags. Are you nuts?",         "@none"    
 );
-
+###############################################
+###############################################
 ini_set("text_next", " ");
 ini_set("icon_next", "@none");
 menubox(
