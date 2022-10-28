@@ -1,5 +1,14 @@
 #S10e #a20 #S #Oneui4 
 
+Changelog v2.4.1
+- Added option to use oneui4 apps for stability
+- Added new updated audio policy 
+- Lmk is now optional
+Default lmk: standard killing, smooth, use with social media apps
+Light lmk: less killing smooth, light multitasking
+Very Light lmk: less killing, little lags, heavy multitasking
+No lmk: no killing but will cause lags
+
 Changelog v2.4
 - Updated base to G970FXXUGHVJ1
 - Security Patch 1 October 2022
