@@ -72,35 +72,13 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.3") == "1" then
 	ui_print("@>Enabling Dual Speaker (Beta)");
 	package_extract_dir("mods/dual/vendor/etc", "/vendor/etc");
 endif;
-###############################################################################
-if file_getprop("/tmp/aroma/keys.prop", "selected") == "1" then
-	ui_print("@>Installing Samsung KeyBoard OneUI4...");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/GBoard");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/GBoard");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/HoneyBoard");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/ClipboardSaveService");
-	package_extract_dir("mods/keys/HoneyBoard_ui4", "/system_root/system/app/HoneyBoard");
-	package_extract_dir("mods/keys/ClipboardSaveService", "/system_root/system/priv-app/ClipboardSaveService");
-endif;
-if file_getprop("/tmp/aroma/keys.prop", "selected") == "2" then
-	ui_print("@>Installing Samsung KeyBoard OneUI5...");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/GBoard");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/GBoard");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/HoneyBoard");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/ClipboardSaveService");
-	package_extract_dir("mods/keys/HoneyBoard_ui5", "/system_root/system/app/HoneyBoard");
-	package_extract_dir("mods/keys/ClipboardSaveService", "/system_root/system/priv-app/ClipboardSaveService");
-endif;
-if file_getprop("/tmp/aroma/keys.prop", "selected") == "3" then
+if file_getprop("/tmp/aroma/mods.prop", "item.1.4") == "1" then
 	ui_print("@>Installing GBoard...");
 	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/GBoard");
 	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/GBoard");
 	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/HoneyBoard");
 	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/ClipboardSaveService");
 	package_extract_dir("mods/keys/GBoard", "/system_root/system/app/GBoard");
-endif;
-if file_getprop("/tmp/aroma/keys.prop", "selected") == "5" then
-	ui_print(" Skipping Keyboard ...");
 endif;
 ###################
 set_progress(0.96);

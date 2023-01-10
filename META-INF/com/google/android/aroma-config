@@ -95,13 +95,15 @@ checkbox(
   
   #-----------------------------------[ Selectbox With Group ]-----------------------------------#
 
-     "Choose Modifications to be Applied:",                "",                 2,
+   "Choose Modifications to be Applied:",                "",                 2,
    "Throttle little to 1352",     "Less heat similar performance",                      0,
 	 "Remove throttle",             "Removes throttle, Reverts the above.",                      0,
-	 "Dual Speaker (Beta)",   "Use Earpice as a Secondary Speaker",             0
+	 "Dual Speaker (Beta)",   "Use Earpice as a Secondary Speaker",             0,
+   "Google Keyboard",   "Google KeyBoard with less annoying features",       0
+    
 	);
 ###############################################
-
+###############################################
 ini_set("text_next", " ");
 ini_set("icon_next", "@none");
 menubox(
@@ -141,26 +143,6 @@ menubox(
 
 );
 ###############################################
-###############################################
-
-ini_set("text_next", " ");
-ini_set("icon_next", "@none");
-menubox(
-    "",
-    "<b>Select your Preferred Keyboard</b>",
-    "@install",
-    "keys.prop",
-
-     #-------------------------+-----------------[ Menubox Items ]-------------------------+---------------#
-     # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
-     #-------------------------+-----------------------------------------------------------+---------------#  
-  
-    "Samsung Keyboard OneUI4",   "Samsung Keyboard from OneUI4, from S10e",    "@honeyboard",      
-    "Samsung Keyboard OneUI5",   "Samsung Keyboard from OneUI5, little issue with clipboard",    "@honeyboard",      
-    "Google Keyboard",   "Google KeyBoard with less annoying features",         "@gboard",
-    "Don't install keyboard",  "Are you nuts?",         "@none"    
-
-);
 ###############################################
 
 ini_set("text_next", "Next ");
