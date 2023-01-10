@@ -157,8 +157,7 @@ menubox(
   
     "Samsung Keyboard OneUI4",   "Samsung Keyboard from OneUI4, from S10e",    "@honeyboard",      
     "Samsung Keyboard OneUI5",   "Samsung Keyboard from OneUI5, little issue with clipboard",    "@honeyboard",      
-    "Google Keyboard Lite",   "Trimmed version of Google KeyBoard with less annoying features",         "@gboard",    
-    "Google Keyboard Full",  "Standard Google KeyBoard with full features",         "@gboard",
+    "Google Keyboard Lite",   "Trimmed version of Google KeyBoard with less annoying features",         "@gboard",
     "Don't install keyboard",  "Are you nuts?",         "@none"    
 
 );
