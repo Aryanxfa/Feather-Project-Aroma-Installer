@@ -88,30 +88,27 @@ run_program("/tmp/busybox", "fstrim", "-v", "/system_root");
 run_program("/tmp/busybox", "fstrim", "-v", "/data");
 run_program("/sbin/sleep", "1");
 run_program("/tmp/busybox", "rm", "-rf", "/data/sec/com.samsung.cmh");
-#############################
 ##################################################
+##################################################
+package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "1" then
 	ui_print("@>Installing Eureka Kernel R8.0 Permissive...");
 	package_extract_file("mods/r8per/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("mods/r8per/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 	package_extract_file("mods/r8per/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
 endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "2" then
 	ui_print("@>Installing Eureka Kernel R9.0 Permissive...");
 	package_extract_file("mods/r9per/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("mods/r9per/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 	package_extract_file("mods/r9per/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
 endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "3" then
 	ui_print("@>Installing Eureka Kernel R9.0 Enforcing...");
 	package_extract_file("mods/r9enf/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("mods/r9enf/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 	package_extract_file("mods/r9enf/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
 endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "4" then
 	ui_print("@>Installing Eureka Kernel R11 Permissive...");
 	package_extract_file("kernel/boot/R110_boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("mods/r11enf/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 	package_extract_file("kernel/dtb/per_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
 endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "5" then
