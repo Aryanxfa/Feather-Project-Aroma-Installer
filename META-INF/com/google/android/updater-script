@@ -60,83 +60,15 @@ run_program("/sbin/mount", "-t", "auto", "/product");
 ###################################
 ###############################################################################
 if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
-    ui_print("@>Switching to AOSP Bootanimation");
-	package_extract_file("system/bin/bootanimation", "/system_root/system/bin/bootanimation");
-	set_metadata_recursive("/system_root/system/bin/bootanimation", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
-endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.2") == "1" then
-	ui_print("@>Disabling Global SoundBooster");
-	package_extract_file("system/etc/stage_policy.conf", "/system_root/system/etc/stage_policy.conf");
-endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.3") == "1" then
-	ui_print("@>Enabling Flagship BLUR");
-	package_extract_file("mods/flagship_blur/floating_feature.xml", "/system_root/system/etc/floating_feature.xml");
-endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.4") == "1" then
-	ui_print("@>Enabling Standard BLUR");
-	package_extract_file("mods/standard_blur/floating_feature.xml", "/system_root/system/etc/floating_feature.xml");
-endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.5") == "1" then
 	ui_print("@>Throttle little to 1352");
 	package_extract_file("mods/throttle/fp_throttle.rc", "/vendor/etc/init/fp_throttle.rc");
 	set_metadata_recursive("/vendor/etc/init/fp_throttle.rc", "uid", 0, "gid", 0, "dmode", 0644, "fmode", 0644);
 endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.6") == "1" then
+if file_getprop("/tmp/aroma/mods.prop", "item.1.2") == "1" then
 	ui_print("@>Removing Throttle");
 	run_program("/tmp/busybox", "rm", "-rf", "/vendor/etc/init/fp_throttle.rc");
 endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.7") == "1" then
-	ui_print("@>Installing ONEUI4 apps");
-	package_extract_dir("mods/ui4/system", "/system_root/system/etc");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/preload");
-if file_getprop("/tmp/aroma/dump.prop", "item.1.1") == "1" then
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/SamsungAccount");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/SamsungExperienceService");
-endif;
-if file_getprop("/tmp/aroma/dump.prop", "item.1.2") == "1" then
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/HybridRadio");
-endif;
-if file_getprop("/tmp/aroma/dump.prop", "item.1.3") == "1" then
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/PeopleStripe");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/TaskEdgePanel_v3.2");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/ClipboardEdge");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/EasyOneHand3");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/CocktailQuickTool");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/CocktailBarService_v3.2");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/LiveDrawing");
-endif;
-if file_getprop("/tmp/aroma/dump.prop", "item.1.4") == "1" then
-    run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/DualOutFocusViewer_S");
-endif;
-if file_getprop("/tmp/aroma/dump.prop", "item.1.5") == "1" then
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/SmartManager_v5");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/SmartManager_v6_DeviceSecurity");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/Turbo");
-endif;
-if file_getprop("/tmp/aroma/dump.prop", "item.1.6") == "1" then
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/Finder");
-endif;
-if file_getprop("/tmp/aroma/dump.prop", "item.1.7") == "1" then
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/DynamicLockscreen");
-endif;
-if file_getprop("/tmp/aroma/dump.prop", "item.1.8") == "1" then
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/SystemUIDesktop");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/KnoxDesktopLauncher");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/DeXonPC");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/DesktopModeUiService");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/LinkToWindowsService");
-endif;
-if file_getprop("/tmp/aroma/dump.prop", "item.1.9") == "1" then
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/SamsungDeviceHealthManagerService");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/GpuWatchApp");
-endif;
-if file_getprop("/tmp/aroma/dump.prop", "item.1.10") == "1" then
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/AllShareAware");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/AllshareFileShare");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/AllshareMediaShare");
-endif;
-endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.7") == "1" then
+if file_getprop("/tmp/aroma/mods.prop", "item.1.3") == "1" then
 	ui_print("@>Enabling Dual Speaker (Beta)");
 	package_extract_dir("mods/dual/vendor/etc", "/vendor/etc");
 endif;

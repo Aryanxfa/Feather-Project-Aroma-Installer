@@ -96,13 +96,8 @@ checkbox(
   #-----------------------------------[ Selectbox With Group ]-----------------------------------#
 
      "Choose Modifications to be Applied:",                "",                 2,
-     "AOSP Bootanimation",   "Switch to AOSP Bootanimation",             0,
-	 "Disable Global Soundbooster (Not needed)",               "(Deprecated) Sound Booster will only be applied to Media. Fixes issue with Very loud Whatsapp video call",                      0,
-	 "Flagship Blur",               "It Will Enable Live BLUR, Can cause Significant Performance drop.",                      0,
-	 "Standard Blur",               "Standard BLUR, Reverts the above.",                      0,
-	 "Throttle little to 1352",     "Less heat similar performance",                      0,
+   "Throttle little to 1352",     "Less heat similar performance",                      0,
 	 "Remove throttle",             "Removes throttle, Reverts the above.",                      0,
-	 "Use ONEUI4 Apps",             "Extra Stable Oneui4 Apps",                      0,
 	 "Dual Speaker (Beta)",   "Use Earpice as a Secondary Speaker",             0
 	);
 ###############################################
