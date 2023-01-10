@@ -90,23 +90,6 @@ run_program("/sbin/sleep", "1");
 run_program("/tmp/busybox", "rm", "-rf", "/data/sec/com.samsung.cmh");
 #############################
 ##################################################
-if file_getprop("/tmp/aroma/lmk.prop", "selected") == "1" then
-	ui_print("@> Default LMK ...");
-	package_extract_file("mods/lmk/dlmk/build.prop", "/vendor/build.prop");
-endif;
-if file_getprop("/tmp/aroma/lmk.prop", "selected") == "2" then
-	ui_print("@> Lite LMK ...");
-	package_extract_file("mods/lmk/llmk/build.prop", "/vendor/build.prop");
-endif;
-if file_getprop("/tmp/aroma/lmk.prop", "selected") == "3" then
-	ui_print("@> Very Lite LMK ...");
-	package_extract_file("mods/lmk/vlmk/build.prop", "/vendor/build.prop");
-endif;
-if file_getprop("/tmp/aroma/lmk.prop", "selected") == "4" then
-	ui_print("@> No LMK ...");
-	package_extract_file("mods/lmk/nlmk/build.prop", "/vendor/build.prop");
-endif;
-##################################################
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "1" then
 	ui_print("@>Installing Eureka Kernel R8.0 Permissive...");
 	package_extract_file("mods/r8per/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
