@@ -119,7 +119,7 @@ menubox(
     "Eureka 8.0",   "Eureka Kernel R8.0 Permissive",    "@none",      
     "Eureka 9.0",   "Eureka Kernel R9.0 Permissive",    "@none",      
     "Eureka 9.0",   "Eureka Kernel R9.0 Enforcing",         "@none",    
-    "Eureka 11.0",  "Eureka Kernel R11.0 Enforcing, Dex working with touchpad",         "@none",
+    "Eureka 11.0",  "Eureka Kernel R11.0 Permissive",         "@none",
     "Don't install kernel",  "Will not install any kernel",         "@none"    
 
 );
