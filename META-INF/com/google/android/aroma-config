@@ -108,25 +108,6 @@ ini_set("text_next", " ");
 ini_set("icon_next", "@none");
 menubox(
     "",
-    "<b>Select your Preferred LMK</b>",
-    "@install",
-    "lmk.prop",
-
-     #-------------------------+-----------------[ Menubox Items ]-------------------------+---------------#
-     # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
-     #-------------------------+-----------------------------------------------------------+---------------#  
-  
-    "Default LMK",   "Default Samsung LMK ui smooth. Kills much",    "@none",      
-    "Lite LMK",   "Light LMK smooth, kill when required",    "@none",      
-    "Very Light LMK",   "Very light LMK. can cause lags.",         "@none",    
-    "No LMK",  "This will cause lags. Are you nuts?",         "@none"    
-);
-###############################################
-###############################################
-ini_set("text_next", " ");
-ini_set("icon_next", "@none");
-menubox(
-    "",
     "<b>Select your Preferred Kernel</b>",
     "@install",
     "kernel.prop",
