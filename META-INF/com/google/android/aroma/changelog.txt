@@ -1,176 +1,67 @@
-#S10e #a20 #S #Oneui4 
+#S22 #a20 #T #OneUI5
 
-Changelog v2.4.1
-- Added option to use oneui4 apps for stability
-- Added new updated audio policy 
-- Lmk is now optional
-Default lmk: standard killing, smooth, use with social media apps
-Light lmk: less killing smooth, light multitasking
-Very Light lmk: less killing, little lags, heavy multitasking
-No lmk: no killing but will cause lags
-
-Changelog v2.4
-- Updated base to G970FXXUGHVJ1
-- Security Patch 1 October 2022
-- Overhauled Audio Hal (All issues regarding audio should be resolved now)
-- Integrated working GPUWatch.
-- Graphic amendments reverted.
-- Pre-installed video gallery.
-- Light lmk activated.
-- Optional little throttle up to 1352.
-- Restored dpi.
-- Profiling switched off.
-- No 5g+ at the moment.
-- Integrated Extended Power Menu mod. Configure at  Settings>Advanced Features>Global action settings
-- Switch to lzo.
-- Changed scalers, normalize sharpness.
-- Switched to a51 wallpapers.
-- Full AOD activated. Some clocks still buggy
-
-Changelog v2.3
-- Kernel updated to R11.0 beta 3
-- Added Samsung Quick Share patch (beta)
-- Adapted OneUI Lmk for kernel R11.0
-- Changes to memory management, Holds more apps in recent
-- Changes to graphics renderer, better system animations. do let me know the changes in games if any
-- Reduced Screen Density
-- Fix to Smart Switch
-- Fixed device care auto restart issue
-- Possible fix for bt call, issue on some models
-- OneUI 5 Calculator & Music @gollo99
-- 5G+ mod optional
-
-Changelog v2.2.2
-- Fixed a heating issue
-
-Changelog v2.2.1 
-- Reverted some oneui5 apps
-- Kernel updated to 11.0 beta2
-
-Changelog v2.2
-- Updated base to G970FXXSGHVI1
-- Security patch August 2022
-- OneUI 5 apps updated to beta 3 @gollo99
-- Added back some apps
-- SSRM Tuning, this should help with High temp during charge
-- Added Bixby
-- Added 5g+ logo @gollo99
-- Added LTE Only mode
-- Oneui5 apps by Default
-- S22 Wallpapers
-- AOD is enabled
-- AOD Now working on lockscreen (with some clocks)
-- Tuning to reduce heat when using R9.0
-- New Keyboard Selector
-- Now Flagship Blur Optional
+OneUI 5.0 S22 port for A205x 
 
 
-Changelog v2.1 
-- Fixed Bluetooth Calls
-- AOD Disabled
-- Video Player fixed
-- Video Trimmer fixed 
-- Photo Remaster Fixed
-- Potrait Mode Fixed
-- GoogleAR Apps now works
-- Dex Keyboard Fixed
-- Reapplied DRM fix @derick
-- OneUI 5 apps updated to beta2 @gollo99
-- Selinux patches
-- CameraLight Sensor changed
-- Some Useless Apps Removed
-- Re-Tuned Boost Patterns Battery+
-- Fixed a issue where image loading was taking very long time
-- Fonts Nuked
-- Added Option to bypass Setup Wizard
-- New Kernel Selector
-
-Changelog v2.0
-- Updated to July Update
-- Source G970FXXUFHVG4
-- Reverted to original Eureka
-- Eureka 10.1 HMP included 
-- Magisk 25.2 included 
-- Fixed Proximity during Calls
-- Added Camera Light Sensor
-- Auto Brightness Now works
-- Fixed Codecs
-- Fixed Camera
-- Face Unlock works
-- RamPlus Nuked
-- Updated Audio hal
-- Switched to OneUI4 SoundAlive
-- Option to install OneUI5 Apps @gollo99
-- Option to Use Eureka 8.0
-- Option to switch aosp bootanimation
-- Samsung's new bootanimation added when using aosp bootanimation
-
-Changelog v1.9 
-- More optimised list Selection in Aroma
-- Some compatibility improvements
-- Added Hybrid Radio @xnavis
-- Switched to aosp bootanimation
-- located at /product/media/bootanimation.zip
-- Added Dolby config from S10e
-- Sound is now boosted by default
-- Merged latest issues
-- Annoying data popup removed
-- Call crashes fixed
-- Camera Effect fixed
-
-
-Changelog v1.8 
-- Source G970FXXSFHVF1 
-- Patch June 2022   
-- Eureka 10.1 HMP included 
-- Magisk 25.1 included 
-- Bluetooth Improved 
-- Bluetooth Library Patched 
-- Secure folder patched 
-- GPS Fixed 
-- Radio improved 
-- Permissions Fixed 
-- Volte fixed @xnavis  
-- DRM fixed @xnavis 
-- Chrome Audio fixed @xnavis  
-- Fingerprint lag fixed @xnavis  
-- Screen off Audio is now fixed 
-- Product included with tweaks 
-- New Improved installer 
-- F2FS Support for / Data 
-- EXT4 still works 
-- Clean flash recommended 
- 
-Included Tweaks 
-- Enabled Call Recording for all csc 
-- Enabled LTEONLY mode 
-- Shutter Sound Optional 
-- Don't Pause Music during Camera 
-- Enabled more Camera features 
-- Real-time network speed in the status bar​ 
-- Extra dim toggle in QS​ 
-- Enhanced processing in quick toggle​ 
-- New edge lighting styles​ 
-- 300+ fonts​ available in aroma
-- Option to Switch to SDcardFS 
-- Video brightness settings in advanced features 
-- Guide on how to force reboot in the power menu​ 
-- High End(Flagship-level) launcher animations​ 
-- Enabled Camera Privacy 
-- Camera Privacy in QS tile 
-​- Volte QS tile​ 
-- Switched to AOSP Brightness 
-- Switched to Interactive 
-- Switched to lz4 
- 
 Bugs  
-- AOD 
- 
-Credits 
-- @kevios12 vendor pro 
-- @neel0210 vendor pro 
-- @FlorinelulX123 
-- @Subodhkr360 tweaks
-- @chatur2709 kernel 
-- @el0xren tweaks
-- mojave0 for aroma theme
+- Low light photos
+- Face Unlock
+
+
+Changelog v0.1: 
+Initial Release S901BXXU2BVJA
+
+Changelog v0.2: 
+- update audio hal
+- using s10e audio policy for fixing audio
+- added sdhms for battery stats
+- face unlock removed for stability
+
+Changelog v0.5: 
+- Added Samsung camera ui5
+- Unlocked all cameras in Night mode
+- Fingerprint fixed
+- Audio fixes
+- More minor change
+
+Changelog v0.7
+- Updated to new base S901BXXU2BVKB
+- Security patch November 2022
+- New integrated CSC (Asia + Europe)
+- Using full S22 Oneui5 Samsung Camera
+- Wide camera disabled in samsung cam
+- Updated audio effects from s22
+- New audio policy from s22
+- Added fix for bt calls from @xnavis
+- bt media still ded
+- Some apps moved to user apps to save space
+- Photo Editor Fixed
+- Object Remover from S22 enabled & working
+- Added NFC support
+- Switched to dtb5
+- Using complete aosp partition entries as in eureka. This should solve issue of fail to mount / data in recovery
+
+Changelog v1.0: 
+- Updated base to S901BXXU2BVL1
+- Security Patch 01 December 2022
+- Internal tuning
+- Graphics improved
+- Switched to A51 CSC
+- Auto Brightness Fixed
+- FOD removed
+- AOD unlocked
+- AR Camera fixed
+- Screen Recorder fix
+- Partial fixes for DEX
+- Secure Folder Patch
+- BT Library Patched
+- BT Media and Calls fixed
+- More Camera fixups
+- Fixed overnight battery drain
+- Added headphone fix @xnavis
+- Added Voice Focus @galaxya51user
+
+Hotfix for v1.0
+- Resolves the screenshot issue
+
+
