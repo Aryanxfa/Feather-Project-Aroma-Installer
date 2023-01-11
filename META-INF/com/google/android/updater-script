@@ -1,14 +1,14 @@
 ui_print("===================================");
 ui_print("  ROM     : FEATHER PROJECT        ");
-ui_print("  DEVICE  : SAMSUNG GALAXY A20     ");
-ui_print("  KERNEL  : Eureka 11.0 Enforcing  ");
+ui_print("  OS      : OneUI 5.0 | Android 13 ");
+ui_print("  Version : S22_v1.1               ");
+ui_print("  Security: December 2022          ");
+ui_print("  KERNEL  : Eureka 11.0            ");
 ui_print("  DTB     : 5, Stable v2           ");
 ui_print("      -> Big cores: 520 - 2080     ");
 ui_print("      -> Little cores: 546 - 1690  ");
 ui_print("      -> GPU Freq: 343 - 1300      ");
-ui_print("  OS      : OneUI 4.1 | Android 12 ");
-ui_print("  Security Patch : October 2022    ");
-ui_print("  Version: S10e_v2.4.1             ");
+ui_print("  DEVICE  : SAMSUNG GALAXY A20     ");
 ui_print("  by @RiskyEagle                   ");
 ui_print("===================================");
 ################################################################################

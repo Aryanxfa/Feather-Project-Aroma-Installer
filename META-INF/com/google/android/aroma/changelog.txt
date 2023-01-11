@@ -64,4 +64,16 @@ Changelog v1.0:
 Hotfix for v1.0
 - Resolves the screenshot issue
 
+Changelog v1.1
+- SELinux fixes
+- Dex Fixed
+- WiFi hal updated
+- Switched to aroma installer
+- RAW support in Samsung camera
+- Unlock uw camera in pro mode
+- Some camera modes fixed
+- Enabled Motion Photo
+- Kernel upgraded to r11 final
+- Optional kernels R8 enforcing R9 enforcing R11 permissive
+
 
