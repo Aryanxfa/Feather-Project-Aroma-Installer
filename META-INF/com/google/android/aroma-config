@@ -36,12 +36,10 @@ anisplash(1,
 "splash/splash_26", 80,
 "splash/splash_27", 80,
 "splash/splash_28", 500);
-####################################################
 fontresload( "0", "ttf/smooth.ttf", "14" );
 fontresload( "1", "ttf/brief.ttf", "18" );
-####################################################
 theme("lime");
-####################################################
+
 #ROM INFORMATION
 ####################################################
 ini_set("text_next", "Next ");
@@ -57,8 +55,8 @@ viewbox(
     "Press Next to continue...",
     "@home"
 );
-##################################################
-###################################################
+
+#INSTALLATION TYPE
 ###################################################
 ini_set("text_next", " ");
 ini_set("icon_next", "@none");
@@ -68,41 +66,29 @@ menubox(
     "@install",
     "configs.prop",
 
-     #-------------------------+-----------------[ Menubox Items ]-------------------------+---------------#
-     # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
-     #-------------------------+-----------------------------------------------------------+---------------#  
-  
     "Install + Configure",   "This will Install the Rom and also Allow you to Configure",    "@none",      
     "Configure Only",        "This will Not install Rom just Allow you to Add/Remove Apps, Once Debloated can't be added back",         "@none"    
 
 );
+
+#MODIFICATIONS
 ###############################################
-###############################################
-     
 ini_set("text_next", "Next ");
 checkbox(
-  #-- Title
     " ",
-  
-  #-- Sub Title
     "<b>Selected your preferred Modifications to be applied</b>",
-  
-  #-- Icon:
     "@magk",
-  
-  #-- Will be saved in /tmp/aroma/mag.prop
     "mods.prop",
-  
-  #-----------------------------------[ Selectbox With Group ]-----------------------------------#
 
-   "Choose Modifications to be Applied:",                "",                 2,
-   "Throttle little to 1352",     "Less heat similar performance",                      0,
-	 "Remove throttle",             "Removes throttle, Reverts the above.",                      0,
-	 "Dual Speaker (Beta)",   "Use Earpice as a Secondary Speaker",             0,
-   "Google Keyboard",   "Google KeyBoard with less annoying features",       0
+    "Choose Modifications to be Applied:",                "",                 2,
+    "Throttle little to 1352",     "Less heat similar performance",                      0,
+    "Remove throttle",             "Removes throttle, Reverts the above.",                      0,
+    "Dual Speaker (Beta)",   "Use Earpice as a Secondary Speaker",             0,
+    "Google Keyboard",   "Google KeyBoard with less annoying features",       0
     
-	);
-###############################################
+);
+
+#KERNEL
 ###############################################
 ini_set("text_next", " ");
 ini_set("icon_next", "@none");
@@ -111,10 +97,6 @@ menubox(
     "<b>Select your Preferred Kernel</b>",
     "@install",
     "kernel.prop",
-
-     #-------------------------+-----------------[ Menubox Items ]-------------------------+---------------#
-     # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
-     #-------------------------+-----------------------------------------------------------+---------------#  
   
     "Eureka 8.0",   "Eureka Kernel R8.0 Permissive",    "@none",      
     "Eureka 9.0",   "Eureka Kernel R9.0 Permissive",    "@none",      
@@ -123,7 +105,8 @@ menubox(
     "Don't install kernel",  "Will not install any kernel",         "@none"    
 
 );
-###############################################
+
+#CHANGELOG
 ###############################################
 
 ini_set("text_next", "Next ");
@@ -133,7 +116,8 @@ textbox(
     "@lic",
     resread("changelog.txt")
 );
-# LICENSE PAGE
+
+#LICENSE
 ###############################################
 ini_set("text_next", "Install");
 agreebox(
@@ -144,7 +128,9 @@ agreebox(
     "I Agree with these Terms and Conditions",
     "<@center>You must accept the terms and conditions</@>"
 );
-########################################INSTALLATION################################################################################
+
+#INSTALL
+###############################################
 ini_set("text_next", "Exit");
 setvar("retstatus",
   install(
