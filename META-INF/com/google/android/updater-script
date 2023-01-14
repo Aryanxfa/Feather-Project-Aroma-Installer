@@ -32,18 +32,18 @@ set_progress(0.30);
 ui_print("@>Extracting System...");
 ifelse(is_mounted("/system_root"), unmount("/system_root"));
 block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/system", package_extract_file("META-INF/com/google/CERT.SF"), "META-INF/scripts/xbin/busybox.kek.br", "img/system.img");
-run_program("/sbin/sleep", "1");
+run_program("/tmp/busybox", "sleep", "1");
 ###################################
 set_progress(0.69);
 ui_print("@>Extracting Vendor...");
 ifelse(is_mounted("/vendor"), unmount("/vendor"));
 block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/vendor", package_extract_file("META-INF/com/google/MANIFEST.MF"), "META-INF/scripts/xbin/mounts.kek.br", "img/vendor.img");
-run_program("/sbin/sleep", "1");
+run_program("/tmp/busybox", "sleep", "1");
 ###################################
 ui_print("@>Extracting Product...");
 ifelse(is_mounted("/product"), unmount("/product"));
 block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/product", package_extract_file("META-INF/com/google/CERT.RSA"), "META-INF/scripts/xbin/sleep.kek.br", "img/product.img");
-run_program("/sbin/sleep", "1");
+run_program("/tmp/busybox", "sleep", "1");
 ###################################
 endif;
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "2" then
@@ -51,12 +51,12 @@ ui_print(" Skipping ROM ...");
 endif;
 ##################################
 set_progress(0.80);
-run_program("/sbin/sleep", "1");
+run_program("/tmp/busybox", "sleep", "1");
 ###################################
 run_program("/tmp/busybox", "sh", "/tmp/system-resize.sh");
-run_program("/sbin/mount", "-t", "auto", "/system_root");
-run_program("/sbin/mount", "-t", "auto", "/vendor");
-run_program("/sbin/mount", "-t", "auto", "/product");
+run_program("/tmp/busybox", "mount", "-t", "auto", "/system_root");
+run_program("/tmp/busybox", "mount", "-t", "auto", "/vendor");
+run_program("/tmp/busybox", "mount", "-t", "auto", "/product");
 ###################################
 ###############################################################################
 if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
@@ -83,10 +83,10 @@ endif;
 ###################
 set_progress(0.96);
 #############################
-run_program("/sbin/sleep", "1");
+run_program("/tmp/busybox", "sleep", "1");
 run_program("/tmp/busybox", "fstrim", "-v", "/system_root");
 run_program("/tmp/busybox", "fstrim", "-v", "/data");
-run_program("/sbin/sleep", "1");
+run_program("/tmp/busybox", "sleep", "1");
 run_program("/tmp/busybox", "rm", "-rf", "/data/sec/com.samsung.cmh");
 ##################################################
 ##################################################
