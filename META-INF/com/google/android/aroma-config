@@ -96,7 +96,7 @@ menubox(
     "@install",
     "kernel.prop",
 
-    "Eureka 8.0",   "Eureka Kernel R8.0 Permissive",        "@none",
+    "Eureka 8.0",   "Eureka Kernel R8.0 Enforcing",         "@none",
     "Eureka 9.0",   "Eureka Kernel R9.0 Permissive",        "@none",
     "Eureka 9.0",   "Eureka Kernel R9.0 Enforcing",         "@none",
     "Eureka 11.0",  "Eureka Kernel R11.0 Permissive",       "@none",
