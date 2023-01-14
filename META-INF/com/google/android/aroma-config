@@ -38,7 +38,7 @@ anisplash(1,
 "splash/splash_28", 500);
 fontresload( "0", "ttf/smooth.ttf", "14" );
 fontresload( "1", "ttf/brief.ttf", "18" );
-theme("lime");
+theme("dark");
 
 #ROM INFORMATION
 ####################################################
