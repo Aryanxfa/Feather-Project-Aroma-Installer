@@ -94,17 +94,17 @@ package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "1" then
 	ui_print("@>Installing Eureka Kernel R8.0 Enforcing...");
 	package_extract_file("mods/r8per/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("mods/r8per/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+	package_extract_file("kernel/dtb/enf_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
 endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "2" then
 	ui_print("@>Installing Eureka Kernel R9.0 Permissive...");
 	package_extract_file("mods/r9per/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("mods/r9per/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+	package_extract_file("kernel/dtb/per_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
 endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "3" then
 	ui_print("@>Installing Eureka Kernel R9.0 Enforcing...");
 	package_extract_file("mods/r9enf/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("mods/r9enf/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+	package_extract_file("kernel/dtb/enf_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
 endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "4" then
 	ui_print("@>Installing Eureka Kernel R11 Permissive...");
