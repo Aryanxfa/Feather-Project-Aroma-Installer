@@ -83,7 +83,8 @@ checkbox(
     "Throttle little to 1352",     "Less heat similar performance",                              0,
     "Remove throttle",             "Removes throttle, Reverts the above.",                       0,
     "Dual Speaker (Beta)",         "Use Earpice as a Secondary Speaker",                         0,
-    "Google Keyboard",             "Google KeyBoard with less annoying features",                0
+    "Google Keyboard",             "Google KeyBoard with less annoying features",                0,
+    "Remove NFC",                  "Removes the NFC support",                                    0
 );
 
 #KERNEL
