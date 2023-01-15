@@ -80,6 +80,10 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.4") == "1" then
 	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/ClipboardSaveService");
 	package_extract_dir("mods/keys/GBoard", "/system_root/system/app/GBoard");
 endif;
+if file_getprop("/tmp/aroma/mods.prop", "item.1.5") == "1" then
+	ui_print("@>Removing NFC...");
+	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/NfcNci");
+endif;
 ###################
 set_progress(0.96);
 #############################
