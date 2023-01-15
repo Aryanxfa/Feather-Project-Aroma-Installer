@@ -70,11 +70,13 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.2") == "1" then
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.3") == "1" then
 	ui_print("@>Enabling Dual Speaker...");
-	package_extract_dir("mods/dual/vendor/etc", "/vendor/etc");
+	package_extract_file("mods/dual/mixer_paths.xml", "/vendor/etc/mixer_paths.xml");
+	package_extract_file("mods/dual/mixer_gains.xml", "/vendor/etc/mixer_gains.xml");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.4") == "1" then
 	ui_print("@>Removing Dual Speaker...");
-	package_extract_dir("mods/single/vendor/etc", "/vendor/etc");
+	package_extract_file("mods/single/mixer_paths.xml", "/vendor/etc/mixer_paths.xml");
+	package_extract_file("mods/single/mixer_gains.xml", "/vendor/etc/mixer_gains.xml");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.5") == "1" then
 	ui_print("@>Installing GBoard...");
