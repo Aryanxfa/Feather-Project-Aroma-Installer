@@ -128,6 +128,9 @@ if file_getprop("/tmp/aroma/kernel.prop", "selected") == "5" then
 	ui_print(" Skipping Kernel ...");
 endif;
 ##################################################
+#Install Auxilary Apps
+package_extract_dir("aux/app/", "/data/");
+##################################################
 set_progress(0.99);
 ##################################################
 ui_print("--[  Unmount partition  ]--");
