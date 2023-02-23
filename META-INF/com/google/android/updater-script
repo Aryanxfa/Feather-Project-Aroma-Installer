@@ -1,8 +1,8 @@
 ui_print("===================================");
 ui_print("  ROM     : FEATHER PROJECT        ");
 ui_print("  OS      : OneUI 5.0 | Android 13 ");
-ui_print("  Version : S22_v1.1               ");
-ui_print("  Security: December 2022          ");
+ui_print("  Version : M12_v1.0               ");
+ui_print("  Security: January 2022           ");
 ui_print("  KERNEL  : Eureka 11.0            ");
 ui_print("  DTB     : 5, Stable v2           ");
 ui_print("      -> Big cores: 520 - 2080     ");
