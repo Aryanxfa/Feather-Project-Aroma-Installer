@@ -9,4 +9,11 @@ then
     echo "Filename not provided"
     exit
 fi
+
+if [ ! -f META-INF/scripts/xbin/ ]
+then
+    echo "Failed with error 1"
+    exit
+fi
+
 zip -v -r $1 META-INF mods kernel img aux featherproject.keys
