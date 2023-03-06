@@ -1,0 +1,8 @@
+# Fix OneUI permissions
+on property:sys.boot_completed=1
+    start fp_lazyenforce
+
+service lazyenforce /system/bin/setenforce 1
+    class core
+    user root
+    group root

@@ -102,6 +102,7 @@ menubox(
     "Eureka 9.0",   "Eureka Kernel R9.0 Permissive",        "@none",
     "Eureka 9.0",   "Eureka Kernel R9.0 Enforcing",         "@none",
     "Eureka 11.0",  "Eureka Kernel R11.0 Permissive",       "@none",
+    "Eureka 11.0",  "Eureka Kernel R11.0 Enforcing",       "@none",
     "Don't install kernel",  "Will not change current kernel", "@none"
 );
 

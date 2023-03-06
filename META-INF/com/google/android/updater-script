@@ -125,6 +125,13 @@ if file_getprop("/tmp/aroma/kernel.prop", "selected") == "4" then
 	package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "5" then
+	ui_print("@>Installing Eureka Kernel R11 Enforcing...");
+	package_extract_file("kernel/boot/R110_boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
+	package_extract_file("kernel/dtb/per_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+	package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
+	package_extract_file("mods/fp_lazyenforce.rc", "/vendor/etc/init/fp_lazyenforce.rc");
+endif;
+if file_getprop("/tmp/aroma/kernel.prop", "selected") == "6" then
 	ui_print(" Skipping Kernel ...");
 endif;
 ##################################################
