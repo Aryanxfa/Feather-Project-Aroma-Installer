@@ -90,6 +90,13 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.6") == "1" then
 	ui_print("@>Removing NFC...");
 	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/NfcNci");
 endif;
+if file_getprop("/tmp/aroma/mods.prop", "item.1.7") == "1" then
+	ui_print("@>Debloating with Kudret's List...");
+	package_extract_file("debloat/nukeengine.sh", "tmp/nukeengine.sh");
+	set_metadata_recursive("tmp/nukeengine.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+	package_extract_file("debloat/kudret", "tmp/dblist");
+	run_program("/tmp/nukeengine.sh");
+endif;
 ###################
 set_progress(0.96);
 #############################
