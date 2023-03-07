@@ -18,6 +18,8 @@ package_extract_dir("META-INF/scripts/bin", "/tmp/");
 set_metadata_recursive("/tmp", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644);
 set_metadata_recursive("/tmp/busybox", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 set_metadata_recursive("/tmp/system-resize.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+package_extract_file("debloat/nukeengine.sh", "tmp/nukeengine.sh");
+set_metadata_recursive("tmp/nukeengine.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 ##################################
 ui_print("@>Mount partition...");
 ifelse(is_mounted("/system_root"), unmount("/system_root"));
@@ -92,9 +94,12 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.6") == "1" then
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.7") == "1" then
 	ui_print("@>Debloating with Kudret's List...");
-	package_extract_file("debloat/nukeengine.sh", "tmp/nukeengine.sh");
-	set_metadata_recursive("tmp/nukeengine.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 	package_extract_file("debloat/kudret", "tmp/dblist");
+	run_program("/tmp/nukeengine.sh");
+endif;
+if file_getprop("/tmp/aroma/mods.prop", "item.1.7") == "1" then
+	ui_print("@>Debloating with slorixsh's List...");
+	package_extract_file("debloat/slorixsh", "tmp/dblist");
 	run_program("/tmp/nukeengine.sh");
 endif;
 ###################

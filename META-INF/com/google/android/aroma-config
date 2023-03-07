@@ -85,8 +85,9 @@ checkbox(
     "Dual Speaker",                "Use Earpice as a Secondary Speaker",                         0,
     "Single Speaker",              "Removes the Dual Speaker mod. Reverts the above.",           0,
     "Google Keyboard",             "Google KeyBoard with less annoying features",                0,
-    "Remove NFC",                  "Removes the NFC support",                                    0
-    "Debloating with Kudret's List","Removes Samsung account, Game tools, Quick Share, SmartMirror",0
+    "Remove NFC",                  "Removes the NFC support",                                    0,
+    "Debloating with Kudret's List","Removes Samsung account, Game tools, Quick Share, SmartMirror",0,
+    "Debloating with slorixsh's List","Removes Free, Game tools, Quick Share, SmartMirror",      0
 );
 
 #KERNEL
