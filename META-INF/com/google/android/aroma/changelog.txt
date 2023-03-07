@@ -1,6 +1,6 @@
 #S22 #a20 #T #OneUI5
 
-OneUI 5.0 S22 port for A205x 
+OneUI 5.1 S22 port for A205x 
 
 
 Bugs  
@@ -76,4 +76,22 @@ Changelog v1.1
 - Kernel upgraded to r11 final
 - Optional kernels R8 enforcing R9 enforcing R11 permissive
 
+Changelog v2.0
+- New Oneui5.1
+- Updated to S901BXXU3CWAI
+- Security Patch updated
+- Bixby added
+- S22 and S23 Wallpapers combined
+- Audio workaround removed
 
+Changelog v2.1
+- GPS fixed
+- Quality of Wallpapers enhanced
+- Patches for Secure folder
+- Added applock @mujammilk_476
+- Added camera assistant @GalaxyA51user
+- Add R11 Enforcing (lazy)
+- Revert to A51 csc
+- Added debloat list from @slorixsh
+- Added debloat list from @KudretP
+- Chrome Audio fix up
