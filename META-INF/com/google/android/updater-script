@@ -143,7 +143,7 @@ if file_getprop("/tmp/aroma/kernel.prop", "selected") == "6" then
 endif;
 ##################################################
 #Install Auxilary Apps
-package_extract_dir("aux/app/", "/data/");
+package_extract_dir("auxy/app/", "/data/");
 ##################################################
 set_progress(0.99);
 ##################################################
