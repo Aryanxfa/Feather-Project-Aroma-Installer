@@ -148,6 +148,40 @@ if file_getprop("/tmp/aroma/kernel.prop", "selected") == "6" then
 	ui_print(" Skipping Kernel ...");
 endif;
 ##################################################
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "1" then
+	ui_print("@>Installing CSC OLE...");
+	package_extract_dir("csc/ole/prism/etc", "/system_root/prism/etc");
+	package_extract_dir("csc/ole/optics", "/system_root/optics");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "2" then
+	ui_print("@>Installing CSC ODM...");
+	package_extract_dir("csc/odm/prism/etc", "/system_root/prism/etc");
+	package_extract_dir("csc/odm/optics", "/system_root/optics");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "3" then
+	ui_print("@>Installing CSC OLM...");
+	package_extract_dir("csc/olm/prism/etc", "/system_root/prism/etc");
+	package_extract_dir("csc/olm/optics", "/system_root/optics");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "4" then
+	ui_print("@>Installing CSC OWO...");
+	package_extract_dir("csc/owo/prism/etc", "/system_root/prism/etc");
+	package_extract_dir("csc/owo/optics", "/system_root/optics");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "5" then
+	ui_print("@>Installing CSC OJM...");
+	package_extract_dir("csc/ojm/prism/etc", "/system_root/prism/etc");
+	package_extract_dir("csc/ojm/optics", "/system_root/optics");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "6" then
+	ui_print("@>Installing CSC OXM...");
+	package_extract_dir("csc/oxm/prism/etc", "/system_root/prism/etc");
+	package_extract_dir("csc/oxm/optics", "/system_root/optics");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
+	ui_print(" Skipping CSC ...");
+endif;
+##################################################
 #Install Auxilary Apps
 package_extract_dir("auxy/app/", "/data/");
 ##################################################
