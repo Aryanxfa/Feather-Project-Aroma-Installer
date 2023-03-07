@@ -142,6 +142,7 @@ if file_getprop("/tmp/aroma/kernel.prop", "selected") == "5" then
 	package_extract_file("kernel/dtb/per_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
 	package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 	package_extract_file("mods/fp_lazyenforce.rc", "/vendor/etc/init/fp_lazyenforce.rc");
+	set_metadata_recursive("/vendor/etc/init/fp_lazyenforce.rc", "uid", 0, "gid", 0, "dmode", 0644, "fmode", 0644);
 endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "6" then
 	ui_print(" Skipping Kernel ...");
