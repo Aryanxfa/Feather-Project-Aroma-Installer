@@ -18,6 +18,7 @@
 @ianmacd for multidisabler
 @ricci206 for Secure Folder patch
 @3arthur6 For Bluetooth lib patcher
+@TBM13 For raw capture libs
 
 You do this at your own risk! 
 
