@@ -13,9 +13,5 @@ app/AllShareAware
 app/AllshareFileShare
 app/AllshareMediaShare
 app/Privacy
-priv-app/SamsungExperienceService
 priv-app/ShareLive
-priv-app/SCPMAgent
-priv-app/RubinVersion33
 priv-app/SPPPushClient
-priv-app/SamsungCoreServices
