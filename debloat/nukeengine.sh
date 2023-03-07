@@ -1,6 +1,6 @@
 #! /bin/sh
 
-cat dblist | while read line 
+cat /tmp/dblist | while read line 
 do
    # do something with $line here
    rm -rf "/system_root/system/$line"
