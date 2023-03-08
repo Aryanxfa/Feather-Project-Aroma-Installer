@@ -1,0 +1,8 @@
+/prism/app/ClaroJuegos_FULL/ClaroJuegos_FULL.apk
+/prism/app/instagram-stub-BR/instagram-stub-BR.apk
+/prism/app/messenger-stub-BR/messenger-stub-BR.apk
+/prism/app/SamsungMax/SamsungMax.apk
+/prism/app/UserManual/UserManual.apk
+/prism/priv-app/ClaroContenedor_Stub/ClaroContenedor_Stub.apk
+/prism/priv-app/com.dti.samsung_Ignite/com.dti.samsung_Ignite.apk
+/prism/priv-app/GPT_MobileTV_LTN_nuginga_release/GPT_MobileTV_LTN_nuginga_release.apk

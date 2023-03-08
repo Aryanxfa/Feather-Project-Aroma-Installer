@@ -1,0 +1,3 @@
+/prism/priv-app/appcloud_oobe_samsungGlobal-BaseVersion_V6.0.0.1/appcloud_oobe_samsungGlobal-BaseVersion_V6.0.0.1.apk
+/prism/priv-app/GPT_SamsungPay_issuerprod_release_v24100_1901/GPT_SamsungPay_issuerprod_release_v24100_1901.apk
+/prism/priv-app/SGI-5.0-1910000083/SGI-5.0-1910000083.apk

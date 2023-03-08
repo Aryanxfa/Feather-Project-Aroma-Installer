@@ -1,0 +1,3 @@
+/prism/app/MDIP-SEAU-SingleSKU-Optus-Vodafone/MDIP-SEAU-SingleSKU-Optus-Vodafone.apk
+/prism/priv-app/appcloud_oobe_samsungGlobal-BaseVersion_V6.0.0.1/appcloud_oobe_samsungGlobal-BaseVersion_V6.0.0.1.apk
+/prism/priv-app/Ignite-Globe/Ignite-Globe.apk

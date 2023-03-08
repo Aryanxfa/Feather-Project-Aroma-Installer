@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SW-Configuration>
+    <MobileData>
+        <PublicName>SM-A515F</PublicName>
+    </MobileData>
+    <OmcYn>Y</OmcYn>
+    <MultiCode>OLE</MultiCode>
+    <CustomerDataSet>
+        <CSCName>A515FOLE</CSCName>
+        <CSCVersion>5GVK6</CSCVersion>
+        <NbCustomer>1</NbCustomer>
+        <CustomerData src="/Customer/XID/customer.xml" />
+    </CustomerDataSet>
+    <OmcInfo>
+        <OmcCode>
+            <CustomerCode>XID</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLE_XID_13_0001</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+            <Packages>
+                <package name="com.srin.garut" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.samsung.android.app.camera.sticker.local_csc.preload" />
+                <package name="com.ss.android.ugc.trill" />
+                <package name="com.srin.fakfak" />
+                <package name="com.lazada.android" />
+            </Packages>
+        </OmcCode>
+    </OmcInfo>
+</SW-Configuration>

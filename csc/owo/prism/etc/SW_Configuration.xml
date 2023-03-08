@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SW-Configuration>
+    <MobileData>
+        <PublicName>SM-A515F</PublicName>
+    </MobileData>
+    <OmcYn>Y</OmcYn>
+    <MultiCode>OWO</MultiCode>
+    <CustomerDataSet>
+        <CSCName>A515FOWO</CSCName>
+        <CSCVersion>5GVK6</CSCVersion>
+        <NbCustomer>15</NbCustomer>
+        <CustomerData src="/Customer/ARO/customer.xml" />
+        <CustomerData src="/Customer/BVO/customer.xml" />
+        <CustomerData src="/Customer/CHO/customer.xml" />
+        <CustomerData src="/Customer/COO/customer.xml" />
+        <CustomerData src="/Customer/EON/customer.xml" />
+        <CustomerData src="/Customer/GTO/customer.xml" />
+        <CustomerData src="/Customer/MXO/customer.xml" />
+        <CustomerData src="/Customer/PEO/customer.xml" />
+        <CustomerData src="/Customer/TPA/customer.xml" />
+        <CustomerData src="/Customer/UPO/customer.xml" />
+        <CustomerData src="/Customer/UYO/customer.xml" />
+        <CustomerData src="/Customer/ZTA/customer.xml" />
+        <CustomerData src="/Customer/ZTM/customer.xml" />
+        <CustomerData src="/Customer/ZTO/customer.xml" />
+        <CustomerData src="/Customer/ZVV/customer.xml" />
+    </CustomerDataSet>
+    <OmcInfo>
+        <OmcCode>
+            <CustomerCode>ARO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_ARO_13_0010</Version>
+            <CustomerEdition>ED0007</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>BVO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_BVO_13_0008</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>CHO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_CHO_13_0009</Version>
+            <CustomerEdition>ED0004</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>COO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_COO_13_0008</Version>
+            <CustomerEdition>ED0006</CustomerEdition>
+            <Packages>
+                <package name="co.gov.ins.guardianes" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>EON</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_EON_13_0007</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>GTO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_GTO_13_0010</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MXO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_MXO_13_0008</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.samsung.memberswallet" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>PEO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_PEO_13_0006</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TPA</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_TPA_13_0009</Version>
+            <CustomerEdition>ED0006</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>UPO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_UPO_13_0009</Version>
+            <CustomerEdition>ED0005</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>UYO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_UYO_13_0010</Version>
+            <CustomerEdition>ED0004</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ZTA</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_ZTA_13_0005</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.facebook.orca" />
+                <package name="com.claro.claromusica.br" />
+                <package name="com.instagram.android" />
+                <package name="com.dla.android" />
+                <package name="br.com.mobicare.net.wifi" />
+                <package name="com.nvt.cs" />
+                <package name="com.handmark.expressweather" />
+                <package name="com.claroColombia.contenedor" />
+                <package name="com.clarodrive.android" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ZTM</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_ZTM_13_0005</Version>
+            <CustomerEdition>ED0004</CustomerEdition>
+            <Packages>
+                <package name="br.com.tim.timprotectbackup" />
+                <package name="com.ideastek.esporteinterativo3" />
+                <package name="deezer.android.app" />
+                <package name="br.com.timbrasil.meutim" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ZTO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_ZTO_13_0008</Version>
+            <CustomerEdition>ED0006</CustomerEdition>
+            <Packages>
+                <package name="com.samsung.shop" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.odete.samsung" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ZVV</CustomerCode>
+            <Version>SAOMC_SM-A515F_OWO_ZVV_13_0004</Version>
+            <CustomerEdition>ED0004</CustomerEdition>
+            <Packages>
+                <package name="br.com.vivo" />
+                <package name="br.com.vivo.meuvivoempresas" />
+                <package name="com.nbaimd.gametime.nba2011" />
+                <package name="com.movile.android.appsvivo" />
+                <package name="com.movile.meditation.vivo" />
+                <package name="com.amazon.mShop.android.shopping" />
+                <package name="br.com.goread.android" />
+                <package name="com.aspiro.tidal" />
+                <package name="com.tid.enjoy" />
+                <package name="br.com.tectotal.vivoguru" />
+                <package name="terra.neo.terralauncher" />
+                <package name="br.com.vivo.cloud" />
+            </Packages>
+        </OmcCode>
+    </OmcInfo>
+</SW-Configuration>

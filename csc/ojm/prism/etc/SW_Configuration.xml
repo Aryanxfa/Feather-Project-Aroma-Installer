@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SW-Configuration>
+    <MobileData>
+        <PublicName>SM-A515F</PublicName>
+    </MobileData>
+    <OmcYn>Y</OmcYn>
+    <MultiCode>OJM</MultiCode>
+    <CustomerDataSet>
+        <CSCName>A515FOJM</CSCName>
+        <CSCVersion>5GVK6</CSCVersion>
+        <NbCustomer>23</NbCustomer>
+        <CustomerData src="/Customer/ACR/customer.xml" />
+        <CustomerData src="/Customer/AFG/customer.xml" />
+        <CustomerData src="/Customer/AFR/customer.xml" />
+        <CustomerData src="/Customer/BTC/customer.xml" />
+        <CustomerData src="/Customer/DKR/customer.xml" />
+        <CustomerData src="/Customer/ECT/customer.xml" />
+        <CustomerData src="/Customer/EGY/customer.xml" />
+        <CustomerData src="/Customer/ILO/customer.xml" />
+        <CustomerData src="/Customer/KSA/customer.xml" />
+        <CustomerData src="/Customer/LYS/customer.xml" />
+        <CustomerData src="/Customer/MID/customer.xml" />
+        <CustomerData src="/Customer/MWD/customer.xml" />
+        <CustomerData src="/Customer/FWD/customer.xml" />
+        <CustomerData src="/Customer/PAK/customer.xml" />
+        <CustomerData src="/Customer/SRR/customer.xml" />
+        <CustomerData src="/Customer/TKD/customer.xml" />
+        <CustomerData src="/Customer/TUN/customer.xml" />
+        <CustomerData src="/Customer/TUR/customer.xml" />
+        <CustomerData src="/Customer/XFA/customer.xml" />
+        <CustomerData src="/Customer/XFE/customer.xml" />
+        <CustomerData src="/Customer/XFV/customer.xml" />
+        <CustomerData src="/Customer/ILP/customer.xml" />
+        <CustomerData src="/Customer/XSG/customer.xml" />
+    </CustomerDataSet>
+    <OmcInfo>
+        <OmcCode>
+            <CustomerCode>ACR</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_ACR_13_0004</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>AFG</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_AFG_13_0004</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>AFR</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_AFR_13_0004</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>BTC</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_BTC_13_0004</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>DKR</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_DKR_13_0003</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ECT</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_ECT_13_0003</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>EGY</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_EGY_13_0003</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+            <Packages>
+                <package name="com.amazon.mShop.android.shopping" />
+                <package name="com.zhiliaoapp.musically" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>FWD</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_FWD_13_0006</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.zhiliaoapp.musically" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ILO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_ILO_13_0004</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.zhiliaoapp.musically" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ILP</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_ILP_13_0006</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>KSA</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_KSA_13_0004</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.zhiliaoapp.musically" />
+                <package name="com.amazon.mShop.android.shopping" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>LYS</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_LYS_13_0003</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MID</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_MID_13_0004</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.zhiliaoapp.musically" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MWD</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_MWD_13_0006</Version>
+            <CustomerEdition>ED0004</CustomerEdition>
+            <Packages>
+                <package name="com.zhiliaoapp.musically" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>PAK</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_PAK_13_0003</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SRR</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_SRR_13_0003</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TKD</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_TKD_13_0003</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+            <Packages>
+                <package name="com.zhiliaoapp.musically" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TUN</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_TUN_13_0003</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TUR</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_TUR_13_0007</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="trendyol.com" />
+                <package name="com.galaxyfirsatlari" />
+                <package name="com.setk.widget" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.amazon.mShop.android.shopping" />
+                <package name="com.zhiliaoapp.musically" />
+                <package name="com.akinon.samsung" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XFA</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_XFA_13_0004</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XFE</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_XFE_13_0003</Version>
+            <CustomerEdition>ED0001</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XFV</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_XFV_13_0010</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XSG</CustomerCode>
+            <Version>SAOMC_SM-A515F_OJM_XSG_13_0007</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.zhiliaoapp.musically" />
+                <package name="com.amazon.mShop.android.shopping" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+            </Packages>
+        </OmcCode>
+    </OmcInfo>
+</SW-Configuration>

@@ -1,0 +1,2 @@
+/prism/app/AmazonMDIP-release-signed-sdk-30-SamsungME/AmazonMDIP-release-signed-sdk-30-SamsungME.apk
+/prism/priv-app/Ignite-samsungSamsungAgent_7.4.307-5707_release/Ignite-samsungSamsungAgent_7.4.307-5707_release.apk

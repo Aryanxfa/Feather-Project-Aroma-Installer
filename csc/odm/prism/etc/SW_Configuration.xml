@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SW-Configuration>
+    <MobileData>
+        <PublicName>SM-A515F</PublicName>
+    </MobileData>
+    <OmcYn>Y</OmcYn>
+    <MultiCode>ODM</MultiCode>
+    <CustomerDataSet>
+        <CSCName>A515FODM</CSCName>
+        <CSCVersion>5GVK7</CSCVersion>
+        <NbCustomer>5</NbCustomer>
+        <CustomerData src="/Customer/BKD/customer.xml" />
+        <CustomerData src="/Customer/INS/customer.xml" />
+        <CustomerData src="/Customer/NPB/customer.xml" />
+        <CustomerData src="/Customer/NPL/customer.xml" />
+        <CustomerData src="/Customer/SLK/customer.xml" />
+    </CustomerDataSet>
+    <OmcInfo>
+        <OmcCode>
+            <CustomerCode>BKD</CustomerCode>
+            <Version>SAOMC_SM-A515F_ODM_BKD_13_0008</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>INS</CustomerCode>
+            <Version>SAOMC_SM-A515F_ODM_INS_13_0015</Version>
+            <CustomerEdition>ED0005</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>NPB</CustomerCode>
+            <Version>SAOMC_SM-A515F_ODM_NPB_13_0008</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>NPL</CustomerCode>
+            <Version>SAOMC_SM-A515F_ODM_NPL_13_0008</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SLK</CustomerCode>
+            <Version>SAOMC_SM-A515F_ODM_SLK_13_0008</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+            </Packages>
+        </OmcCode>
+    </OmcInfo>
+</SW-Configuration>
