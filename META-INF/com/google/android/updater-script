@@ -177,7 +177,7 @@ if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
 endif;
 ##################################################
 #Install Auxilary Apps
-package_extract_dir("auxy/app/", "/data/");
+package_extract_dir("auxy/", "/data/");
 ##################################################
 set_progress(0.99);
 ##################################################
