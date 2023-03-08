@@ -16,4 +16,4 @@ then
     exit
 fi
 
-zip -v -r $1 META-INF mods kernel img auxy debloat featherproject.keys
+zip -v -r $1 META-INF mods kernel img auxy csc debloat featherproject.keys
