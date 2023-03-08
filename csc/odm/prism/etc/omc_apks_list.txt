@@ -1,0 +1,10 @@
+/prism/app/MyGalaxy_NEBANGS/MyGalaxy_NEBANGS.apk
+/prism/app/MyGalaxyWidget/MyGalaxyWidget.apk
+/prism/app/MyGalaxyWidget_NEBANGS/MyGalaxyWidget_NEBANGS.apk
+/prism/app/SamsungMax/SamsungMax.apk
+/prism/priv-app/AliveService/AliveService.apk
+/prism/priv-app/appcloud_oobe/appcloud_oobe.apk
+/prism/priv-app/GPT_MemorySaver_release/GPT_MemorySaver_release.apk
+/prism/priv-app/MyGalaxy/MyGalaxy.apk
+/prism/priv-app/PrivacyManager/PrivacyManager.apk
+/prism/priv-app/SamsungShop/SamsungShop.apk

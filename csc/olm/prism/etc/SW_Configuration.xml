@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SW-Configuration>
+    <MobileData>
+        <PublicName>SM-A515F</PublicName>
+    </MobileData>
+    <OmcYn>Y</OmcYn>
+    <MultiCode>OLM</MultiCode>
+    <CustomerDataSet>
+        <CSCName>A515FOLM</CSCName>
+        <CSCVersion>5GVK6</CSCVersion>
+        <NbCustomer>23</NbCustomer>
+        <CustomerData src="/Customer/CAM/customer.xml" />
+        <CustomerData src="/Customer/GLB/customer.xml" />
+        <CustomerData src="/Customer/LAO/customer.xml" />
+        <CustomerData src="/Customer/MM1/customer.xml" />
+        <CustomerData src="/Customer/MYM/customer.xml" />
+        <CustomerData src="/Customer/NZC/customer.xml" />
+        <CustomerData src="/Customer/OPS/customer.xml" />
+        <CustomerData src="/Customer/SIN/customer.xml" />
+        <CustomerData src="/Customer/SMA/customer.xml" />
+        <CustomerData src="/Customer/STH/customer.xml" />
+        <CustomerData src="/Customer/TEL/customer.xml" />
+        <CustomerData src="/Customer/THL/customer.xml" />
+        <CustomerData src="/Customer/TNZ/customer.xml" />
+        <CustomerData src="/Customer/VAU/customer.xml" />
+        <CustomerData src="/Customer/VNZ/customer.xml" />
+        <CustomerData src="/Customer/XME/customer.xml" />
+        <CustomerData src="/Customer/XNF/customer.xml" />
+        <CustomerData src="/Customer/XNZ/customer.xml" />
+        <CustomerData src="/Customer/XSA/customer.xml" />
+        <CustomerData src="/Customer/XSP/customer.xml" />
+        <CustomerData src="/Customer/XTC/customer.xml" />
+        <CustomerData src="/Customer/XXV/customer.xml" />
+        <CustomerData src="/Customer/ATS/customer.xml" />
+    </CustomerDataSet>
+    <OmcInfo>
+        <OmcCode>
+            <CustomerCode>ATS</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_ATS_13_0007</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>CAM</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_CAM_13_0006</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.samsung.android.carriermatching" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>GLB</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_GLB_13_0006</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.srph.emergency321" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>LAO</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_LAO_13_0009</Version>
+            <CustomerEdition>ED0005</CustomerEdition>
+            <Packages>
+                <package name="com.samsung.android.app.camera.sticker.local_csc.preload" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MM1</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_MM1_13_0006</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.m1.mym1" />
+                <package name="com.ministryofhomeaffairs.sgsecure.mhasg" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="sg.gov.mnd.OneService" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MYM</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_MYM_13_0006</Version>
+            <CustomerEdition>ED0004</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.samsung.android.carriermatching" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>NZC</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_NZC_13_0008</Version>
+            <CustomerEdition>ED0006</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.twodegreesmobile.twodegrees" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>OPS</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_OPS_13_0006</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="au.com.optus.selfservice" />
+                <package name="com.amazon.mShop.android.shopping" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SIN</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_SIN_13_0006</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.ministryofhomeaffairs.sgsecure.mhasg" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.opera.max.oem" />
+                <package name="com.singtel.play" />
+                <package name="com.singtel.mysingtel" />
+                <package name="com.SingTel.mWallet" />
+                <package name="com.singtel.hiaccount" />
+                <package name="com.singtel.miotvgo" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SMA</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_SMA_13_0006</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="smart.services.android.widget" />
+                <package name="com.srph.emergency321" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>STH</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_STH_13_0006</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.starhub.csselfhelp" />
+                <package name="com.ministryofhomeaffairs.sgsecure.mhasg" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.starhub.itv" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TEL</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_TEL_13_0009</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.telstra.mobile.android.air" />
+                <package name="com.telstra.mobile.android.mytelstra" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>THL</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_THL_13_0009</Version>
+            <CustomerEdition>ED0006</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.lazada.android" />
+                <package name="com.opera.max.oem" />
+                <package name="com.ss.android.ugc.trill" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TNZ</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_TNZ_13_0007</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="nz.co.telecom.smartphone.android" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>VAU</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_VAU_13_0007</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.amazon.mShop.android.shopping" />
+                <package name="au.com.vodafone.mobile.gss" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>VNZ</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_VNZ_13_0005</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="nz.co.vodafone.android.myaccount" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XME</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_XME_13_0006</Version>
+            <CustomerEdition>ED0004</CustomerEdition>
+            <Packages>
+                <package name="com.lazada.android" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XNF</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_XNF_13_0004</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XNZ</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_XNZ_13_0007</Version>
+            <CustomerEdition>ED0005</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XSA</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_XSA_13_0006</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XSP</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_XSP_13_0007</Version>
+            <CustomerEdition>ED0003</CustomerEdition>
+            <Packages>
+                <package name="com.ministryofhomeaffairs.sgsecure.mhasg" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XTC</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_XTC_13_0006</Version>
+            <CustomerEdition>ED0002</CustomerEdition>
+            <Packages>
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.srph.emergency321" />
+                <package name="com.lazada.android" />
+                <package name="com.opera.max.oem" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XXV</CustomerCode>
+            <Version>SAOMC_SM-A515F_OLM_XXV_13_0008</Version>
+            <CustomerEdition>ED0004</CustomerEdition>
+            <Packages>
+                <package name="com.epi" />
+                <package name="com.zing.mp3" />
+                <package name="com.zing.zalo" />
+                <package name="com.rsupport.rs.activity.rsupport.aas2" />
+                <package name="com.samsungvietnam.galaxygift" />
+                <package name="com.lazada.android" />
+                <package name="com.opera.max.oem" />
+                <package name="com.ss.android.ugc.trill" />
+            </Packages>
+        </OmcCode>
+    </OmcInfo>
+</SW-Configuration>
