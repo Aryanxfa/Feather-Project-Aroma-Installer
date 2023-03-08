@@ -10,7 +10,7 @@ then
     exit
 fi
 
-if [ ! -f META-INF/scripts/xbin/ ]
+if [ ! -f META-INF/scripts/xbin/sleep.kek.br ]
 then
     echo "Failed with error 1"
     exit
