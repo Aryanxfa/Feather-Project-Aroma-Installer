@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /tmp/busybox sh
 
 cat /tmp/dblist | while read line 
 do
