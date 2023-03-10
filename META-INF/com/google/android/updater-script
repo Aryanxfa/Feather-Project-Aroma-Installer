@@ -82,11 +82,7 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.4") == "1" then
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.5") == "1" then
 	ui_print("@>Installing GBoard...");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/GBoard");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/GBoard");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/HoneyBoard");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/ClipboardSaveService");
-	package_extract_dir("mods/keys/GBoard", "/system_root/system/app/GBoard");
+	package_extract_dir("mods/keys/GBoard", "/data/app/GBoard");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.6") == "1" then
 	ui_print("@>Removing NFC...");
