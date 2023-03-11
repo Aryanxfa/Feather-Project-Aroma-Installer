@@ -111,7 +111,6 @@
 
 	<!-- SMA1301 default settings -->
 	<ctl name="Volume slope" value="Off" />
-	<ctl name="Attack level control" value="LVL_0.25FS" />
 	<ctl name="Trimming of over current limit" value="I_1.93A" />
 	<ctl name="Trimming of boost voltage" value="BST_5.5V" />
 	<ctl name="Filtered VDD gain control" value="VDD_2.75V" />
