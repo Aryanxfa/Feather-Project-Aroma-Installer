@@ -95,3 +95,10 @@ Changelog v2.1
 - Added debloat list from @slorixsh
 - Added debloat list from @KudretP
 - Chrome Audio fix up
+
+Changelog v2.2
+- Base updated to S901BXXU3CWBE
+- Security update March 2023
+- Fixes for widevine L1 (untested)
+- Fixed dual speaker mod
+- Update menu for debloat
