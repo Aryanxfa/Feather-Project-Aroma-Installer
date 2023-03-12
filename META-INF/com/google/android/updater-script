@@ -91,22 +91,22 @@ endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.7") == "1" then
 	ui_print("@>Debloating with Kudret's Easy List...");
 	package_extract_file("debloat/easy", "tmp/dblist");
-	run_program("/tmp/nukeengine.sh");
+	run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.8") == "1" then
 	ui_print("@>Debloating with Kudret's Mid List...");
 	package_extract_file("debloat/mid", "tmp/dblist");
-	run_program("/tmp/nukeengine.sh");
+	run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.9") == "1" then
 	ui_print("@>Debloating with Kudret's Hard List...");
 	package_extract_file("debloat/hard", "tmp/dblist");
-	run_program("/tmp/nukeengine.sh");
+	run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.10") == "1" then
 	ui_print("@>Debloating with slorixsh's Full List...");
 	package_extract_file("debloat/full", "tmp/dblist");
-	run_program("/tmp/nukeengine.sh");
+	run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 ###################
 set_progress(0.96);
