@@ -89,7 +89,8 @@ checkbox(
     "Kudret's Easy Debloat",       "Removes Share, Bixby, Switch, AR, Free, Magnifier, Media control",     0,
     "Kudret's Mid Debloat",        "Removes Above all and Game tools",                           0,
     "Kudret's Hard Debloat",       "Removes Above all and Dex, Edge Panel, Dual Apps, VoWiFi",   0,
-    "slorixsh's Full Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View",         0
+    "slorixsh's Full Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View",         0,
+    "Use Eureka Fstab",            "!! Use Eureka rom fstab to maintain compatibility for UserData",0
 );
 
 #KERNEL
