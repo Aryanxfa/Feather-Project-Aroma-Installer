@@ -4,6 +4,7 @@ OneUI 5.1 S22 port for A205x
 
 
 Bugs  
+- Netflix L1
 - Low light photos
 - Face Unlock
 
@@ -102,3 +103,18 @@ Changelog v2.2
 - Fixes for widevine L1 (untested)
 - Fixed dual speaker mod
 - Update menu for debloat
+
+
+Changelog v3.0
+- !! fstab changed. Use Eureka fstab in mods to avoid data format
+- Added band selector @FlorinelulX123
+- Some more csc tweaks from @GalaxyA51user
+- Fixed move App to Sdcard issue
+- Fixed testing codes issue 
+- Fixes for Screen Record issue
+- AV1 Decoding Support
+- More Codec fixes
+- Slightly Aggressive lmk
+- Re-tuned Behaviour
+
+
