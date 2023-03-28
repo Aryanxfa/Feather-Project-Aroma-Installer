@@ -2,10 +2,10 @@
 ini_set("force_colorspace", "rgba");
 ini_set("transition", "stack");
 ini_set("rom_name",             "Feather Project");
-ini_set("rom_version",          "S22_v2.2");
+ini_set("rom_version",          "S22_v3.0");
 ini_set("rom_author",           "Raptor 9");
 ini_set("rom_device",           "Galaxy A20");
-ini_set("rom_date",             "12/Mar/2023");
+ini_set("rom_date",             "28/Mar/2023");
 ini_set("force_colorspace","rgba");
 anisplash(1,
 "splash/splash_01", 80,
