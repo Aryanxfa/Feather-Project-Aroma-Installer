@@ -86,6 +86,8 @@ checkbox(
     "Single Speaker",              "Removes the Dual Speaker mod. Reverts the above.",           0,
     "Google Keyboard",             "Google KeyBoard with less annoying features",                0,
     "Remove NFC",                  "Removes the NFC support",                                    0,
+    "Standard LMK",                "Standard LMK for Fluidity and Responsive UI",                0,
+    "Light LMK",                   "Light the LMK and allows heavy Multi-tasking",               0,
     "Kudret's Easy Debloat",       "Removes Share, Bixby, Switch, AR, Free, Magnifier, Media control",     0,
     "Kudret's Mid Debloat",        "Removes Above all and Game tools",                           0,
     "Kudret's Hard Debloat",       "Removes Above all and Dex, Edge Panel, Dual Apps, VoWiFi",   0,
