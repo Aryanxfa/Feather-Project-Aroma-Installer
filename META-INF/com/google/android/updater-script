@@ -90,11 +90,11 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.6") == "1" then
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.7") == "1" then
 	ui_print("@>Standard LMK...");
-	run_program("/tmp/busybox", "sed", "-i", "'s/ro.slmk.enable_userspace_lmk=false/ro.slmk.enable_userspace_lmk=true/g'", "/vendor/build.prop");
+	run_program("/tmp/busybox", "sed", "-i", "s/ro.slmk.enable_userspace_lmk=false/ro.slmk.enable_userspace_lmk=true/g", "/vendor/build.prop");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.8") == "1" then
 	ui_print("@>Light LMK...");
-	run_program("/tmp/busybox", "sed", "-i", "'s/ro.slmk.enable_userspace_lmk=true/ro.slmk.enable_userspace_lmk=false/g'", "/vendor/build.prop");
+	run_program("/tmp/busybox", "sed", "-i", "s/ro.slmk.enable_userspace_lmk=true/ro.slmk.enable_userspace_lmk=false/g", "/vendor/build.prop");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.9") == "1" then
 	ui_print("@>Debloating with Kudret's Easy List...");
