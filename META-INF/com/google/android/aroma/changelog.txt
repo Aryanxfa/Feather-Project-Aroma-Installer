@@ -117,4 +117,19 @@ Changelog v3.0
 - Slightly Aggressive lmk
 - Re-tuned Behaviour
 
+Changelog v3.1
 
+V3.1
+- Base updated to S901BXXU4CWCG 
+- Security patch April 2023
+- Revert fstab changes (now Uses Eureka fstab by default)
+- Magisk updated to v26.1
+- Gpuwatch fixed
+- DEX experience improved
+- Fix wallpaper issue
+- Fix a GPU throttling issue. For reporting @kudretP
+- Added Dailyboard @GalaxyA51user
+- Added some knox apps
+- Photo clipper added by Samsung
+- Overhaul audio, report any weird bugs
+- Product is now Read only to preserve space
