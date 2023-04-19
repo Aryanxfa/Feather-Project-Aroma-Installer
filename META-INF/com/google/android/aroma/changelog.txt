@@ -118,8 +118,6 @@ Changelog v3.0
 - Re-tuned Behaviour
 
 Changelog v3.1
-
-V3.1
 - Base updated to S901BXXU4CWCG 
 - Security patch April 2023
 - Revert fstab changes (now Uses Eureka fstab by default)
@@ -133,3 +131,7 @@ V3.1
 - Photo clipper added by Samsung
 - Overhaul audio, report any weird bugs
 - Product is now Read only to preserve space
+
+Changelog v3.2
+- Fixed Secure Folder issue
+- Fix Routines issue
