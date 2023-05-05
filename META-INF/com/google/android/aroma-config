@@ -2,10 +2,10 @@
 ini_set("force_colorspace", "rgba");
 ini_set("transition", "stack");
 ini_set("rom_name",             "Feather Project");
-ini_set("rom_version",          "S22_v3.2");
+ini_set("rom_version",          "M12_v2.0");
 ini_set("rom_author",           "Raptor 9");
 ini_set("rom_device",           "Galaxy A20");
-ini_set("rom_date",             "19/Apr/2023");
+ini_set("rom_date",             "05/May/2023");
 ini_set("force_colorspace","rgba");
 anisplash(1,
 "splash/splash_01", 80,
@@ -126,17 +126,6 @@ menubox(
     "OJM",   "Middle East:- ACR AFR ECT ILO MID PAK SRR TUN XSG AFG DKR EGY KSA MWD TKD TUR BTC FWD ILP LYS XFA XFE XFV",        "@tur",
     "OXM",   "Rest of the world:- 3IE AMO ATL ATO AUT AVF BGL BOG BTB BTE BTU CAC CAU CNX COA COS CPW CRO CYV DBT DCO DRE DTM EUR EUX EUY EVR FTM H3G HTS HUI ITV LUX MAX MBC MBM MEO MET MOB MOT MSR NEE O2C O2U OMN OPV ORO ORS ORX PHE PHN PLS PRT ROM SEB SEE SEK SER SFR SIM SIO SKZ SWC TCL TIM TMH TMS TMZ TOP TPH TPL TRG TSI VD2 VDC VDF VDH VDI VGR VIP VOD XEC XEF XEH XEO XEZ",        "@rus",
     "Skip CSC",  "Will not change CSC", "@none"
-);
-
-#CHANGELOG
-###############################################
-
-ini_set("text_next", "Next ");
-textbox(
-    "",
-    "<b>ROM Changelog</b>",
-    "@lic",
-    resread("changelog.txt")
 );
 
 #LICENSE

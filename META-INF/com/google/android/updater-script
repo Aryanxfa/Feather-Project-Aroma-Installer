@@ -1,8 +1,8 @@
 ui_print("===================================");
 ui_print("  ROM     : FEATHER PROJECT        ");
 ui_print("  OS      : OneUI 5.1 | Android 13 ");
-ui_print("  Version : S22_v3.2               ");
-ui_print("  Security: April 2023             ");
+ui_print("  Version : M12_v2.0               ");
+ui_print("  Security: March 2023             ");
 ui_print("  KERNEL  : Eureka 11.0            ");
 ui_print("  DTB     : 5, Stable v2           ");
 ui_print("      -> Big cores: 520 - 2080     ");
@@ -180,7 +180,7 @@ if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
 endif;
 ##################################################
 #Install Auxilary Apps
-package_extract_dir("auxy/app", "/data/app");
+#package_extract_dir("auxy/app", "/data/app");
 ##################################################
 set_progress(0.99);
 ##################################################

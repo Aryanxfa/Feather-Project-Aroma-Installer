@@ -3,28 +3,34 @@
 # These properties identify this partition image.
 ####################################
 ro.product.vendor.brand=samsung
-ro.product.vendor.device=r0s
+ro.product.vendor.device=m12
 ro.product.vendor.manufacturer=samsung
-ro.product.vendor.model=SM-S901B
-ro.product.vendor.name=r0sxxx
+ro.product.vendor.model=SM-M127F
+ro.product.vendor.name=m12nsxx
 ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
 ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
 ro.vendor.product.cpu.abilist64=arm64-v8a
-ro.vendor.qb.id=63617900
-ro.vendor.build.date=Tue Mar 28 09:45:23 KST 2023
-ro.vendor.build.date.utc=1679964323
-ro.vendor.build.fingerprint=samsung/r0sxxx/r0s:12/SP1A.210812.016/S901BXXU4CWCG:user/release-keys
-ro.vendor.build.id=SP1A.210812.016
+ro.vendor.qb.id=63380780
+ro.vendor.build.date=Tue Mar 21 13:47:18 KST 2023
+ro.vendor.build.date.utc=1679374038
+ro.vendor.build.fingerprint=samsung/m12nsxx/m12:13/TP1A.220624.014/M127FXXU4DWC4:user/release-keys
+ro.vendor.build.id=TP1A.220624.014
 ro.vendor.build.tags=release-keys
 ro.vendor.build.type=user
-ro.vendor.build.version.incremental=S901BXXU4CWCG
+ro.vendor.build.version.incremental=M127FXXU4DWC4
 ro.vendor.build.version.release=13
 ro.vendor.build.version.release_or_codename=13
 ro.vendor.build.version.sdk=33
-ro.soc.manufacturer=Samsung
-ro.soc.model=Exynos 7884B
 ####################################
-# from out/target/product/r0s/obj/ETC/android_info_prop_intermediates/android_info.prop
+# from device/samsung/universal3830/vendor.prop
+####################################
+#
+# vendor.prop for universal3830
+#
+ro.soc.manufacturer=Samsung
+ro.soc.model=Exynos 850
+####################################
+# from out/target/product/m12/obj/ETC/android_info_prop_intermediates/android_info.prop
 ####################################
 ####################################
 # from variable ADDITIONAL_VENDOR_PROPERTIES
@@ -42,6 +48,7 @@ dalvik.vm.isa.arm.features=default
 ro.boot.dynamic_partitions=false
 ro.product.first_api_level=28
 ro.board.first_api_level=28
+ro.board.api_level=28
 ro.vendor.build.security_patch=2023-04-01
 ro.board.platform=universal7884B
 ro.hwui.use_vulkan=
@@ -60,10 +67,6 @@ ro.surface_flinger.running_without_sync_framework=false
 ro.surface_flinger.use_color_management=false
 ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.has_HDR_display=false
-debug.sf.disable_backpressure=1
-debug.slsi_platform=1
-wifi.interface=wlan0
-ro.opengles.version=196610
 dalvik.vm.heapstartsize=4m
 dalvik.vm.heapgrowthlimit=128m
 dalvik.vm.heapsize=256m
@@ -71,9 +74,9 @@ dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
 ro.zygote=zygote64_32
-# Removed by post_process_props.py because overridden by ro.config.ringtone?=ACH_Galaxy_Bells.ogg
+# Removed by post_process_props.py because overridden by ro.config.ringtone?=Galaxy_Bells.ogg
 #ro.config.ringtone?=Ring_Synth_04.ogg
-# Removed by post_process_props.py because overridden by ro.config.notification_sound?=ACH_Spaceline.ogg
+# Removed by post_process_props.py because overridden by ro.config.notification_sound?=Spaceline.ogg
 #ro.config.notification_sound?=pixiedust.ogg
 # Removed by post_process_props.py because overridden by ro.zygote=zygote64_32
 #ro.zygote?=zygote32
@@ -81,19 +84,14 @@ ro.apex.updatable=true
 ro.logd.size.stats=64K
 log.tag.stats_log=I
 ro.carrier=unknown
-# Removed by post_process_props.py because overridden by ro.config.notification_sound?=ACH_Spaceline.ogg
+# Removed by post_process_props.py because overridden by ro.config.notification_sound?=Spaceline.ogg
 #ro.config.notification_sound?=OnTheHunt.ogg
-# Removed by post_process_props.py because overridden by ro.config.alarm_alert=ACH_Homecoming.ogg
+# Removed by post_process_props.py because overridden by ro.config.alarm_alert=Homecoming.ogg
 #ro.config.alarm_alert?=Alarm_Classic.ogg
 ro.vendor.sec.radio.def_network=9
-vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 ro.radio.noril=no
 ro.telephony.default_cdma_sub=0
 ro.vendor.epdg.support=true
-
-external_storage.projid.enabled=0
-external_storage.casefold.enabled=0
-external_storage.cross_user.enabled=1
 ####################################
 # from variable PRODUCT_DEFAULT_PROPERTY_OVERRIDES
 ####################################
@@ -106,15 +104,10 @@ persist.demo.hdmirotationlock=false
 dev.usbsetting.embedded=on
 ro.debug_level=0x494d
 ro.ril.ecclist=911,112
-ro.incremental.enable=no
-aaudio.mmap_policy=1
-aaudio.mmap_exclusive_policy=1
-aaudio.hw_burst_min_usec=2000
+debug.sf.disable_backpressure=1
 wifi.interface=wlan0
 vendor.hwc.exynos.vsync_mode=0
 ro.opengles.version=196610
-
-ro.hw.use_virtual_display=1
 security.ASKS.policy_version=00000000
 security.ASKS.version=0
 security.ASKS.time_value=00000000
@@ -123,31 +116,44 @@ security.ADP.version=0
 security.ADP.policy_version=00000000
 sys.config.activelaunch_enable=true
 drm.service.enabled=true
-ro.control_privapp_permissions=disable
+ro.control_privapp_permissions=enforce
 sys.config.ibs.enable=false
+ro.security.vpnpp.ver=2.4
+ro.security.vpnpp.release=1.0
+ro.apk_verity.mode=0
 sys.config.hardcoder.enable=false
 ro.vendor.sec.radio.def_network=9
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 ro.radio.noril=no
 ro.telephony.default_cdma_sub=0
 ro.vendor.epdg.support=true
-ro.security.cass.feature=0
 ro.hardware.keystore=mdfpp
-ro.security.keystore.keytype=gak,
+ro.hardware.keystore_desede=false
+ro.security.keystore.keytype=gak
 security.securehw.available=false
 security.securenvm.available=false
+ro.security.cass.feature=0
 ro.security.vpnpp.ver=2.4
 ro.security.vpnpp.release=1.0
+persist.backup.ntpServer=0.pool.ntp.org
 ro.hardware.chipname=exynos850
 exynos.wlbtlog.path=/data/vendor/log/wlbt/
 sys.perf.hmp=6:2
+ro.opengles.version=196610
+graphics.gpu.profiler.support=true
+af.fast_track_multiplier=1
+aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=2
+aaudio.hw_burst_min_usec=2000
+
+drm.service.enabled=true
 debug.mdpcomp.logs=0
-ro.config.ringtone=ACH_Galaxy_Bells.ogg
-ro.config.notification_sound=ACH_Spaceline.ogg
-ro.config.alarm_alert=ACH_Homecoming.ogg
+ro.config.ringtone=Galaxy_Bells.ogg
+ro.config.notification_sound=Spaceline.ogg
+ro.config.alarm_alert=Homecoming.ogg
 ro.config.media_sound=Media_preview_Touch_the_light.ogg
-ro.config.ringtone_2=ACH_Atomic_Bell.ogg
-ro.config.notification_sound_2=ACH_Signal.ogg
+ro.config.ringtone_2=Atomic_Bell.ogg
+ro.config.notification_sound_2=Signal.ogg
 ro.config.vc_call_vol_steps=8
 ro.sf.lcd_density=280
 ro.frp.pst=
