@@ -2,10 +2,10 @@
 ini_set("force_colorspace", "rgba");
 ini_set("transition", "stack");
 ini_set("rom_name",             "Feather Project");
-ini_set("rom_version",          "S22_v3.2");
+ini_set("rom_version",          "S22_v4.0");
 ini_set("rom_author",           "Raptor 9");
 ini_set("rom_device",           "Galaxy A20");
-ini_set("rom_date",             "19/Apr/2023");
+ini_set("rom_date",             "15/May/2023");
 ini_set("force_colorspace","rgba");
 anisplash(1,
 "splash/splash_01", 80,
@@ -84,7 +84,7 @@ checkbox(
     "Remove throttle",             "Removes throttle, Reverts the above.",                       0,
     "Dual Speaker",                "Use Earpice as a Secondary Speaker",                         0,
     "Single Speaker",              "Removes the Dual Speaker mod. Reverts the above.",           0,
-    "Google Keyboard",             "Google KeyBoard with less annoying features",                0,
+    "Disable Extended Brightness", "Removes Extended Brightness Support",                        0,
     "Remove Knox Apps",            "Removes the Knox apps for Knox Framework support",           1,
     "Remove NFC",                  "Removes the NFC support",                                    0,
     "Standard LMK",                "Standard LMK for Fluidity and Responsive UI",                0,

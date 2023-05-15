@@ -1,8 +1,8 @@
 ui_print("===================================");
 ui_print("  ROM     : FEATHER PROJECT        ");
 ui_print("  OS      : OneUI 5.1 | Android 13 ");
-ui_print("  Version : S22_v3.2               ");
-ui_print("  Security: April 2023             ");
+ui_print("  Version : S22_v4.0               ");
+ui_print("  Security: May 2023               ");
 ui_print("  KERNEL  : Eureka 11.0            ");
 ui_print("  DTB     : 5, Stable v2           ");
 ui_print("      -> Big cores: 520 - 2080     ");
@@ -68,7 +68,7 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.2") == "1" then
 	ui_print("@>Removing Throttle");
-	run_program("/tmp/busybox", "rm", "-rf", "/vendor/etc/init/fp_throttle.rc");
+	delete_recursive("/vendor/etc/init/fp_throttle.rc");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.3") == "1" then
 	ui_print("@>Enabling Dual Speaker...");
@@ -81,21 +81,21 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.4") == "1" then
 	package_extract_file("mods/single/mixer_gains.xml", "/vendor/etc/mixer_gains.xml");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.5") == "1" then
-	ui_print("@>Installing GBoard...");
-	package_extract_dir("mods/keys/GBoard", "/data/app/GBoard");
+	ui_print("@>Removing Extended Brightness...");
+	delete_recursive("/vendor/etc/init/fp_aospbrightness.rc");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.6") == "1" then
 	ui_print("@>Removing Knox Apps...");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/KLMSAgent");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/knoxanalyticsagent");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/KnoxCore");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/KnoxPushManager");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/knoxvpnproxyhandler");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/priv-app/KPECore");
+	delete_recursive("/system_root/system/priv-app/KLMSAgent");
+	delete_recursive("/system_root/system/priv-app/knoxanalyticsagent");
+	delete_recursive("/system_root/system/priv-app/KnoxCore");
+	delete_recursive("/system_root/system/priv-app/KnoxPushManager");
+	delete_recursive("/system_root/system/priv-app/knoxvpnproxyhandler");
+	delete_recursive("/system_root/system/priv-app/KPECore");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.7") == "1" then
 	ui_print("@>Removing NFC...");
-	run_program("/tmp/busybox", "rm", "-rf", "/system_root/system/app/NfcNci");
+	delete_recursive("/system_root/system/app/NfcNci");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.8") == "1" then
 	ui_print("@>Standard LMK...");
@@ -132,7 +132,7 @@ run_program("/tmp/busybox", "sleep", "1");
 run_program("/tmp/busybox", "fstrim", "-v", "/system_root");
 run_program("/tmp/busybox", "fstrim", "-v", "/data");
 run_program("/tmp/busybox", "sleep", "1");
-run_program("/tmp/busybox", "rm", "-rf", "/data/sec/com.samsung.cmh");
+delete_recursive("/data/sec/com.samsung.cmh");
 ##################################################
 ##################################################
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "1" then
