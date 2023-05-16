@@ -17,6 +17,8 @@ set_progress(0.20);
 package_extract_dir("META-INF/scripts/bin", "/tmp/");
 set_metadata_recursive("/tmp", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644);
 set_metadata_recursive("/tmp/busybox", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+set_metadata_recursive("/tmp/tolightlmk.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+set_metadata_recursive("/tmp/tostandardlmk.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 set_metadata_recursive("/tmp/system-resize.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 package_extract_file("debloat/nukeengine.sh", "tmp/nukeengine.sh");
 set_metadata_recursive("tmp/nukeengine.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
@@ -99,11 +101,11 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.7") == "1" then
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.8") == "1" then
 	ui_print("@>Standard LMK...");
-	package_extract_file("mods/lmk/standard.prop", "/vendor/build.prop");
+	run_program("/tmp/busybox","sh","/tmp/tostandardlmk.sh");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.9") == "1" then
 	ui_print("@>Light LMK...");
-	package_extract_file("mods/lmk/light.prop", "/vendor/build.prop");
+	run_program("/tmp/busybox","sh","/tmp/tolightlmk.sh");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.10") == "1" then
 	ui_print("@>Debloating with Kudret's Easy List...");
