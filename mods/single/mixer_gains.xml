@@ -625,7 +625,7 @@
 
 	<path name="gain-camcorder-headset-mic">
 		<ctl name="MIC3 Boost Volume" value="1" />
-		<ctl name="ADC Left Gain" value="121"/>
+		<ctl name="ADC Left Gain" value="121" />
 		<ctl name="ADC Right Gain" value="121" />
 	</path>
 
@@ -1424,18 +1424,17 @@
 	</path>
 
 	<!-- FM Playback/Recording -->
-	<path name="gain-fm_radio-speaker" >
+	<path name="gain-fm_radio-speaker">
 		<ctl name="DAC Gain" value="55" />
 		<ctl name="Speaker Volume" value="117" />
 	</path>
 
-	<path name="gain-fm_radio-headset" >
+	<path name="gain-fm_radio-headset">
 		<ctl name="DAC Gain" value="136" />
 		<ctl name="Headphone Volume" value="0" />
 		<ctl name="HP Analog Volume AVCBypass" value="58" />
 	</path>
 
-	<path name="gain-fm_radio-fm-recording" >
+	<path name="gain-fm_radio-fm-recording">
 	</path>
 </mixer>
-

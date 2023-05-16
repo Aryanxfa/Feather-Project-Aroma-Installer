@@ -10,7 +10,7 @@
 	<pcmdai baseband_link="4" />
 	<pcmdai baseband_capture_link="10" />
 	<pcmdai call_rec_capture_link="19" />
-	<pcmdai abox_pcm_dump_card="1"/>
+	<pcmdai abox_pcm_dump_card="1" />
 	<pcmdai capture_callmic_link="23" />
 	<pcmdai call_forwarding_capture_link="9" />
 
@@ -1647,21 +1647,21 @@
 	</path>
 
 	<!-- FM Playback/Recording -->
-	<path name="fm_radio-speaker" >
+	<path name="fm_radio-speaker">
 		<path name="route-fm" />
 		<path name="route-playback" />
 		<path name="dev-speaker" />
 		<path name="route-spkamp-playback" />
 	</path>
 
-	<path name="fm_radio-headset" >
+	<path name="fm_radio-headset">
 		<path name="route-fm" />
 		<path name="route-playback" />
 		<path name="dev-headset" />
 		<ctl name="AVC Bypass Mode" value="1" />
 	</path>
 
-	<path name="fm_radio-fm-recording" >
+	<path name="fm_radio-fm-recording">
 		<path name="route-fm" />
 		<path name="route-ap-record" />
 	</path>
