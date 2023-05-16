@@ -33,15 +33,15 @@ for item in SYSTEM system APP app system_a system_b; do
 		dirnamex=$(dirname $full_block)
 		if [ ! "$(basename $full_block | grep "_")" ]; then SLOT=""; fi
 		full_blockx="$dirnamex/$basenamex"
-		echo "system_block=$full_blockx$SLOT" >> /tmp/mount.cfg
+		echo "system_block=$full_blockx$SLOT" >>/tmp/mount.cfg
 		break
 	fi
 done
 
 if [ -d /system_root ]; then
-	echo "sys=/system_root" >> /tmp/mount.cfg
+	echo "sys=/system_root" >>/tmp/mount.cfg
 else
-	echo "sys=/system" >> /tmp/mount.cfg
+	echo "sys=/system" >>/tmp/mount.cfg
 fi
 
 for item in VENDOR vendor VNR vendor_a vendor_b; do
@@ -52,7 +52,7 @@ for item in VENDOR vendor VNR vendor_a vendor_b; do
 		dirnamex=$(dirname $full_block)
 		if [ ! "$(basename $full_block | grep "_")" ]; then SLOT=""; fi
 		full_blockx="$dirnamex/$basenamex"
-		echo "vendor_block=$full_blockx$SLOT" >> /tmp/mount.cfg
+		echo "vendor_block=$full_blockx$SLOT" >>/tmp/mount.cfg
 		break
 	fi
 done
@@ -65,7 +65,7 @@ for item in PRODUCT product PRD product_a product_b; do
 		dirnamex=$(dirname $full_block)
 		if [ ! "$(basename $full_block | grep "_")" ]; then SLOT=""; fi
 		full_blockx="$dirnamex/$basenamex"
-		echo "product_block=$full_blockx$SLOT" >> /tmp/mount.cfg
+		echo "product_block=$full_blockx$SLOT" >>/tmp/mount.cfg
 		break
 	fi
 done
@@ -78,7 +78,7 @@ for item in ODM odm odm_a odm_b; do
 		dirnamex=$(dirname $full_block)
 		if [ ! "$(basename $full_block | grep "_")" ]; then SLOT=""; fi
 		full_blockx="$dirnamex/$basenamex"
-		echo "odm_block=$full_blockx$SLOT" >> /tmp/mount.cfg
+		echo "odm_block=$full_blockx$SLOT" >>/tmp/mount.cfg
 		break
 	fi
 done
@@ -91,7 +91,7 @@ for item in boot boot_a boot_b BOOT Boot kernel kernel_a kernel_b KERNEL Kernel 
 		dirnamex=$(dirname $full_block)
 		if [ ! "$(basename $full_block | grep "_")" ]; then SLOT=""; fi
 		full_blockx="$dirnamex/$basenamex"
-		echo "boot_block=$full_blockx$SLOT" >> /tmp/mount.cfg
+		echo "boot_block=$full_blockx$SLOT" >>/tmp/mount.cfg
 		break
 	fi
 done
