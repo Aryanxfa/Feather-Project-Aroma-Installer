@@ -203,6 +203,9 @@ endif;
 ##################################################
 #Install Auxilary Apps
 package_extract_dir("auxy/data/app", "/data/app");
+set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
 ##################################################
 set_progress(0.99);
 ##################################################
