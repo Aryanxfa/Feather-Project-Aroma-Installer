@@ -70,6 +70,23 @@ menubox(
     "Configure Only",        "This will Not install Rom just Allow you to Add/Remove Apps, Once Debloated can't be added back",         "@none"
 );
 
+#DEVICE
+###############################################
+ini_set("text_next", " ");
+ini_set("icon_next", "@none");
+menubox(
+    "",
+    "<b>Select your Device</b>",
+    "@install",
+    "device.prop",
+    "Galaxy A10",    "SM-A105",         "@none",
+    "Galaxy A20",    "SM-A205",         "@none",
+    "Galaxy A20e",   "SM-A202",         "@none",
+    "Galaxy A30",    "SM-A305",         "@none",
+    "Galaxy A30s",   "SM-A307",         "@none",
+    "Galaxy A40",   "SM-A405",         "@none",
+);
+
 #MODIFICATIONS
 ###############################################
 ini_set("text_next", "Next ");
