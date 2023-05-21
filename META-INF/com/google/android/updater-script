@@ -37,13 +37,11 @@ ui_print("@>Extracting System...");
 ifelse(is_mounted("/system_root"), unmount("/system_root"));
 block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/system", package_extract_file("META-INF/com/google/CERT.SF"), "META-INF/scripts/xbin/busybox.kek.br", "img/system.img");
 run_program("/tmp/busybox", "sleep", "1");
-###################################
 set_progress(0.69);
 ui_print("@>Extracting Vendor...");
 ifelse(is_mounted("/vendor"), unmount("/vendor"));
 block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/vendor", package_extract_file("META-INF/com/google/MANIFEST.MF"), "META-INF/scripts/xbin/mounts.kek.br", "img/vendor.img");
 run_program("/tmp/busybox", "sleep", "1");
-###################################
 ui_print("@>Extracting Product...");
 ifelse(is_mounted("/product"), unmount("/product"));
 block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/product", package_extract_file("META-INF/com/google/CERT.RSA"), "META-INF/scripts/xbin/sleep.kek.br", "img/product.img");
@@ -202,10 +200,12 @@ if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
 endif;
 ##################################################
 #Install Auxilary Apps
+if file_getprop("/tmp/aroma/configs.prop", "selected") == "1" then
 package_extract_dir("auxy/data/app", "/data/app");
 set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
 set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
 set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+endif;
 ##################################################
 set_progress(0.99);
 ##################################################
