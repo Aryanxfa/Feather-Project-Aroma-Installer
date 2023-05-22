@@ -1,6 +1,3 @@
-#
-#ROM INFO
-##################################################
 ui_print("===================================");
 ui_print("  ROM     : FEATHER PROJECT        ");
 ui_print("  OS      : OneUI 5.1 | Android 13 ");
@@ -15,8 +12,6 @@ ui_print("  DEVICE  : SAMSUNG GALAXY A20     ");
 ui_print("  by @RiskyEagle                   ");
 ui_print("===================================");
 set_progress(0.10);
-#
-#ENV SETUP
 ##################################################
 package_extract_dir("META-INF/scripts/bin", "/tmp/");
 set_metadata_recursive("/tmp", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644);
