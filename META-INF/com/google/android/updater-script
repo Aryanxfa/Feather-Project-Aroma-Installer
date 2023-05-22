@@ -1,3 +1,6 @@
+#
+#ROM INFO
+##################################################
 ui_print("===================================");
 ui_print("  ROM     : FEATHER PROJECT        ");
 ui_print("  OS      : OneUI 5.1 | Android 13 ");
@@ -11,9 +14,10 @@ ui_print("      -> GPU Freq: 343 - 1300      ");
 ui_print("  DEVICE  : SAMSUNG GALAXY A20     ");
 ui_print("  by @RiskyEagle                   ");
 ui_print("===================================");
-################################################################################
-set_progress(0.20);
-################################################################################
+set_progress(0.10);
+#
+#ENV SETUP
+##################################################
 package_extract_dir("META-INF/scripts/bin", "/tmp/");
 set_metadata_recursive("/tmp", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644);
 set_metadata_recursive("/tmp/busybox", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
@@ -22,16 +26,16 @@ set_metadata_recursive("/tmp/tostandardlmk.sh", "uid", 0, "gid", 0, "dmode", 075
 set_metadata_recursive("/tmp/system-resize.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 package_extract_file("debloat/nukeengine.sh", "tmp/nukeengine.sh");
 set_metadata_recursive("tmp/nukeengine.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
-##################################
+#
+#MOUNTS
+##################################################
 ui_print("@>Mount partition...");
 ifelse(is_mounted("/system_root"), unmount("/system_root"));
 ifelse(is_mounted("/vendor"), unmount("/vendor"));
 ifelse(is_mounted("/product"), unmount("/product"));
-###################################
-###################################
+##################################################
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "1" then
 ui_print(" Installing ROM ...");
-##################################
 set_progress(0.30);
 ui_print("@>Extracting System...");
 ifelse(is_mounted("/system_root"), unmount("/system_root"));
@@ -46,21 +50,22 @@ ui_print("@>Extracting Product...");
 ifelse(is_mounted("/product"), unmount("/product"));
 block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/product", package_extract_file("META-INF/com/google/CERT.RSA"), "META-INF/scripts/xbin/sleep.kek.br", "img/product.img");
 run_program("/tmp/busybox", "sleep", "1");
-###################################
 endif;
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "2" then
 ui_print(" Skipping ROM ...");
 endif;
-##################################
+#
+#RESIZE
+##################################################
 set_progress(0.80);
 run_program("/tmp/busybox", "sleep", "1");
-###################################
 run_program("/tmp/busybox", "sh", "/tmp/system-resize.sh");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/system_root");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/vendor");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/product");
-###################################
-###############################################################################
+#
+#MODS
+##################################################
 if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
 	ui_print("@>Throttle little to 1352");
 	package_extract_file("mods/throttle/fp_throttle.rc", "/vendor/etc/init/fp_throttle.rc");
@@ -125,15 +130,16 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.13") == "1" then
 	package_extract_file("debloat/full", "tmp/dblist");
 	run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
-###################
+##################################################
 set_progress(0.96);
-#############################
+##################################################
 run_program("/tmp/busybox", "sleep", "1");
 run_program("/tmp/busybox", "fstrim", "-v", "/system_root");
 run_program("/tmp/busybox", "fstrim", "-v", "/data");
 run_program("/tmp/busybox", "sleep", "1");
 delete_recursive("/data/sec/com.samsung.cmh");
-##################################################
+#
+#KERNEL
 ##################################################
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "1" then
 	ui_print("@>Installing Eureka Kernel R8.0 Enforcing...");
@@ -170,6 +176,8 @@ endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "6" then
 	ui_print(" Skipping Kernel ...");
 endif;
+#
+#CSC
 ##################################################
 if file_getprop("/tmp/aroma/csc.prop", "selected") == "1" then
 	ui_print("@>Installing CSC OLE...");
@@ -198,8 +206,9 @@ endif;
 if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
 	ui_print(" Skipping CSC ...");
 endif;
-##################################################
+#
 #Install Auxilary Apps
+##################################################
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "1" then
 package_extract_dir("auxy/data/app", "/data/app");
 set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
