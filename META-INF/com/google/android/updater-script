@@ -75,7 +75,9 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
 	delete_recursive("/vendor/lib64/libexynoscamera3.so");
 	delete_recursive("/vendor/lib64/hw/camera.exynos7884B.so");
 	delete_recursive("/vendor/lib64/hw/sensors.exynos7884B.so");
-	delete_recursive("/vendor/firmware/");
+	delete_recursive("/vendor/firmware/setfile_4ha_front.bin");
+	delete_recursive("/vendor/firmware/setfile_imx258.bin");
+	delete_recursive("/vendor/firmware/setfile_sr556.bin");
 	package_extract_dir("device/a10/wifi", "/vendor/etc/wifi");
 	package_extract_dir("device/a10/firmware", "/vendor/firmware");
 	package_extract_file("device/a10/liblibexynoscamera3.so", "/vendor/lib/libexynoscamera3.so");
