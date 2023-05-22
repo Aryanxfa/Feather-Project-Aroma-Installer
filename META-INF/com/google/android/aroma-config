@@ -84,7 +84,7 @@ menubox(
     "Galaxy A20e",   "SM-A202",         "@none",
     "Galaxy A30",    "SM-A305",         "@none",
     "Galaxy A30s",   "SM-A307",         "@none",
-    "Galaxy A40",   "SM-A405",         "@none",
+    "Galaxy A40",    "SM-A405",         "@none"
 );
 
 #MODIFICATIONS
