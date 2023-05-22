@@ -84,7 +84,7 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
 	package_extract_file("device/a10/lib/hw/camera.exynos7884B.so", "/vendor/lib/hw/camera.exynos7884B.so");
 	package_extract_file("device/a10/lib/hw/sensors.exynos7884B.so", "/vendor/lib/hw/sensors.exynos7884B.so");
 endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
+if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "2" then
 	ui_print("@>Selected Device: A20");
 endif;
 if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "3" then
