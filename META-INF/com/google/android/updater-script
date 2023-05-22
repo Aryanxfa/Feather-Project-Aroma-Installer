@@ -21,7 +21,6 @@ set_metadata_recursive("/tmp/tostandardlmk.sh", "uid", 0, "gid", 0, "dmode", 075
 set_metadata_recursive("/tmp/system-resize.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 package_extract_file("debloat/nukeengine.sh", "tmp/nukeengine.sh");
 set_metadata_recursive("tmp/nukeengine.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
-#
 #MOUNTS
 ##################################################
 ui_print("@>Mount partition...");
@@ -49,7 +48,6 @@ endif;
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "2" then
 ui_print(" Skipping ROM ...");
 endif;
-#
 #RESIZE
 ##################################################
 set_progress(0.80);
@@ -58,9 +56,7 @@ run_program("/tmp/busybox", "sh", "/tmp/system-resize.sh");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/system_root");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/vendor");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/product");
-
-#
-#RESIZE
+#DEVICE
 ##################################################
 if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	ui_print("@>Selected Device: A10");
@@ -182,7 +178,6 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.product.board=universal7884B/ro.product.board=universal7904/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.board.platform=universal7884B/ro.board.platform=universal7904/'g", "/vendor/build.prop");
 endif;
-#
 #MODS
 ##################################################
 if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
@@ -257,7 +252,6 @@ run_program("/tmp/busybox", "fstrim", "-v", "/system_root");
 run_program("/tmp/busybox", "fstrim", "-v", "/data");
 run_program("/tmp/busybox", "sleep", "1");
 delete_recursive("/data/sec/com.samsung.cmh");
-#
 #KERNEL
 ##################################################
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "1" then
@@ -295,7 +289,6 @@ endif;
 if file_getprop("/tmp/aroma/kernel.prop", "selected") == "6" then
 	ui_print(" Skipping Kernel ...");
 endif;
-#
 #CSC
 ##################################################
 if file_getprop("/tmp/aroma/csc.prop", "selected") == "1" then
@@ -325,7 +318,6 @@ endif;
 if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
 	ui_print(" Skipping CSC ...");
 endif;
-#
 #Install Auxilary Apps
 ##################################################
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "1" then
