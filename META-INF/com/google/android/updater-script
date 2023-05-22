@@ -142,6 +142,8 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
 	package_extract_file("device/a30s/lib/libexynosgraphicbuffer.so", "/vendor/lib/libexynosgraphicbuffer.so");
 	package_extract_file("device/a30s/lib/libuniplugin.so", "/vendor/lib/libuniplugin.so");
 	package_extract_file("device/a30s/lib/libwrappergps.so", "/vendor/lib/libwrappergps.so");
+	package_extract_file("device/a30/lib/libskhynix_q2b_shared.so", "/vendor/lib/libskhynix_q2b_shared.so");
+	package_extract_file("device/a30/lib64/libskhynix_q2b_shared.so", "/vendor/lib64/libskhynix_q2b_shared.so");
 	package_extract_file("device/a30s/lib64/hw/camera.exynos7904.so", "/vendor/lib64/hw/camera.exynos7904.so");
 	package_extract_file("device/a30s/lib64/hw/sensors.exynos7904.so", "/vendor/lib64/hw/sensors.exynos7904.so");
 	package_extract_file("device/a30s/lib64/libacryl.so", "/vendor/lib64/libacryl.so");
