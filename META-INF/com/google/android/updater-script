@@ -8,7 +8,6 @@ ui_print("  DTB     : 5, Stable v2           ");
 ui_print("      -> Big cores: 520 - 2080     ");
 ui_print("      -> Little cores: 546 - 1690  ");
 ui_print("      -> GPU Freq: 343 - 1300      ");
-ui_print("  DEVICE  : SAMSUNG GALAXY A20     ");
 ui_print("  by @RiskyEagle                   ");
 ui_print("===================================");
 set_progress(0.10);
