@@ -101,6 +101,7 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.product.board=universal7884B/ro.product.board=universal7904/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.board.platform=universal7884B/ro.board.platform=universal7904/'g", "/vendor/build.prop");
     set_metadata("/vendor/tee/00000000-0000-0000-0000-46494e474502", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
+	delete_recursive("/system_root/system/app/WifiRROverlayAppSBS");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
 	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
@@ -119,6 +120,7 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	run_program("/tmp/busybox", "sed", "-i", "s'/ro.product.board=universal7884B/ro.product.board=universal7904/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.board.platform=universal7884B/ro.board.platform=universal7904/'g", "/vendor/build.prop");
     set_metadata("/vendor/tee/00000000-0000-0000-0000-46494e474502", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
+	delete_recursive("/system_root/system/app/WifiRROverlayAppSBS");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
 	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
@@ -137,6 +139,7 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.sf.lcd_density=280/ro.sf.lcd_density=420/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.product.board=universal7884B/ro.product.board=universal7904/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.board.platform=universal7884B/ro.board.platform=universal7904/'g", "/vendor/build.prop");
+	delete_recursive("/system_root/system/app/WifiRROverlayAppSBS");
     set_metadata("/vendor/tee/00000000-0000-0000-0000-46494e474502", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
 	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
