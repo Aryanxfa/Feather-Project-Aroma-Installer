@@ -72,6 +72,8 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	package_extract_file("device/a10/liblibexynoscamera3.so", "/vendor/lib/libexynoscamera3.so");
 	package_extract_file("device/a10/lib/hw/camera.exynos7884B.so", "/vendor/lib/hw/camera.exynos7884B.so");
 	package_extract_file("device/a10/lib/hw/sensors.exynos7884B.so", "/vendor/lib/hw/sensors.exynos7884B.so");
+    set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
+	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
 if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "2" then
 	delete_recursive("/vendor/etc/permissions/android.hardware.sensor.light.xml");
@@ -85,6 +87,8 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "3" then
 	package_extract_file("device/a20e/liblibexynoscamera3.so", "/vendor/lib/libexynoscamera3.so");
 	package_extract_file("device/a20e/lib/hw/camera.exynos7884B.so", "/vendor/lib/hw/camera.exynos7884B.so");
 	package_extract_file("device/a20e/lib/hw/sensors.exynos7884B.so", "/vendor/lib/hw/sensors.exynos7884B.so");
+	set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
+	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
 if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	ui_print("@>Selected Device: A30");
@@ -115,6 +119,9 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.sf.lcd_density=280/ro.sf.lcd_density=420/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.product.board=universal7884B/ro.product.board=universal7904/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.board.platform=universal7884B/ro.board.platform=universal7904/'g", "/vendor/build.prop");
+    set_metadata("/vendor/tee/00000000-0000-0000-0000-46494e474502", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
+    set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
+	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
 if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	ui_print("@>Selected Device: A30s");
@@ -146,6 +153,9 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	package_extract_file("device/a30s/tee/00000000-0000-0000-0000-46494e474502", "/vendor/tee/00000000-0000-0000-0000-46494e474502");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.product.board=universal7884B/ro.product.board=universal7904/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.board.platform=universal7884B/ro.board.platform=universal7904/'g", "/vendor/build.prop");
+    set_metadata("/vendor/tee/00000000-0000-0000-0000-46494e474502", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
+    set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
+	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
 if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	ui_print("@>Selected Device: A40");
@@ -176,6 +186,9 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.sf.lcd_density=280/ro.sf.lcd_density=420/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.product.board=universal7884B/ro.product.board=universal7904/'g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.board.platform=universal7884B/ro.board.platform=universal7904/'g", "/vendor/build.prop");
+    set_metadata("/vendor/tee/00000000-0000-0000-0000-46494e474502", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
+    set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
+	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
 #MODS
 ##################################################
