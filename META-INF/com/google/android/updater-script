@@ -113,8 +113,8 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	delete_recursive("/vendor/firmware/setfile_sr556.bin");
     package_extract_dir("device/a30s/wifi", "/vendor/etc/wifi");
 	package_extract_dir("device/a30s/firmware", "/vendor/firmware");
-	package_extract_dir("device/a30/lib/", "/vendor/lib/");
-	package_extract_dir("device/a30/lib64/", "/vendor/lib64/");
+	package_extract_dir("device/a30s/lib/", "/vendor/lib/");
+	package_extract_dir("device/a30s/lib64/", "/vendor/lib64/");
     package_extract_file("device/a30s/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
     package_extract_file("device/a30s/tee/00000000-0000-0000-0000-46494e474502", "/vendor/tee/00000000-0000-0000-0000-46494e474502");
 	run_program("/tmp/busybox", "sed", "-i", "s'/ro.product.board=universal7884B/ro.product.board=universal7904/'g", "/vendor/build.prop");
@@ -132,8 +132,8 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	delete_recursive("/vendor/firmware/setfile_sr556.bin");
     package_extract_dir("device/a40/wifi", "/vendor/etc/wifi");
 	package_extract_dir("device/a40/firmware", "/vendor/firmware");
-	package_extract_dir("device/a30/lib/", "/vendor/lib/");
-	package_extract_dir("device/a30/lib64/", "/vendor/lib64/");
+	package_extract_dir("device/a40/lib/", "/vendor/lib/");
+	package_extract_dir("device/a40/lib64/", "/vendor/lib64/");
 	package_extract_file("device/a40/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
 	package_extract_file("device/a40/tee/00000000-0000-0000-0000-46494e474502", "/vendor/tee/00000000-0000-0000-0000-46494e474502");
     run_program("/tmp/busybox", "sed", "-i", "s'/ro.sf.lcd_density=280/ro.sf.lcd_density=420/'g", "/vendor/build.prop");
