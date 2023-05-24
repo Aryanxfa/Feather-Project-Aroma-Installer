@@ -67,6 +67,10 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	package_extract_file("device/a10/liblibexynoscamera3.so", "/vendor/lib/libexynoscamera3.so");
 	package_extract_file("device/a10/lib/hw/camera.exynos7884B.so", "/vendor/lib/hw/camera.exynos7884B.so");
 	package_extract_file("device/a10/lib/hw/sensors.exynos7884B.so", "/vendor/lib/hw/sensors.exynos7884B.so");
+	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10", "/vendor/bin/hw/android.hardware.usb@1.0-service.a10");
+	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10.rc", "/vendor/etc/init/android.hardware.usb@1.0-service.a10.rc");
+	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10.xml", "/vendor/etc/vintf/manifest/android.hardware.usb@1.0-service.a10.xml");
+    set_metadata("/vendor/bin/hw/android.hardware.usb@1.0-service.a10", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:hal_usb_default_exec:s0");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
 	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
