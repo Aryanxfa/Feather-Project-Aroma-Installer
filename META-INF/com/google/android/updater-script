@@ -70,6 +70,7 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "1" then
 	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10", "/vendor/bin/hw/android.hardware.usb@1.0-service.a10");
 	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10.rc", "/vendor/etc/init/android.hardware.usb@1.0-service.a10.rc");
 	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10.xml", "/vendor/etc/vintf/manifest/android.hardware.usb@1.0-service.a10.xml");
+    package_extract_file("device/a10/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
     set_metadata("/vendor/bin/hw/android.hardware.usb@1.0-service.a10", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:hal_usb_default_exec:s0");
     run_program("/tmp/busybox", "sed", "-i", "s'/Galaxy A20/Galaxy A10/'g", "/system_root/system/etc/floating_feature.xml");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
@@ -87,6 +88,7 @@ if file_getprop("/tmp/aroma/device.prop", "item.1.1") == "3" then
 	package_extract_file("device/a20e/liblibexynoscamera3.so", "/vendor/lib/libexynoscamera3.so");
 	package_extract_file("device/a20e/lib/hw/camera.exynos7884B.so", "/vendor/lib/hw/camera.exynos7884B.so");
 	package_extract_file("device/a20e/lib/hw/sensors.exynos7884B.so", "/vendor/lib/hw/sensors.exynos7884B.so");
+	package_extract_file("device/a20e/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
 	run_program("/tmp/busybox", "sed", "-i", "s'/Galaxy A20/Galaxy A20e/'g", "/system_root/system/etc/floating_feature.xml");
 	set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
 	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
