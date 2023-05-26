@@ -164,43 +164,6 @@ run_program("/tmp/busybox", "fstrim", "-v", "/system_root");
 run_program("/tmp/busybox", "fstrim", "-v", "/data");
 run_program("/tmp/busybox", "sleep", "1");
 delete_recursive("/data/sec/com.samsung.cmh");
-#KERNEL
-##################################################
-if file_getprop("/tmp/aroma/kernel.prop", "selected") == "1" then
-	ui_print("@>Installing Eureka Kernel R8.0 Enforcing...");
-	package_extract_file("kernel/boot/R080_boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("kernel/dtb/enf_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
-	package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
-endif;
-if file_getprop("/tmp/aroma/kernel.prop", "selected") == "2" then
-	ui_print("@>Installing Eureka Kernel R9.0 Permissive...");
-	package_extract_file("kernel/boot/R090_boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("kernel/dtb/per_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
-	package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
-endif;
-if file_getprop("/tmp/aroma/kernel.prop", "selected") == "3" then
-	ui_print("@>Installing Eureka Kernel R9.0 Enforcing...");
-	package_extract_file("kernel/boot/R090_boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("kernel/dtb/enf_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
-	package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
-endif;
-if file_getprop("/tmp/aroma/kernel.prop", "selected") == "4" then
-	ui_print("@>Installing Eureka Kernel R11 Permissive...");
-	package_extract_file("kernel/boot/R110_boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("kernel/dtb/per_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
-	package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
-endif;
-if file_getprop("/tmp/aroma/kernel.prop", "selected") == "5" then
-	ui_print("@>Installing Eureka Kernel R11 Enforcing...");
-	package_extract_file("kernel/boot/R110_boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-	package_extract_file("kernel/dtb/per_dtb5.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
-	package_extract_file("kernel/dtbo/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
-	package_extract_file("mods/fp_lazyenforce.rc", "/vendor/etc/init/fp_lazyenforce.rc");
-	set_metadata_recursive("/vendor/etc/init/fp_lazyenforce.rc", "uid", 0, "gid", 0, "dmode", 0644, "fmode", 0644);
-endif;
-if file_getprop("/tmp/aroma/kernel.prop", "selected") == "6" then
-	ui_print(" Skipping Kernel ...");
-endif;
 #CSC
 ##################################################
 if file_getprop("/tmp/aroma/csc.prop", "selected") == "1" then
