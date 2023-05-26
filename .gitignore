@@ -2,3 +2,4 @@
 system/*/*
 META-INF/scripts/xbin/*
 mods/keys/*
+device/*/overlay
