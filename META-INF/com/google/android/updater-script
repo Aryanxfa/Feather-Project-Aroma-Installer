@@ -76,6 +76,7 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "1" then
 endif;
 if file_getprop("/tmp/aroma/device.prop", "selected") == "2" then
 	delete_recursive("/vendor/etc/permissions/android.hardware.sensor.light.xml");
+	package_extract_file("device/a20/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
 	ui_print("@>Selected Device: A20");
 endif;
 if file_getprop("/tmp/aroma/device.prop", "selected") == "3" then
