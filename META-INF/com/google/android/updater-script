@@ -27,7 +27,7 @@ ui_print(" Installing ROM ...");
 set_progress(0.30);
 ui_print("@>Extracting System...");
 ifelse(is_mounted("/system_root"), unmount("/system_root"));
-#block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/system", package_extract_file("META-INF/com/google/CERT.SF"), "META-INF/scripts/xbin/busybox.kek.br", "img/system.img");
+block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/system", package_extract_file("META-INF/com/google/CERT.SF"), "META-INF/scripts/xbin/busybox.kek.br", "img/system.img");
 run_program("/tmp/busybox", "sleep", "1");
 set_progress(0.69);
 ui_print("@>Extracting Vendor...");
@@ -36,7 +36,7 @@ block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/vendor", package
 run_program("/tmp/busybox", "sleep", "1");
 ui_print("@>Extracting Product...");
 ifelse(is_mounted("/product"), unmount("/product"));
-#block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/product", package_extract_file("META-INF/com/google/CERT.RSA"), "META-INF/scripts/xbin/sleep.kek.br", "img/product.img");
+block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/product", package_extract_file("META-INF/com/google/CERT.RSA"), "META-INF/scripts/xbin/sleep.kek.br", "img/product.img");
 run_program("/tmp/busybox", "sleep", "1");
 endif;
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "2" then
