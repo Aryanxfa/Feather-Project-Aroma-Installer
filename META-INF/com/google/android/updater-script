@@ -71,6 +71,8 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "1" then
 	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10", "/vendor/bin/hw/android.hardware.usb@1.0-service.a10");
 	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10.rc", "/vendor/etc/init/android.hardware.usb@1.0-service.a10.rc");
 	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10.xml", "/vendor/etc/vintf/manifest/android.hardware.usb@1.0-service.a10.xml");
+	set_metadata_recursive("/vendor/etc/vintf/manifest/android.hardware.usb@1.0-service.a10.xml", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
+	set_metadata_recursive("/vendor/etc/init/android.hardware.usb@1.0-service.a10.rc", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
     package_extract_file("device/a10/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
     package_extract_file("device/a10/camera-feature.xml", "/system_root/system/cameradata/camera-feature.xml");
     set_metadata("/vendor/bin/hw/android.hardware.usb@1.0-service.a10", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:hal_usb_default_exec:s0");
