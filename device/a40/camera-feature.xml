@@ -1,0 +1,190 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<resources>
+    <!-- Shootingmode -->
+    <local name="SHOOTING_MODE_LIVE_FOCUS" back="LIVE_FOCUS_LITE" front="LIVE_FOCUS_LITE" enable="true" more="false" order="1" info="1"/>
+    <local name="SHOOTING_MODE_PHOTO" back="PHOTO" front="PHOTO" enable="true" more="false" order="2"/>
+    <local name="SHOOTING_MODE_VIDEO" back="VIDEO" front="VIDEO" enable="true" more="false" order="3"/>
+    <local name="SHOOTING_MODE_PRO_LITE" back="PRO_LITE" enable="true" more="true" order="4"/>
+    <local name="SHOOTING_MODE_PANORAMA" back="PANORAMA" enable="true" more="true" order="5" preview-size="1920x1080" capture-size="2576x1932"/>
+    <local name="SHOOTING_MODE_SLOW_MOTION" back="SLOW_MOTION" enable="true" more="true" order="6" preview-size="1280x720" capture-size="1280x720"/>
+    <local name="SHOOTING_MODE_HYPER_LAPSE" back="HYPER_LAPSE" enable="true" more="true" order="7" preview-size="1920x1080" capture-size="1920x1080" info="2"/>
+    <local name="SHOOTING_MODE_QR" back="QR" enable="true" more="false" order="100" preview-size="2336x1080"/>
+
+    <!-- Capture resolution - BACK -->
+    <local name="BACK_CAMERA_RESOLUTION_FULL_RATIO" value="4608x2128" />
+    <local name="BACK_CAMERA_RESOLUTION_4BY3_LARGE" value="4608x3456" />
+    <local name="BACK_CAMERA_RESOLUTION_16BY9_LARGE" value="4608x2592" />
+    <local name="BACK_CAMERA_RESOLUTION_1BY1_LARGE" value="3456x3456" />
+    <local name="BACK_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="4608x3456" />
+
+    <!-- Capture resolution - FRONT -->
+    <local name="FRONT_CAMERA_RESOLUTION_FULL_RATIO" value="4032x1860" />
+    <local name="FRONT_CAMERA_RESOLUTION_4BY3_LARGE" value="5760x4312" />
+    <local name="FRONT_CAMERA_RESOLUTION_4BY3_MEDIUM" value="4032x3024" />
+    <local name="FRONT_CAMERA_RESOLUTION_16BY9_LARGE" value="4032x2268" />
+    <local name="FRONT_CAMERA_RESOLUTION_16BY9_MEDIUM" value="4032x2268" />
+    <local name="FRONT_CAMERA_RESOLUTION_1BY1_LARGE" value="3024x3024" />
+    <local name="FRONT_CAMERA_RESOLUTION_1BY1_MEDIUM" value="3024x3024" />
+    <local name="FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="4032x3024" />
+
+    <!-- Capture resolution - SUPER -->
+    <local name="FRONT_CAMERA_RESOLUTION_SUPER_RESOLUTION" value="5760x4312" />
+
+    <!-- Capture resolution - BACK ULTRA_WIDE -->
+    <local name="BACK_WIDE_CAMERA_RESOLUTION_4BY3_LARGE" value="2576x1932" />
+    <local name="BACK_WIDE_CAMERA_RESOLUTION_16BY9_LARGE" value="2560x1440" />
+    <local name="BACK_WIDE_CAMERA_RESOLUTION_1BY1_LARGE" value="1920x1920" />
+    <local name="BACK_WIDE_CAMERA_RESOLUTION_FULL_RATIO" value="2576x1188" />
+
+    <!-- Front camera sensor crop resolution -->
+    <local name="FRONT_CAMERA_SENSOR_CROP_RESOLUTION_4BY3_LARGE" value="4688x3516"/>
+    <local name="FRONT_CAMERA_SENSOR_CROP_RESOLUTION_4BY3_MEDIUM" value="3296x2472"/>
+    <local name="FRONT_CAMERA_SENSOR_CROP_RESOLUTION_16BY9_LARGE" value="3296x1854"/>
+    <local name="FRONT_CAMERA_SENSOR_CROP_RESOLUTION_1BY1_LARGE" value="2464x2464"/>
+    <local name="FRONT_CAMERA_SENSOR_CROP_RESOLUTION_FULL_RATIO" value="3296x1520"/>
+
+    <!-- Recording resolution - BACK -->
+    <local name="BACK_CAMERA_RECORDING_DEFAULT_RESOLUTION" value="1920x1080"/>
+    <local name="BACK_CAMERA_RECORDING_MIN_RESOLUTION" value="640x480"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_2336X1080" value="true" hdr="false" hdr10="false" preview-size="2340x1080" snapshot-support="true" snapshot-size="4608x2128" vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080" value="true" hdr="false" hdr10="false" preview-size="1280x720" snapshot-support="true" snapshot-size="4608x2592" vdis="true" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1440X1440" value="true" hdr="false" hdr10="false" preview-size="1088x1088" snapshot-support="true" snapshot-size="3456x3456" vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720" value="true" hdr="false" hdr10="false" preview-size="1280x720" snapshot-support="true" snapshot-size="4608x2592" vdis="true" effect="true" object-tracking="false" external-storage-support="true"/>
+
+    <!-- Recording resolution - FRONT -->
+    <local name="FRONT_CAMERA_RECORDING_DEFAULT_RESOLUTION" value="1920x1080"/>
+    <local name="FRONT_CAMERA_RECORDING_MIN_RESOLUTION" value="640x480"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_2336X1080" value="true" hdr="false" hdr10="false" preview-size="2880x1332" snapshot-support="true" snapshot-size="4032x1860" vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080" value="true" hdr="false" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4032x2268" vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1440X1440" value="true" hdr="false" hdr10="false" preview-size="1088x1088" snapshot-support="true" snapshot-size="3024x3024" vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720" value="true" hdr="false" hdr10="false" preview-size="1280x720" snapshot-support="true" snapshot-size="4032x2268" vdis="true" effect="true" object-tracking="false" external-storage-support="true"/>
+
+    <!-- Live focus Resolutions - BACK -->
+    <local name="BACK_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_FULL_RATIO" value="3264x1504" />
+    <local name="BACK_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_16BY9_LARGE" value="3264x1836" />
+    <local name="BACK_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_1BY1_LARGE" value="2448x2448" />
+    <local name="BACK_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_4BY3_LARGE" value="3264x2448" />
+
+    <!-- Live focus Resolutions - FRONT -->
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_FULL_RATIO" value="3264x1504" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_16BY9_LARGE" value="3264x1836" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_1BY1_LARGE" value="2448x2448" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_4BY3_LARGE" value="3264x2448" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_4BY3_MEDIUM" value="3264x2448" />
+
+    <!-- Live focus Sensor crop Resolutions - FRONT -->
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_SENSOR_CROP_RESOLUTION_FULL_RATIO" value="2608x1204" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_SENSOR_CROP_RESOLUTION_16BY9_LARGE" value="2608x1468" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_SENSOR_CROP_RESOLUTION_1BY1_LARGE" value="1968x1968" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_SENSOR_CROP_RESOLUTION_4BY3_LARGE" value="2608x1956" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_SENSOR_CROP_RESOLUTION_4BY3_MEDIUM" value="2608x1956" />
+
+    <!-- Performance feature -->
+    <local name="LOW_PERFORMANCE_RECORDING_VI" value="true" />
+    <local name="PANORAMA_LOW_PERFORMANCE_FPS" value="24" />
+    <local name="REMOSAIC_CAPTURE_LOW_PERFORMANCE" value="true"/>
+    <local name="MAX_BURST_CAPTURE_COUNT" value="30" />
+    <local name="LOW_PERFORMANCE_REAR_LIVE_FOCUS" value="true" />
+    <local name="LOW_PERFORMANCE_FRONT_LIVE_FOCUS" value="true" />
+    <local name="SUPPORT_CAMERA_APP_ENTRY_PERFORMANCE" value="true"/>
+    <local name="USE_KEY_SCREEN_INFLATION_DELAY" value="true" />
+
+    <!-- Presentative camcorder -->
+    <local name="REPRESENTATIVE_CAMCORDER_RESOLUTION_FOR_FULL_RATIO" value="2336x1080" />
+
+    <!-- Quick launch features -->
+    <local name="CAMERA_QUICK_LAUNCH_USING_POWER_KEY" value="true"/>
+
+    <!-- Multi-camera features -->
+    <local name="BACK_WIDE_CAMERA_ID" value="50"/>
+
+    <!-- Shutter LP features -->
+    <local name="SUPPORT_TAP_AND_HOLD_CAMERA_BUTTON" value="true" />
+
+    <!-- Intelligent recognition -->
+    <local name="SUPPORT_INTELLIGENT_RECOGNITION_TIPS" value="true" />
+
+    <!-- Additional effects like live bokeh/motion photo/star effect in labs -->
+    <local name="SUPPORT_ADDITIONAL_SCENE_BRIGHT_NIGHT" value="false" />
+
+    <!-- Etc. features -->
+    <local name="CAMCORDER_FRONT_ANTI_SHAKE" value="false" />
+    <local name="SUPPORT_VOICE_COMMAND" value="false" />
+    <local name="SUPPORT_MOTION_PHOTO" value="false" />
+    <local name="SUPPORT_HEIF_FORMAT" value="true" />
+    <local name="SUPPORT_ADVANCED_RECORDING_OPTIONS" value="false" />
+    <local name="SUPPORT_SENSOR_CROP" value="true"/>
+
+    <!-- Notch Animation -->
+    <local name="DISPLAY_CUTOUT_ANIMATION_INFO" num-of-display-cutout="1" display-cutout-0-type="2" display-cutout-0-left="146" display-cutout-0-top="0" display-cutout-0-right="213" display-cutout-0-bottom="40" />
+    <local name="DISPLAY_CUTOUT_POSITION" value="1" />
+    
+    <!-- Seamless camera switching related features -->
+    <local name="SUPPORT_SEAMLESS_LENS_CHANGE_VI" value="true" />
+    <local name="TRANSITION_SCALE_PIVOTY_NORMAL_ASPECT_RATIO" value="0.45f" />
+    <local name="TRANSITION_NORMAL_TO_WIDE_ANIMATION_DURATION" value="700" />
+    <local name="TRANSITION_WIDE_TO_NORMAL_ANIMATION_DURATION" value="600" />	
+
+    <!-- Post Picture Processing -->
+    <local name="SUPPORT_POST_PICTURE_PROCESSING" value="true" />
+
+    <!-- Floating camera button -->
+    <local name="SUPPORT_FLOATING_CAMERA_BUTTON" value="true"/>
+
+    <!-- Live Beauty features -->
+    <local name="SUPPORT_LIVE_BEAUTY_IN_AUTO_MODE" value="true"/>
+
+    <!-- Shooting mode variation features -->
+    <local name="SUPPORT_FOCUS_PEAKING" value="false" />
+    <local name="SUPPORT_LIVE_FOCUS_LENS_TYPE_CHANGE" value="true" />
+
+    <!-- Camera Preview FPS Variations -->
+    <local name="SINGLE_LIVE_FOCUS_PREVIEW_FPS_MAX" value="24" />
+    <local name="SUPPORT_LIVE_FOCUS_HDR_CAPTURE" value="true" />
+
+    <!-- AF features -->
+    <local name="SUPPORT_MULTI_AF" value="false"/>
+    <local name="SUPPORT_OBJECT_TRACKING_AF" value="false" />
+    <local name="SUPPORT_FAST_REACTIVE_AF" value="false" />
+
+    <!-- Support picture format -->
+    <local name="CAMERA_SUPPORT_PICTURE_FORMAT" value="false"/>
+
+    <!-- Live BOKEH EFFECT -->
+    <local name="SUPPORT_LIVE_BEAUTY_SHAPE_CORRECTION" value="false"/>
+    <local name="SUPPORT_BOKEH_FOCUSED_REGION" value="true" />
+
+    <!-- Super Slow Motion features -->
+    <local name="SUPER_SLOW_MOTION_MAX_FRC_TIME" value="400"/>
+    <local name="SUPPORT_SUPER_SLOW_MOTION_AUTO_DETECTION" value="false"/>
+    <local name="SLOW_MOTION_RECORDING_FPS" value="120"/>
+    <local name="SUPER_SLOW_MOTION_RECORDING_FPS" value="120"/>
+    <local name="SUPPORT_FRONT_SUPER_LARGE_RESOLUTION" value="true"/>
+
+    <!-- Camera watermark features -->
+    <local name="SUPPORT_AUTO_WATERMARK" value="true" />
+    <local name="CAMERA_AUTO_WATERMARK_NUMBER_OF_CAMERAS" value="2" />
+
+    <!-- Advance option HDR10+ Video Recording -->
+    <local name="SUPPORT_HDR10_PLUS_RECORDING" value="false"/>
+
+    <!-- Etc. features -->
+    <local name="SUPPORT_SUPER_VIDEO_STABILIZATION" value="false" />
+    <local name="SUPPORT_FRONT_VIDEO_BEAUTY" value="false" />
+    <local name="SUPPORT_VIDEO_HDR" value="false" />
+    <local name="CAMERA_BACKGROUND_OPEN_WHEN_BOOTING" value="true" />
+    <local name="SUPPORT_LIVE_BEAUTY_SKIN_COLOR" value="true" />
+    <local name="SUPPORT_TAP_TO_TAKE_PICTURES" value="true" />
+    <local name="SUPPORT_AUTO_HDR_MENU" value="true" />
+    <local name="SUPPORT_CLEAN_UP_TEMP_FILE_ON_BACKGROUND" value="true" />
+
+    <!--Support to use post processing picture -->
+    <local name="SUPPORT_TO_USE_PPP" value="false" />
+
+    <!--Video beauty low performance -->
+    <local name="SUPPORT_FRONT_LOW_PERFORMANCE_VIDEO_BEAUTY" value="true" />
+    <local name="SUPPORT_BACK_LOW_PERFORMANCE_VIDEO_BEAUTY" value="true" />
+
+    <!-- Guide Line percentage -->
+    <local name="TOP_GUIDE_LINE" value="0.125"/>
+</resources>
