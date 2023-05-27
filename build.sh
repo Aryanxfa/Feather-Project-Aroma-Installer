@@ -33,4 +33,5 @@ cp ../FP_overlay/a30s/framework-res__auto_generated_rro_vendor.apk device/a30s/o
 mkdir device/a40/overlay/
 cp ../FP_overlay/a40/framework-res__auto_generated_rro_vendor.apk device/a40/overlay/
 
+rm -f $1
 zip -v -r $1 META-INF/com META-INF/scripts/bin mods kernel img device auxy csc debloat featherproject.keys META-INF/scripts/xbin
