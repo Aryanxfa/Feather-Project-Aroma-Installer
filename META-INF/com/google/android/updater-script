@@ -81,9 +81,9 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "1" then
 	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
 if file_getprop("/tmp/aroma/device.prop", "selected") == "2" then
+	ui_print("@>Selected Device: A20");
 	delete_recursive("/vendor/etc/permissions/android.hardware.sensor.light.xml");
 	package_extract_file("device/a20/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
-	ui_print("@>Selected Device: A20");
 endif;
 if file_getprop("/tmp/aroma/device.prop", "selected") == "3" then
 	ui_print("@>Selected Device: A20e");
