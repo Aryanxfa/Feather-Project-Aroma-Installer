@@ -133,7 +133,7 @@
     <local name="SUPPORT_LIVE_BEAUTY_SKIN_COLOR" value="true"/>
 
     <!-- Slow Motion features -->
-    <local name="SLOW_MOTION_RECORDING_FPS" value="120">
+    <local name="SLOW_MOTION_RECORDING_FPS" value="120"/>
 
     <!-- Shooting mode variation features -->
     <local name="SUPPORT_FOCUS_PEAKING" value="false" />
