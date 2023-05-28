@@ -84,6 +84,9 @@
     <local name="PANORAMA_LOW_PERFORMANCE" value="true" />
     <local name="SUPPORT_CAMERA_APP_ENTRY_PERFORMANCE" value="true"/>
 
+    <!-- Front dynamic FOV features -->
+    <local name="SUPPORT_FRONT_CAMERA_DYNAMIC_FOV" value="false"/>
+
     <!--Video beauty low performance --> 
     <local name="SUPPORT_FRONT_LOW_PERFORMANCE_VIDEO_BEAUTY" value="true" /> 
     <local name="SUPPORT_BACK_LOW_PERFORMANCE_VIDEO_BEAUTY" value="true" /> 

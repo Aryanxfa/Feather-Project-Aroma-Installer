@@ -89,6 +89,9 @@
     <local name="SUPPORT_CAMERA_APP_ENTRY_PERFORMANCE" value="true"/>
     <local name="USE_KEY_SCREEN_INFLATION_DELAY" value="true" />
 
+    <!-- Front dynamic FOV features -->
+    <local name="SUPPORT_FRONT_CAMERA_DYNAMIC_FOV" value="false"/>
+
     <!-- Presentative camcorder -->
     <local name="REPRESENTATIVE_CAMCORDER_RESOLUTION_FOR_FULL_RATIO" value="2336x1080" />
 

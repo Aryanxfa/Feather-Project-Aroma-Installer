@@ -80,6 +80,9 @@
     <local name="LOW_PERFORMANCE_REAR_LIVE_FOCUS" value="true" />
     <local name="LOW_PERFORMANCE_FRONT_LIVE_FOCUS" value="true" />
 
+    <!-- Front dynamic FOV features -->
+    <local name="SUPPORT_FRONT_CAMERA_DYNAMIC_FOV" value="false"/>
+
     <!-- Quick launch features -->
     <local name="CAMERA_QUICK_LAUNCH_USING_POWER_KEY" value="true"/>
 

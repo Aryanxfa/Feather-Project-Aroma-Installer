@@ -59,6 +59,9 @@
     <local name="PANORAMA_LOW_PERFORMANCE_FPS" value="24" />
     <local name="USE_KEY_SCREEN_INFLATION_DELAY" value="true" />
 
+    <!-- Front dynamic FOV features -->
+    <local name="SUPPORT_FRONT_CAMERA_DYNAMIC_FOV" value="false"/>
+
     <!-- Quick launch features -->
     <local name="CAMERA_QUICK_LAUNCH_USING_POWER_KEY" value="true"/>
 
