@@ -113,7 +113,7 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "4" then
 	package_extract_file("device/a30/hal/remosaic_daemon", "/vendor/bin/remosaic_daemon");
 	package_extract_file("device/a30/hal/remosaic_daemon.rc", "/vendor/etc/init/remosaic_daemon.rc");
 	set_metadata("/vendor/bin/remosaic_daemon", "uid", 0, "gid", 0, "fmode", 0755, "selabel", "u:object_r:remosaicd_exec:s0");
-    set_metadata("/vendor/etc/init/remosaic_daemon.rc", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:vendor_configs_file:s0");
+    set_metadata("/vendor/etc/init/remosaic_daemon.rc", "uid", 0, "gid", 0, "fmode", 0755, "selabel", "u:object_r:vendor_configs_file:s0");
 	package_extract_file("device/a30/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
 	package_extract_file("device/a30/tee/00000000-0000-0000-0000-46494e474502", "/vendor/tee/00000000-0000-0000-0000-46494e474502");
 	package_extract_file("device/a30/camera-feature.xml", "/system_root/system/cameradata/camera-feature.xml");
