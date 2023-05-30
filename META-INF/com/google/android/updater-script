@@ -101,7 +101,7 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "4" then
 	delete_recursive("/vendor/firmware/setfile_imx258.bin");
 	delete_recursive("/vendor/firmware/setfile_sr556.bin");
     delete_recursive("/system_root/system/app/WifiRROverlayAppSBS");
-    package_extract_dir("device/a30/wifi", "/vendor/etc/wifi");
+    package_extract_dir("device/a30/etc/wifi", "/vendor/etc/wifi");
 	package_extract_dir("device/a30/firmware", "/vendor/firmware");
 	package_extract_dir("device/a30/lib/", "/vendor/lib/");
 	package_extract_dir("device/a30/lib64/", "/vendor/lib64/");
@@ -128,7 +128,7 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "5" then
 	delete_recursive("/vendor/firmware/setfile_imx258.bin");
 	delete_recursive("/vendor/firmware/setfile_sr556.bin");
 	delete_recursive("/system_root/system/app/WifiRROverlayAppSBS");
-    package_extract_dir("device/a30s/wifi", "/vendor/etc/wifi");
+    package_extract_dir("device/a30s/etc/wifi", "/vendor/etc/wifi");
 	package_extract_dir("device/a30s/firmware", "/vendor/firmware");
 	package_extract_dir("device/a30s/lib/", "/vendor/lib/");
 	package_extract_dir("device/a30s/lib64/", "/vendor/lib64/");
@@ -148,7 +148,7 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "6" then
 	delete_recursive("/vendor/firmware/setfile_imx258.bin");
 	delete_recursive("/vendor/firmware/setfile_sr556.bin");
 	delete_recursive("/system_root/system/app/WifiRROverlayAppSBS");
-    package_extract_dir("device/a40/wifi", "/vendor/etc/wifi");
+    package_extract_dir("device/a40/etc/wifi", "/vendor/etc/wifi");
 	package_extract_dir("device/a40/firmware", "/vendor/firmware");
 	package_extract_dir("device/a40/lib/", "/vendor/lib/");
 	package_extract_dir("device/a40/lib64/", "/vendor/lib64/");
