@@ -15,22 +15,12 @@ if [ ! -f META-INF/scripts/xbin/sleep.kek.br ]; then
 fi
 
 #Pull overlays
-mkdir device/a10/overlay/
+mkdir device/*/overlay/
 cp ../FP_overlay/a10/framework-res__auto_generated_rro_vendor.apk device/a10/overlay/
-
-mkdir device/a20/overlay/
 cp ../FP_overlay/a20/framework-res__auto_generated_rro_vendor.apk device/a20/overlay/
-
-mkdir device/a20e/overlay/
 cp ../FP_overlay/a20e/framework-res__auto_generated_rro_vendor.apk device/a20e/overlay/
-
-mkdir device/a30/overlay/
 cp ../FP_overlay/a30/framework-res__auto_generated_rro_vendor.apk device/a30/overlay/
-
-mkdir device/a30s/overlay/
 cp ../FP_overlay/a30s/framework-res__auto_generated_rro_vendor.apk device/a30s/overlay/
-
-mkdir device/a40/overlay/
 cp ../FP_overlay/a40/framework-res__auto_generated_rro_vendor.apk device/a40/overlay/
 
 xmlstarlet val device/*/camera-feature.xml
