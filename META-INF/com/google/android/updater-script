@@ -65,7 +65,6 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "1" then
 	delete_recursive("/vendor/firmware/setfile_imx258.bin");
 	delete_recursive("/vendor/firmware/setfile_sr556.bin");
 	delete_recursive("/vendor/etc/permissions/android.hardware.sensor.light.xml");
-	package_extract_dir("device/a10/wifi", "/vendor/etc/wifi");
 	package_extract_dir("device/a10/firmware", "/vendor/firmware");
 	package_extract_dir("device/a10/lib/", "/vendor/lib/");
 	package_extract_file("device/a10/hal/android.hardware.usb@1.0-service.a10", "/vendor/bin/hw/android.hardware.usb@1.0-service.a10");
@@ -76,8 +75,7 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "1" then
     package_extract_file("device/a10/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
     package_extract_file("device/a10/camera-feature.xml", "/system_root/system/cameradata/camera-feature.xml");
     set_metadata("/vendor/bin/hw/android.hardware.usb@1.0-service.a10", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:hal_usb_default_exec:s0");
-    set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
-	set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
+    set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
 if file_getprop("/tmp/aroma/device.prop", "selected") == "2" then
 	ui_print("@>Selected Device: A20");
