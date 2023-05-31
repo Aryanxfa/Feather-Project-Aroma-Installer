@@ -154,6 +154,7 @@ if file_getprop("/tmp/aroma/device.prop", "selected") == "6" then
     package_extract_dir("device/a40/etc/wifi", "/vendor/etc/wifi");
     package_extract_file("device/a40/camera-feature.xml", "/system_root/system/cameradata/camera-feature.xml");
     package_extract_file("device/a40/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
+    run_program("/tmp/busybox", "sed", "-i", "s/eq_custom/eq_custom,uhq_upscale,uhq_onoff/g", "/system_root/system/etc/floating_feature.xml");
     run_program("/tmp/busybox", "sed", "-i", "s/ro.sf.lcd_density=280/ro.sf.lcd_density=420/g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s/ro.product.board=exynos7884B/ro.product.board=exynos7904/g", "/vendor/build.prop");
     run_program("/tmp/busybox", "sed", "-i", "s/ro.board.platform=universal7884B/ro.board.platform=universal7904/g", "/vendor/build.prop");
