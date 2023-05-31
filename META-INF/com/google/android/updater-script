@@ -13,7 +13,6 @@ ui_print("===================================");
 set_progress(0.10);
 ##################################################
 package_extract_dir("META-INF/scripts/bin", "/tmp/");
-package_extract_file("debloat/nukeengine.sh", "tmp/nukeengine.sh");
 set_metadata_recursive("/tmp", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0777);
 #MOUNTS
 ##################################################
