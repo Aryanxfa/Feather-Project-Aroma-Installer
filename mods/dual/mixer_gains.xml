@@ -2,7 +2,7 @@
 	<!-- Output volume stage -->
 	<!-- media playback volume -->
 
-	<!-- Dual Speaker Mod -->
+    <!-- Dual Speaker Mod -->
 	<!-- Uses the earpiece as left speaker -->
 	<!-- Adjust values with caution! -->
 
@@ -24,10 +24,8 @@
 
 	<!-- Disable Values for Dual Speaker Mod -->
 	<path name="gain-media-speaker">
-		<!--ctl
-		name="DAC Gain" value="55" /-->
-		<!--ctl
-		name="Speaker Volume" value="117" /-->
+		<!--ctl name="DAC Gain" value="55" /-->
+		<!--ctl name="Speaker Volume" value="117" /-->
 	</path>
 
 	<!-- Adjusted Volume for Headset -->
@@ -36,8 +34,7 @@
 	<path name="gain-media-headset">
 		<ctl name="DAC Gain" value="148" />
 		<ctl name="Headphone Volume" value="199" />
-		<!--ctl
-		name="HP Analog Volume AVCBypass" value="58" /-->
+		<!--ctl name="HP Analog Volume AVCBypass" value="58" /-->
 	</path>
 
 	<path name="gain-media-speaker-headset">
@@ -1444,10 +1441,8 @@
 
 	<!-- FM Playback/Recording -->
 	<path name="gain-fm_radio-speaker">
-		<!--ctl
-		name="DAC Gain" value="55" /-->
-		<!--ctl
-		name="Speaker Volume" value="117" /-->
+		<!--ctl name="DAC Gain" value="55" /-->
+		<!--ctl name="Speaker Volume" value="117" /-->
 	</path>
 
 	<path name="gain-fm_radio-headset">
