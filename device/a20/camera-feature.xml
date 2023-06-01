@@ -99,7 +99,7 @@
 
     <!-- Multi-camera features -->
     <local name="BACK_WIDE_CAMERA_ID" value="50"/>
-    
+
     <!-- Sticker features -->
     <local name="SUPPORT_AR_EMOJI_MODE_USING_INTERNAL_SHOOTING_MODE_STICKER" value="true"/>
 
@@ -157,7 +157,7 @@
     <local name="SUPPORT_BACK_LOW_PERFORMANCE_VIDEO_BEAUTY" value="true" />
 
     <!-- Slow Motion features -->
-    <local name="SLOW_MOTION_RECORDING_FPS" value="120">
+    <local name="SLOW_MOTION_RECORDING_FPS" value="120"/>
 
     <!-- Live BOKEH EFFECT -->
     <local name="SUPPORT_SINGLE_BOKEH_EFFECT" value="false"/>
@@ -176,7 +176,7 @@
     <local name="SINGLE_LIVE_FOCUS_PREVIEW_FPS_MAX" value="24" />
     <local name="FRONT_CAMERA_PREVIEW_FPS_MIN" value="8" />
     <local name="CAMERA_PREVIEW_FPS_MIN" value="15" />
-    <local name="BACK_WIDE_CAMERA_PREVIEW_FPS_MIN"  value="10" />
+    <local name="BACK_WIDE_CAMERA_PREVIEW_FPS_MIN" value="10" />
 
     <!-- Seamless camera switching related features -->
     <local name="SUPPORT_SEAMLESS_LENS_CHANGE_VI" value="true" />
@@ -198,7 +198,7 @@
 
     <!-- Advance option HDR10+ Video Recording -->
     <local name="SUPPORT_HDR10_PLUS_RECORDING" value="false"/>
-    
+
     <!--Support to use post processing picture -->
     <local name="SUPPORT_TO_USE_PPP" value="false" />
 

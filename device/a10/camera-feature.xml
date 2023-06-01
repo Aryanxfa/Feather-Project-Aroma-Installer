@@ -2,13 +2,10 @@
 <resources>
 
     <!-- Shootingmode -->
-    <local name="SHOOTING_MODE_PHOTO" back="PHOTO" front="PHOTO" enable="true" more="false"
-        order="1" />
-    <local name="SHOOTING_MODE_VIDEO" back="VIDEO" front="VIDEO" enable="true" more="false"
-        order="2" />
+    <local name="SHOOTING_MODE_PHOTO" back="PHOTO" front="PHOTO" enable="true" more="false" order="1" />
+    <local name="SHOOTING_MODE_VIDEO" back="VIDEO" front="VIDEO" enable="true" more="false" order="2" />
     <local name="SHOOTING_MODE_PRO_LITE" back="PRO_LITE" enable="true" more="true" order="3" />
-    <local name="SHOOTING_MODE_PANORAMA" back="PANORAMA" enable="true" more="true" order="4"
-        preview-size="1920x1080" capture-size="2560x1440" />
+    <local name="SHOOTING_MODE_PANORAMA" back="PANORAMA" enable="true" more="true" order="4" preview-size="1920x1080" capture-size="2560x1440" />
 
     <!-- Capture resolution - BACK -->
     <local name="BACK_CAMERA_RESOLUTION_FULL_RATIO" value="4128x1956" />
@@ -27,35 +24,19 @@
     <!-- Recording resolution - BACK -->
     <local name="BACK_CAMERA_RECORDING_DEFAULT_RESOLUTION" value="1920x1080" />
     <local name="BACK_CAMERA_RECORDING_MIN_RESOLUTION" value="640x480" />
-    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X908" value="true" hdr="false"
-        hdr10="false" preview-size="1920x908" snapshot-support="true" snapshot-size="4128x1956"
-        vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
-    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080" value="true" hdr="false"
-        hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4128x2322"
-        vdis="true" effect="true" object-tracking="false" external-storage-support="true" />
-    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720" value="true" hdr="false"
-        hdr10="false" preview-size="1280x720" snapshot-support="true" snapshot-size="4128x2322"
-        vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
-    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1072X1072" value="true" hdr="false"
-        hdr10="false" preview-size="1072x1072" snapshot-support="true" snapshot-size="3088x3088"
-        vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X908" value="true" hdr="false" hdr10="false" preview-size="1920x908" snapshot-support="true" snapshot-size="4128x1956" vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080" value="true" hdr="false" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4128x2322" vdis="true" effect="true" object-tracking="false" external-storage-support="true" />
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720" value="true" hdr="false" hdr10="false" preview-size="1280x720" snapshot-support="true" snapshot-size="4128x2322" vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1072X1072" value="true" hdr="false" hdr10="false" preview-size="1072x1072" snapshot-support="true" snapshot-size="3088x3088" vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
     <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_176X144" value="true" />
 
     <!-- Recording resolution - FRONT -->
     <local name="FRONT_CAMERA_RECORDING_DEFAULT_RESOLUTION" value="1920x1080" />
     <local name="FRONT_CAMERA_RECORDING_MIN_RESOLUTION" value="640x480" />
-    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X908" value="true" hdr="false"
-        hdr10="false" preview-size="1920x908" snapshot-support="true" snapshot-size="2560x1212"
-        vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
-    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080" value="true" hdr="false"
-        hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="2560x1440"
-        vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
-    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720" value="true" hdr="false"
-        hdr10="false" preview-size="1280x720" snapshot-support="true" snapshot-size="2560x1440"
-        vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
-    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1072X1072" value="true" hdr="false"
-        hdr10="false" preview-size="1072x1072" snapshot-support="true" snapshot-size="1920x1920"
-        vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X908" value="true" hdr="false" hdr10="false" preview-size="1920x908" snapshot-support="true" snapshot-size="2560x1212" vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080" value="true" hdr="false" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="2560x1440" vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720" value="true" hdr="false" hdr10="false" preview-size="1280x720" snapshot-support="true" snapshot-size="2560x1440" vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1072X1072" value="true" hdr="false" hdr10="false" preview-size="1072x1072" snapshot-support="true" snapshot-size="1920x1920" vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
     <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_176X144" value="true" />
 
     <!-- Camcorder resolution features -->
@@ -160,9 +141,7 @@
     <local name="SUPPORT_TO_USE_PPP" value="false" />
 
     <!-- Notch Animation -->
-    <local name="DISPLAY_CUTOUT_ANIMATION_INFO" num-of-display-cutout="1" display-cutout-0-type="3"
-        display-cutout-0-left="133" display-cutout-0-top="0" display-cutout-0-right="226"
-        display-cutout-0-bottom="33" />
+    <local name="DISPLAY_CUTOUT_ANIMATION_INFO" num-of-display-cutout="1" display-cutout-0-type="3" display-cutout-0-left="133" display-cutout-0-top="0" display-cutout-0-right="226" display-cutout-0-bottom="33" />
     <local name="DISPLAY_CUTOUT_POSITION" value="1" />
 
     <!-- Guide Line percentage -->
