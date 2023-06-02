@@ -174,7 +174,6 @@
     <local name="SUPPORT_PRO_VIDEO_AUDIO_BLUETOOTH_MIX_MIC" value="true"/>
     <local name="SUPPORT_PRO_VIDEO_AUDIO_INPUT_CONTROL" value="false"/>
     <local name="SUPPORT_UW_AE_LOCK" value="true" />
-    <local name="SUPPORT_BACK_WIDE_PRO" value="true"/>
     <local name="SUPPORT_PRO_COLOR_TUNE_TEMPERATURE" value="true"/>
 
     <!-- Enable Qr code detection -->
