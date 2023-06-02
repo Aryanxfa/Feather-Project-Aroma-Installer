@@ -4,7 +4,7 @@
     <local name="SHOOTING_MODE_LIVE_FOCUS" back="LIVE_FOCUS_LITE" front="LIVE_FOCUS_LITE" enable="true" more="false" order="1" info="1" />
     <local name="SHOOTING_MODE_PHOTO" back="PHOTO" front="PHOTO" enable="true" more="false" order="2" />
     <local name="SHOOTING_MODE_VIDEO" back="VIDEO" front="VIDEO" enable="true" more="false" order="3" />
-    <local name="SHOOTING_MODE_PRO_LITE" back="PRO_LITE" enable="true" more="true" order="4" />
+    <local name="SHOOTING_MODE_PRO" back="PRO" enable="true" more="true" order="4"/>
     <local name="SHOOTING_MODE_PANORAMA" back="PANORAMA" enable="true" more="true" order="5" preview-size="1920x1080" capture-size="2576x1932" />
     <local name="SHOOTING_MODE_SLOW_MOTION" back="SLOW_MOTION" enable="true" more="true" order="6" preview-size="1280x720" capture-size="1280x720" />
     <local name="SHOOTING_MODE_HYPER_LAPSE" back="HYPER_LAPSE" enable="true" more="true" order="7" preview-size="1920x1080" capture-size="1920x1080" info="2" />
