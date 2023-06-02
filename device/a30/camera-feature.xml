@@ -9,7 +9,7 @@
     <local name="SHOOTING_MODE_PANORAMA" enable="true" back="PANORAMA" more="true" order="5" preview-size="1920x1080" capture-size="2576x1932" />
     <local name="SHOOTING_MODE_SLOW_MOTION" enable="true" back="SLOW_MOTION" more="true" order="6" internal-only="false" preview-size="1280x720" capture-size="1280x720" />
     <local name="SHOOTING_MODE_QR" back="QR" enable="true" more="false" order="100" preview-size="2336x1080" />
-    <local name="SHOOTING_MODE_PRO_VIDEO" back="PRO_VIDEO" enable="true" more="true" order="8"/>
+    <local name="SHOOTING_MODE_PRO_VIDEO" back="PRO_VIDEO" front="PRO_VIDEO" enable="true" more="true" order="8"/>
     <local name="SHOOTING_MODE_NIGHT" back="NIGHT" front="NIGHT" enable="true" more="true" order="9"/>
 
     <!-- Capture resolution - BACK -->
