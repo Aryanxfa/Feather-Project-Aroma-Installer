@@ -2,6 +2,7 @@
 <resources>
 
     <!-- Shootingmode -->
+    <local name="SHOOTING_MODE_LIVE_FOCUS" back="LIVE_FOCUS_LITE" front="LIVE_FOCUS_LITE" enable="true" more="false" order="1" info="1" />
     <local name="SHOOTING_MODE_PHOTO" back="PHOTO" front="PHOTO" enable="true" more="false" order="1" />
     <local name="SHOOTING_MODE_VIDEO" back="VIDEO" front="VIDEO" enable="true" more="false" order="2" />
     <local name="SHOOTING_MODE_PRO" back="PRO" enable="true" more="true" order="3" />
@@ -51,6 +52,18 @@
     <local name="REAL_PREVIEW_SIZE_4_3" value="960x720" />
     <local name="REAL_PREVIEW_SIZE_1_1" value="720x720" />
     <local name="REAL_PREVIEW_SIZE_FULL_RATIO" value="1520x720" />
+
+    <!-- Live focus Resolutions - BACK -->
+    <local name="BACK_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_FULL_RATIO" value="3264x1504" />
+    <local name="BACK_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_16BY9_LARGE" value="3264x1836" />
+    <local name="BACK_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_1BY1_LARGE" value="2448x2448" />
+    <local name="BACK_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_4BY3_LARGE" value="3264x2448" />
+
+    <!-- Live focus Resolutions - FRONT -->
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_FULL_RATIO" value="3264x1504" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_16BY9_LARGE" value="3264x1836" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_1BY1_LARGE" value="2448x2448" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_4BY3_LARGE" value="3264x2448" />
 
     <!-- Performance feature -->
     <local name="LOW_PERFORMANCE_BEAUTY_AND_FILTER" value="false" />
