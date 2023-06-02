@@ -114,8 +114,8 @@
 
     <!-- Etc. features -->
     <local name="CAMCORDER_FRONT_ANTI_SHAKE" value="false" />
-    <local name="SUPPORT_VOICE_COMMAND" value="false" />
-    <local name="SUPPORT_MOTION_PHOTO" value="false" />
+    <local name="SUPPORT_VOICE_COMMAND" value="true" />
+    <local name="SUPPORT_MOTION_PHOTO" value="true" />
     <local name="SUPPORT_HEIF_FORMAT" value="true" />
     <local name="SUPPORT_ADVANCED_RECORDING_OPTIONS" value="false" />
     <local name="SUPPORT_SENSOR_CROP" value="true" />
