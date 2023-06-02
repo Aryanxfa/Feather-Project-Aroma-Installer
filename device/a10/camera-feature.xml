@@ -181,4 +181,19 @@
     <local name="SUPPORT_QR_CODE_DETECTION" value="true" />
     <local name="SUPPORT_SUPER_RESOLUTION_SMART_TIPS" value="true" />
     <local name="USING_MAX_RESOLUTION_STAMP_IN_WATERMARK" value="true"/>
+
+    <!--  camera assistant features  -->
+    <local name="SUPPORT_CAMERA_ASSISTANT" value="true"/>
+    <local name="SUPPORT_CAMERA_ASSISTANT_AUTO_HDR" value="true"/>
+    <local name="SUPPORT_CAMERA_ASSISTANT_AUTO_LENS_SWITCHING" value="true"/>
+    <local name="SUPPORT_CAMERA_ASSISTANT_FAST_SHUTTER" value="true"/>
+    <local name="SUPPORT_CAMERA_ASSISTANT_HIGH_RESOLUTION_FAST_SHUTTER" value="true"/>
+    <local name="SUPPORT_CAMERA_ASSISTANT_SOFTEN_PICTURE" value="true"/>
+
+    <!-- Night mode features -->
+    <local name="LOW_PERFORMANCE_REAR_NIGHT_SHOT" value="true" />
+    <local name="SUPPORT_NIGHT_MODE_FRONT_ANGLE" value="true" />
+    <local name="SUPPORT_NIGHT_MODE_ZOOM" value="true" />
+    <local name="SUPPORT_NIGHT_MODE_REAR_LENS" value="true" />
+    <local name="SUPPORT_NIGHT_CIRCLE_SCREEN_FLASH" value="true" />
 </resources>
