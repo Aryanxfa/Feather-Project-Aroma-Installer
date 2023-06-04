@@ -33,6 +33,8 @@
     <!-- Recording resolution - BACK -->
     <local name="BACK_CAMERA_RECORDING_DEFAULT_RESOLUTION" value="1920x1080" />
     <local name="BACK_CAMERA_RECORDING_MIN_RESOLUTION" value="640x480"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080_60FPS" value="true" hdr="false" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4128x2322" vdis="false" effect="true" object-tracking="false" external-storage-support="true" uw-support="false"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080_24FPS" value="true" hdr="false" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4128x2322" vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
     <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X886" value="true" hdr="false" hdr10="false" preview-size="1920x886" snapshot-support="true" snapshot-size="4128x1908" vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
     <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720" value="true" hdr="false" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4128x2322" vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
     <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080" value="true" hdr="false" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4128x2322" vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
