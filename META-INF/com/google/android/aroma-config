@@ -79,12 +79,12 @@ menubox(
     "<b>Select your Device</b>",
     "@install",
     "device.prop",
-    "Galaxy A10",    "SM-A105",         "@none",
-    "Galaxy A20",    "SM-A205",         "@none",
-    "Galaxy A20e",   "SM-A202",         "@none",
-    "Galaxy A30",    "SM-A305",         "@none",
-    "Galaxy A30s",   "SM-A307",         "@none",
-    "Galaxy A40",    "SM-A405",         "@none"
+    "Galaxy A10",    "SM-A105",         "@da10",
+    "Galaxy A20",    "SM-A205",         "@da20",
+    "Galaxy A20e",   "SM-A202",         "@da20e",
+    "Galaxy A30",    "SM-A305",         "@da30",
+    "Galaxy A30s",   "SM-A307",         "@da30s",
+    "Galaxy A40",    "SM-A405",         "@da40"
 );
 
 #MODIFICATIONS
