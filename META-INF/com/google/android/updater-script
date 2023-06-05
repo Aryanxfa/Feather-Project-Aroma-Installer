@@ -14,6 +14,7 @@ set_progress(0.10);
 ##################################################
 package_extract_dir("META-INF/scripts/bin", "/tmp/");
 set_metadata_recursive("/tmp", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0777);
+##################################################
 #MOUNTS
 ##################################################
 ui_print("@>Mount partition...");
@@ -41,6 +42,7 @@ endif;
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "2" then
 ui_print(" Skipping ROM ...");
 endif;
+##################################################
 #RESIZE
 ##################################################
 set_progress(0.80);
@@ -49,6 +51,16 @@ run_program("/tmp/busybox", "sh", "/tmp/system-resize.sh");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/system_root");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/vendor");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/product");
+##################################################
+#Install Auxilary Apps
+##################################################
+if file_getprop("/tmp/aroma/configs.prop", "selected") == "1" then
+    package_extract_dir("auxy/data/app", "/data/app");
+    set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+    set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+    set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+endif;
+##################################################
 #DEVICE
 ##################################################
 if is_substring("A105", getprop("ro.boot.bootloader")) then
@@ -165,6 +177,7 @@ if is_substring("A405", getprop("ro.boot.bootloader")) then
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
     set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
+##################################################
 #MODS
 ##################################################
 if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
@@ -238,12 +251,13 @@ set_progress(0.96);
 #run_program("/tmp/busybox", "sed", "-i", "s/ro.secure=1/ro.secure=0/g", "/system_root/system/build.prop");
 #run_program("/tmp/busybox", "sed", "-i", "s/ro.adb.secure=1/ro.adb.secure=0/g", "/system_root/system/build.prop");
 #run_program("/tmp/busybox", "sed", "-i", "s/ro.debuggable=0/ro.debuggable=1/g", "/system_root/system/build.prop");
-#
+##################################################
 run_program("/tmp/busybox", "sleep", "1");
 run_program("/tmp/busybox", "fstrim", "-v", "/system_root");
 run_program("/tmp/busybox", "fstrim", "-v", "/data");
 run_program("/tmp/busybox", "sleep", "1");
 delete_recursive("/data/sec/com.samsung.cmh");
+##################################################
 #CSC
 ##################################################
 if file_getprop("/tmp/aroma/csc.prop", "selected") == "1" then
@@ -272,14 +286,6 @@ if file_getprop("/tmp/aroma/csc.prop", "selected") == "6" then
 endif;
 if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
 	ui_print(" Skipping CSC ...");
-endif;
-#Install Auxilary Apps
-##################################################
-if file_getprop("/tmp/aroma/configs.prop", "selected") == "1" then
-    package_extract_dir("auxy/data/app", "/data/app");
-    set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
-    set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
-    set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
 endif;
 ##################################################
 set_progress(0.99);
