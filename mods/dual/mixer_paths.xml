@@ -222,7 +222,7 @@
 
 	<path name="dev-speaker">
 		<path name="media-handset" />
-			<path name="dev-handset" />					  					 
+		<path name="dev-handset" />
 	</path>
 
 	<path name="dev-headset">
@@ -285,7 +285,7 @@
 		<path name="route-spkamp-playback" />
 		<path name="dev-speaker" />
 		<path name="route-playback" />
-		<path name="dev-handset" />						
+		<path name="dev-handset" />
 	</path>
 
 	<!-- Adjusted settings for headset volume -->
