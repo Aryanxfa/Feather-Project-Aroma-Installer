@@ -6,7 +6,6 @@ ini_set("rom_version",          "S22_v4.0");
 ini_set("rom_author",           "Raptor 9");
 ini_set("rom_device",           "Galaxy A20");
 ini_set("rom_date",             "15/May/2023");
-ini_set("force_colorspace","rgba");
 anisplash(1,
 "splash/splash_01", 80,
 "splash/splash_02", 80,
@@ -40,6 +39,7 @@ fontresload( "0", "ttf/smooth.ttf", "14" );
 fontresload( "1", "ttf/brief.ttf", "18" );
 theme("dark");
 
+###############################################
 #ROM INFORMATION
 ####################################################
 ini_set("text_next", "Next ");
@@ -56,8 +56,9 @@ viewbox(
     "@home"
 );
 
+###############################################
 #INSTALLATION TYPE
-###################################################
+###############################################
 ini_set("text_next", " ");
 ini_set("icon_next", "@none");
 menubox(
@@ -70,23 +71,7 @@ menubox(
     "Configure Only",        "This will Not install Rom just Allow you to Add/Remove Apps, Once Debloated can't be added back",         "@none"
 );
 
-#DEVICE
 ###############################################
-ini_set("text_next", " ");
-ini_set("icon_next", "@none");
-menubox(
-    "",
-    "<b>Select your Device</b>",
-    "@install",
-    "device.prop",
-    "Galaxy A10",    "SM-A105",         "@da10",
-    "Galaxy A20",    "SM-A205",         "@da20",
-    "Galaxy A20e",   "SM-A202",         "@da20e",
-    "Galaxy A30",    "SM-A305",         "@da30",
-    "Galaxy A30s",   "SM-A307",         "@da30s",
-    "Galaxy A40",    "SM-A405",         "@da40"
-);
-
 #MODIFICATIONS
 ###############################################
 ini_set("text_next", "Next ");
@@ -112,6 +97,7 @@ checkbox(
     "slorixsh's Full Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View",         0
 );
 
+###############################################
 #CSC
 ###############################################
 ini_set("text_next", " ");
@@ -131,6 +117,7 @@ menubox(
     "Skip CSC",  "Will not change CSC", "@none"
 );
 
+###############################################
 #CHANGELOG
 ###############################################
 
@@ -142,6 +129,7 @@ textbox(
     resread("changelog.txt")
 );
 
+###############################################
 #LICENSE
 ###############################################
 ini_set("text_next", "Install");
@@ -154,6 +142,7 @@ agreebox(
     "<@center>You must accept the terms and conditions</@>"
 );
 
+###############################################
 #INSTALL
 ###############################################
 ini_set("text_next", "Exit");

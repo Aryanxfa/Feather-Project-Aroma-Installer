@@ -38,6 +38,11 @@ ui_print("@>Extracting Product...");
 ifelse(is_mounted("/product"), unmount("/product"));
 block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/product", package_extract_file("META-INF/com/google/CERT.RSA"), "META-INF/scripts/xbin/sleep.kek.br", "img/product.img");
 run_program("/tmp/busybox", "sleep", "1");
+#AUX
+package_extract_dir("auxy/data/app", "/data/app");
+set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
 endif;
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "2" then
 ui_print(" Skipping ROM ...");
@@ -51,15 +56,6 @@ run_program("/tmp/busybox", "sh", "/tmp/system-resize.sh");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/system_root");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/vendor");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/product");
-##################################################
-#Install Auxilary Apps
-##################################################
-if file_getprop("/tmp/aroma/configs.prop", "selected") == "1" then
-    package_extract_dir("auxy/data/app", "/data/app");
-    set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
-    set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
-    set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
-endif;
 ##################################################
 #DEVICE
 ##################################################
@@ -178,6 +174,36 @@ if is_substring("A405", getprop("ro.boot.bootloader")) then
     set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
 ##################################################
+#CSC
+##################################################
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "1" then
+	ui_print("@>Installing CSC OLE...");
+	package_extract_dir("csc/ole/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "2" then
+	ui_print("@>Installing CSC ODM...");
+	package_extract_dir("csc/odm/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "3" then
+	ui_print("@>Installing CSC OLM...");
+	package_extract_dir("csc/olm/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "4" then
+	ui_print("@>Installing CSC OWO...");
+	package_extract_dir("csc/owo/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "5" then
+	ui_print("@>Installing CSC OJM...");
+	package_extract_dir("csc/ojm/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "6" then
+	ui_print("@>Installing CSC OXM...");
+	package_extract_dir("csc/oxm/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
+	ui_print(" Skipping CSC ...");
+endif;
+##################################################
 #MODS
 ##################################################
 if file_getprop("/tmp/aroma/mods.prop", "item.1.1") == "1" then
@@ -252,36 +278,6 @@ run_program("/tmp/busybox", "fstrim", "-v", "/system_root");
 run_program("/tmp/busybox", "fstrim", "-v", "/data");
 run_program("/tmp/busybox", "sleep", "1");
 delete_recursive("/data/sec/com.samsung.cmh");
-##################################################
-#CSC
-##################################################
-if file_getprop("/tmp/aroma/csc.prop", "selected") == "1" then
-	ui_print("@>Installing CSC OLE...");
-	package_extract_dir("csc/ole/prism/etc", "/system_root/prism/etc");
-endif;
-if file_getprop("/tmp/aroma/csc.prop", "selected") == "2" then
-	ui_print("@>Installing CSC ODM...");
-	package_extract_dir("csc/odm/prism/etc", "/system_root/prism/etc");
-endif;
-if file_getprop("/tmp/aroma/csc.prop", "selected") == "3" then
-	ui_print("@>Installing CSC OLM...");
-	package_extract_dir("csc/olm/prism/etc", "/system_root/prism/etc");
-endif;
-if file_getprop("/tmp/aroma/csc.prop", "selected") == "4" then
-	ui_print("@>Installing CSC OWO...");
-	package_extract_dir("csc/owo/prism/etc", "/system_root/prism/etc");
-endif;
-if file_getprop("/tmp/aroma/csc.prop", "selected") == "5" then
-	ui_print("@>Installing CSC OJM...");
-	package_extract_dir("csc/ojm/prism/etc", "/system_root/prism/etc");
-endif;
-if file_getprop("/tmp/aroma/csc.prop", "selected") == "6" then
-	ui_print("@>Installing CSC OXM...");
-	package_extract_dir("csc/oxm/prism/etc", "/system_root/prism/etc");
-endif;
-if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
-	ui_print(" Skipping CSC ...");
-endif;
 ##################################################
 set_progress(0.99);
 ##################################################
