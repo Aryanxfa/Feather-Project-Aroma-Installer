@@ -178,6 +178,35 @@ run_program("/tmp/busybox", "fstrim", "-v", "/system_root");
 run_program("/tmp/busybox", "fstrim", "-v", "/data");
 run_program("/tmp/busybox", "sleep", "1");
 delete_recursive("/data/sec/com.samsung.cmh");
+#CSC
+##################################################
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "1" then
+	ui_print("@>Installing CSC OLE...");
+	package_extract_dir("csc/ole/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "2" then
+	ui_print("@>Installing CSC ODM...");
+	package_extract_dir("csc/odm/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "3" then
+	ui_print("@>Installing CSC OLM...");
+	package_extract_dir("csc/olm/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "4" then
+	ui_print("@>Installing CSC OWO...");
+	package_extract_dir("csc/owo/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "5" then
+	ui_print("@>Installing CSC OJM...");
+	package_extract_dir("csc/ojm/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "6" then
+	ui_print("@>Installing CSC OXM...");
+	package_extract_dir("csc/oxm/prism/etc", "/system_root/prism/etc");
+endif;
+if file_getprop("/tmp/aroma/csc.prop", "selected") == "7" then
+	ui_print(" Skipping CSC ...");
+endif;
 #Install Auxilary Apps
 ##################################################
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "1" then
