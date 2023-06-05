@@ -250,23 +250,21 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.9") == "1" then
 	ui_print("@>Light LMK...");
 	run_program("/tmp/busybox","sh","/tmp/tolightlmk.sh");
 endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.10") == "1" then
-	ui_print("@>Debloating with Kudret's Easy List...");
+##################################################
+#DEBLOAT
+##################################################
+if file_getprop("/tmp/aroma/debloat.prop", "selected") == "2" then
+	ui_print("@>Debloating with Light Mode...");
 	package_extract_file("debloat/easy", "tmp/dblist");
 	run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.11") == "1" then
-	ui_print("@>Debloating with Kudret's Mid List...");
+if file_getprop("/tmp/aroma/debloat.prop", "selected") == "3" then
+	ui_print("@>Debloating with Moderate Mode...");
 	package_extract_file("debloat/mid", "tmp/dblist");
 	run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.12") == "1" then
-	ui_print("@>Debloating with Kudret's Hard List...");
-	package_extract_file("debloat/hard", "tmp/dblist");
-	run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
-endif;
-if file_getprop("/tmp/aroma/mods.prop", "item.1.13") == "1" then
-	ui_print("@>Debloating with slorixsh's Full List...");
+if file_getprop("/tmp/aroma/debloat.prop", "selected") == "4" then
+	ui_print("@>Debloating with Heavy Mode...");
 	package_extract_file("debloat/full", "tmp/dblist");
 	run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;

@@ -90,11 +90,24 @@ checkbox(
     "Remove Knox Apps",            "Removes the Knox apps for Knox Framework support",           1,
     "Remove NFC",                  "Removes the NFC support",                                    0,
     "Standard LMK",                "Standard LMK for Fluidity and Responsive UI",                0,
-    "Light LMK",                   "Light the LMK and allows heavy Multi-tasking",               0,
-    "Kudret's Easy Debloat",       "Removes Share, Bixby, Switch, AR, Free, Magnifier, Media control",     0,
-    "Kudret's Mid Debloat",        "Removes Above all and Game tools",                           0,
-    "Kudret's Hard Debloat",       "Removes Above all and Dex, Edge Panel, Dual Apps, VoWiFi",   0,
-    "slorixsh's Full Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View",         0
+    "Light LMK",                   "Lighten the LMK and allows heavy Multi-tasking",             0
+);
+
+###############################################
+#DEBLOAT
+###############################################
+ini_set("text_next", " ");
+ini_set("icon_next", "@none");
+menubox(
+    "",
+    "<b>Select your Preferred Debloat</b>",
+    "@debloat",
+    "debloat.prop",
+
+    "NO DEBLOAT",        "Recommended for New Users, Least bugs",                              "@none",
+    "Light Debloat",     "Removes Share, Bixby, Switch, AR, Free, Magnifier, Media control",   "@none",
+    "Moderate Debloat",  "Removes Above all and Dex, Edge Panel, Dual Apps, VoWiFi",           "@none",
+    "Heavy Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View", "@none"
 );
 
 ###############################################
