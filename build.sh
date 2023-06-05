@@ -21,7 +21,7 @@ if [[ $? -ne 0 ]]; then
 fi
 
 # Pull overlays
-mkdir device/*/overlay/
+mkdir device/*/overlay/ 2>/dev/null
 cp ../FP_overlay/a10/framework-res__auto_generated_rro_vendor.apk device/a10/overlay/
 cp ../FP_overlay/a20/framework-res__auto_generated_rro_vendor.apk device/a20/overlay/
 cp ../FP_overlay/a20e/framework-res__auto_generated_rro_vendor.apk device/a20e/overlay/
@@ -30,4 +30,9 @@ cp ../FP_overlay/a30s/framework-res__auto_generated_rro_vendor.apk device/a30s/o
 cp ../FP_overlay/a40/framework-res__auto_generated_rro_vendor.apk device/a40/overlay/
 
 rm -f $1
-zip -v -r $1 META-INF/com META-INF/scripts/bin mods kernel img device auxy csc debloat featherproject.keys META-INF/scripts/xbin
+lowercase_arg="${1,,}"
+if [[ "$lowercase_arg" == *"patch"* ]]; then
+    zip -v -r $1 META-INF/com META-INF/scripts/bin mods kernel img device csc debloat featherproject.keys auxy/data/app/.set META-INF/scripts/xbin/mounts.kek.br
+else
+    zip -v -r $1 META-INF/com META-INF/scripts/bin mods kernel img device auxy csc debloat featherproject.keys META-INF/scripts/xbin
+fi
