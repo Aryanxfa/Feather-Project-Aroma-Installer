@@ -66,7 +66,8 @@ menubox(
     "@install",
     "configs.prop",
 
-    "Install + Configure",   "This will Install the Rom and also Allow you to Configure",    "@none"
+    "Install + Configure",   "This will Install the Rom and also Allow you to Configure",    "@none",
+    "Configure Only",        "This will Not install Rom just Allow you to Add/Remove Apps, Once Debloated can't be added back",         "@none"
 );
 
 #DEVICE
