@@ -87,7 +87,7 @@ checkbox(
     "Dual Speaker",                "Use Earpice as a Secondary Speaker",                         0,
     "Single Speaker",              "Removes the Dual Speaker mod. Reverts the above.",           0,
     "Disable Extended Brightness", "Removes Extended Brightness Support",                        0,
-    "Remove Knox Apps",            "Removes the Knox apps for Knox Framework support",           1,
+    "Remove Knox Apps",            "Removes the Knox apps for Knox Framework support",           0,
     "Remove NFC",                  "Removes the NFC support",                                    0,
     "Standard LMK",                "Standard LMK for Fluidity and Responsive UI",                0,
     "Light LMK",                   "Lighten the LMK and allows heavy Multi-tasking",             0
