@@ -109,6 +109,7 @@ if is_substring("A305", getprop("ro.boot.bootloader")) then
     delete_recursive("/vendor/firmware/setfile_imx258.bin");
     delete_recursive("/vendor/firmware/setfile_sr556.bin");
     delete_recursive("/system_root/system/app/WifiRROverlayAppSBS");
+    delete_recursive("/vendor/tee");
     package_extract_dir("device/a30/firmware", "/vendor/firmware");
     package_extract_dir("device/a30/lib/", "/vendor/lib/");
     package_extract_dir("device/a30/lib64/", "/vendor/lib64/");
@@ -136,6 +137,7 @@ if is_substring("A307", getprop("ro.boot.bootloader")) then
     delete_recursive("/vendor/firmware/setfile_imx258.bin");
     delete_recursive("/vendor/firmware/setfile_sr556.bin");
     delete_recursive("/system_root/system/app/WifiRROverlayAppSBS");
+    delete_recursive("/vendor/tee");
     package_extract_dir("device/a30s/firmware", "/vendor/firmware");
     package_extract_dir("device/a30s/lib/", "/vendor/lib/");
     package_extract_dir("device/a30s/lib64/", "/vendor/lib64/");
@@ -158,6 +160,7 @@ if is_substring("A405", getprop("ro.boot.bootloader")) then
     delete_recursive("/vendor/firmware/setfile_imx258.bin");
     delete_recursive("/vendor/firmware/setfile_sr556.bin");
     delete_recursive("/system_root/system/app/WifiRROverlayAppSBS");
+    delete_recursive("/vendor/tee");
     package_extract_dir("device/a40/firmware", "/vendor/firmware");
     package_extract_dir("device/a40/lib/", "/vendor/lib/");
     package_extract_dir("device/a40/lib64/", "/vendor/lib64/");
