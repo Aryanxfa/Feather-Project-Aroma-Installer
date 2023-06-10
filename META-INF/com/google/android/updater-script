@@ -87,6 +87,7 @@ endif;
 if is_substring("A205", getprop("ro.boot.bootloader")) then
     ui_print("@>Detected Device: Galaxy A20");
     delete_recursive("/vendor/etc/permissions/android.hardware.sensor.light.xml");
+    run_program("/tmp/busybox", "sed", "-i", "s/powerkey/rear/g", "/system_root/system/etc/floating_feature.xml");
     package_extract_file("device/a20/camera-feature.xml", "/system_root/system/cameradata/camera-feature.xml");
     package_extract_file("device/a20/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
 endif;
@@ -99,6 +100,7 @@ if is_substring("A202", getprop("ro.boot.bootloader")) then
     package_extract_dir("device/a20e/lib64/", "/vendor/lib64/");
     package_extract_file("device/a20e/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
     package_extract_file("device/a20e/camera-feature.xml", "/system_root/system/cameradata/camera-feature.xml");
+    run_program("/tmp/busybox", "sed", "-i", "s/powerkey/rear/g", "/system_root/system/etc/floating_feature.xml");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
     set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 endif;
