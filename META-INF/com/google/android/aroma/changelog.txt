@@ -160,7 +160,6 @@ Changelog v4.0.1
 Changelog v5.0
 - Base updated to S901BXXU4CWE1 
 - Security patch June 2023
-- Added kernel Eureka R12
 - exy7884 revert tee changes
 - Fix AOD for A30 and A40
 - Fix fingerprint for A30 and A40
