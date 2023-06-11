@@ -117,7 +117,7 @@ ini_set("icon_next", "@none");
 menubox(
     "",
     "<b>Select your Preferred Debloat</b>",
-    "@debloat",
+    "@nuke",
     "debloat.prop",
 
     "NO DEBLOAT",        "Recommended for New Users, Least bugs",                              "@none",
