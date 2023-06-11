@@ -135,3 +135,34 @@ Changelog v3.1
 Changelog v3.2
 - Fixed Secure Folder issue
 - Fix Routines issue
+
+Changelog v4.0
+- Base updated to S901BXXS4CWD3
+- Security patch 1 May 2023
+- Lmk tuned
+- Graphics tuned
+- Audio re-tuned
+- AppLock fixes
+- Corners fixed
+- Extra Dim Enabled
+- More Stability fixes
+- Aroma internal updates
+- Wifi connectivity improved
+- Cellular connectivity improved
+
+Changelog v4.0.1
+- Fixes for Bixby
+- Aroma installer Overhaul
+- Major Vendor Overhaul
+- Added support for Exynos 7904 devices
+- Camera fixups for all devices
+
+Changelog v5.0
+- Base updated to S901BXXU4CWE1 
+- Security patch June 2023
+- Added kernel Eureka R12
+- exy7884 revert tee changes
+- Fix AOD for A30 and A40
+- Fix fingerprint for A30 and A40
+- Add option to enable or disable live blurs
+- Add option to enable multi user
