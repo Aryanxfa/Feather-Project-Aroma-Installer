@@ -94,6 +94,22 @@ checkbox(
 );
 
 ###############################################
+#ROM MODIFICATIONS
+###############################################
+ini_set("text_next", "Next ");
+checkbox(
+    " ",
+    "<b>Selected your preferred ROM Modifications to be applied</b>",
+    "@magk",
+    "mods2.prop",
+
+    "Choose Modifications to be Applied:",                "",                                    2,
+    "Enable Multi User",           "Enables MultiUser Support",                                  0,
+    "Enable Live Blur",            "Enables Live Blur in Launcher and apps (default)",           0,
+    "Disable Live Blur",           "Disables Live Blur in Launcher and apps",                    0
+);
+
+###############################################
 #DEBLOAT
 ###############################################
 ini_set("text_next", " ");

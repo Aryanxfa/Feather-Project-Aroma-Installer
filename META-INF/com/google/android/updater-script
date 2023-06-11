@@ -272,6 +272,24 @@ if file_getprop("/tmp/aroma/mods.prop", "item.1.9") == "1" then
 	run_program("/tmp/busybox","sh","/tmp/tolightlmk.sh");
 endif;
 ##################################################
+#ROM MODS
+##################################################
+if file_getprop("/tmp/aroma/mods2.prop", "item.1.1") == "1" then
+    ui_print("@>Enabling MultiUser Support...");
+    run_program("/tmp/busybox", "sed", "-i", "$a\fw.max_users=30", "/system_root/system/build.prop");
+    run_program("/tmp/busybox", "sed", "-i", "$a\fw.show_multiuserui=1", "/system_root/system/build.prop");
+    run_program("/tmp/busybox", "sed", "-i", "$a\fw.show_hidden_users=1", "/system_root/system/build.prop");
+    run_program("/tmp/busybox", "sed", "-i", "$a\fw.power_user_switcher=1", "/system_root/system/build.prop");
+endif;
+if file_getprop("/tmp/aroma/mods2.prop", "item.1.2") == "1" then
+    ui_print("@>Enabling Live Blur");
+    run_program("/tmp/busybox", "sed", "-i", "s/FLAG>FALSE/FLAG>TRUE/g", "/system_root/system/etc/floating_feature.xml");
+endif;
+if file_getprop("/tmp/aroma/mods2.prop", "item.1.3") == "1" then
+    ui_print("@>Disabling Live Blur...");
+    run_program("/tmp/busybox", "sed", "-i", "s/FLAG>TRUE/FLAG>FALSE/g", "/system_root/system/etc/floating_feature.xml");
+endif;
+##################################################
 #DEBLOAT
 ##################################################
 if file_getprop("/tmp/aroma/debloat.prop", "selected") == "2" then
