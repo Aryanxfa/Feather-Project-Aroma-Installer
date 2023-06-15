@@ -29,6 +29,13 @@ cp ../FP_overlay/a30/framework-res__auto_generated_rro_vendor.apk device/a30/ove
 cp ../FP_overlay/a30s/framework-res__auto_generated_rro_vendor.apk device/a30s/overlay/
 cp ../FP_overlay/a40/framework-res__auto_generated_rro_vendor.apk device/a40/overlay/
 
+cp ../FP_kernels/a10/* device/a10/
+cp ../FP_kernels/a20/* device/a20/
+cp ../FP_kernels/a20e/* device/a20e/
+cp ../FP_kernels/a30/* device/a30/
+cp ../FP_kernels/a30s/* device/a30s/
+cp ../FP_kernels/a40/* device/a40/
+
 rm -f $1
 lowercase_arg="${1,,}"
 if [[ "$lowercase_arg" == *"patch"* ]]; then
