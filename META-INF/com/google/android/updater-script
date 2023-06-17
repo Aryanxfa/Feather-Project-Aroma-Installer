@@ -90,6 +90,8 @@ if is_substring("A105", getprop("ro.boot.bootloader")) then
     package_extract_file("device/a10/camera-feature.xml", "/system_root/system/cameradata/camera-feature.xml");
     set_metadata("/vendor/bin/hw/android.hardware.usb@1.0-service.a10", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:hal_usb_default_exec:s0");
     set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
+    package_extract_file("device/a10/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+    package_extract_file("device/a10/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 endif;
 if is_substring("A205", getprop("ro.boot.bootloader")) then
     ui_print("@>Detected Device: Galaxy A20");
@@ -97,6 +99,8 @@ if is_substring("A205", getprop("ro.boot.bootloader")) then
     run_program("/tmp/busybox", "sed", "-i", "s/powerkey/rear/g", "/system_root/system/etc/floating_feature.xml");
     package_extract_file("device/a20/camera-feature.xml", "/system_root/system/cameradata/camera-feature.xml");
     package_extract_file("device/a20/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
+    package_extract_file("device/a20/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+    package_extract_file("device/a20/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 endif;
 if is_substring("A202", getprop("ro.boot.bootloader")) then
     ui_print("@>Detected Device: Galaxy A20e");
@@ -110,6 +114,8 @@ if is_substring("A202", getprop("ro.boot.bootloader")) then
     run_program("/tmp/busybox", "sed", "-i", "s/powerkey/rear/g", "/system_root/system/etc/floating_feature.xml");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
     set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
+    package_extract_file("device/a20e/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+    package_extract_file("device/a20e/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 endif;
 if is_substring("A305", getprop("ro.boot.bootloader")) then
     ui_print("@>Detected Device: Galaxy A30");
@@ -137,6 +143,8 @@ if is_substring("A305", getprop("ro.boot.bootloader")) then
     set_metadata_recursive("/vendor/tee/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
     set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
+    package_extract_file("device/a30/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+    package_extract_file("device/a30/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
     package_extract_dir("auxy/data/app", "/system_root/system/app");
 endif;
 if is_substring("A307", getprop("ro.boot.bootloader")) then
@@ -161,6 +169,8 @@ if is_substring("A307", getprop("ro.boot.bootloader")) then
     set_metadata_recursive("/vendor/tee/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
     set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
+    package_extract_file("device/a30s/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+    package_extract_file("device/a30s/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
     package_extract_dir("auxy/data/app", "/system_root/system/app");
 endif;
 if is_substring("A405", getprop("ro.boot.bootloader")) then
@@ -184,6 +194,8 @@ if is_substring("A405", getprop("ro.boot.bootloader")) then
     set_metadata_recursive("/vendor/tee/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
     set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
     set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
+    package_extract_file("device/a40/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+    package_extract_file("device/a40/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
     package_extract_dir("auxy/data/app", "/system_root/system/app");
 endif;
 ##################################################
