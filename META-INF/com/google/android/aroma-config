@@ -60,6 +60,7 @@ viewbox(
 #COMPATIBILITY CHECK
 ###############################################
 pleasewait("Checking Compatibility...");
+restotmp("tools/busybox", "busybox");
 
 setvar(
     "resexec_retstatus",
