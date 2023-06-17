@@ -63,6 +63,12 @@ else
 fi
 
 echo " "
+if [ "$system_size" -ge 4820133120 ]; then
+    append_to_file "auxy_to_system=1"
+    echo "    -> <#00ff00>System is 4.5GB+</#>"
+else
+    append_to_file "auxy_to_system=0"
+fi
 #400mb size 419430400
 if [ "$product_size" -ge 419430300 ]; then
     append_to_file "auxy_to_product=1"
