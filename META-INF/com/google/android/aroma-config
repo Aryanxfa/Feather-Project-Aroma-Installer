@@ -60,19 +60,22 @@ viewbox(
 #COMPATIBILITY CHECK
 ###############################################
 pleasewait("Checking Compatibility...");
-  
+
 setvar(
     "resexec_retstatus",
     resexec("tools/compatibility_check.sh")
 );
+if(getvar("resexec_retstatus")!=1) then
+    ini_set("text_next", "Exit");
+endif;
 textbox(
     "",
     "<b>Compatibility Check: </b>\n",
     "@magk",
-    "\n\n"+    
+    "\n\n"+
     getvar("exec_buffer")+
     "\n\n"+
-    
+
     if(getvar("resexec_retstatus")==1) then
         "<b><#00ff00>   DEVICE COMPATIBLE</#>"+
         "\n   Press Next to continue..."
@@ -83,8 +86,19 @@ textbox(
             "<b><#ff0000>  UNSUPPORTED RECOVERY</#>"
         endif;
     endif;
-    
 );
+if(getvar("resexec_retstatus")!=1) then
+    if
+	  confirm(
+		  "Exit",
+		  "Are you sure want to exit the Installer?",
+		  "@alert"
+	  )=="yes"
+	then
+	  exit("");
+	endif;
+    back("2");
+endif;
 ###############################################
 #INSTALLATION TYPE
 ###############################################
