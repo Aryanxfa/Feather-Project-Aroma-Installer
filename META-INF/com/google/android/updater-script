@@ -50,6 +50,7 @@ set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 07
 set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
 set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
 endif;
+endif;
 if file_getprop("/tmp/aroma/configs.prop", "selected") == "2" then
 ui_print(" Skipping ROM ...");
 endif;
