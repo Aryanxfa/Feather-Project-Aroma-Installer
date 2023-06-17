@@ -30,21 +30,21 @@ if [ "$system_size" -ge 4320133120 ]; then
     append_to_file "system_compatible=1"
 else
     append_to_file "system_compatible=0"
-    echo "    -> System is Insufficient"
+    echo "    -> <#ff0000>System is Insufficient</#>"
     exit 55
 fi
 if [ "$vendor_size" -ge 545259520 ]; then
     append_to_file "vendor_compatible=1"
 else
     append_to_file "vendor_compatible=0"
-    echo "    -> Vendor is Insufficient"
+    echo "    -> <#ff0000>Vendor is Insufficient</#>"
     exit 55
 fi
 if [ "$product_size" -ge 209715200 ]; then
     append_to_file "product_compatible=1"
 else
     append_to_file "product_compatible=0"
-    echo "    -> Product is Insufficient"
+    echo "    -> <#ff0000>Product is Insufficient</#>"
     exit 55
 fi
 
