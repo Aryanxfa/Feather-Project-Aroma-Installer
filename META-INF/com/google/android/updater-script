@@ -39,6 +39,12 @@ ifelse(is_mounted("/product"), unmount("/product"));
 block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/product", package_extract_file("META-INF/com/google/CERT.RSA"), "META-INF/scripts/xbin/sleep.kek.br", "img/product.img");
 run_program("/tmp/busybox", "sleep", "1");
 #AUX
+if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "1" then
+package_extract_dir("auxy/data/app/WebViewGoogle", "/product/app/WebViewGoogle");
+package_extract_dir("auxy/data/app/TrichromeLibrary", "/product/app/TrichromeLibrary");
+package_extract_dir("auxy/data/app/Chrome", "/data/app/Chrome");
+endif;
+if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "0" then
 package_extract_dir("auxy/data/app", "/data/app");
 set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
 set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
