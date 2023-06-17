@@ -72,12 +72,18 @@ textbox(
     "\n\n"+    
     getvar("exec_buffer")+
     "\n\n"+
-    if(getvar("resexec_retstatus")==55) then
-        "<b>  DEVICE INCOMPATIBLE"
+    
+    if(getvar("resexec_retstatus")==1) then
+        "<b><#00ff00>   DEVICE COMPATIBLE</#>"+
+        "\n   Press Next to continue..."
     else
-        "<b>  DEVICE COMPATIBLE"+
-        "\n\n\n\n  Press Next to continue..."
+        if(getvar("resexec_retstatus")==55) then
+            "<b><#ff0000>  DEVICE INCOMPATIBLE</#>"
+        else
+            "<b><#ff0000>  UNSUPPORTED RECOVERY</#>"
+        endif;
     endif;
+    
 );
 ###############################################
 #INSTALLATION TYPE

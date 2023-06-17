@@ -6,8 +6,22 @@ append_to_file() {
     local content="$1"
     echo "$content" >>"$configfile"
 }
+is_substring() {
+    local substring=$1
+    local string=$2
+
+    case "$string" in
+    *"$substring"*) return 0 ;;
+    *) return 1 ;;
+    esac
+}
+
 rm -f $configfile
 touch $configfile
+
+supported_list=("A105" "A205" "A202" "A305" "A307" "A405")
+bootloader=$(getprop ro.boot.bootloader)
+device_supported=0
 
 system_size=$(blockdev --getsize64 /dev/block/by-name/system)
 vendor_size=$(blockdev --getsize64 /dev/block/by-name/vendor)
@@ -48,11 +62,27 @@ else
     exit 55
 fi
 
+echo " "
 #400mb size 419430400
 if [ "$product_size" -ge 419430300 ]; then
     append_to_file "auxy_to_product=1"
+    echo "    -> <#00ff00>Product is 300MB+</#>"
 else
     append_to_file "auxy_to_product=0"
 fi
 
+for device in "${supported_list[@]}"; do
+    # Check if the command output matches the current name as a substring
+    if is_substring "$device" "$bootloader" ]]; then
+        echo "    -> <#00ff00>Bootloader  : $bootloader </#>"
+        echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
+        device_supported="1"
+    fi
+done
+
+if [ "$device_supported" == "0" ]; then
+    echo "    -> Bootloader  : $bootloader"
+    echo "    -> <#ff0000>UNKNOWN DEVICE</#>"
+    exit 55
+fi
 exit 1
