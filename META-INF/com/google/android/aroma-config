@@ -57,6 +57,29 @@ viewbox(
 );
 
 ###############################################
+#COMPATIBILITY CHECK
+###############################################
+pleasewait("Checking Compatibility...");
+  
+setvar(
+    "resexec_retstatus",
+    resexec("tools/compatibility_check.sh")
+);
+textbox(
+    "",
+    "<b>Compatibility Check: </b>\n",
+    "@magk",
+    "\n\n"+    
+    getvar("exec_buffer")+
+    "\n\n"+
+    if(getvar("resexec_retstatus")==55) then
+        "<b>  DEVICE INCOMPATIBLE"
+    else
+        "<b>  DEVICE COMPATIBLE"+
+        "\n\n\n\n  Press Next to continue..."
+    endif;
+);
+###############################################
 #INSTALLATION TYPE
 ###############################################
 ini_set("text_next", " ");
