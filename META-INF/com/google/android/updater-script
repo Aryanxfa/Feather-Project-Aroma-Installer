@@ -260,6 +260,11 @@ if file_getprop("/tmp/aroma/debloat.prop", "selected") == "4" then
     package_extract_file("debloat/full", "tmp/dblist");
     run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
+if file_getprop("/tmp/aroma/debloat.prop", "selected") == "5" then
+    ui_print("@>Debloating with Lain's List...");
+    package_extract_file("debloat/lain", "tmp/dblist");
+    run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+endif;
 ##################################################
 set_progress(0.96);
 ##################################################
