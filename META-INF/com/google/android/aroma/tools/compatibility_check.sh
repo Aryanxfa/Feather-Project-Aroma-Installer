@@ -1,6 +1,7 @@
 #!/sbin/sh
 
 configfile=/tmp/aroma/compatible.prop
+device_supported=0
 
 append_to_file() {
     local content="$1"
@@ -23,7 +24,6 @@ supported_list=("A105" "A205" "A202" "A305" "A307" "A405")
 supported_list_alt=("a10" "a20" "a20e" "a30" "a30s" "a40")
 
 bootloader=$(getprop ro.boot.bootloader)
-device_supported=0
 
 system_size=$(blockdev --getsize64 /dev/block/by-name/system)
 vendor_size=$(blockdev --getsize64 /dev/block/by-name/vendor)
