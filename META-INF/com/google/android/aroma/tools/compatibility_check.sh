@@ -89,6 +89,10 @@ for index in "${!supported_list[@]}"; do
         echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
         append_to_file "device_id=$device"
         append_to_file "device_id_alt=$device_alt"
+        if ["$index" -ge 3]; then
+            append_to_file "is_7904=1"
+            echo "    -> <#00ff00>Chipset is : Exynos 7904 </#>"
+        fi
         device_supported="1"
         break
     fi
