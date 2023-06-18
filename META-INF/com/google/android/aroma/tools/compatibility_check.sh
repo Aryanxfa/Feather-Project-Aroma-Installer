@@ -20,6 +20,8 @@ rm -f $configfile
 touch $configfile
 
 supported_list=("A105" "A205" "A202" "A305" "A307" "A405")
+supported_list_alt=("a10" "a20" "a20e" "a30" "a30s" "a40")
+
 bootloader=$(getprop ro.boot.bootloader)
 device_supported=0
 
@@ -78,12 +80,15 @@ else
     append_to_file "auxy_to_product=0"
 fi
 
-for device in "${supported_list[@]}"; do
-    # Check if the command output matches the current name as a substring
+for index in "${!supported_list[@]}"; do
+    device=${supported_list[index]}
+    device_alt=${supported_list_alt[index]}
+
     if is_substring "$device" "$bootloader" ]]; then
         echo "    -> <#00ff00>Bootloader  : $bootloader </#>"
         echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
         append_to_file "device_id=$device"
+        append_to_file "device_id_alt=$device_alt"
         device_supported="1"
         break
     fi
