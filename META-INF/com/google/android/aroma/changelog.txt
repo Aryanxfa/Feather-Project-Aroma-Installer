@@ -173,3 +173,6 @@ Changelog v5.1
 - A30s Nfc fixes
 - Product reduced to 200mb
 - Fix Setup Wizard Login issues
+- exy7904: Update wifi driver @BJCSilva
+- Add option for Lian Debloat
+- Add option to skip kernel install
