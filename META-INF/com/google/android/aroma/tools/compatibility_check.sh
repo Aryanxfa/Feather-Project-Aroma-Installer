@@ -27,7 +27,8 @@ system_size=$(blockdev --getsize64 /dev/block/by-name/system)
 vendor_size=$(blockdev --getsize64 /dev/block/by-name/vendor)
 product_size=$(blockdev --getsize64 /dev/block/by-name/product)
 
-system_size_mb=$(echo "scale=2; $system_size / (1024 * 1024 * 1024)" | bc)
+system_size_mb=$(echo $system_size | cut -c1-7)
+system_size_mb=$(($system_size_mb / 1024))
 vendor_size_mb=$(($vendor_size / 1024 / 1024))
 product_size_mb=$(($product_size / 1024 / 1024))
 
@@ -36,7 +37,7 @@ append_to_file "vendor_size=$vendor_size"
 append_to_file "product_size=$product_size"
 
 echo "<b>COMPUTING SPACE REQUIREMENTS :-</b>"
-echo "    -> System : $system_size_mb GB"
+echo "    -> System : $system_size_mb MB"
 echo "    -> Vendor : $vendor_size_mb MB"
 echo "    -> Product : $product_size_mb MB"
 
@@ -82,7 +83,9 @@ for device in "${supported_list[@]}"; do
     if is_substring "$device" "$bootloader" ]]; then
         echo "    -> <#00ff00>Bootloader  : $bootloader </#>"
         echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
+        append_to_file "device_id=$device"
         device_supported="1"
+        break
     fi
 done
 
