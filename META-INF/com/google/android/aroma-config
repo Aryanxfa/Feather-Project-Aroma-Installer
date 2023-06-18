@@ -80,9 +80,9 @@ textbox(
         "<b><#00ff00>   DEVICE COMPATIBLE</#>"+
         "\n   Press Next to continue..."
     else
-        "<b><#ff0000>  DEVICE INCOMPATIBLE</#>\n"+
-        "<b><#ff0000>           OR        </#>"+
-        "<b><#ff0000>  UNSUPPORTED RECOVERY</#>"
+        "<b><#ff0000>   DEVICE INCOMPATIBLE</#>\n"+
+        "<b><#ff0000>            OR        </#>\n"+
+        "<b><#ff0000>   UNSUPPORTED RECOVERY</#>"
     endif;
 );
 if(getvar("resexec_retstatus")!=1) then
