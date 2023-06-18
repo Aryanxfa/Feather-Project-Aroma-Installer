@@ -101,7 +101,7 @@ for index in "${!supported_list[@]}"; do
     device_alt=${supported_list_alt[index]}
 
     if is_substring "$device" "$bootloader"; then
-        echo "    -> <#00ff00>Bootloader  : $bootloader </#>"
+        echo "    -> Bootloader  : $bootloader"
         echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
         append_to_file "device_id=$device"
         append_to_file "device_id_alt=$device_alt"
