@@ -28,7 +28,7 @@ Feather Project is designed to support the following devices:
    - Camera: 13MP (rear), 5MP (front)
 
 2. Samsung Galaxy A20
-   ![Samsung Galaxy A20](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a20e.jpg)
+   ![Samsung Galaxy A20](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a20.jpg)
    - Display: 6.4-inch Super AMOLED, 720 x 1560 pixels
    - Processor: Exynos 7884B
    - RAM: 3GB
@@ -46,7 +46,7 @@ Feather Project is designed to support the following devices:
    - Camera: 13MP (rear), 8MP (front)
 
 4. Samsung Galaxy A30
-   ![Samsung Galaxy A30]([a30_logo.png](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a30.jpg))
+   ![Samsung Galaxy A30](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a30.jpg)
    - Display: 6.4-inch Super AMOLED, 1080 x 2340 pixels
    - Processor: Exynos 7904
    - RAM: 3GB/4GB
@@ -64,7 +64,7 @@ Feather Project is designed to support the following devices:
    - Camera: 25MP (rear), 16MP (front)
 
 6. Samsung Galaxy A40
-   ![Samsung Galaxy A40](a40_logo.png)
+   ![Samsung Galaxy A40](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a40.jpg)
    - Display: 5.9-inch Super AMOLED, 1080 x 2340 pixels
    - Processor: Exynos 7904
    - RAM: 4GB
