@@ -3,3 +3,4 @@ system/*/*
 META-INF/scripts/xbin/*
 mods/keys/*
 device/*/overlay
+!/mods/magisk.zip
