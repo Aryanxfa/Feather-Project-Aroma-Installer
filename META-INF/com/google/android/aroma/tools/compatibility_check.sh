@@ -3,7 +3,7 @@
 configfile=/tmp/aroma/compatible.prop
 device_supported=0
 
-#Setup Busybox
+# Setup Busybox
 cp /tmp/aroma/busybox /tmp/busybox
 chmod 777 /tmp/busybox
 
@@ -29,6 +29,7 @@ supported_list_alt=("a10" "a20" "a20e" "a30" "a30s" "a40")
 
 bootloader=$(getprop ro.boot.bootloader)
 
+# Space Checks
 system_size=$(blockdev --getsize64 /dev/block/by-name/system)
 vendor_size=$(blockdev --getsize64 /dev/block/by-name/vendor)
 product_size=$(blockdev --getsize64 /dev/block/by-name/product)
@@ -69,19 +70,30 @@ else
     exit 55
 fi
 
-echo " "
 if [ "$system_size" -ge 4820133120 ]; then
     append_to_file "auxy_to_system=1"
     echo "    -> <#00ff00>System is 4.5GB+</#>"
 else
     append_to_file "auxy_to_system=0"
 fi
-#400mb size 419430400
+# 400mb size 419430400
 if [ "$product_size" -ge 419430300 ]; then
     append_to_file "auxy_to_product=1"
     echo "    -> <#00ff00>Product is 300MB+</#>"
 else
     append_to_file "auxy_to_product=0"
+fi
+
+echo " "
+echo "<b>DETECTING DEVICE :-</b>"
+# Device Checks
+if [ -z "$bootloader" ]; then
+    echo "Installer: Employing Alternative Detection Methods"
+    bootloader=$(/tmp/busybox sed -n 's/.*androidboot.bootloader=\([^[:space:]]*\).*/\1/p' /proc/cmdline)
+fi
+if [ -z "$bootloader" ]; then
+    echo "Installer: Harnessing Alternative Detection Strategies"
+    bootloader=$(/tmp/busybox sed -n 's/.*androidboot.em.model=\([^[:space:]]*\).*/\1/p' /proc/cmdline)
 fi
 
 for index in "${!supported_list[@]}"; do
