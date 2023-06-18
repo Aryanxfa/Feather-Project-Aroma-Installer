@@ -132,7 +132,8 @@ checkbox(
     "Remove Knox Apps",            "Removes the Knox apps for Knox Framework support",           0,
     "Remove NFC",                  "Removes the NFC support",                                    0,
     "Standard LMK",                "Standard LMK for Fluidity and Responsive UI",                0,
-    "Light LMK",                   "Lighten the LMK and allows heavy Multi-tasking",             0
+    "Light LMK",                   "Lighten the LMK and allows heavy Multi-tasking",             0,
+    "Skip Kernel",                 "Skips the kernel installs and Keeps existing kernel",        0
 );
 
 ###############################################
