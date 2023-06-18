@@ -19,6 +19,7 @@ Feather Project is an open-source project aimed at providing a seamless and cust
 Feather Project is designed to support the following devices:
 
 1. Samsung Galaxy A10
+
    ![Samsung Galaxy A10](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a10.jpg)
    - Display: 6.2-inch IPS LCD, 720 x 1520 pixels
    - Processor: Exynos 7884B
@@ -28,6 +29,7 @@ Feather Project is designed to support the following devices:
    - Camera: 13MP (rear), 5MP (front)
 
 2. Samsung Galaxy A20
+
    ![Samsung Galaxy A20](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a20.jpg)
    - Display: 6.4-inch Super AMOLED, 720 x 1560 pixels
    - Processor: Exynos 7884B
@@ -37,6 +39,7 @@ Feather Project is designed to support the following devices:
    - Camera: 13MP (rear), 8MP (front)
 
 3. Samsung Galaxy A20e
+   
    ![Samsung Galaxy A20e](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a20e.jpg)
    - Display: 5.8-inch IPS LCD, 720 x 1560 pixels
    - Processor: Exynos 7884B
@@ -46,6 +49,7 @@ Feather Project is designed to support the following devices:
    - Camera: 13MP (rear), 8MP (front)
 
 4. Samsung Galaxy A30
+   
    ![Samsung Galaxy A30](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a30.jpg)
    - Display: 6.4-inch Super AMOLED, 1080 x 2340 pixels
    - Processor: Exynos 7904
@@ -55,6 +59,7 @@ Feather Project is designed to support the following devices:
    - Camera: 16MP (rear), 16MP (front)
 
 5. Samsung Galaxy A30s
+   
    ![Samsung Galaxy A30s](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a30s.jpg)
    - Display: 6.4-inch Super AMOLED, 720 x 1560 pixels
    - Processor: Exynos 7904
@@ -64,6 +69,7 @@ Feather Project is designed to support the following devices:
    - Camera: 25MP (rear), 16MP (front)
 
 6. Samsung Galaxy A40
+   
    ![Samsung Galaxy A40](https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a40.jpg)
    - Display: 5.9-inch Super AMOLED, 1080 x 2340 pixels
    - Processor: Exynos 7904
@@ -77,10 +83,10 @@ Please note that the project is specifically tailored to work with Exynos 7884B 
 ## Installation
 To install Feather Project on your compatible device, follow the steps below:
 
-1. Download the latest release of Feather Project from the [Releases](https://github.com/yourusername/feather-project/releases) section of the GitHub repository.
+1. Download the latest release of Feather Project from the XDA/Telegram Links.
 2. Transfer the downloaded package to your device's internal storage or external SD card.
-3. Reboot your device into recovery mode. The exact method may vary depending on your device, but usually involves holding specific key combinations during boot-up (e.g., Volume Up + Power).
-4. Once in recovery mode, navigate to the "Install" or "Install ZIP" option using the volume keys, and select it using the power button.
+3. Reboot your device into recovery mode. With the specific key combinations of (Volume Up + Power) during boot-up.
+4. Once in recovery mode, navigate to the "Install" or "Install ZIP" option using the volume keys, and select it.
 5. Choose the Feather Project package that you transferred to your device in step 2.
 6. Follow the on-screen instructions provided by the Aroma installer to customize your installation preferences.
 7. Once the installation is complete, select the option to reboot your device.
@@ -98,7 +104,7 @@ Feather Project offers several features that enhance the installation and custom
 
 4. **Performance Optimization:** Feather Project includes various tweaks and optimizations to improve the performance of your device. It fine-tunes system parameters, manages resource allocation, and applies other optimizations to enhance overall speed, responsiveness, and efficiency.
 
-5. **Security Enhancements:** This project incorporates security-focused features to help protect your device and data. It provides options for enabling additional security measures such as encrypted storage, secure boot, and app permissions management, allowing you to have better control over your device's security posture.
+5. **Security Enhancements:** This project incorporates security-focused features to help protect your device and data. It provides options for enabling additional security measures such as app permissions management, allowing you to have better control over your device's security posture.
 
-6. **Regular Updates:** The Feather Project team is committed to providing timely updates to ensure compatibility with the latest Android versions, security patches, and bug fixes. Regular updates help keep your device up-to-date and provide a stable and reliable user experience.
+6. **Regular Updates:** The Feather Project team is committed to providing timely updates to ensure compatibility with the security patches, and bug fixes. Regular updates help keep your device up-to-date and provide a stable and reliable user experience.
 
