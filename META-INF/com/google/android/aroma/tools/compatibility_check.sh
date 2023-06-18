@@ -91,7 +91,10 @@ for index in "${!supported_list[@]}"; do
         append_to_file "device_id_alt=$device_alt"
         if [[ "$index" -ge 3 ]]; then
             append_to_file "is_7904=1"
-            echo "    -> <#00ff00>Chipset is : Exynos 7904 </#>"
+            echo "    -> <#00ff00>Chipset is  : Exynos 7904 </#>"
+        else
+            append_to_file "is_7904=0"
+            echo "    -> <#00ff00>Chipset is  : Exynos 7884B </#>"
         fi
         device_supported="1"
         break
