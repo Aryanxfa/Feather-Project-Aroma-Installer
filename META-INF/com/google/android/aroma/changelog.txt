@@ -169,6 +169,7 @@ Changelog v5.0
 Changelog v5.1
 - Introduce Compatibility checks
 - Added kernel Eureka R12
+- Added Magisk v26.1
 - Fixes for Text OCR
 - A30s Nfc fixes
 - Product reduced to 200mb
