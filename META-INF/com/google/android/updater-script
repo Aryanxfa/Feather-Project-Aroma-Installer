@@ -73,7 +73,7 @@ endif;
 ##################################################
 #DEVICE
 ##################################################
-if is_substring("A105", getprop("ro.boot.bootloader")) then
+if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A105" then
     ui_print("@>Detected Device: Galaxy A10");
     delete_recursive("/vendor/etc/init/android.hardware.usb@1.3-service.coral.rc");
     delete_recursive("/vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.coral.xml");
@@ -89,30 +89,30 @@ if is_substring("A105", getprop("ro.boot.bootloader")) then
     set_metadata_recursive("/vendor/etc/vintf/manifest/android.hardware.usb@1.0-service.a10.xml", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
     set_metadata_recursive("/vendor/etc/init/android.hardware.usb@1.0-service.a10.rc", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
 endif;
-if is_substring("A205", getprop("ro.boot.bootloader")) then
+if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A205" then
     ui_print("@>Detected Device: Galaxy A20");
     delete_recursive("/vendor/etc/permissions/android.hardware.sensor.light.xml");
     run_program("/tmp/busybox", "sed", "-i", "s/powerkey/rear/g", "/system_root/system/etc/floating_feature.xml");
 endif;
-if is_substring("A202", getprop("ro.boot.bootloader")) then
+if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A202" then
     ui_print("@>Detected Device: Galaxy A20e");
     delete_recursive("/vendor/firmware/setfile_imx258.bin");
     delete_recursive("/vendor/etc/permissions/android.hardware.sensor.light.xml");
     run_program("/tmp/busybox", "sed", "-i", "s/powerkey/rear/g", "/system_root/system/etc/floating_feature.xml");
 endif;
-if is_substring("A305", getprop("ro.boot.bootloader")) then
+if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A305" then
     ui_print("@>Detected Device: Galaxy A30");
     package_extract_file("device/a30/hal/remosaic_daemon.rc", "/vendor/etc/init/remosaic_daemon.rc");
     set_metadata("/vendor/etc/init/remosaic_daemon.rc", "uid", 0, "gid", 0, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
     run_program("/tmp/busybox", "sed", "-i", "s/,notaptoshow//g", "/system_root/system/etc/floating_feature.xml");
     run_program("/tmp/busybox", "sed", "-i", "s/ro.sf.lcd_density=280/ro.sf.lcd_density=420/g", "/vendor/build.prop");
 endif;
-if is_substring("A307", getprop("ro.boot.bootloader")) then
+if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A307" then
     ui_print("@>Detected Device: Galaxy A30s");
     package_extract_dir("device/a30s/app/BiometricSetting/", "/system_root/system/priv-app/BiometricSetting/");
     run_program("/tmp/busybox", "sed", "-i", "s/capacitive_powerkey_phone/optical/g", "/system_root/system/etc/floating_feature.xml");
 endif;
-if is_substring("A405", getprop("ro.boot.bootloader")) then
+if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A405" then
     ui_print("@>Detected Device: Galaxy A40");
     run_program("/tmp/busybox", "sed", "-i", "s/ro.sf.lcd_density=280/ro.sf.lcd_density=420/g", "/vendor/build.prop");
 endif;
