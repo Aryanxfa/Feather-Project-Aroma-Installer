@@ -3,6 +3,10 @@
 configfile=/tmp/aroma/compatible.prop
 device_supported=0
 
+#Setup Busybox
+cp /tmp/aroma/busybox /tmp/busybox
+chmod 777 /tmp/busybox
+
 append_to_file() {
     local content="$1"
     echo "$content" >>"$configfile"
