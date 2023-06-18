@@ -1,24 +1,24 @@
 #S22 #a20 #T #OneUI5
 
-OneUI 5.1 S22 port for A205x 
+OneUI 5.1 S22 port for A205x
 
 
-Bugs  
+Bugs
 - Netflix L1
 - Low light photos
 - Face Unlock
 
 
-Changelog v0.1: 
+Changelog v0.1:
 Initial Release S901BXXU2BVJA
 
-Changelog v0.2: 
+Changelog v0.2:
 - update audio hal
 - using s10e audio policy for fixing audio
 - added sdhms for battery stats
 - face unlock removed for stability
 
-Changelog v0.5: 
+Changelog v0.5:
 - Added Samsung camera ui5
 - Unlocked all cameras in Night mode
 - Fingerprint fixed
@@ -42,7 +42,7 @@ Changelog v0.7
 - Switched to dtb5
 - Using complete aosp partition entries as in eureka. This should solve issue of fail to mount / data in recovery
 
-Changelog v1.0: 
+Changelog v1.0:
 - Updated base to S901BXXU2BVL1
 - Security Patch 01 December 2022
 - Internal tuning
@@ -110,7 +110,7 @@ Changelog v3.0
 - Added band selector @FlorinelulX123
 - Some more csc tweaks from @GalaxyA51user
 - Fixed move App to Sdcard issue
-- Fixed testing codes issue 
+- Fixed testing codes issue
 - Fixes for Screen Record issue
 - AV1 Decoding Support
 - More Codec fixes
@@ -118,7 +118,7 @@ Changelog v3.0
 - Re-tuned Behaviour
 
 Changelog v3.1
-- Base updated to S901BXXU4CWCG 
+- Base updated to S901BXXU4CWCG
 - Security patch April 2023
 - Revert fstab changes (now Uses Eureka fstab by default)
 - Magisk updated to v26.1
@@ -158,7 +158,7 @@ Changelog v4.0.1
 - Camera fixups for all devices
 
 Changelog v5.0
-- Base updated to S901BXXU4CWE1 
+- Base updated to S901BXXU4CWE1
 - Security patch June 2023
 - exy7884 revert tee changes
 - Fix AOD for A30s and A40
@@ -172,3 +172,4 @@ Changelog v5.1
 - Fixes for Text OCR
 - A30s Nfc fixes
 - Product reduced to 200mb
+- Fix Setup Wizard Login issues
