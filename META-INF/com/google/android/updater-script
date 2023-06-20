@@ -109,6 +109,7 @@ if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A305" then
 endif;
 if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A307" then
     ui_print("@>Detected Device: Galaxy A30s");
+    package_extract_dir("device/a30s/etc/", "/vendor/etc/");
     package_extract_dir("device/a30s/app/BiometricSetting/", "/system_root/system/priv-app/BiometricSetting/");
     run_program("/tmp/busybox", "sed", "-i", "s/capacitive_powerkey_phone/optical/g", "/system_root/system/etc/floating_feature.xml");
 endif;
