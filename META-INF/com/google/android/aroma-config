@@ -167,7 +167,8 @@ menubox(
     "Light Debloat",     "Removes Share, Bixby, Switch, AR, Free, Magnifier, Media control",   "@none",
     "Moderate Debloat",  "Removes Above all and Dex, Edge Panel, Dual Apps, VoWiFi",           "@none",
     "Heavy Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View", "@none",
-    "Lain's Debloat",    "Removes Above all but keeps Dex and Samsung Account", "@none"
+    "Lain's Debloat",    "Removes Above all but keeps Dex and Samsung Account",                "@none",
+    "Sanchet's Debloat", "Custom debloat list by Sanchet",                                     "@none"
 );
 
 ###############################################
