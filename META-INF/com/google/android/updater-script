@@ -144,7 +144,7 @@ set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "
 set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 
 #Kernel
-if file_getprop("/tmp/aroma/mods.prop", "item.1.9") != "1" then
+if file_getprop("/tmp/aroma/mods.prop", "item.1.10") != "1" then
     ui_print("@>Installing R12 Kernel...");
     package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
     package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
