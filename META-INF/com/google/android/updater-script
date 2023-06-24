@@ -143,20 +143,6 @@ set_metadata_recursive("/vendor/tee/", "uid", 0, "gid", 0, "dmode", 0755, "fmode
 set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
 set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
 
-#Kernel
-if file_getprop("/tmp/aroma/mods.prop", "item.1.10") != "1" then
-    ui_print("@>Installing R12 Kernel...");
-    package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-    package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
-    package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
-    #Magisk
-    ui_print("@>Installing Magisk...");
-    package_extract_file("mods/magisk.zip", "/tmp/aroma/magisk.zip");
-    run_program("/tmp/busybox", "unzip", "/tmp/aroma/magisk.zip", "META-INF/com/google/android/*", "-d", "/tmp/aroma/");
-    run_program("/tmp/busybox", "sh", "/tmp/aroma/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/aroma/magisk.zip");
-    delete_recursive("/tmp/magisk.zip");
-endif;
-
 ##################################################
 #CSC
 ##################################################
@@ -295,6 +281,22 @@ ui_print("--[  Unmount partition  ]--");
 ifelse(is_mounted("/system"), unmount("/system"));
 ifelse(is_mounted("/vendor"), unmount("/vendor"));
 ifelse(is_mounted("/product"), unmount("/product"));
+##################################################
+#Kernel
+##################################################
+if file_getprop("/tmp/aroma/mods.prop", "item.1.10") != "1" then
+    ui_print("@>Installing R12 Kernel...");
+    package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
+    package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+    package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
+    #Magisk
+    ui_print("@>Installing Magisk...");
+    package_extract_file("mods/magisk.zip", "/tmp/aroma/magisk.zip");
+    run_program("/tmp/busybox", "unzip", "/tmp/aroma/magisk.zip", "META-INF/com/google/android/*", "-d", "/tmp/aroma/");
+    run_program("/tmp/busybox", "sh", "/tmp/aroma/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/aroma/magisk.zip");
+    delete_recursive("/tmp/magisk.zip");
+endif;
+##################################################
 ui_print(" ");
 ui_print("SUCCESSFULLY COMPLETED!");
 ui_print(" ");
