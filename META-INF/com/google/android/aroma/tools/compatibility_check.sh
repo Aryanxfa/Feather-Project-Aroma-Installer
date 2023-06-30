@@ -24,9 +24,6 @@ is_substring() {
 rm -f $configfile
 touch $configfile
 
-supported_list=("A105" "A205" "A202" "A305" "A307" "A405")
-supported_list_alt=("a10" "a20" "a20e" "a30" "a30s" "a40")
-
 bootloader=$(getprop ro.boot.bootloader)
 
 # Space Checks
@@ -96,26 +93,76 @@ if [ -z "$bootloader" ]; then
     bootloader=$(/tmp/busybox sed -n 's/.*androidboot.em.model=\([^[:space:]]*\).*/\1/p' /proc/cmdline)
 fi
 
-for index in "${!supported_list[@]}"; do
-    device=${supported_list[index]}
-    device_alt=${supported_list_alt[index]}
+device="A105"
+device_alt="a10"
+if is_substring "$device" "$bootloader"; then
+    echo "    -> Bootloader  : $bootloader"
+    echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
+    append_to_file "device_id=$device"
+    append_to_file "device_id_alt=$device_alt"
+    append_to_file "is_7904=0"
+    device_supported="1"
+    exit 1
+fi
 
-    if is_substring "$device" "$bootloader"; then
-        echo "    -> Bootloader  : $bootloader"
-        echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
-        append_to_file "device_id=$device"
-        append_to_file "device_id_alt=$device_alt"
-        if [[ "$index" -ge 3 ]]; then
-            append_to_file "is_7904=1"
-            echo "    -> <#00ff00>Chipset is  : Exynos 7904 </#>"
-        else
-            append_to_file "is_7904=0"
-            echo "    -> <#00ff00>Chipset is  : Exynos 7884B </#>"
-        fi
-        device_supported="1"
-        break
-    fi
-done
+device="A205"
+device_alt="a20"
+if is_substring "$device" "$bootloader"; then
+    echo "    -> Bootloader  : $bootloader"
+    echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
+    append_to_file "device_id=$device"
+    append_to_file "device_id_alt=$device_alt"
+    append_to_file "is_7904=0"
+    device_supported="1"
+    exit 1
+fi
+
+device="A202"
+device_alt="a20e"
+if is_substring "$device" "$bootloader"; then
+    echo "    -> Bootloader  : $bootloader"
+    echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
+    append_to_file "device_id=$device"
+    append_to_file "device_id_alt=$device_alt"
+    append_to_file "is_7904=0"
+    device_supported="1"
+    exit 1
+fi
+device="A305"
+device_alt="a30"
+if is_substring "$device" "$bootloader"; then
+    echo "    -> Bootloader  : $bootloader"
+    echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
+    append_to_file "device_id=$device"
+    append_to_file "device_id_alt=$device_alt"
+    append_to_file "is_7904=1"
+    device_supported="1"
+    exit 1
+fi
+
+device="A307"
+device_alt="a30s"
+if is_substring "$device" "$bootloader"; then
+    echo "    -> Bootloader  : $bootloader"
+    echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
+    append_to_file "device_id=$device"
+    append_to_file "device_id_alt=$device_alt"
+    append_to_file "is_7904=1"
+    device_supported="1"
+    exit 1
+fi
+
+device="A405"
+device_alt="a40"
+if is_substring "$device" "$bootloader"; then
+    echo "    -> Bootloader  : $bootloader"
+    echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
+    append_to_file "device_id=$device"
+    append_to_file "device_id_alt=$device_alt"
+    append_to_file "is_7904=1"
+    device_supported="1"
+    exit 1
+fi
 
 if [ "$device_supported" == "0" ]; then
     echo "    -> Bootloader  : $bootloader"
