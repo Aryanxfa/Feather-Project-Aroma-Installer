@@ -178,73 +178,62 @@ endif;
 #MODS
 ##################################################
 #-- Sound
-ui_print("@Sound");
 if file_getprop("/tmp/aroma/mods.prop","selected.1") == "1" then
-  ui_print("Installing MONO effect...");
+  ui_print("@>Installing MONO effect...");
   package_extract_file("mods/single/mixer_paths.xml", "/vendor/etc/mixer_paths.xml");
   package_extract_file("mods/single/mixer_gains.xml", "/vendor/etc/mixer_gains.xml");
 endif;
-
 if file_getprop("/tmp/aroma/mods.prop","selected.1") == "2" then
-  ui_print("Installing Stereo effect...");
+  ui_print("@>Installing Stereo effect...");
   package_extract_file("mods/dual/mixer_paths.xml", "/vendor/etc/mixer_paths.xml");
   package_extract_file("mods/dual/mixer_gains.xml", "/vendor/etc/mixer_gains.xml");
 endif;
 
 #-- Throttling
-ui_print("@Throttle");
 if file_getprop("/tmp/aroma/mods.prop","selected.2") == "1" then
-  ui_print("Throttling little to 1352");
+  ui_print("@>Throttling little to 1352");
   package_extract_file("mods/throttle/fp_throttle.rc", "/vendor/etc/init/fp_throttle.rc");
   set_metadata_recursive("/vendor/etc/init/fp_throttle.rc", "uid", 0, "gid", 0, "dmode", 0644, "fmode", 0644);
 endif;
-
 if file_getprop("/tmp/aroma/mods.prop","selected.2") == "2" then
-  ui_print("Removing Throttle...");
+  ui_print("@>Removing Throttle...");
   delete_recursive("/vendor/etc/init/fp_throttle.rc");
 endif;
 
 #-- Brightness
-ui_print("@Brightness");
 if file_getprop("/tmp/aroma/mods.prop","selected.3") == "1" then
-  ui_print("Removing Notch ...");
+  ui_print("@>Removing Notch ...");
   package_extract_file("mods/fp_notchfiller.apk", "/vendor/overlay/fp_notchfiller.apk");
   set_metadata_recursive("/vendor/overlay/fp_notchfiller.apk", "uid", 0, "gid", 0, "dmode", 0644, "fmode", 0644, "selabel", "u:object_r:vendor_overlay_file:s0");
 endif;
-
 if file_getprop("/tmp/aroma/mods.prop","selected.3") == "2" then
-  ui_print("Restoring Notch...");
+  ui_print("@>Restoring Notch...");
   delete_recursive("/vendor/overlay/fp_notchfiller.apk");
 endif;
 
 #-- LMK
-ui_print("@Initializing LMK...");
 if file_getprop("/tmp/aroma/mods.prop","selected.4") == "1" then
-  ui_print("Installing Light LMK...");
+  ui_print("@>Installing Light LMK...");
   run_program("/tmp/busybox","sh","/tmp/tolightlmk.sh");
 endif;
-
 if file_getprop("/tmp/aroma/mods.prop","selected.4") == "2" then
-  ui_print("Installing Standard LMK...");
+  ui_print("@>Installing Standard LMK...");
   run_program("/tmp/busybox","sh","/tmp/tostandardlmk.sh");
 endif;
 
 #-- UI
-ui_print("@UI tweak");
 if file_getprop("/tmp/aroma/mods.prop","selected.5") == "1" then
-  ui_print("Live blur effect enabling...");
+  ui_print("@>Live blur effect enabling...");
   run_program("/tmp/busybox", "sed", "-i", "s/FLAG>FALSE/FLAG>TRUE/g", "/system_root/system/etc/floating_feature.xml");
 endif;
-
 if file_getprop("/tmp/aroma/mods.prop","selected.5") == "2" then
-  ui_print("static blur effect enabling...");
+  ui_print("@>Static blur effect enabling...");
   run_program("/tmp/busybox", "sed", "-i", "s/FLAG>TRUE/FLAG>FALSE/g", "/system_root/system/etc/floating_feature.xml");
-  ui_print("I have a question.. why tf you use that low quality blur u r using a flagship rom bru");
 endif;
 
 # Knox
 if file_getprop("/tmp/aroma/mods.prop","item.6.1") == "1" then
-  ui_print("@Removing KNOX app support...");
+  ui_print("@>Removing KNOX app support...");
   delete_recursive("/system_root/system/priv-app/KLMSAgent");
   delete_recursive("/system_root/system/priv-app/knoxanalyticsagent");
   delete_recursive("/system_root/system/priv-app/KnoxCore");
@@ -255,26 +244,23 @@ endif;
 
 # User
 if file_getprop("/tmp/aroma/mods.prop","item.6.2") == "1" then
-  ui_print("@Enabling Users...");
-  run_program("/tmp/busybox", "sed", "-i", "$a\fw.max_users=30", "/system_root/system/build.prop");
-  run_program("/tmp/busybox", "sed", "-i", "$a\fw.show_multiuserui=1", "/system_root/system/build.prop");
-  run_program("/tmp/busybox", "sed", "-i", "$a\fw.show_hidden_users=1", "/system_root/system/build.prop");
-  run_program("/tmp/busybox", "sed", "-i", "$a\fw.power_user_switcher=1", "/system_root/system/build.prop");
+  ui_print("@>Removing extended brightness...");
+  delete_recursive("/vendor/etc/init/fp_aospbrightness.rc");
 endif;
 
 # Kernel
 if file_getprop("/tmp/aroma/mods.prop","item.6.3") == "1" then
-  ui_print("@Skipping Kernel...");
+  ui_print("Skipping Kernel...");
   run_program("/tmp/aroma/sleep","300");
 else
-  ui_print("@Installing EK R12 Kernel...");
+  ui_print("@>Installing EK R12 Kernel...");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
 endif;
 # Magisk
 if file_getprop("/tmp/aroma/mods.prop","item.6.4") == "1" then
-  ui_print("@installing Magisk 26");
+  ui_print("@>installing Magisk 26");
   package_extract_file("mods/magisk.zip", "/tmp/aroma/magisk.zip");
   run_program("/tmp/busybox", "unzip", "/tmp/aroma/magisk.zip", "META-INF/com/google/android/*", "-d", "/tmp/aroma/");
   run_program("/tmp/busybox", "sh", "/tmp/aroma/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/aroma/magisk.zip");
