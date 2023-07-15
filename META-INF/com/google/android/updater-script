@@ -247,24 +247,6 @@ if file_getprop("/tmp/aroma/mods.prop","item.6.2") == "1" then
   ui_print("@>Removing extended brightness...");
   delete_recursive("/vendor/etc/init/fp_aospbrightness.rc");
 endif;
-
-# Kernel
-if file_getprop("/tmp/aroma/mods.prop","item.6.3") == "1" then
-  ui_print("Skipping Kernel...");
-else
-  ui_print("@>Installing EK R12 Kernel...");
-  package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-  package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
-  package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
-endif;
-# Magisk
-if file_getprop("/tmp/aroma/mods.prop","item.6.4") == "1" then
-  ui_print("@>installing Magisk 26");
-  package_extract_file("mods/magisk.zip", "/tmp/aroma/magisk.zip");
-  run_program("/tmp/busybox", "unzip", "/tmp/aroma/magisk.zip", "META-INF/com/google/android/*", "-d", "/tmp/aroma/");
-  run_program("/tmp/busybox", "sh", "/tmp/aroma/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/aroma/magisk.zip");
-  delete_recursive("/tmp/magisk.zip");
-endif;
 ##################################################
 #DEBLOAT
 ##################################################
@@ -311,17 +293,21 @@ ifelse(is_mounted("/product"), unmount("/product"));
 ##################################################
 #Kernel
 ##################################################
-if file_getprop("/tmp/aroma/mods.prop", "item.1.10") != "1" then
-    ui_print("@>Installing R12 Kernel...");
-    package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
-    package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
-    package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
-    #Magisk
-    ui_print("@>Installing Magisk...");
-    package_extract_file("mods/magisk.zip", "/tmp/aroma/magisk.zip");
-    run_program("/tmp/busybox", "unzip", "/tmp/aroma/magisk.zip", "META-INF/com/google/android/*", "-d", "/tmp/aroma/");
-    run_program("/tmp/busybox", "sh", "/tmp/aroma/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/aroma/magisk.zip");
-    delete_recursive("/tmp/magisk.zip");
+if file_getprop("/tmp/aroma/mods.prop","item.6.3") == "1" then
+  ui_print("Skipping Kernel...");
+else
+  ui_print("@>Installing R12 Kernel...");
+  package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
+  package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
+  package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");
+endif;
+# Magisk
+if file_getprop("/tmp/aroma/mods.prop","item.6.4") == "1" then
+  ui_print("@>installing Magisk 26");
+  package_extract_file("mods/magisk.zip", "/tmp/aroma/magisk.zip");
+  run_program("/tmp/busybox", "unzip", "/tmp/aroma/magisk.zip", "META-INF/com/google/android/*", "-d", "/tmp/aroma/");
+  run_program("/tmp/busybox", "sh", "/tmp/aroma/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/aroma/magisk.zip");
+  delete_recursive("/tmp/magisk.zip");
 endif;
 ##################################################
 ui_print(" ");
