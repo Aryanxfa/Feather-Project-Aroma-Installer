@@ -1,4 +1,4 @@
-###############################################
+﻿###############################################
 #CUSTOM INSTALLATION TYPE
 ###############################################
 
@@ -12,16 +12,16 @@ form(
     "@install_custom",
     "mods.prop",
     "group1",     "Sound",        "",                                         "group",
-      "opt1",     "Mono",       "Stock sound config, only main speaker",                      "select",
-      "opt2",     "Stereo",       "Use earpiece as secondary speaker.",                      "select.selected",
+      "opt1",     "Mono",       "Stock sound config, only main speaker",                      "select.selected",
+      "opt2",     "Stereo",       "Use earpiece as secondary speaker.",                      "select",
       
     "group2",     "Throttling",        "",                                         "group",
-      "opta",     "Lillte to 1352",       "Less heat similar performance",                      "select",
+      "opta",     "Little to 1352",       "Less heat similar performance",                      "select",
       "optb",     "Remove throttle",       "Revert ^option above^",                      "select.selected",
-      
-    "group3",     "Brightness",        "",                                         "group",
-      "opt3",     "Remove extended brightness",       "The display will has lower light than normally",                      "select",
-      "opt4",     "Enable extended brightness",       "Revert ^option above^",                      "select.selected",
+
+    "group3",     "Notch",        "",                                         "group",
+      "opt3",     "Remove Notch",       "The will force the whole notch to be black",             "select",
+      "opt4",     "Keep Notch",       "Revert ^option above^",                               "select.selected",
       
     "group4",     "LMK - LowMemoryKiller",        "",                                         "group",
       "opt5",     "Light LMK",       "Allow heavy multi-tasking",                      "select",
@@ -33,7 +33,7 @@ form(
       
     "group6",     "Miscellaneous",        "",                                         "group",
       "chk1",     "Remove Knox apps support",       "Will remove Knox component",                      "check",
-      "chk2",     "Enable Multi User",       "Enable multi user if this device is not personal use",                      "check",
+      "chk2",     "Remove extended brightness",       "The display will have lower Brightness than normally",                      "check",
       "chk3",     "Skip kernel",       "Will skip Installing kernel in installation list",                      "check",
       "chk4",     "Magisk 26",       "Will install magisk.",                      "check"
 );
