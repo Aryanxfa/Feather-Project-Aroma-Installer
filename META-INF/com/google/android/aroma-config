@@ -6,55 +6,51 @@ ini_set("rom_name",             "Feather Project");
 ini_set("rom_version",          "S22_v6.0");
 ini_set("rom_author",           "Raptor 9");
 ini_set("rom_device",           "Exynos 7884B/7904");
-ini_set("rom_date",             "05/July/2023");
+ini_set("rom_date",             "16/July/2023");
+
+# Show splash screen
+splash(2000, "coolest_splash");
 anisplash(1,
-"splash/splash_01", 80,
-"splash/splash_02", 80,
-"splash/splash_03", 80,
-"splash/splash_04", 80,
-"splash/splash_05", 80,
-"splash/splash_06", 80,
-"splash/splash_07", 80,
-"splash/splash_08", 80,
-"splash/splash_09", 80,
-"splash/splash_10", 80,
-"splash/splash_11", 80,
-"splash/splash_12", 80,
-"splash/splash_13", 80,
-"splash/splash_14", 80,
-"splash/splash_15", 80,
-"splash/splash_16", 80,
-"splash/splash_17", 80,
-"splash/splash_18", 80,
-"splash/splash_19", 80,
-"splash/splash_20", 50,
-"splash/splash_21", 80,
-"splash/splash_22", 80,
-"splash/splash_23", 80,
-"splash/splash_24", 80,
-"splash/splash_25", 80,
-"splash/splash_26", 80,
-"splash/splash_27", 80,
-"splash/splash_28", 500);
-fontresload( "0", "ttf/smooth.ttf", "14" );
-fontresload( "1", "ttf/brief.ttf", "18" );
-theme("dark");
+    "splash/fp_01", 80,
+    "splash/fp_02", 80,
+    "splash/fp_03", 80,
+    "splash/fp_04", 80,
+    "splash/fp_05", 80,
+    "splash/fp_06", 80,
+    "splash/fp_07", 80,
+    "splash/fp_08", 80,
+    "splash/fp_09", 80,
+    "splash/fp_10", 80,
+    "splash/fp_11", 80,
+    "splash/fp_12", 80,
+    "splash/fp_13", 80,
+    "splash/fp_14", 80,
+    "splash/fp_15", 80,
+    "splash/fp_16", 80,
+    "splash/fp_17", 80,
+    "splash/fp_18", 80,
+    "splash/fp_19", 80,
+    "splash/fp_20", 80,
+    "splash/fp_21", 80,
+    "splash/fp_22", 80,
+    "splash/fp_23", 80,
+    "splash/fp_24", 80,
+    "splash/fp_25", 80,
+    "splash/fp_26", 80);
+fontresload( "0", "ttf/regular.ttf", "12" );
+fontresload( "1", "ttf/bold.ttf", "16" );
+theme("modern_blue");
 
 ###############################################
 #ROM INFORMATION
 ###############################################
 ini_set("text_next", "Next ");
 viewbox(
-    " ",
-    "<b>Aroma Installer: \n"+
-    "It will guide you to configure your Rom installation.\n\n\n\n\n\n</b>"+
-    "<b>About Rom</b>\n"+
-    "Name: <#selectbg_g>"+ini_get("rom_name")+"</#>\n"+
-    "Version: <#selectbg_g>"+ini_get("rom_version")+"</#>\n"+
-    "Developer: <#selectbg_g>"+ini_get("rom_author")+"</#>\n"+
-    "Device: <#selectbg_g>"+ini_get("rom_device")+"</#>\n\n\n\n"+
-    "Press Next to continue...",
-    "@home"
+    "Feather Project",
+    "<@center>Welcome to the installation wizard!</@>\n\n" +
+    "<@center>The install wizard is a user-friendly tool that will assist you step-by-step in installing the Feather Project onto your device. It simplifies the installation process by providing clear instructions and prompts, ensuring a smooth and hassle-free experience. By following the wizard, you'll be able to seamlessly set up the Feather Project and begin enjoying its features and functionalities on your device.</@>\n\n\n\n" +
+    "<@center>Tap <b>'next'</b> to continue.</@>",
+    "@feather_logo"
 );
 
 ###############################################
@@ -99,78 +95,28 @@ if(getvar("resexec_retstatus")!=1) then
 	endif;
     back("2");
 endif;
+
 ###############################################
 #INSTALLATION TYPE
 ###############################################
 ini_set("text_next", " ");
 ini_set("icon_next", "@none");
 menubox(
-    "",
+    "Installation",
     "<b>Select your Install Method</b>",
     "@install",
     "configs.prop",
 
-    "Install + Configure",   "This will Install the Rom and also Allow you to Configure",    "@none",
-    "Configure Only",        "This will Not install Rom just Allow you to Add/Remove Apps, Once Debloated can't be added back",         "@none"
+    "Express Install",          "This takes the hassle out of installation by intuitively configuring your system with a click, ensuring a seamless and hassle-free setup experience.",    "@install_express",
+    "Personalized Install",     "This allows users to tailor the software or operating system setup according to their specific preferences and requirements.",    "@install_custom",
+    "Installation Tuner",       "This process allows ROM modification without requiring a reinstallation, while removed apps cannot be restored.",       "@install_tune"
 );
-
-###############################################
-#MODIFICATIONS
-###############################################
-ini_set("text_next", "Next ");
-checkbox(
-    " ",
-    "<b>Selected your preferred Modifications to be applied</b>",
-    "@magk",
-    "mods.prop",
-
-    "Choose Modifications to be Applied:",                "",                                    2,
-    "Throttle little to 1352",     "Less heat similar performance",                              0,
-    "Remove throttle",             "Removes throttle, Reverts the above.",                       0,
-    "Dual Speaker",                "Use Earpice as a Secondary Speaker",                         0,
-    "Single Speaker",              "Removes the Dual Speaker mod. Reverts the above.",           0,
-    "Disable Extended Brightness", "Removes Extended Brightness Support",                        0,
-    "Remove Knox Apps",            "Removes the Knox apps for Knox Framework support",           0,
-    "Remove NFC",                  "Removes the NFC support",                                    0,
-    "Standard LMK",                "Standard LMK for Fluidity and Responsive UI",                0,
-    "Light LMK",                   "Lighten the LMK and allows heavy Multi-tasking",             0,
-    "Skip Kernel",                 "Skips the kernel installs and Keeps existing kernel",        0
-);
-
-###############################################
-#ROM MODIFICATIONS
-###############################################
-ini_set("text_next", "Next ");
-checkbox(
-    " ",
-    "<b>Selected your preferred ROM Modifications to be applied</b>",
-    "@magk",
-    "mods2.prop",
-
-    "Choose Modifications to be Applied:",                "",                                    2,
-    "Enable Multi User",           "Enables MultiUser Support",                                  0,
-    "Enable Live Blur",            "Enables Live Blur in Launcher and apps (default)",           0,
-    "Disable Live Blur",           "Disables Live Blur in Launcher and apps",                    0
-);
-
-###############################################
-#DEBLOAT
-###############################################
-ini_set("text_next", " ");
-ini_set("icon_next", "@none");
-menubox(
-    "",
-    "<b>Select your Preferred Debloat</b>",
-    "@nuke",
-    "debloat.prop",
-
-    "NO DEBLOAT",        "Recommended for New Users, Least bugs",                              "@none",
-    "Light Debloat",     "Removes Share, Bixby, Switch, AR, Free, Magnifier, Media control",   "@none",
-    "Moderate Debloat",  "Removes Above all and Dex, Edge Panel, Dual Apps, VoWiFi",           "@none",
-    "Heavy Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View", "@none",
-    "Lain's Debloat",    "Removes Above all but keeps Dex and Samsung Account",                "@none",
-    "Sanchet's Debloat", "Custom debloat list by Sanchet",                                     "@none"
-);
+# Express install
+if prop("configs.prop","selected") == "1" then
+    include("install_express.edify");
+else
+    include("install_custom.edify");
+endif;
 
 ###############################################
 #CSC
@@ -178,7 +124,7 @@ menubox(
 ini_set("text_next", " ");
 ini_set("icon_next", "@none");
 menubox(
-    "",
+    "CSC Selection",
     "<b>Select your Region</b>",
     "@earth",
     "csc.prop",
@@ -189,16 +135,15 @@ menubox(
     "OWO",   "South America:- ARO BVO CHO COO EON GTO MXO PEO TPA UPO UYO ZTA ZTM ZTO ZVV",       "@zto",
     "OJM",   "Middle East:- ACR AFR ECT ILO MID PAK SRR TUN XSG AFG DKR EGY KSA MWD TKD TUR BTC FWD ILP LYS XFA XFE XFV",        "@tur",
     "OXM",   "Rest of the world:- 3IE AMO ATL ATO AUT AVF BGL BOG BTB BTE BTU CAC CAU CNX COA COS CPW CRO CYV DBT DCO DRE DTM EUR EUX EUY EVR FTM H3G HTS HUI ITV LUX MAX MBC MBM MEO MET MOB MOT MSR NEE O2C O2U OMN OPV ORO ORS ORX PHE PHN PLS PRT ROM SEB SEE SEK SER SFR SIM SIO SKZ SWC TCL TIM TMH TMS TMZ TOP TPH TPL TRG TSI VD2 VDC VDF VDH VDI VGR VIP VOD XEC XEF XEH XEO XEZ",        "@rus",
-    "Skip CSC",  "Will not change CSC", "@none"
+    "Skip CSC",  "Will not change CSC", "@skip"
 );
 
 ###############################################
 #CHANGELOG
 ###############################################
-
 ini_set("text_next", "Next ");
 textbox(
-    "",
+    "ROM Changelogs",
     "<b>ROM Changelog</b>",
     "@lic",
     resread("changelog.txt")
@@ -209,7 +154,7 @@ textbox(
 ###############################################
 ini_set("text_next", "Install");
 agreebox(
-    "",
+    "Terms & Agreement",
     "<b>Read The Terms Of Use Carefully!</b>",
     "@lic",
     resread("agreement.txt"),
@@ -223,10 +168,10 @@ agreebox(
 ini_set("text_next", "Exit");
 setvar("retstatus",
   install(
-      " ",
+      "Installation:",
       "<b>Flashing the rom.</b>\n"+
       "<b>Please wait...</b>",
-      "@install",
+      "@installer",
       "Installation finished!"
   )
 );

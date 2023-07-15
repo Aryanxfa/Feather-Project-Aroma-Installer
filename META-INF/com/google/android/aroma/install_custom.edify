@@ -1,0 +1,55 @@
+﻿###############################################
+#CUSTOM INSTALLATION TYPE
+###############################################
+
+###############################################
+#MODIFICATIONS MENU
+###############################################
+form(
+    "Modification",
+    "Choose a/some mod(s) to apply to ROM",
+    "@install_custom",
+    "mods.prop",
+    "group1",     "Sound",        "",                                         "group",
+      "opt1",     "Mono",       "Stock sound config, only main speaker",                      "select",
+      "opt2",     "Stereo",       "Use earpiece as secondary speaker.",                      "select.selected",
+      
+    "group2",     "Throttling",        "",                                         "group",
+      "opta",     "Lillte to 1352",       "Less heat similar performance",                      "select",
+      "optb",     "Remove throttle",       "Revert ^option above^",                      "select.selected",
+      
+    "group3",     "Brightness",        "",                                         "group",
+      "opt3",     "Remove extended brightness",       "The display will has lower light than normally",                      "select",
+      "opt4",     "Enable extended brightness",       "Revert ^option above^",                      "select.selected",
+      
+    "group4",     "LMK - LowMemoryKiller",        "",                                         "group",
+      "opt5",     "Light LMK",       "Allow heavy multi-tasking",                      "select",
+      "opt6",     "Standard LMk",       "Allow UI more responsive",                      "select.selected",
+      
+    "group5",     "UserInterface",        "",                                         "group",
+      "opt7",     "Enable Live Blur UI",       "Flagship blurs that's realistic and looks good",                      "select",
+      "opt8",     "Enable Static blur UI",       "Midrange/Low blurs that's you have seen also noticed in stock",                      "select.selected",
+      
+    "group6",     "Miscellaneous",        "",                                         "group",
+      "chk1",     "Remove Knox apps support",       "Will remove Knox component",                      "check",
+      "chk2",     "Enable Multi User",       "Enable multi user if this device is not personal use",                      "check",
+      "chk3",     "Skip kernel",       "Will skip Installing kernel in installation list",                      "check",
+      "chk4",     "Magisk 26",       "Will install magisk.",                      "check"
+);
+
+###############################################
+#DEBLOAT MENU
+###############################################
+menubox(
+    "Nuke Engine",
+    "Select your Preferred Debloat",
+    "@nuke",
+    "debloat.prop",
+
+    "NO DEBLOAT",        "Recommended for New Users, Least bugs",                              "@none",
+    "Light Debloat",     "Removes Share, Bixby, Switch, AR, Free, Magnifier, Media control",   "@none",
+    "Moderate Debloat",  "Removes Above all and Dex, Edge Panel, Dual Apps, VoWiFi",           "@none",
+    "Heavy Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View", "@none",
+    "Lain's Debloat",    "Removes Above all but keeps Dex and Samsung Account",                "@none",
+    "Sanchet's Debloat", "Custom debloat list by Sanchet",                                     "@none"
+);
