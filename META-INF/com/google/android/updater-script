@@ -296,7 +296,7 @@ ifelse(is_mounted("/product"), unmount("/product"));
 if file_getprop("/tmp/aroma/mods.prop","item.6.3") == "1" then
   ui_print("Skipping Kernel...");
 else
-  ui_print("@>Installing R12 Kernel...");
+  ui_print("@>Installing R13 Kernel...");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");

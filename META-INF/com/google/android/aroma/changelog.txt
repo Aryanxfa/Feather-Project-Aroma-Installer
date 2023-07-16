@@ -177,3 +177,16 @@ Changelog v5.1
 - exy7904: Update wifi driver @BJCSilva
 - Add option for Lian Debloat
 - Add option to skip kernel install
+
+Changelog v6.0
+- Base updated to S901BXXS6CWF6
+- Security Patch July 2023
+- Eureka kernel R13
+- A30s Fix NFC issue
+- Recovery Compatibility improved
+- New Aroma theme by @bobertA30
+- Aroma Overhaul
+- Added option to hide notch in aroma
+- Enabled Tags added in screenshot
+- Enabled Adaptive Eye Comfort 
+- Bixby vision removed
