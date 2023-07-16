@@ -11,31 +11,27 @@ form(
     "Choose a/some mod(s) to apply to ROM",
     "@install_custom",
     "mods.prop",
-    "group1",     "Sound",        "",                                         "group",
-      "opt1",     "Mono",       "Stock sound config, only main speaker",                      "select.selected",
-      "opt2",     "Stereo",       "Use earpiece as secondary speaker.",                      "select",
+    "sound",     "Sound",             "",                                              "group",
+      "1",     "Mono",                "Stock sound config, only main speaker",         "select",
+      "2",     "Stereo",              "Use earpiece as secondary speaker.",            "select",
       
-    "group2",     "Throttling",        "",                                         "group",
-      "opta",     "Little to 1352",       "Less heat similar performance",                      "select",
-      "optb",     "Remove throttle",       "Revert ^option above^",                      "select.selected",
-
-    "group3",     "Notch",        "",                                         "group",
-      "opt3",     "Remove Notch",       "The will force the whole notch to be black",             "select",
-      "opt4",     "Keep Notch",       "Revert ^option above^",                               "select.selected",
+    "throttle",     "Throttling",        "",                                           "group",
+      "1",     "Little to 1352",      "Less heat similar performance",                 "select",
+      "2",     "Remove throttle",     "Revert ^option above^",                         "select",
       
-    "group4",     "LMK - LowMemoryKiller",        "",                                         "group",
-      "opt5",     "Light LMK",       "Allow heavy multi-tasking",                      "select",
-      "opt6",     "Standard LMk",       "Allow UI more responsive",                      "select.selected",
+    "lmk",     "LMK - LowMemoryKiller",        "",                                     "group",
+      "1",     "Light LMK",           "Allow heavy multi-tasking",                     "select",
+      "2",     "Standard LMk",        "Allow UI more responsive",                      "select",
       
-    "group5",     "UserInterface",        "",                                         "group",
-      "opt7",     "Enable Live Blur UI",       "Flagship blurs that's realistic and looks good",                      "select",
-      "opt8",     "Enable Static blur UI",       "Midrange/Low blurs that's you have seen also noticed in stock",                      "select.selected",
+    "blur",     "UserInterface",        "",                                            "group",
+      "1",     "Enable Live Blur UI",       "Flagship blurs that's realistic and looks good",                      "select",
+      "2",     "Enable Static blur UI",       "Midrange/Low blurs that's you have seen also noticed in stock",     "select",
       
     "group6",     "Miscellaneous",        "",                                         "group",
-      "chk1",     "Remove Knox apps support",       "Will remove Knox component",                      "check",
-      "chk2",     "Remove extended brightness",       "The display will have lower Brightness than normally",                      "check",
-      "chk3",     "Skip kernel",       "Will skip Installing kernel in installation list",                      "check",
-      "chk4",     "Magisk 26",       "Will install magisk.",                      "check"
+      "knox",     "Remove Knox apps support",       "Will remove Knox component",                      "check",
+      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",                      "check",
+      "kernel",     "Skip kernel",       "Will skip Installing kernel in installation list",                      "check",
+      "magisk",     "Magisk 26",       "Will install magisk.",                      "check"
 );
 
 ###############################################
