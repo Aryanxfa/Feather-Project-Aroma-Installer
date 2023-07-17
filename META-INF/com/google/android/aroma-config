@@ -116,6 +116,7 @@ if prop("configs.prop","selected") == "1" then
     include("install_express.edify");
 else
     include("install_custom.edify");
+    include("kernel.edify");
 endif;
 
 ###############################################
