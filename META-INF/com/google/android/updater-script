@@ -231,6 +231,12 @@ if file_getprop("/tmp/aroma/mods.prop","knox") == "1" then
   delete_recursive("/system_root/system/priv-app/KPECore");
 endif;
 
+# NFC
+if file_getprop("/tmp/aroma/mods.prop", "nfc") == "1" then
+    ui_print("@>Removing NFC...");
+    delete_recursive("/system_root/system/app/NfcNci");
+endif;
+
 # User
 if file_getprop("/tmp/aroma/mods.prop","brightness") == "1" then
   ui_print("@>Removing extended brightness...");
