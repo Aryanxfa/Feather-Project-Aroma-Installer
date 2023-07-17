@@ -50,3 +50,18 @@ menubox(
     "Lain's Debloat",    "Removes Above all but keeps Dex and Samsung Account",                "@none",
     "Sanchet's Debloat", "Custom debloat list by Sanchet",                                     "@none"
 );
+
+###############################################
+#KERNEL
+###############################################
+menubox(
+    "Root Solution",
+    "Select your Kernel type, installs Eureka kernel and DTB 5",
+    "@su",
+    "kernel.prop",
+
+    "Magisk",       "Recommend for most users want root with stable.",          "@magisk",
+    "KernelSU",     "Only if you wanted SuperUser, modules are still buggy.",      "@ksu",
+    "Vanilla",      "Non rooted Eureka Kernel.",                                   "@ekm",
+    "Skip Kernel",  "Skip Changing Kernel at all. Use existing Kernel",            "@skip"
+);
