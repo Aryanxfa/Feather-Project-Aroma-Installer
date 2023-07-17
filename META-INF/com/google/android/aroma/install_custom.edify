@@ -29,9 +29,7 @@ form(
       
     "group6",     "Miscellaneous",        "",                                         "group",
       "knox",     "Remove Knox apps support",       "Will remove Knox component",                      "check",
-      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",                      "check",
-      "kernel",     "Skip kernel",       "Will skip Installing kernel in installation list",                      "check",
-      "magisk",     "Magisk 26",       "Will install magisk.",                      "check"
+      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",                      "check"
 );
 
 ###############################################
