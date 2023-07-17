@@ -1,0 +1,10 @@
+﻿menubox(
+    "Root Solution",
+    "Select your rooting taste. 2 solution available",
+    "su",
+    "su.prop",
+
+    "Eureka KernelSU",        "Only if you wanted SuperUser, modules are still buggy",                              "@ksu",
+    "Magisk v26",     "Recommend for most users want root with stable",   "@magisk",
+    "Skip root",  "Will skip root. Note that if you choose skip kernel and choose KSU here, KSU will install DTB 5",           "@skip"
+);
