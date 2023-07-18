@@ -4,3 +4,4 @@ META-INF/scripts/xbin/*
 mods/keys/*
 device/*/overlay
 !/mods/magisk.zip
+!/mods/bootani/bootanimation.zip
