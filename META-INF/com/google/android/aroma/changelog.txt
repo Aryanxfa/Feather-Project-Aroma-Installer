@@ -190,3 +190,8 @@ Changelog v6.0
 - Enabled Tags added in screenshot
 - Enabled Adaptive Eye Comfort 
 - Bixby vision removed
+
+Changelog v6.0
+- Add option for AOSP Bootanimation
+- Add KSU kernel options
+- Exy7884B Fix Lockscreen issue 

@@ -57,7 +57,7 @@ menubox(
 menubox(
     "Root Solution",
     "Select your Kernel type, installs Eureka kernel and DTB 5",
-    "@su",root 2000 u:object_r:bootanim_exec:s0 
+    "@su", 
     "kernel.prop",
 
     "Magisk",       "Recommend for most users want root with stable.",          "@magisk",
