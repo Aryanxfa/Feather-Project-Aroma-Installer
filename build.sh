@@ -39,7 +39,7 @@ cp ../FP_kernels/a40/* device/a40/
 rm -f $1
 lowercase_arg="${1,,}"
 if [[ "$lowercase_arg" == *"patch"* ]]; then
-    zip -v -r $1 META-INF/com META-INF/scripts/bin mods kernel img device csc debloat featherproject.keys auxy/data/app/.set META-INF/scripts/xbin/mounts.kek.br
+    zip -v -r $1 META-INF/com META-INF/scripts/bin mods img device csc debloat featherproject.keys auxy/data/app/.set #META-INF/scripts/xbin/mounts.kek.br
 else
-    zip -v -r $1 META-INF/com META-INF/scripts/bin mods kernel img device auxy csc debloat featherproject.keys META-INF/scripts/xbin
+    zip -v -r $1 META-INF/com META-INF/scripts/bin mods img device auxy csc debloat featherproject.keys META-INF/scripts/xbin
 fi
