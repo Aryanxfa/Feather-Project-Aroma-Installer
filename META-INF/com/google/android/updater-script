@@ -242,6 +242,15 @@ if file_getprop("/tmp/aroma/mods.prop","brightness") == "1" then
   ui_print("@>Removing extended brightness...");
   delete_recursive("/vendor/etc/init/fp_aospbrightness.rc");
 endif;
+
+# Bootani
+if file_getprop("/tmp/aroma/mods.prop","bootani") == "1" then
+  ui_print("@>AOSP Bootanimation...");
+  package_extract_file("mods/bootani/bootanimation", "/system/bin/bootanimation");
+  set_metadata("/system/bin/bootanimation", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:bootanim_exec:s0");
+  package_extract_file("mods/bootani/libbootanimation.so", "/system/lib64/libbootanimation.so");
+  set_metadata("/system/lib64/libbootanimation.so", "uid", 0, "gid", 0, "fmode", 0644, "selabel", "u:object_r:system_lib_file:s0");
+endif;
 ##################################################
 #DEBLOAT
 ##################################################

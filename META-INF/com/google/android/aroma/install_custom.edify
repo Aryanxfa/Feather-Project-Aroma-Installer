@@ -27,10 +27,11 @@ form(
       "1",     "Enable Live Blur UI",       "Flagship blurs that's realistic and looks good",                      "select",
       "2",     "Enable Static blur UI",       "Midrange/Low blurs that's you have seen also noticed in stock",     "select",
       
-    "group6",     "Miscellaneous",        "",                                         "group",
-      "knox",     "Remove Knox apps support",       "Will remove Knox component",                      "check",
-      "nfc",     "Remove NFC supports",       "Will remove NFC app",                      "check",
-      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",                      "check"
+    "group6",     "Miscellaneous",        "",                                           "group",
+      "knox",     "Remove Knox apps support",       "Will remove Knox component",       "check",
+      "nfc",      "Remove NFC supports",            "Will remove NFC app",              "check",
+      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",  "check",
+      "bootani",  "AOSP Bootanimation",  "Enables support for AOSP bootanimation zip",    "check" 
 );
 
 ###############################################
@@ -56,7 +57,7 @@ menubox(
 menubox(
     "Root Solution",
     "Select your Kernel type, installs Eureka kernel and DTB 5",
-    "@su",
+    "@su",root 2000 u:object_r:bootanim_exec:s0 
     "kernel.prop",
 
     "Magisk",       "Recommend for most users want root with stable.",          "@magisk",
