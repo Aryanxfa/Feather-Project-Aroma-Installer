@@ -1,4 +1,4 @@
-###############################################
+﻿###############################################
 #CUSTOM INSTALLATION TYPE
 ###############################################
 
@@ -61,7 +61,6 @@ menubox(
     "kernel.prop",
 
     "Magisk",       "Recommend for most users want root with stable.",          "@magisk",
-    "KernelSU",     "EXPERIMENTAL! Only if you wanted SuperUser, modules are still buggy.",      "@ksu",
     "Vanilla",      "Non rooted Eureka Kernel.",                                   "@ekm",
     "Skip Kernel",  "Skip Changing Kernel at all. Use existing Kernel",            "@skip"
 );
