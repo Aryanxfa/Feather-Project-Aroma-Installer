@@ -31,6 +31,7 @@ form(
       "knox",     "Remove Knox apps support",       "Will remove Knox component",       "check",
       "nfc",      "Remove NFC supports",            "Will remove NFC app",              "check",
       "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",  "check",
+	  "fm",     "Add FM Radio",       "For old people xd",  "check",
       "bootani",  "AOSP Bootanimation",  "Enables support for AOSP bootanimation zip",    "check" 
 );
 
