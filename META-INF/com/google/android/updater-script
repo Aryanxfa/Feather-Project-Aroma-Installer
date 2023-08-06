@@ -214,10 +214,18 @@ endif;
 if file_getprop("/tmp/aroma/mods.prop","blur") == "1" then
   ui_print("@>Live blur effect enabling...");
   run_program("/tmp/busybox", "sed", "-i", "s/FLAG>FALSE/FLAG>TRUE/g", "/system_root/system/etc/floating_feature.xml");
+  package_extract_file("mods/highanim/bin/surfaceflinger", "/system_root/system/bin/surfaceflinger");
+  package_extract_file("mods/highanim/lib/libgui.so", "/system_root/system/lib/libgui.so");
+  package_extract_file("mods/highanim/lib64/libgui.so", "/system_root/system/lib64/libgui.so");
+  set_metadata("/system_root/system/bin/surfaceflinger", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:surfaceflinger_exec:s0");
 endif;
 if file_getprop("/tmp/aroma/mods.prop","blur") == "2" then
   ui_print("@>Static blur effect enabling...");
   run_program("/tmp/busybox", "sed", "-i", "s/FLAG>TRUE/FLAG>FALSE/g", "/system_root/system/etc/floating_feature.xml");
+  package_extract_file("mods/liteanim/bin/surfaceflinger", "/system_root/system/bin/surfaceflinger");
+  package_extract_file("mods/liteanim/lib/libgui.so", "/system_root/system/lib/libgui.so");
+  package_extract_file("mods/liteanim/lib64/libgui.so", "/system_root/system/lib64/libgui.so");
+  set_metadata("/system_root/system/bin/surfaceflinger", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:surfaceflinger_exec:s0");
 endif;
 
 # Knox
