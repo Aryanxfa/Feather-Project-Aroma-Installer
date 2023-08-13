@@ -191,7 +191,18 @@ Changelog v6.0
 - Enabled Adaptive Eye Comfort 
 - Bixby vision removed
 
-Changelog v6.0
-- Add option for AOSP Bootanimation
-- Add KSU kernel options
+Changelog v6.0.1
+- Aroma: Add option for AOSP Bootanimation
 - Exy7884B Fix Lockscreen issue 
+- A40 Notch fixed
+
+Changelog v7.0
+- Some Camera crashes fixed, Reported by @GalaxyA51user
+- Fixed Low Light bug @Bobert_A30
+- Added FM Radio @Bobert_A30
+- Fixed AR Camera
+- Game Tools removed
+- Vendor Updates
+- A20 Camera Quality improved
+- A20e Add support for U5 bootloader
+
