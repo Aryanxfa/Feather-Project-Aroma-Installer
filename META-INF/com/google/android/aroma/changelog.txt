@@ -197,12 +197,14 @@ Changelog v6.0.1
 - A40 Notch fixed
 
 Changelog v7.0
-- Some Camera crashes fixed, Reported by @GalaxyA51user
 - Fixed Low Light bug @Bobert_A30
 - Added FM Radio @Bobert_A30
+- Fixed green selfie issue, Reported by @szcs92
+- Fixed Camera crashes, Reported by @GalaxyA51user
+- Fixed AOD Analog Clock issue
+- Camera Quality improved
 - Fixed AR Camera
+- Recalibrate Auto Brightness
 - Game Tools removed
-- Vendor Updates
-- A20 Camera Quality improved
 - A20e Add support for U5 bootloader
 
