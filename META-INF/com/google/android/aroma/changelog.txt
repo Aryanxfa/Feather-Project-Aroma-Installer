@@ -202,9 +202,10 @@ Changelog v7.0
 - Fixed green selfie issue, Reported by @szcs92
 - Fixed Camera crashes, Reported by @GalaxyA51user
 - Fixed AOD Analog Clock issue
-- Camera Quality improved
 - Fixed AR Camera
-- Recalibrate Auto Brightness
 - Game Tools removed
+- Camera Quality improved
+- Recalibrate Auto Brightness
 - A20e Add support for U5 bootloader
-
+- A30s Patches for FOD
+ 
