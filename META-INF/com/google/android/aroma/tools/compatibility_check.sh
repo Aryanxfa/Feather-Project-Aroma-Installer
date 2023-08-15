@@ -92,11 +92,19 @@ if [ -z "$bootloader" ]; then
     echo "Installer: Harnessing Alternative Detection Strategies"
     bootloader=$(/tmp/busybox sed -n 's/.*androidboot.em.model=\([^[:space:]]*\).*/\1/p' /proc/cmdline)
 fi
+if [ -z "$bootloader" ]; then
+    exit 55
+fi
+binary="${bootloader:8:1}"
+
+echo "    -> Bootloader  : $bootloader"
+echo "    -> Binary      : $binary"
+append_to_file "bootloader=$bootloader"
+append_to_file "binary=$binary"
 
 device="A105"
 device_alt="a10"
 if is_substring "$device" "$bootloader"; then
-    echo "    -> Bootloader  : $bootloader"
     echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
     append_to_file "device_id=$device"
     append_to_file "device_id_alt=$device_alt"
@@ -108,7 +116,6 @@ fi
 device="A205"
 device_alt="a20"
 if is_substring "$device" "$bootloader"; then
-    echo "    -> Bootloader  : $bootloader"
     echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
     append_to_file "device_id=$device"
     append_to_file "device_id_alt=$device_alt"
@@ -120,7 +127,6 @@ fi
 device="A202"
 device_alt="a20e"
 if is_substring "$device" "$bootloader"; then
-    echo "    -> Bootloader  : $bootloader"
     echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
     append_to_file "device_id=$device"
     append_to_file "device_id_alt=$device_alt"
@@ -128,10 +134,10 @@ if is_substring "$device" "$bootloader"; then
     device_supported="1"
     exit 1
 fi
+
 device="A305"
 device_alt="a30"
 if is_substring "$device" "$bootloader"; then
-    echo "    -> Bootloader  : $bootloader"
     echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
     append_to_file "device_id=$device"
     append_to_file "device_id_alt=$device_alt"
@@ -143,7 +149,6 @@ fi
 device="A307"
 device_alt="a30s"
 if is_substring "$device" "$bootloader"; then
-    echo "    -> Bootloader  : $bootloader"
     echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
     append_to_file "device_id=$device"
     append_to_file "device_id_alt=$device_alt"
@@ -155,7 +160,6 @@ fi
 device="A405"
 device_alt="a40"
 if is_substring "$device" "$bootloader"; then
-    echo "    -> Bootloader  : $bootloader"
     echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
     append_to_file "device_id=$device"
     append_to_file "device_id_alt=$device_alt"
@@ -165,7 +169,6 @@ if is_substring "$device" "$bootloader"; then
 fi
 
 if [ "$device_supported" == "0" ]; then
-    echo "    -> Bootloader  : $bootloader"
     echo "    -> <#ff0000>UNKNOWN DEVICE</#>"
     exit 55
 fi
