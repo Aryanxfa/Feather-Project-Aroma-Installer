@@ -209,3 +209,6 @@ Changelog v7.0
 - A20e Add support for U5 bootloader
 - A30s Patches for FOD
  
+Changelog v7.1
+- A10: QR Scanner fixed
+- Fixed some Debloat issues

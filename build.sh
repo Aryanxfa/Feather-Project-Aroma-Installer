@@ -20,6 +20,16 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
+# Format DBList
+db_list=$(find debloat)
+echo $db_list
+for file in $db_list; do
+    if [ -f "$file" ]; then
+        ./validatedblist.sh "$file"
+    fi
+done
+exit
+
 # Pull overlays
 mkdir device/*/overlay/ 2>/dev/null
 cp ../FP_overlay/a10/framework-res__auto_generated_rro_vendor.apk device/a10/overlay/
