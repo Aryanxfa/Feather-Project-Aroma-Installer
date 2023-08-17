@@ -85,14 +85,14 @@ textbox(
 );
 if(getvar("resexec_retstatus")!=1) then
     if
-	  confirm(
-		  "Exit",
-		  "Are you sure want to exit the Installer?",
-		  "@alert"
-	  )=="yes"
-	then
-	  exit("");
-	endif;
+      confirm(
+          "Exit",
+          "Are you sure want to exit the Installer?",
+          "@alert"
+      )=="yes"
+    then
+      exit("");
+    endif;
     back("2");
 endif;
 
