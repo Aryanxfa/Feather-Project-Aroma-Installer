@@ -28,7 +28,6 @@ for file in $db_list; do
         ./validatedblist.sh "$file"
     fi
 done
-exit
 
 # Pull overlays
 mkdir device/*/overlay/ 2>/dev/null
