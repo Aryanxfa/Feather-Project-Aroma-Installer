@@ -211,4 +211,5 @@ Changelog v7.0
  
 Changelog v7.1
 - A10: QR Scanner fixed
+- A10: Brighness fixed
 - Fixed some Debloat issues
