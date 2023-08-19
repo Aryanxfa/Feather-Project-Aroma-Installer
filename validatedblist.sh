@@ -8,7 +8,7 @@ if [ $# -ne 1 ]; then
 fi
 file_path="$1"
 
-# Remove all spaces and tabs from the file
-sed -i 's/[[:space:]]//g' "$file_path"
+# Remove all spaces, tabs, and empty lines from the file
+sed -i '/^[[:space:]]*$/d' "$file_path"
 
 echo "Removed all spaces and tabs from the file."
