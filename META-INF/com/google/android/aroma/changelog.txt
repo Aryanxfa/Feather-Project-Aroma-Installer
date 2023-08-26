@@ -212,8 +212,9 @@ Changelog v7.0
 Changelog v7.1
 - Base update S901BXXU6CWH5
 - Security patch August 2023
+- Google Play Update July 2023
 - A10: QR Scanner fixed
 - A10: Brighness fixed
 - A30s: Unsupported camera feat removed
 - Fixed some Debloat issues
-- LMK updated
+- Standard LMK updated

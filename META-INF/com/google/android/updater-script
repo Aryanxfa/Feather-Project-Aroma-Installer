@@ -209,11 +209,11 @@ endif;
 #-- LMK
 if file_getprop("/tmp/aroma/mods.prop","lmk") == "1" then
   ui_print("@>Installing Light LMK...");
-  run_program("/tmp/busybox","sh","/tmp/tolightlmk.sh");
+  run_program("/tmp/busybox", "sed", "-i", "s/ro.slmk.enable_userspace_lmk=true/ro.slmk.enable_userspace_lmk=false/g", "/vendor/build.prop");
 endif;
 if file_getprop("/tmp/aroma/mods.prop","lmk") == "2" then
   ui_print("@>Installing Standard LMK...");
-  run_program("/tmp/busybox","sh","/tmp/tostandardlmk.sh");
+  run_program("/tmp/busybox", "sed", "-i", "s/ro.slmk.enable_userspace_lmk=false/ro.slmk.enable_userspace_lmk=true/g", "/vendor/build.prop");
 endif;
 
 #-- UI
