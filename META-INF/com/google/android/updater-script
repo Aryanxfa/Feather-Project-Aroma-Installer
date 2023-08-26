@@ -132,11 +132,11 @@ if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A307" then
     ui_print("@>Detected Device: Galaxy A30s");
     package_extract_dir("device/a30s/etc/", "/vendor/etc/");
     package_extract_dir("device/a30s/app/BiometricSetting/", "/system_root/system/priv-app/BiometricSetting/");
-    set_metadata("/vendor/lib/libBeauty_v4.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0")
-    set_metadata("/vendor/lib/libDualCamBokehCapture.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0")
-    set_metadata("/vendor/lib/libdualcam_refocus_image.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0")
-    set_metadata("/vendor/lib/libdualcam_refocus_video.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0")
-    set_metadata("/vendor/lib/libhigh_dynamic_range_bokeh.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0")
+    set_metadata("/vendor/lib/libBeauty_v4.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libDualCamBokehCapture.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libdualcam_refocus_image.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libdualcam_refocus_video.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libhigh_dynamic_range_bokeh.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     run_program("/tmp/busybox", "sed", "-i", "s/VENDOR_LIB_INFO>/VENDOR_LIB_INFO>dual_bokeh.samsung.v1,/g", "/system_root/system/etc/floating_feature.xml");
     run_program("/tmp/busybox", "sed", "-i", "s/capacitive_powerkey_phone/optical/g", "/system_root/system/etc/floating_feature.xml");
 endif;
