@@ -4,10 +4,8 @@ OneUI 5.1 S22 port for A205x
 
 
 Bugs
-- Netflix L1
-- Low light photos
 - Face Unlock
-
+- Moving apps to Sdcard
 
 Changelog v0.1:
 Initial Release S901BXXU2BVJA
