@@ -4,15 +4,13 @@
 # To be used when ones images are ready
 # Call with the format ./build.sh FeatherProject_S22_T_v0.7.zip
 
+supported_devices=("a10" "a20" "a20e" "a30" "a30s" "a40")
+
 if [ -z "$1" ]; then
     echo "Filename not provided"
     exit
 fi
 
-if [ ! -f META-INF/scripts/xbin/sleep.kek.br ]; then
-    echo "Failed with error 1"
-    exit
-fi
 # Validate XML
 ./validatexml.sh
 if [[ $? -ne 0 ]]; then
@@ -30,20 +28,11 @@ for file in $db_list; do
 done
 
 # Pull overlays
-mkdir device/*/overlay/ 2>/dev/null
-cp ../FP_overlay/a10/framework-res__auto_generated_rro_vendor.apk device/a10/overlay/
-cp ../FP_overlay/a20/framework-res__auto_generated_rro_vendor.apk device/a20/overlay/
-cp ../FP_overlay/a20e/framework-res__auto_generated_rro_vendor.apk device/a20e/overlay/
-cp ../FP_overlay/a30/framework-res__auto_generated_rro_vendor.apk device/a30/overlay/
-cp ../FP_overlay/a30s/framework-res__auto_generated_rro_vendor.apk device/a30s/overlay/
-cp ../FP_overlay/a40/framework-res__auto_generated_rro_vendor.apk device/a40/overlay/
-
-cp ../FP_kernels/a10/* device/a10/
-cp ../FP_kernels/a20/* device/a20/
-cp ../FP_kernels/a20e/* device/a20e/
-cp ../FP_kernels/a30/* device/a30/
-cp ../FP_kernels/a30s/* device/a30s/
-cp ../FP_kernels/a40/* device/a40/
+for device in "${supported_devices[@]}"; do
+    mkdir -p device/${device}/overlay/
+    cp ../FP_overlay/${device}/framework-res__auto_generated_rro_vendor.apk device/${device}/overlay/
+    cp ../FP_kernels/${device}/* device/${device}/
+done
 
 rm -f $1
 lowercase_arg="${1,,}"
