@@ -52,7 +52,7 @@ else
     echo "    -> <#ff0000>System is Insufficient</#>"
     exit 55
 fi
-if [ "$vendor_size" -ge 545259520 ]; then
+if [ "$vendor_size" -ge 361496576 ]; then
     append_to_file "vendor_compatible=1"
 else
     append_to_file "vendor_compatible=0"
@@ -76,10 +76,18 @@ else
 fi
 # 400mb size 419430400
 if [ "$product_size" -ge 419430300 ]; then
-    append_to_file "auxy_to_product=1"
+    append_to_file "huge_product=1"
     echo "    -> <#00ff00>Product is 300MB+</#>"
 else
-    append_to_file "auxy_to_product=0"
+    append_to_file "huge_product=0"
+fi
+# A20e caveat
+# 535mb size 560988160
+if [ "$vendor_size" -ge 560988160 ]; then
+    append_to_file "huge_vendor=1"
+    echo "    -> <#00ff00>Vendor is 535MB+</#>"
+else
+    append_to_file "huge_vendor=0"
 fi
 
 echo " "
