@@ -207,12 +207,16 @@ Changelog v7.0
 - A20e Add support for U5 bootloader
 - A30s Patches for FOD
  
-Changelog v7.1
+Changelog v8.0
 - Base update S901BXXU6CWH5
 - Security patch August 2023
 - Google Play System Update
 - A10: QR Scanner fixed
-- A10: Brighness fixed
 - A30s: Some Camera Fixes
+- Brighness Recalibrated again
 - Fixed some Debloat issues
 - Standard LMK updated
+- Game tools added without game home
+- Add support for stock A10 with new minimal install
+  this removes bixby store arzone mcf
+- A10 no longer require mandatory repartitioner
