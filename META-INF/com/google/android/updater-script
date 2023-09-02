@@ -66,7 +66,7 @@ if file_getprop("/tmp/aroma/compatible.prop", "huge_system") == "1" then
 else
   run_program("/tmp/busybox", "sed", "-i", "s/DUAL_BOKEH>BLUR,EFFECT,BIGBOKEH,PORTRAIT,RELIGHT,REFOCUS,LIGHT360/DUAL_BOKEH>/g", "/system_root/system/etc/floating_feature.xml");
   run_program("/tmp/busybox", "sed", "-i", "s/SUPPORT_BIXBY>TRUE/SUPPORT_BIXBY>FALSE/g", "/system_root/system/etc/floating_feature.xml");
-fi
+endif;
 ##################################################
 #DEVICE
 ##################################################
