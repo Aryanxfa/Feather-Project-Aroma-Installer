@@ -59,7 +59,7 @@ else
     echo "    -> <#ff0000>Vendor is Insufficient</#>"
     exit 55
 fi
-if [ "$product_size" -ge 209715200 ]; then
+if [ "$product_size" -ge 83886080 ]; then
     append_to_file "product_compatible=1"
 else
     append_to_file "product_compatible=0"
