@@ -3,7 +3,7 @@
 ini_set("force_colorspace", "rgba");
 ini_set("transition", "stack");
 ini_set("rom_name",             "Feather Project");
-ini_set("rom_version",          "S22_v8.0");
+ini_set("rom_version",          "A13_v1.0");
 ini_set("rom_author",           "Raptor 9");
 ini_set("rom_device",           "Exynos 7884B/7904");
 ini_set("rom_date",             "03/September/2023");
