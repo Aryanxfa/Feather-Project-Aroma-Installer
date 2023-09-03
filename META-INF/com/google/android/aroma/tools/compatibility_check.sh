@@ -133,41 +133,6 @@ if is_substring "$device" "$bootloader"; then
     device_supported="1"
     exit 1
 fi
-device="A305"
-device_alt="a30"
-if is_substring "$device" "$bootloader"; then
-    echo "    -> Bootloader  : $bootloader"
-    echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
-    append_to_file "device_id=$device"
-    append_to_file "device_id_alt=$device_alt"
-    append_to_file "is_7904=1"
-    device_supported="1"
-    exit 1
-fi
-
-device="A307"
-device_alt="a30s"
-if is_substring "$device" "$bootloader"; then
-    echo "    -> Bootloader  : $bootloader"
-    echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
-    append_to_file "device_id=$device"
-    append_to_file "device_id_alt=$device_alt"
-    append_to_file "is_7904=1"
-    device_supported="1"
-    exit 1
-fi
-
-device="A405"
-device_alt="a40"
-if is_substring "$device" "$bootloader"; then
-    echo "    -> Bootloader  : $bootloader"
-    echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
-    append_to_file "device_id=$device"
-    append_to_file "device_id_alt=$device_alt"
-    append_to_file "is_7904=1"
-    device_supported="1"
-    exit 1
-fi
 
 if [ "$device_supported" == "0" ]; then
     echo "    -> Bootloader  : $bootloader"

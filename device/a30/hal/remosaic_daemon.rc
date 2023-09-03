@@ -1,6 +1,0 @@
-
-# Remosaic daemon of Camera
-service remosaic_daemon /vendor/bin/remosaic_daemon
-    class late_start
-    user cameraserver
-    group cameraserver
