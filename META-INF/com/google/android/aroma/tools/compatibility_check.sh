@@ -67,29 +67,6 @@ else
     exit 55
 fi
 
-if [ "$system_size" -ge 4320133120 ]; then
-    append_to_file "huge_system=1"
-    echo "    -> <#00ff00>System is 4.0GB+</#>"
-else
-    append_to_file "huge_system=0"
-    echo "    -> <#ff7961>Minimal Mode Some features might be missing</#>"
-fi
-# 400mb size 419430400
-if [ "$product_size" -ge 419430300 ]; then
-    append_to_file "huge_product=1"
-    echo "    -> <#00ff00>Product is 300MB+</#>"
-else
-    append_to_file "huge_product=0"
-fi
-# A20e caveat
-# 535mb size 560988160
-if [ "$vendor_size" -ge 560988160 ]; then
-    append_to_file "huge_vendor=1"
-    echo "    -> <#00ff00>Vendor is 535MB+</#>"
-else
-    append_to_file "huge_vendor=0"
-fi
-
 echo " "
 echo "<b>DETECTING DEVICE :-</b>"
 # Device Checks
