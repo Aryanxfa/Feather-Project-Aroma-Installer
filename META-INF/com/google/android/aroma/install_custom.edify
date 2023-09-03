@@ -22,11 +22,7 @@ form(
     "lmk",     "LMK - LowMemoryKiller",        "",                                     "group",
       "1",     "Light LMK",           "Allow heavy multi-tasking",                     "select",
       "2",     "Standard LMk",        "Allow UI more responsive",                      "select",
-      
-    "blur",     "UserInterface",        "",                                            "group",
-      "1",     "Enable Live Blur UI",       "Flagship blurs that's realistic and looks good",                      "select",
-      "2",     "Enable Static blur UI",       "Midrange/Low blurs that's you have seen also noticed in stock",     "select",
-      
+    
     "group6",     "Miscellaneous",        "",                                           "group",
       "knox",     "Remove Knox apps support",       "Will remove Knox component",       "check",
       "nfc",      "Remove NFC supports",            "Will remove NFC app",              "check",
