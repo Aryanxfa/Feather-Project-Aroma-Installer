@@ -19,3 +19,8 @@ Changelog v1.0:
 - Add Support for Korean Devices
 - Extra Dim Enabled
 - Switched to A51 CSC
+
+Changelog v1.1:
+- Camera Fixups
+- Selinux Fixes
+- Off Charging screen resized
