@@ -2,8 +2,8 @@
 ui_print("===================================");
 ui_print("  ROM    : FEATHER PROJECT         ");
 ui_print("  OS     : OneUI 5.1 | Android 13  ");
-ui_print("  Version : S22_v6.0.1             ");
-ui_print("  Security: July 2023              ");
+ui_print("  Version : S22_v8.0               ");
+ui_print("  Security: August 2023            ");
 ui_print("  KERNEL  : Eureka 13.0            ");
 ui_print("  DTB    : 5, Stable v2            ");
 ui_print("     -> Big cores: 520 - 2080      ");
@@ -29,16 +29,13 @@ else
     ui_print(" Installing ROM ...");
     set_progress(0.25);
     ui_print("@>Extracting System...");
-    ifelse(is_mounted("/system_root"), unmount("/system_root"));
     block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/system", package_extract_file("META-INF/com/google/CERT.SF"), "META-INF/scripts/xbin/busybox.kek.br", "img/system.img");
     run_program("/tmp/busybox", "sleep", "1");
     set_progress(0.68);
     ui_print("@>Extracting Vendor...");
-    ifelse(is_mounted("/vendor"), unmount("/vendor"));
     block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/vendor", package_extract_file("META-INF/com/google/MANIFEST.MF"), "META-INF/scripts/xbin/mounts.kek.br", "img/vendor.img");
     run_program("/tmp/busybox", "sleep", "1");
     ui_print("@>Extracting Product...");
-    ifelse(is_mounted("/product"), unmount("/product"));
     block_image_update("/dev/block/platform/13500000.dwmmc0/by-name/product", package_extract_file("META-INF/com/google/CERT.RSA"), "META-INF/scripts/xbin/sleep.kek.br", "img/product.img");
     run_program("/tmp/busybox", "sleep", "1");
 endif;
@@ -46,7 +43,6 @@ endif;
 #RESIZE
 ##################################################
 set_progress(0.80);
-run_program("/tmp/busybox", "sleep", "1");
 run_program("/tmp/busybox", "sh", "/tmp/system-resize.sh");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/system_root");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/vendor");
@@ -61,7 +57,6 @@ if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "0" then
     if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "1" then
         package_extract_dir("auxy/data/app/WebViewGoogle", "/product/app/WebViewGoogle");
         package_extract_dir("auxy/data/app/TrichromeLibrary", "/product/app/TrichromeLibrary");
-        package_extract_dir("auxy/data/app/Chrome", "/data/app/Chrome");
     endif;
     if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "0" then
         package_extract_dir("auxy/data/app", "/data/app");
@@ -132,6 +127,22 @@ if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A307" then
     ui_print("@>Detected Device: Galaxy A30s");
     package_extract_dir("device/a30s/etc/", "/vendor/etc/");
     package_extract_dir("device/a30s/app/BiometricSetting/", "/system_root/system/priv-app/BiometricSetting/");
+    set_metadata("/vendor/lib/libBeauty_v4.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libDualCamBokehCapture.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libdualcam_refocus_image.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libdualcam_refocus_video.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libFacePreProcessing.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libhigh_dynamic_range_bokeh.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libHprFace_GAE_api.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib64/libBeauty_v4.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib64/libDualCamBokehCapture.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib64/libdualcam_refocus_image.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib64/libFacePreProcessing.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib64/libhigh_dynamic_range_bokeh.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib64/libHprFace_GAE_api.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    run_program("/tmp/busybox", "sed", "-i", "s/VENDOR_LIB_INFO>/VENDOR_LIB_INFO>dual_bokeh.samsung.v1,/g", "/system_root/system/etc/floating_feature.xml");
     run_program("/tmp/busybox", "sed", "-i", "s/capacitive_powerkey_phone/optical/g", "/system_root/system/etc/floating_feature.xml");
 endif;
 if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A405" then
@@ -203,21 +214,29 @@ endif;
 #-- LMK
 if file_getprop("/tmp/aroma/mods.prop","lmk") == "1" then
   ui_print("@>Installing Light LMK...");
-  run_program("/tmp/busybox","sh","/tmp/tolightlmk.sh");
+  run_program("/tmp/busybox", "sed", "-i", "s/ro.slmk.enable_userspace_lmk=true/ro.slmk.enable_userspace_lmk=false/g", "/vendor/build.prop");
 endif;
 if file_getprop("/tmp/aroma/mods.prop","lmk") == "2" then
   ui_print("@>Installing Standard LMK...");
-  run_program("/tmp/busybox","sh","/tmp/tostandardlmk.sh");
+  run_program("/tmp/busybox", "sed", "-i", "s/ro.slmk.enable_userspace_lmk=false/ro.slmk.enable_userspace_lmk=true/g", "/vendor/build.prop");
 endif;
 
 #-- UI
 if file_getprop("/tmp/aroma/mods.prop","blur") == "1" then
   ui_print("@>Live blur effect enabling...");
   run_program("/tmp/busybox", "sed", "-i", "s/FLAG>FALSE/FLAG>TRUE/g", "/system_root/system/etc/floating_feature.xml");
+  package_extract_file("mods/highanim/bin/surfaceflinger", "/system_root/system/bin/surfaceflinger");
+  package_extract_file("mods/highanim/lib/libgui.so", "/system_root/system/lib/libgui.so");
+  package_extract_file("mods/highanim/lib64/libgui.so", "/system_root/system/lib64/libgui.so");
+  set_metadata("/system_root/system/bin/surfaceflinger", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:surfaceflinger_exec:s0");
 endif;
 if file_getprop("/tmp/aroma/mods.prop","blur") == "2" then
   ui_print("@>Static blur effect enabling...");
   run_program("/tmp/busybox", "sed", "-i", "s/FLAG>TRUE/FLAG>FALSE/g", "/system_root/system/etc/floating_feature.xml");
+  package_extract_file("mods/liteanim/bin/surfaceflinger", "/system_root/system/bin/surfaceflinger");
+  package_extract_file("mods/liteanim/lib/libgui.so", "/system_root/system/lib/libgui.so");
+  package_extract_file("mods/liteanim/lib64/libgui.so", "/system_root/system/lib64/libgui.so");
+  set_metadata("/system_root/system/bin/surfaceflinger", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:surfaceflinger_exec:s0");
 endif;
 
 # Knox
@@ -532,7 +551,7 @@ delete_recursive("/data/sec/com.samsung.cmh");
 set_progress(0.99);
 ##################################################
 ui_print("--[  Unmount partition  ]--");
-ifelse(is_mounted("/system"), unmount("/system"));
+ifelse(is_mounted("/system_root"), unmount("/system_root"));
 ifelse(is_mounted("/vendor"), unmount("/vendor"));
 ifelse(is_mounted("/product"), unmount("/product"));
 ##################################################

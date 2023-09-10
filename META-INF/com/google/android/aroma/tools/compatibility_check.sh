@@ -88,10 +88,6 @@ if [ -z "$bootloader" ]; then
     echo "Installer: Employing Alternative Detection Methods"
     bootloader=$(/tmp/busybox sed -n 's/.*androidboot.bootloader=\([^[:space:]]*\).*/\1/p' /proc/cmdline)
 fi
-if [ -z "$bootloader" ]; then
-    echo "Installer: Harnessing Alternative Detection Strategies"
-    bootloader=$(/tmp/busybox sed -n 's/.*androidboot.em.model=\([^[:space:]]*\).*/\1/p' /proc/cmdline)
-fi
 
 device="A105"
 device_alt="a10"

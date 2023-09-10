@@ -402,8 +402,8 @@
    <type name="Counter32" resource="TYPE" size="32"/>
    <type name="Counters_List" resource="TYPE">
       <!-- "num_counts" 32 bit counters will be placed in the counts buffer in the same order
-		      as requested in WLANLITE_RX_READ.request.
-		      Only returns counters for rates recognised; will stop at first invalid rate. -->
+              as requested in WLANLITE_RX_READ.request.
+              Only returns counters for rates recognised; will stop at first invalid rate. -->
       <field name="num_counts">
          <type>uint16</type>
       </field>
@@ -1054,23 +1054,23 @@
    <type name="Data_Length" resource="TYPE" size="16" subsidiary="true"/>
    <type name="Data_Rate" resource="TYPE" size="16">
       <!-- The format of the rate field is:
-		 Bit fields:   15..13  12..10   9..7   6   5..0
-			           <mode><bandwidth><NSS><SGI><rate>
-		 Notes:
-		  - mode is one of:
-			0 - 11b  and <rate> is the 11b Mbps data rate rounded down
-			1 - 11ag and <rate> is the 11a/11g Mbps data rate rounded down
-			2 - 11n  and <rate> is the HT MCS index (0..32)
-			3 - 11ac and <rate> is the VHT MCS index (0..9)
-			7 - misc_count and <rate> selects non-rate counters (WLANLITE_RX_READ only)
-		  - bandwidth is one of:
-			0 - 20MHz
-			1 - 40MHz
-			2 - 80MHz
-		  - NSS is the number of spatial streams(1..8) - 1
-		  - Short guard interval(SGI) flag only applies to HT/VHT rates.
-		These values are also used to pick which rate counters we would like
-		to read in the WLANLITE_RX_READ request. -->
+         Bit fields:   15..13  12..10   9..7   6   5..0
+                       <mode><bandwidth><NSS><SGI><rate>
+         Notes:
+          - mode is one of:
+            0 - 11b  and <rate> is the 11b Mbps data rate rounded down
+            1 - 11ag and <rate> is the 11a/11g Mbps data rate rounded down
+            2 - 11n  and <rate> is the HT MCS index (0..32)
+            3 - 11ac and <rate> is the VHT MCS index (0..9)
+            7 - misc_count and <rate> selects non-rate counters (WLANLITE_RX_READ only)
+          - bandwidth is one of:
+            0 - 20MHz
+            1 - 40MHz
+            2 - 80MHz
+          - NSS is the number of spatial streams(1..8) - 1
+          - Short guard interval(SGI) flag only applies to HT/VHT rates.
+        These values are also used to pick which rate counters we would like
+        to read in the WLANLITE_RX_READ request. -->
       <value name="11b20_1mbps" value="0x0001"/>
       <value name="11b20_2mbps" value="0x0002"/>
       <value name="11b20_5m5bps" value="0x0005"/>
@@ -1266,7 +1266,7 @@
       <value name="11ac80_780mbps_sgi_nss2" value="0x68c8"/>
       <value name="11ac80_866m7bps_sgi_nss2" value="0x68c9"/>
       <!-- These values are not rates and are only applicable when
-		     using WLANLITE_RX_READ to read miscellaneous counters. -->
+             using WLANLITE_RX_READ to read miscellaneous counters. -->
       <value name="ctr_total" value="0xe000"/>
       <value name="ctr_no_error" value="0xe001"/>
       <value name="ctr_crc_error" value="0xe002"/>
@@ -5005,8 +5005,8 @@
       <value name="filtering" value="0x0002"/>
       <value name="periodic" value="0x0004"/>
       <!-- The radio is normally turned on for Rx only. However, if the 'ack' flag
-		     is set it will be turned on for Tx as well. This allows unicast MPDUs
-		     to be acked. -->
+             is set it will be turned on for Tx as well. This allows unicast MPDUs
+             to be acked. -->
       <value name="ack" value="0x0008"/>
       <value name="lp_mode" value="0x0010"/>
    </type>

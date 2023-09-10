@@ -279,7 +279,7 @@
             <key_info keyname="SERIAL" min="" max="" desc1="Partialy SD Card Serial" desc2="" desc3="" desc4="" type1="1" type2="0"/>
             <key_info keyname="SIZE" min="" max="" desc1="SD Card Size" desc2="" desc3="" desc4="" type1="1" type2="0"/>
             <key_info keyname="SPEEDMODE" min="" max="" desc1="Current SD Card run Speed Mode" desc2="" desc3="" desc4="" type1="1" type2="0"/>
-	    <key_info keyname="NOTI" min="" max="" desc1="SD Card IO Error Notification Count" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+        <key_info keyname="NOTI" min="" max="" desc1="SD Card IO Error Notification Count" desc2="" desc3="" desc4="" type1="1" type2="0"/>
         </sysfs_node>
       </condition_info>
     </hwparam_info>
@@ -384,7 +384,7 @@
             <key_info keyname="TAMB_MIN" min="0" max="0" desc1="touch ambient data min value" desc2="" desc3="" desc4="" type1="1" type2="99"/>
             <key_info keyname="TAMB_MIN_TX" min="0" max="0" desc1="touch ambient data min value tx position" desc2="" desc3="" desc4="" type1="1" type2="99"/>
             <key_info keyname="TAMB_MIN_RX" min="0" max="0" desc1="touch ambient data min value rx position" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	</sysfs_node>
+    </sysfs_node>
     </hwparam_info>
 
     <hwparam_info compID="TSP" feature="HKEY" hitType="sm" compVer="0.0" compManufacture="" order_compID="5" order_feature="4" >
@@ -525,53 +525,53 @@
 
     <!-- Device : USB -->
     <hwparam_info compID="USB" feature="UUSB" hitType="sm" compVer="0.0" compManufacture="" order_compID="11" order_feature="1">
-	<sysfs_node type="M" key="" value="/sys/class/usb_notify/usb_control/hw_param" clear="1">
-	    <key_info keyname="CC_WATER" min="" max="" desc1="Water Detection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_DRY" min="" max="" desc1="Dry Detection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_I2C" min="" max="" desc1="CCIC i2c Error Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_OVC" min="" max="" desc1="VBUS Output OverCurrent Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_OTG" min="" max="" desc1="USB OTG Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_DP" min="" max="" desc1="DP(Display Port) Adapter Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_VR" min="" max="" desc1="Samsung Gear VR Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_SUPER" min="" max="" desc1="USB Host SuperSpeed device Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_HIGH" min="" max="" desc1="USB Host HighSpeed device Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_FULL" min="" max="" desc1="USB Host FullSpeed device Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_LOW" min="" max="" desc1="USB Host LowSpeed device Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="C_SUPER" min="" max="" desc1="USB Client SuperSpeed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="C_HIGH" min="" max="" desc1="USB Client HighSpeed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_AUDIO" min="" max="" desc1="USB Host Audio Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_COMM" min="" max="" desc1="USB Host Communication Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_HID" min="" max="" desc1="USB Host HID Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_PHYSIC" min="" max="" desc1="USB Host Physical Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_IMAGE" min="" max="" desc1="USB Host Image Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_PRINTER" min="" max="" desc1="USB Host Printer Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_STORAGE" min="" max="" desc1="USB Host Storage Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_STO_S" min="" max="" desc1="USB Host Storage Super Speed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_STO_H" min="" max="" desc1="USB Host Storage High Speed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_STO_F" min="" max="" desc1="USB Host Storage Full Speed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_HUB" min="" max="" desc1="USB Host Hub Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_CDC" min="" max="" desc1="USB Host CDC Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_CSCID" min="" max="" desc1="USB Host CSCID Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_CONTENT" min="" max="" desc1="USB Host Content Security Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_VIDEO" min="" max="" desc1="USB Host Video Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_WIRE" min="" max="" desc1="USB Host Wireless Control Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_MISC" min="" max="" desc1="USB Host Miscellaneous Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_APP" min="" max="" desc1="USB Host App Specific Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="H_VENDOR" min="" max="" desc1="USB Host Vendor Specific Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_DEX" min="" max="" desc1="DEX Dock Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_WTIME" min="" max="" desc1="Water Detection Duration (minutes)" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_WVBUS" min="" max="" desc1="Water Detection Charging Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_WVTIME" min="" max="" desc1="Water-Vbus Detection Duration (seconds)" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_CSHORT" min="" max="" desc1="CC VBUS Pin Short Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-	    <key_info keyname="CC_SVSHT" min="" max="" desc1="SBU VBUS Pin Short Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-	    <key_info keyname="CC_SGSHT" min="" max="" desc1="SBU GND Pin Short Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-	    <key_info keyname="M_AFCNAK" min="" max="" desc1="AFC Protocol Nack Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="M_AFCERR" min="" max="" desc1="AFC Protocol Nack and Error Voltage Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="M_DCDTMO" min="" max="" desc1="Data Contact Detecting Timeout Event Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	    <key_info keyname="CC_KILLER" min="" max="" desc1="USB Killer Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-	    <key_info keyname="CC_FWERR" min="" max="" desc1="CCIC FW Update Fail Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-	    <key_info keyname="CC_VER" min="" max="" desc1="CCIC FW Version" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-	</sysfs_node>
+    <sysfs_node type="M" key="" value="/sys/class/usb_notify/usb_control/hw_param" clear="1">
+        <key_info keyname="CC_WATER" min="" max="" desc1="Water Detection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_DRY" min="" max="" desc1="Dry Detection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_I2C" min="" max="" desc1="CCIC i2c Error Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_OVC" min="" max="" desc1="VBUS Output OverCurrent Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_OTG" min="" max="" desc1="USB OTG Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_DP" min="" max="" desc1="DP(Display Port) Adapter Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_VR" min="" max="" desc1="Samsung Gear VR Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_SUPER" min="" max="" desc1="USB Host SuperSpeed device Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_HIGH" min="" max="" desc1="USB Host HighSpeed device Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_FULL" min="" max="" desc1="USB Host FullSpeed device Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_LOW" min="" max="" desc1="USB Host LowSpeed device Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="C_SUPER" min="" max="" desc1="USB Client SuperSpeed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="C_HIGH" min="" max="" desc1="USB Client HighSpeed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_AUDIO" min="" max="" desc1="USB Host Audio Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_COMM" min="" max="" desc1="USB Host Communication Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_HID" min="" max="" desc1="USB Host HID Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_PHYSIC" min="" max="" desc1="USB Host Physical Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_IMAGE" min="" max="" desc1="USB Host Image Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_PRINTER" min="" max="" desc1="USB Host Printer Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_STORAGE" min="" max="" desc1="USB Host Storage Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_STO_S" min="" max="" desc1="USB Host Storage Super Speed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_STO_H" min="" max="" desc1="USB Host Storage High Speed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_STO_F" min="" max="" desc1="USB Host Storage Full Speed Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_HUB" min="" max="" desc1="USB Host Hub Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_CDC" min="" max="" desc1="USB Host CDC Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_CSCID" min="" max="" desc1="USB Host CSCID Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_CONTENT" min="" max="" desc1="USB Host Content Security Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_VIDEO" min="" max="" desc1="USB Host Video Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_WIRE" min="" max="" desc1="USB Host Wireless Control Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_MISC" min="" max="" desc1="USB Host Miscellaneous Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_APP" min="" max="" desc1="USB Host App Specific Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="H_VENDOR" min="" max="" desc1="USB Host Vendor Specific Class Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_DEX" min="" max="" desc1="DEX Dock Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_WTIME" min="" max="" desc1="Water Detection Duration (minutes)" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_WVBUS" min="" max="" desc1="Water Detection Charging Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_WVTIME" min="" max="" desc1="Water-Vbus Detection Duration (seconds)" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_CSHORT" min="" max="" desc1="CC VBUS Pin Short Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+        <key_info keyname="CC_SVSHT" min="" max="" desc1="SBU VBUS Pin Short Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+        <key_info keyname="CC_SGSHT" min="" max="" desc1="SBU GND Pin Short Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+        <key_info keyname="M_AFCNAK" min="" max="" desc1="AFC Protocol Nack Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="M_AFCERR" min="" max="" desc1="AFC Protocol Nack and Error Voltage Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="M_DCDTMO" min="" max="" desc1="Data Contact Detecting Timeout Event Count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        <key_info keyname="CC_KILLER" min="" max="" desc1="USB Killer Connection Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+        <key_info keyname="CC_FWERR" min="" max="" desc1="CCIC FW Update Fail Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+        <key_info keyname="CC_VER" min="" max="" desc1="CCIC FW Version" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+    </sysfs_node>
     </hwparam_info>
 
     <!-- Device : Sensor -->
@@ -584,31 +584,31 @@
 
     <!-- Device : Biometrics FingerPrint Sensor -->
     <hwparam_info compID="BFS" feature="BFPS" hitType="sm" compVer="0.0" compManufacture="" order_compID="14" order_feature="1" >
-	    <sysfs_node type="S" key="FPTY" value="/sys/class/fingerprint/fingerprint/type_check" clear="0" >
-		    <key_info keyname="FPTY" min="" max="" desc1="-1:unknown, 0,-2:failed, 1~: success" desc2="" desc3="" desc4="" type1="1" type2="99" />
-	    </sysfs_node>
-	    <sysfs_node type="S" key="FPIC" value="/sys/class/fingerprint/fingerprint/name" clear="0" >
-		    <key_info keyname="FPIC" min="" max="" desc1="Fingerprint" desc2="" desc3="" desc4="" type1="1" type2="10" />
-	    </sysfs_node>
-	    <dev_sysfs_node type="S" key="FPNS" value="/data/log/FingerNormalData.log" clear="0" >
-	    </dev_sysfs_node>
-	    <dev_sysfs_node type="S" key="FPSN" value="/data/log/FingerSNRData.log" clear="0" >
-	    </dev_sysfs_node>
-	    <condition_info path="/sys/class/fingerprint/fingerprint/name" value="QBT2000" >
-	        <sysfs_node type="S" key="FPQC" value="/sys/class/fingerprint/fingerprint/cbgecnt" clear="1" >
-		        <key_info keyname="FPQC" min="" max="" desc1="CBGE_count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-	        </sysfs_node>
-	    </condition_info>
-	    <condition_info path="/sys/class/fingerprint/fingerprint/name" value="QBT2000" >
-	        <sysfs_node type="S" key="FPIT" value="/sys/class/fingerprint/fingerprint/intcnt" clear="1" >
-		        <key_info keyname="FPIT" min="" max="" desc1="interrupt_count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-	        </sysfs_node>
-	    </condition_info>
-	    <condition_info path="/sys/class/fingerprint/fingerprint/name" value="QBT2000" >
-	        <sysfs_node type="S" key="FPRS" value="/sys/class/fingerprint/fingerprint/resetcnt" clear="1" >
-		        <key_info keyname="FPRS" min="" max="" desc1="reset_count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-	        </sysfs_node>
-	    </condition_info>
+        <sysfs_node type="S" key="FPTY" value="/sys/class/fingerprint/fingerprint/type_check" clear="0" >
+            <key_info keyname="FPTY" min="" max="" desc1="-1:unknown, 0,-2:failed, 1~: success" desc2="" desc3="" desc4="" type1="1" type2="99" />
+        </sysfs_node>
+        <sysfs_node type="S" key="FPIC" value="/sys/class/fingerprint/fingerprint/name" clear="0" >
+            <key_info keyname="FPIC" min="" max="" desc1="Fingerprint" desc2="" desc3="" desc4="" type1="1" type2="10" />
+        </sysfs_node>
+        <dev_sysfs_node type="S" key="FPNS" value="/data/log/FingerNormalData.log" clear="0" >
+        </dev_sysfs_node>
+        <dev_sysfs_node type="S" key="FPSN" value="/data/log/FingerSNRData.log" clear="0" >
+        </dev_sysfs_node>
+        <condition_info path="/sys/class/fingerprint/fingerprint/name" value="QBT2000" >
+            <sysfs_node type="S" key="FPQC" value="/sys/class/fingerprint/fingerprint/cbgecnt" clear="1" >
+                <key_info keyname="FPQC" min="" max="" desc1="CBGE_count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            </sysfs_node>
+        </condition_info>
+        <condition_info path="/sys/class/fingerprint/fingerprint/name" value="QBT2000" >
+            <sysfs_node type="S" key="FPIT" value="/sys/class/fingerprint/fingerprint/intcnt" clear="1" >
+                <key_info keyname="FPIT" min="" max="" desc1="interrupt_count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            </sysfs_node>
+        </condition_info>
+        <condition_info path="/sys/class/fingerprint/fingerprint/name" value="QBT2000" >
+            <sysfs_node type="S" key="FPRS" value="/sys/class/fingerprint/fingerprint/resetcnt" clear="1" >
+                <key_info keyname="FPRS" min="" max="" desc1="reset_count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            </sysfs_node>
+        </condition_info>
     </hwparam_info>
 
     <!-- Device : GNSS -->

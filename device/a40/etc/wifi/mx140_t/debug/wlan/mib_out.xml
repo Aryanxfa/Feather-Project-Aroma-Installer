@@ -2414,17 +2414,17 @@
         <!-- unifiTxOOBConstraintTable Transmit out-of-band regulatory constraint table -->
         <config_element name="unifiTxOOBConstraints" psid="5064">
           <description_user>OOB constraints table.
-		| octects | description                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-		|---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-		|       0 | DPD applicability bitmask: 0 = no DPD, 1 = dynamic DPD, 2 = static DPD, 3 = applies to both static and dynamic DPD                                                                                                                                                                                                                                                                                                                                    |
-		|     1-2 | Bitmask indicating which regulatory domains this rule applies to FCC=bit0, ETSI=bit1, JAPAN=bit2                                                                                                                                                                                                                                                                                                                                                      |
-		|     3-4 | Bitmask indicating which band edges this rule applies to RICE_BAND_EDGE_ISM_24G_LOWER = bit 0, RICE_BAND_EDGE_ISM_24G_UPPER = bit 1, RICE_BAND_EDGE_U_NII_1_LOWER = bit 2, RICE_BAND_EDGE_U_NII_1_UPPER = bit 3, RICE_BAND_EDGE_U_NII_2_LOWER = bit 4, RICE_BAND_EDGE_U_NII_2_UPPER = bit 5, RICE_BAND_EDGE_U_NII_2E_LOWER = bit 6, RICE_BAND_EDGE_U_NII_2E_UPPER = bit 7, RICE_BAND_EDGE_U_NII_3_LOWER = bit 8, RICE_BAND_EDGE_U_NII_3_UPPER = bit 9 |
-		|       5 | Bitmask indicating which modulation types this rule applies to (LSB/b0=DSSS/CCK, b1= OFDM0 modulation group, b2= OFDM1 modulation group)                                                                                                                                                                                                                                                                                                              |
-		|       6 | Bitmask indicating which channel bandwidths this rule applies to (LSB/b0=20MHz, b1=40MHz, b2=80MHz)                                                                                                                                                                                                                                                                                                                                                   |
-		|       7 | Minimum distance to nearest band edge in 500 kHz units for which this constraint becomes is applicable.                                                                                                                                                                                                                                                                                                                                               |
-		|       8 | Maximum power (EIRP) for this particular constraint - specified in units of quarter dBm.                                                                                                                                                                                                                                                                                                                                                              |
-		|    9-32 | Spectral shaping configuration to be used for this particular constraint. The value is specific to the radio hardware and should only be altered under advice from the IC supplier.                                                                                                                                                                                                                                                                   |
-		                                                                                                                                                                                     |</description_user>
+        | octects | description                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+        |---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+        |       0 | DPD applicability bitmask: 0 = no DPD, 1 = dynamic DPD, 2 = static DPD, 3 = applies to both static and dynamic DPD                                                                                                                                                                                                                                                                                                                                    |
+        |     1-2 | Bitmask indicating which regulatory domains this rule applies to FCC=bit0, ETSI=bit1, JAPAN=bit2                                                                                                                                                                                                                                                                                                                                                      |
+        |     3-4 | Bitmask indicating which band edges this rule applies to RICE_BAND_EDGE_ISM_24G_LOWER = bit 0, RICE_BAND_EDGE_ISM_24G_UPPER = bit 1, RICE_BAND_EDGE_U_NII_1_LOWER = bit 2, RICE_BAND_EDGE_U_NII_1_UPPER = bit 3, RICE_BAND_EDGE_U_NII_2_LOWER = bit 4, RICE_BAND_EDGE_U_NII_2_UPPER = bit 5, RICE_BAND_EDGE_U_NII_2E_LOWER = bit 6, RICE_BAND_EDGE_U_NII_2E_UPPER = bit 7, RICE_BAND_EDGE_U_NII_3_LOWER = bit 8, RICE_BAND_EDGE_U_NII_3_UPPER = bit 9 |
+        |       5 | Bitmask indicating which modulation types this rule applies to (LSB/b0=DSSS/CCK, b1= OFDM0 modulation group, b2= OFDM1 modulation group)                                                                                                                                                                                                                                                                                                              |
+        |       6 | Bitmask indicating which channel bandwidths this rule applies to (LSB/b0=20MHz, b1=40MHz, b2=80MHz)                                                                                                                                                                                                                                                                                                                                                   |
+        |       7 | Minimum distance to nearest band edge in 500 kHz units for which this constraint becomes is applicable.                                                                                                                                                                                                                                                                                                                                               |
+        |       8 | Maximum power (EIRP) for this particular constraint - specified in units of quarter dBm.                                                                                                                                                                                                                                                                                                                                                              |
+        |    9-32 | Spectral shaping configuration to be used for this particular constraint. The value is specific to the radio hardware and should only be altered under advice from the IC supplier.                                                                                                                                                                                                                                                                   |
+                                                                                                                                                                                             |</description_user>
             <type>octet_string</type>
             <range_min>0</range_min><range_max>255</range_max>
             <function type="set" function_name="mibricechangefsmparams" is_for_vif="false"></function>
@@ -3877,239 +3877,239 @@
         <!-- end of unifiRegulatoryTable -->
         <!--  Operating Class information for all countries. -->
         <config_element name="unifiOperatingClassTableIndex" psid="0">
-		    <type>integer</type>
-		    <range_min>1</range_min><range_max>200</range_max>
-		    <description_user>Index for unifiOperatingClassTable</description_user>
-		</config_element>
-		<config_element name="unifiOperatingClassParamters" psid="8015">
-		    <description_user>Supported Operating Class parameters.</description_user>
-		    <access_rights>read_only</access_rights>
-		    <type>octet_string</type>
-		    <range_min>6</range_min><range_max>73</range_max>
-		    <table_name>unifiOperatingClassTable</table_name>
-		    <default_list>
+            <type>integer</type>
+            <range_min>1</range_min><range_max>200</range_max>
+            <description_user>Index for unifiOperatingClassTable</description_user>
+        </config_element>
+        <config_element name="unifiOperatingClassParamters" psid="8015">
+            <description_user>Supported Operating Class parameters.</description_user>
+            <access_rights>read_only</access_rights>
+            <type>octet_string</type>
+            <range_min>6</range_min><range_max>73</range_max>
+            <table_name>unifiOperatingClassTable</table_name>
+            <default_list>
                 <default index1="1">{0x53,0x54,0x70,0x73,0x74,0x75,0x7A,0x7B,0x7C,
-		                             0x7D,0x7E,0x7F,0x80,0x81,0x82}</default>		      <!-- Global -->
+                                     0x7D,0x7E,0x7F,0x80,0x81,0x82}</default>              <!-- Global -->
                 <default index1="2">{0x01,0x02,0x03,0x05,0x06,0x07,0x08,0x09,0x0A,0x10,
-		                             0x11,0x80,0x81,0x82}</default>		                  <!-- Europe -->
+                                     0x11,0x80,0x81,0x82}</default>                          <!-- Europe -->
                 <default index1="3">{0x01,0x03,0x05,0x16,0x17,0x19,0x1A,0x1B,0x1C,0x1E,
-		                             0x1F,0x20,0x21,0x80,0x81,0x82}</default>		      <!-- US -->
+                                     0x1F,0x20,0x21,0x80,0x81,0x82}</default>              <!-- US -->
                 <default index1="4">{0x01,0x02,0x03,0x04,0x05,0x06,0x20,0x21,0x24,0x25,
-		                             0x26,0x29,0x2A,0x2B,0x3A,0x80,0x81,0x82}</default>	  <!-- Japan -->
-		    </default_list>
-		    <nature>software</nature>
-		  </config_element>
-		  <!-- end of unifiOperatingClassTable -->
-		  <config_element name="unifiScanParametersTableIndex" psid="0">
+                                     0x26,0x29,0x2A,0x2B,0x3A,0x80,0x81,0x82}</default>      <!-- Japan -->
+            </default_list>
+            <nature>software</nature>
+          </config_element>
+          <!-- end of unifiOperatingClassTable -->
+          <config_element name="unifiScanParametersTableIndex" psid="0">
               <type>integer</type>
               <range_min>1</range_min><range_max>20</range_max>
               <description_user>Index for unifiScanParametersTable. Index is a Scan_Type as defined in FAPI. </description_user>
-		  </config_element>
-		  <config_element name="unifiScanParameters" psid="2154">
-		  <description_user>Scan parameters.
-		    Each row of the table contains 2 entries for a scan: first entry when there is 0 registered VIFs, second - when there is 1 or more registered VIFs.
-		    Entry has the following structure:
-		    octet  0        -  Scan priority                          (uint8_t)
-		    octet  1        -  Enable Early Channel Exit              (uint8_t as bool)
-		    octet  2 ~ 3    -  Probe Interval in Time Units           (uint16_t)
-		    octet  4 ~ 5    -  Max Active Channel Time in Time Units  (uint16_t)
-		    octet  6 ~ 7    -  Max Passive Channel Time in Time Units (uint16_t)
-		    octet  8 ~ 9    -  Scan Policy                            (uint16_t)
-		    Size of each entry is 10 octets, row size is 20 octets. A Time Units value specifies a time interval as a multiple of TU (1024 us).</description_user>
-		  <type>octet_string</type>
-		  <range_min>20</range_min><range_max>20</range_max>
-		  <table_name>unifiScanParametersTable</table_name>
-		  <default_list>
-		    <!-- Initial scan
-		             0 VIFS:      6      true      24TU           58TU          102TU
-		          >= 1 VIFS (no such thing as initial scan with >= 1 VIFS):
-		                          6      true      24TU           58TU          102TU -->
-		    <default index1="1">{ 0x06,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00,
-		                          0x06,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00  }</default>
-		    <!-- Full scan
-		             0 VIFS:      6      true      68TU           146TU         117TU
-		          >= 1 VIFS:      6      true      24TU           58TU          102TU -->
-		    <default index1="2">{ 0x06,  0x01,     0x44,0x00,     0x92,0x00,    0x75,0x00,    0x00,0x00,
-		                          0x06,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00  }</default>
-		    <!-- Scheduled scan
-		             0 VIFS:      2      true      68TU           146TU         117TU
-		           = 1 VIFS:      2      true      24TU           58TU          102TU -->
-		    <default index1="3">{ 0x02,  0x01,     0x44,0x00,     0x92,0x00,    0x75,0x00,    0x00,0x00,
-		                          0x02,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00  }</default>
-		    <!-- P2P full scan
-		             0 VIFS:      6      true      24TU           68TU          102TU
-		          >= 1 VIFS:      6      true      24TU           50TU          102TU -->
-		    <default index1="4">{ 0x06,  0x01,     0x18,0x00,     0x44,0x00,    0x66,0x00,    0x00,0x00,
-		                          0x06,  0x01,     0x18,0x00,     0x32,0x00,    0x66,0x00,    0x00,0x00  }</default>
-		    <!-- P2P social scan
-		             0 VIFS:      6      false     24TU           68TU          N/A
-		          >= 1 VIFS:      6      false     24TU           50TU          N/A   -->
-		    <default index1="5">{ 0x06,  0x00,     0x18,0x00,     0x44,0x00,    0x00,0x00,    0x00,0x00,
-		                          0x06,  0x00,     0x18,0x00,     0x32,0x00,    0x00,0x00,    0x00,0x00  }</default>
-		    <!-- OBSS scan
-		             0 VIFS:      4      true      24TU           58TU          N/A
-		          >= 1 VIFS       (no scan with >= 1 VIFS):-->
-		    <default index1="6">{ 0x04,  0x01,     0x18,0x00,     0x3A,0x00,    0x00,0x00,    0x00,0x00,
-		                          0x04,  0x01,     0x18,0x00,     0x3A,0x00,    0x00,0x00,    0x00,0x00  }</default>
-		    <!-- AP Auto Channel Selection scan
-		             0 VIFS:      4      true      24TU           39TU          N/A
-		          >= 1 VIFS       (no scan with >= 1 VIFS):-->
-		    <default index1="7">{ 0x04,  0x01,     0x18,0x00,     0x27,0x00,    0x00,0x00,    0x00,0x00,
-		                          0x04,  0x01,     0x18,0x00,     0x27,0x00,    0x00,0x00,    0x00,0x00  }</default>
-		    <!-- PNO scan
-		             0 VIFS:      0      true      68TU           146TU         117TU
-		          >= 1 VIFS       (no scan with >= 1 VIFS):-->
-		    <default index1="8">{ 0x00,  0x01,     0x44,0x00,     0x92,0x00,    0x75,0x00,    0x00,0x00,
-		                          0x00,  0x01,     0x44,0x00,     0xF4,0x00,    0x75,0x00,    0x00,0x00  }</default>
-		    <!-- GSCAN
-		             0 VIFS:      2      true      68TU           146TU         117TU
-		          >= 1 VIFS:      2      true      24TU           58TU          102TU -->
-		    <default index1="9">{ 0x02,  0x01,     0x44,0x00,     0x92,0x00,    0x75,0x00,    0x00,0x00,
-		                          0x02,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00  }</default>
-		    <!-- Measurement scan
-		             0 VIFS       (no scan with 0 VIFS):
-		          >= 1 VIFS:      3      true      24TU           58TU          102TU  -->
-		    <default index1="10">{0x03,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x80,0x00,
-		                          0x03,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x80,0x00  }</default>
-		    <!-- Soft Neighbour Roaming scan
-		             0 VIFS NA:   4      false     27TU           68TU          117TU
-		          >= 1 VIFS:      4      false     27TU           68TU          117TU   -->
-		    <default index1="11">{0x04,  0x00,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x00,0x00,
-		                          0x04,  0x00,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x00,0x00  }</default>
-		    <!-- Soft Cached Roaming scan
-		             0 VIFS NA:   4      false     27TU           68TU          117TU
-		          >= 1 VIFS:      4      false     27TU           68TU          117TU         Any_RA    -->
-		    <default index1="12">{0x04,  0x00,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,0x00,
-		                          0x04,  0x00,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,0x00  }</default>
-		    <!-- Soft All Roaming scan
-		             0 VIFS NA:   4      true      27TU           68TU          117TU
-		          >= 1 VIFS:      4      true      27TU           68TU          117TU         Any_RA    -->
-		    <default index1="13">{0x04,  0x01,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,0x00,
-		                          0x04,  0x01,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,0x00  }</default>
-		    <!-- Hard Neighbour Roaming scan
-		             0 VIFS NA:   8      false     39TU           98TU          117TU
-		          >= 1 VIFS:      8      false     39TU           98TU          117TU   -->
-		    <default index1="14">{0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x00,0x00,
-		                          0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x00,0x00  }</default>
-		    <!-- Hard Cached Roaming scan
-		             0 VIFS NA:   8      false     39TU           98TU          117TU
-		          >= 1 VIFS:      8      false     39TU           98TU          117TU         Any_RA    -->
-		    <default index1="15">{0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,0x00,
-		                          0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,0x00  }</default>
-		    <!-- Hard All Roaming scan
-		             0 VIFS NA:   8      false     39TU           98TU          117TU
-		          >= 1 VIFS:      8      false     39TU           98TU          117TU         Any_RA    -->
-		    <default index1="16">{0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,0x00,
-		                          0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,0x00  }</default>
-		    <!-- OBSS Internal scan
-		             0 VIFS NA:   3      false     5TU            20TU          100TU
-		          >= 1 VIFS       3      false     5TU            20TU          100TU -->
-		    <default index1="17">{0x03,  0x01,     0x05,0x00,     0x14,0x00,    0x64,0x00,    0x00,0x00,
-		                          0x03,  0x01,     0x05,0x00,     0x14,0x00,    0x64,0x00,    0x00,0x00  }</default>
-		    <!-- NAN scan
-		             0 VIFS NA:   3      false     N/A            N/A           200TU
-		          >= 1 VIFS:      3      false     N/A            N/A           200TU         Passive    -->
-		    <default index1="18">{0x03,  0x00,     0x00,0x00,     0x00,0x00,    0xC8,0x00,    0x01,0x00,
-		                          0x03,  0x00,     0x00,0x00,     0x00,0x00,    0xC8,0x00,    0x01,0x00  }</default>
-		    <!-- Single Channel scan
-		             0 VIFS:      6      false     70TU          232TU         232TU
-		          >= 1 VIFS:      6      false     70TU          232TU         232TU -->
-		    <default index1="19">{0x06,  0x00,     0x46,0x00,     0xE8,0x00,    0xE8,0x00,    0x00,0x00,
-		                          0x06,  0x00,     0x46,0x00,     0xE8,0x00,    0xE8,0x00,    0x00,0x00  }</default>
-		    <!-- Dummy Entry -->
-		    <default index1="20">{0x00,  0x01,     0x02,0x03,     0x04,0x05,    0x06,0x07,    0x08,0x09,
-		                          0x09,  0x08,     0x07,0x06,     0x05,0x04,    0x03,0x02,    0x01,0x00  }</default>  </default_list>
-		    <nature>software</nature>
-		  </config_element>
-		  <config_element name="unifiTdlsInP2pActivated" psid="2556">
-		   <description_user>Use TDLS in P2P mode.</description_user>
-		   <type>boolean</type>
-		   <default>true</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="unifiTdlsActivated" psid="2558">
-		   <description_user>Use TDLS mode.</description_user>
-		   <type>boolean</type>
-		   <default>true</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="unifiTdlsTPThresholdPktSecs" psid="2559">
-		   <description_user>Used for the argument "throughput_threshold_pktsecs" of RAME-MLME-ENABLE-PEER-TRAFFIC-REPORTING.request signal defined in SC-505422-DD.</description_user>
-		   <type>uint32</type>
-		   <default>100</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="unifiTdlsRssiThreshold" psid="2560">
-		   <description_user>Used for the FW initiated TDLS Discovery/Setup procedure.
-		   If the RSSI of a received TDLS Discovery Response frame is greater than this value,the TDLS FSM shall initiate the TDLS Setup procedure.</description_user>
-		   <type>int16</type>
-		   <default>-75</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="unifiTdlsMaximumRetry" psid="2561">
-		   <description_user>Transmission of a TDLS Action frame or
-		   a TDLS Discovery Response Public Action frame shall be retried unifiTdlsMaximumRetry times until the frame is transmitted successfully.</description_user>
-		   <type>uint16</type>
-		   <default>3</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="unifiTdlsTPMonitorSecs" psid="2562">
-		   <description_user>The measurement period for recording the number of packets sent to a peer over a TDLS link.</description_user>
-		   <type>uint16</type>
-		   <default>10</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="unifiTdlsBasicHtMcsSet" psid="2563">
-		   <description_user>The default Basic HT MCS SET used on a TDLS Link. Used to build the HT Operation element in TDLS Setup frames.</description_user>
-		   <type>octet_string</type>
-		   <range_min>16</range_min><range_max>16</range_max>
-		   <default>{ 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }</default>
-		  </config_element>
-		 <config_element name="unifiTdlsBasicVhtMcsSet" psid="2564">
-		   <description_user>Used to build the VHT Operation element in the TDLS Setup Confirm frame</description_user>
-		   <type>octet_string</type>
-		   <range_min>2</range_min><range_max>2</range_max>
-		   <default>{ 0xfe, 0xff }</default>
-		  </config_element>
-		 <config_element name="dot11TDLSDiscoveryRequestWindow" psid="2565">
-		   <description_user>TDLS shall not transmit the TDLS Discovery Request frame within dot11TDLSDiscoveryRequestWindow DTIM intervals
-		   after transmitting TDLS Discovery Request frame.</description_user>
-		   <type>uint32</type>
-		   <default>10</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="dot11TDLSResponseTimeout" psid="2566">
-		   <description_user>If no TDLS Setup Response frame is received within dot11TDLSResponseTimeout,
-		    or if a TDLS Setup Response frame is received with a nonzero status code,
-		    the TDLS initiator STA shall terminate the setup procedure and discard the TDLS Setup Response frame.</description_user>
-		   <type>uint32</type>
-		   <default>5</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="dot11TDLSChannelSwitchActivated" psid="2567">
-		   <description_user>When true, indicates that the STA implementation is capable of supporting TDLS Channel Switching.</description_user>
-		   <type>boolean</type>
-		   <default>false</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="unifiTdlsDesignForTestMode" psid="2568">
-		   <description_user>Set TDLS design for test mode</description_user>
-		   <type>uint32</type>
-		   <default>0x00000000</default>
-		  </config_element>
-		 <config_element name="unifiTdlsKeyLifeTimeInterval" psid="2577">
-		   <description_user>Build the Key Lifetime Interval in the TDLS Setup Request frame.</description_user>
-		   <type>uint32</type>
-		   <default>0x000FFFFF</default>
-		   <nature>software</nature>
-		  </config_element>
-		 <config_element name="unifiTdlsTeardownFrameTxTimeout" psid="2578">
-		   <description_user>Allowed time in milliseconds for a TDLS Teardown frame to be trasmitted over the air</description_user>
-		   <type>uint16</type>
-		   <default>500</default>
-		   <nature>software</nature>
-		  </config_element>
-		  <config_element name="unifiWifiSharingEnabled" psid="2580">
+          </config_element>
+          <config_element name="unifiScanParameters" psid="2154">
+          <description_user>Scan parameters.
+            Each row of the table contains 2 entries for a scan: first entry when there is 0 registered VIFs, second - when there is 1 or more registered VIFs.
+            Entry has the following structure:
+            octet  0        -  Scan priority                          (uint8_t)
+            octet  1        -  Enable Early Channel Exit              (uint8_t as bool)
+            octet  2 ~ 3    -  Probe Interval in Time Units           (uint16_t)
+            octet  4 ~ 5    -  Max Active Channel Time in Time Units  (uint16_t)
+            octet  6 ~ 7    -  Max Passive Channel Time in Time Units (uint16_t)
+            octet  8 ~ 9    -  Scan Policy                            (uint16_t)
+            Size of each entry is 10 octets, row size is 20 octets. A Time Units value specifies a time interval as a multiple of TU (1024 us).</description_user>
+          <type>octet_string</type>
+          <range_min>20</range_min><range_max>20</range_max>
+          <table_name>unifiScanParametersTable</table_name>
+          <default_list>
+            <!-- Initial scan
+                     0 VIFS:      6      true      24TU           58TU          102TU
+                  >= 1 VIFS (no such thing as initial scan with >= 1 VIFS):
+                                  6      true      24TU           58TU          102TU -->
+            <default index1="1">{ 0x06,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00,
+                                  0x06,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00  }</default>
+            <!-- Full scan
+                     0 VIFS:      6      true      68TU           146TU         117TU
+                  >= 1 VIFS:      6      true      24TU           58TU          102TU -->
+            <default index1="2">{ 0x06,  0x01,     0x44,0x00,     0x92,0x00,    0x75,0x00,    0x00,0x00,
+                                  0x06,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00  }</default>
+            <!-- Scheduled scan
+                     0 VIFS:      2      true      68TU           146TU         117TU
+                   = 1 VIFS:      2      true      24TU           58TU          102TU -->
+            <default index1="3">{ 0x02,  0x01,     0x44,0x00,     0x92,0x00,    0x75,0x00,    0x00,0x00,
+                                  0x02,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00  }</default>
+            <!-- P2P full scan
+                     0 VIFS:      6      true      24TU           68TU          102TU
+                  >= 1 VIFS:      6      true      24TU           50TU          102TU -->
+            <default index1="4">{ 0x06,  0x01,     0x18,0x00,     0x44,0x00,    0x66,0x00,    0x00,0x00,
+                                  0x06,  0x01,     0x18,0x00,     0x32,0x00,    0x66,0x00,    0x00,0x00  }</default>
+            <!-- P2P social scan
+                     0 VIFS:      6      false     24TU           68TU          N/A
+                  >= 1 VIFS:      6      false     24TU           50TU          N/A   -->
+            <default index1="5">{ 0x06,  0x00,     0x18,0x00,     0x44,0x00,    0x00,0x00,    0x00,0x00,
+                                  0x06,  0x00,     0x18,0x00,     0x32,0x00,    0x00,0x00,    0x00,0x00  }</default>
+            <!-- OBSS scan
+                     0 VIFS:      4      true      24TU           58TU          N/A
+                  >= 1 VIFS       (no scan with >= 1 VIFS):-->
+            <default index1="6">{ 0x04,  0x01,     0x18,0x00,     0x3A,0x00,    0x00,0x00,    0x00,0x00,
+                                  0x04,  0x01,     0x18,0x00,     0x3A,0x00,    0x00,0x00,    0x00,0x00  }</default>
+            <!-- AP Auto Channel Selection scan
+                     0 VIFS:      4      true      24TU           39TU          N/A
+                  >= 1 VIFS       (no scan with >= 1 VIFS):-->
+            <default index1="7">{ 0x04,  0x01,     0x18,0x00,     0x27,0x00,    0x00,0x00,    0x00,0x00,
+                                  0x04,  0x01,     0x18,0x00,     0x27,0x00,    0x00,0x00,    0x00,0x00  }</default>
+            <!-- PNO scan
+                     0 VIFS:      0      true      68TU           146TU         117TU
+                  >= 1 VIFS       (no scan with >= 1 VIFS):-->
+            <default index1="8">{ 0x00,  0x01,     0x44,0x00,     0x92,0x00,    0x75,0x00,    0x00,0x00,
+                                  0x00,  0x01,     0x44,0x00,     0xF4,0x00,    0x75,0x00,    0x00,0x00  }</default>
+            <!-- GSCAN
+                     0 VIFS:      2      true      68TU           146TU         117TU
+                  >= 1 VIFS:      2      true      24TU           58TU          102TU -->
+            <default index1="9">{ 0x02,  0x01,     0x44,0x00,     0x92,0x00,    0x75,0x00,    0x00,0x00,
+                                  0x02,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00,0x00  }</default>
+            <!-- Measurement scan
+                     0 VIFS       (no scan with 0 VIFS):
+                  >= 1 VIFS:      3      true      24TU           58TU          102TU  -->
+            <default index1="10">{0x03,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x80,0x00,
+                                  0x03,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x80,0x00  }</default>
+            <!-- Soft Neighbour Roaming scan
+                     0 VIFS NA:   4      false     27TU           68TU          117TU
+                  >= 1 VIFS:      4      false     27TU           68TU          117TU   -->
+            <default index1="11">{0x04,  0x00,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x00,0x00,
+                                  0x04,  0x00,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x00,0x00  }</default>
+            <!-- Soft Cached Roaming scan
+                     0 VIFS NA:   4      false     27TU           68TU          117TU
+                  >= 1 VIFS:      4      false     27TU           68TU          117TU         Any_RA    -->
+            <default index1="12">{0x04,  0x00,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,0x00,
+                                  0x04,  0x00,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,0x00  }</default>
+            <!-- Soft All Roaming scan
+                     0 VIFS NA:   4      true      27TU           68TU          117TU
+                  >= 1 VIFS:      4      true      27TU           68TU          117TU         Any_RA    -->
+            <default index1="13">{0x04,  0x01,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,0x00,
+                                  0x04,  0x01,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,0x00  }</default>
+            <!-- Hard Neighbour Roaming scan
+                     0 VIFS NA:   8      false     39TU           98TU          117TU
+                  >= 1 VIFS:      8      false     39TU           98TU          117TU   -->
+            <default index1="14">{0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x00,0x00,
+                                  0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x00,0x00  }</default>
+            <!-- Hard Cached Roaming scan
+                     0 VIFS NA:   8      false     39TU           98TU          117TU
+                  >= 1 VIFS:      8      false     39TU           98TU          117TU         Any_RA    -->
+            <default index1="15">{0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,0x00,
+                                  0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,0x00  }</default>
+            <!-- Hard All Roaming scan
+                     0 VIFS NA:   8      false     39TU           98TU          117TU
+                  >= 1 VIFS:      8      false     39TU           98TU          117TU         Any_RA    -->
+            <default index1="16">{0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,0x00,
+                                  0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,0x00  }</default>
+            <!-- OBSS Internal scan
+                     0 VIFS NA:   3      false     5TU            20TU          100TU
+                  >= 1 VIFS       3      false     5TU            20TU          100TU -->
+            <default index1="17">{0x03,  0x01,     0x05,0x00,     0x14,0x00,    0x64,0x00,    0x00,0x00,
+                                  0x03,  0x01,     0x05,0x00,     0x14,0x00,    0x64,0x00,    0x00,0x00  }</default>
+            <!-- NAN scan
+                     0 VIFS NA:   3      false     N/A            N/A           200TU
+                  >= 1 VIFS:      3      false     N/A            N/A           200TU         Passive    -->
+            <default index1="18">{0x03,  0x00,     0x00,0x00,     0x00,0x00,    0xC8,0x00,    0x01,0x00,
+                                  0x03,  0x00,     0x00,0x00,     0x00,0x00,    0xC8,0x00,    0x01,0x00  }</default>
+            <!-- Single Channel scan
+                     0 VIFS:      6      false     70TU          232TU         232TU
+                  >= 1 VIFS:      6      false     70TU          232TU         232TU -->
+            <default index1="19">{0x06,  0x00,     0x46,0x00,     0xE8,0x00,    0xE8,0x00,    0x00,0x00,
+                                  0x06,  0x00,     0x46,0x00,     0xE8,0x00,    0xE8,0x00,    0x00,0x00  }</default>
+            <!-- Dummy Entry -->
+            <default index1="20">{0x00,  0x01,     0x02,0x03,     0x04,0x05,    0x06,0x07,    0x08,0x09,
+                                  0x09,  0x08,     0x07,0x06,     0x05,0x04,    0x03,0x02,    0x01,0x00  }</default>  </default_list>
+            <nature>software</nature>
+          </config_element>
+          <config_element name="unifiTdlsInP2pActivated" psid="2556">
+           <description_user>Use TDLS in P2P mode.</description_user>
+           <type>boolean</type>
+           <default>true</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="unifiTdlsActivated" psid="2558">
+           <description_user>Use TDLS mode.</description_user>
+           <type>boolean</type>
+           <default>true</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="unifiTdlsTPThresholdPktSecs" psid="2559">
+           <description_user>Used for the argument "throughput_threshold_pktsecs" of RAME-MLME-ENABLE-PEER-TRAFFIC-REPORTING.request signal defined in SC-505422-DD.</description_user>
+           <type>uint32</type>
+           <default>100</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="unifiTdlsRssiThreshold" psid="2560">
+           <description_user>Used for the FW initiated TDLS Discovery/Setup procedure.
+           If the RSSI of a received TDLS Discovery Response frame is greater than this value,the TDLS FSM shall initiate the TDLS Setup procedure.</description_user>
+           <type>int16</type>
+           <default>-75</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="unifiTdlsMaximumRetry" psid="2561">
+           <description_user>Transmission of a TDLS Action frame or
+           a TDLS Discovery Response Public Action frame shall be retried unifiTdlsMaximumRetry times until the frame is transmitted successfully.</description_user>
+           <type>uint16</type>
+           <default>3</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="unifiTdlsTPMonitorSecs" psid="2562">
+           <description_user>The measurement period for recording the number of packets sent to a peer over a TDLS link.</description_user>
+           <type>uint16</type>
+           <default>10</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="unifiTdlsBasicHtMcsSet" psid="2563">
+           <description_user>The default Basic HT MCS SET used on a TDLS Link. Used to build the HT Operation element in TDLS Setup frames.</description_user>
+           <type>octet_string</type>
+           <range_min>16</range_min><range_max>16</range_max>
+           <default>{ 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }</default>
+          </config_element>
+         <config_element name="unifiTdlsBasicVhtMcsSet" psid="2564">
+           <description_user>Used to build the VHT Operation element in the TDLS Setup Confirm frame</description_user>
+           <type>octet_string</type>
+           <range_min>2</range_min><range_max>2</range_max>
+           <default>{ 0xfe, 0xff }</default>
+          </config_element>
+         <config_element name="dot11TDLSDiscoveryRequestWindow" psid="2565">
+           <description_user>TDLS shall not transmit the TDLS Discovery Request frame within dot11TDLSDiscoveryRequestWindow DTIM intervals
+           after transmitting TDLS Discovery Request frame.</description_user>
+           <type>uint32</type>
+           <default>10</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="dot11TDLSResponseTimeout" psid="2566">
+           <description_user>If no TDLS Setup Response frame is received within dot11TDLSResponseTimeout,
+            or if a TDLS Setup Response frame is received with a nonzero status code,
+            the TDLS initiator STA shall terminate the setup procedure and discard the TDLS Setup Response frame.</description_user>
+           <type>uint32</type>
+           <default>5</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="dot11TDLSChannelSwitchActivated" psid="2567">
+           <description_user>When true, indicates that the STA implementation is capable of supporting TDLS Channel Switching.</description_user>
+           <type>boolean</type>
+           <default>false</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="unifiTdlsDesignForTestMode" psid="2568">
+           <description_user>Set TDLS design for test mode</description_user>
+           <type>uint32</type>
+           <default>0x00000000</default>
+          </config_element>
+         <config_element name="unifiTdlsKeyLifeTimeInterval" psid="2577">
+           <description_user>Build the Key Lifetime Interval in the TDLS Setup Request frame.</description_user>
+           <type>uint32</type>
+           <default>0x000FFFFF</default>
+           <nature>software</nature>
+          </config_element>
+         <config_element name="unifiTdlsTeardownFrameTxTimeout" psid="2578">
+           <description_user>Allowed time in milliseconds for a TDLS Teardown frame to be trasmitted over the air</description_user>
+           <type>uint16</type>
+           <default>500</default>
+           <nature>software</nature>
+          </config_element>
+          <config_element name="unifiWifiSharingEnabled" psid="2580">
             <description_user>Enabled Wifi Sharing feature</description_user>
             <type>boolean</type>
             <default>true</default>
@@ -4129,63 +4129,63 @@
             <default>{ 0x00, 0xC0, 0xFF, 0xFF, 0x7F, 0x00, 0x00, 0x00 }</default>
             <nature>software</nature>
          </config_element>
-		 <config_element name="unifiWifiSharingChannelSwitchCount" psid="2583">
-		   <description_user>Channel switch announcement count which will be used in the Channel announcement IE when using wifi sharing</description_user>
-		   <type>uint16</type>
-		   <default>10</default>
+         <config_element name="unifiWifiSharingChannelSwitchCount" psid="2583">
+           <description_user>Channel switch announcement count which will be used in the Channel announcement IE when using wifi sharing</description_user>
+           <type>uint16</type>
+           <default>10</default>
            <range_min>3</range_min><range_max>10</range_max>
-		   <nature>software</nature>
-		 </config_element>
-		 <config_element name="unifiChannelAnnouncementCount" psid="2584">
-		   <description_user>Channel switch announcement count which will be used in the Channel announcement IE</description_user>
-		   <type>uint16</type>
-		   <default>10</default>
-		   <nature>software</nature>
-		  </config_element>
-		  <config_element name="unifiStaChannelSwitchSlowApActivated" psid="2601">
-         	<description_user>ChanelSwitch: Enable waiting for a slow AP.</description_user>
+           <nature>software</nature>
+         </config_element>
+         <config_element name="unifiChannelAnnouncementCount" psid="2584">
+           <description_user>Channel switch announcement count which will be used in the Channel announcement IE</description_user>
+           <type>uint16</type>
+           <default>10</default>
+           <nature>software</nature>
+          </config_element>
+          <config_element name="unifiStaChannelSwitchSlowApActivated" psid="2601">
+             <description_user>ChanelSwitch: Enable waiting for a slow AP.</description_user>
             <type>boolean</type>
             <default>false</default>
             <nature>software</nature>
          </config_element>
          <config_element name="unifiStaChannelSwitchSlowApMaxTime" psid="2604">
-		    <description_user>ChannelSwitch delay for Slow APs. In Seconds.</description_user>
-		    <type>uint32</type>
-		    <default>70</default>
-		    <nature>software</nature>
-		 </config_element>
-   		 <config_element name="unifiStaChannelSwitchSlowApPollInterval" psid="2605">
-		    <description_user>ChannelSwitch polling interval for Slow APs. In Seconds.</description_user>
-		    <type>uint16</type>
-		    <default>1</default>
-		    <nature>software</nature>
-		 </config_element>
-   		 <config_element name="unifiStaChannelSwitchSlowApProcedureTimeoutIncrement" psid="2606">
-		    <description_user>ChannelSwitch procedure timeout increment for Slow APs. In Seconds.</description_user>
-		    <type>uint16</type>
-		    <default>10</default>
-		    <nature>software</nature>
-		 </config_element>
-		 <config_element name="unifiRATestStoredSA" psid="2585">
-		   <description_user>Source address of router assuming that is contained in virtural router advertisement packet
-		   is only used for the test purpose, specified in chapter '6.2 Forward Received RA frame to Host' in SC-506393-TE</description_user>
-		   <type>octet_string</type>
-		   <default>0x00000000</default>
-		   <nature>software</nature>
-		 </config_element>
-		 <config_element name="unifiRATestStoreFrame" psid="2586">
-		   <description_user>Virtual router advertisement packet
-		   is only used for the test purpose, specified in chapter '6.2 Forward Received RA frame to Host' in SC-506393-TE</description_user>
-		   <type>octet_string</type>
-		   <default>0x00000000</default>
-		   <nature>software</nature>
-		 </config_element>
-		 <config_element name="dot11TDLSPeerUAPSDBufferSTAActivated" psid="2587">
-		   <description_user>Indicate that the STA implementation is capable of supporting TDLS peer U-APSD.</description_user>
-		   <type>boolean</type>
-		   <default>false</default>
-		   <nature>software</nature>
-		  </config_element>
+            <description_user>ChannelSwitch delay for Slow APs. In Seconds.</description_user>
+            <type>uint32</type>
+            <default>70</default>
+            <nature>software</nature>
+         </config_element>
+            <config_element name="unifiStaChannelSwitchSlowApPollInterval" psid="2605">
+            <description_user>ChannelSwitch polling interval for Slow APs. In Seconds.</description_user>
+            <type>uint16</type>
+            <default>1</default>
+            <nature>software</nature>
+         </config_element>
+            <config_element name="unifiStaChannelSwitchSlowApProcedureTimeoutIncrement" psid="2606">
+            <description_user>ChannelSwitch procedure timeout increment for Slow APs. In Seconds.</description_user>
+            <type>uint16</type>
+            <default>10</default>
+            <nature>software</nature>
+         </config_element>
+         <config_element name="unifiRATestStoredSA" psid="2585">
+           <description_user>Source address of router assuming that is contained in virtural router advertisement packet
+           is only used for the test purpose, specified in chapter '6.2 Forward Received RA frame to Host' in SC-506393-TE</description_user>
+           <type>octet_string</type>
+           <default>0x00000000</default>
+           <nature>software</nature>
+         </config_element>
+         <config_element name="unifiRATestStoreFrame" psid="2586">
+           <description_user>Virtual router advertisement packet
+           is only used for the test purpose, specified in chapter '6.2 Forward Received RA frame to Host' in SC-506393-TE</description_user>
+           <type>octet_string</type>
+           <default>0x00000000</default>
+           <nature>software</nature>
+         </config_element>
+         <config_element name="dot11TDLSPeerUAPSDBufferSTAActivated" psid="2587">
+           <description_user>Indicate that the STA implementation is capable of supporting TDLS peer U-APSD.</description_user>
+           <type>boolean</type>
+           <default>false</default>
+           <nature>software</nature>
+          </config_element>
         <config_element name="unifiSupportedChannels" psid="8012">
             <description_user>Supported 20MHz channel centre frequency grouped in sub-bands. For each sub-band: starting channel number, followed by number of channels</description_user>
             <type>octet_string</type>
@@ -5650,7 +5650,7 @@ The rates are encoded in host(FAPI) format, see SC-506179, section 4.41.
                               sensitivity.</description_user>
             <type>octet_string</type>
             <range_min>6</range_min><range_max>6</range_max>
-		    <default>{ 0x0a, 0x09, 0x05, 0xa, 0xa, 0x0 }</default>
+            <default>{ 0x0a, 0x09, 0x05, 0xa, 0xa, 0x0 }</default>
             <function type="set" function_name="mibricechangenonfsmparams"></function>
             <nature>hardware</nature>
         </config_element>
