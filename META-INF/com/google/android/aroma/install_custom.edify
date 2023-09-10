@@ -49,8 +49,14 @@ menubox(
     "Moderate Debloat",  "Removes Above all and Dex, Edge Panel, Dual Apps, VoWiFi",           "@none",
     "Heavy Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View", "@none",
     "Lain's Debloat",    "Removes Above all but keeps Dex and Samsung Account",                "@none",
-    "Sanchet's Debloat", "Custom debloat list by Sanchet",                                     "@none"
+    "Sanchet's Debloat", "Custom debloat list by Sanchet",                                     "@none",
+	"Manual Debloat",    "Will intialize remove_recursive engine. For advanced user only",                "@next"
 );
+
+#Manual
+  if prop("debloat.prop","selected") == "7" then
+    include("debloater.edify");
+  endif;
 
 ###############################################
 #KERNEL
