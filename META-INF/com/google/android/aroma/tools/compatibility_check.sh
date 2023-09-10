@@ -45,7 +45,7 @@ echo "    -> System : $system_size_mb MB"
 echo "    -> Vendor : $vendor_size_mb MB"
 echo "    -> Product : $product_size_mb MB"
 
-if [ "$system_size" -ge 3556769792 ]; then
+if [ "$system_size" -ge 4320133120 ]; then
     append_to_file "system_compatible=1"
 else
     append_to_file "system_compatible=0"
@@ -67,12 +67,11 @@ else
     exit 55
 fi
 
-if [ "$system_size" -ge 4320133120 ]; then
-    append_to_file "huge_system=1"
-    echo "    -> <#00ff00>System is 4.0GB+</#>"
+if [ "$system_size" -ge 4820133120 ]; then
+    append_to_file "auxy_to_system=1"
+    echo "    -> <#00ff00>System is 4.5GB+</#>"
 else
-    append_to_file "huge_system=0"
-    echo "    -> <#ff7961>Minimal Mode Some features might be missing</#>"
+    append_to_file "auxy_to_system=0"
 fi
 # 400mb size 419430400
 if [ "$product_size" -ge 419430300 ]; then
