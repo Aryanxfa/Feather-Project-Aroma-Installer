@@ -13,7 +13,6 @@ app/Netflix_stub
 app/SmartMirroring
 app/SmartSwitchAgent
 app/VisionIntelligence3.7
-priv-app/AppsEdgePanel_v3.2
 priv-app/BeaconManager
 priv-app/Bixby
 priv-app/BixbyVisionFramework3.5
