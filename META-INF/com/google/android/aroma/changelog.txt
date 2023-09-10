@@ -218,6 +218,3 @@ Changelog v8.0
 - Standard LMK updated
 - Game tools added without game home
 - Wifi Connectivity throttling removed
-- Add support for stock A10 with new minimal install
-  this removes bixby store arzone mcf
-- A10 no longer require mandatory repartitioner
