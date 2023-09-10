@@ -138,12 +138,14 @@ if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A307" then
     set_metadata("/vendor/lib/libDualCamBokehCapture.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib/libdualcam_refocus_image.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib/libdualcam_refocus_video.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib/libFacePreProcessing.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib/libhigh_dynamic_range_bokeh.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib/libHprFace_GAE_api.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib64/libBeauty_v4.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib64/libDualCamBokehCapture.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib64/libdualcam_refocus_image.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
+    set_metadata("/vendor/lib64/libFacePreProcessing.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib64/libhigh_dynamic_range_bokeh.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib64/libHprFace_GAE_api.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
