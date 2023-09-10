@@ -49,7 +49,6 @@ app/UnifiedWFC
 app/WebManual
 priv-app/AdaptSound_T
 priv-app/AppLock
-priv-app/AppsEdgePanel_v3.2
 priv-app/AREmoji
 priv-app/AudioMirroring
 priv-app/AuthFactorTouchService
