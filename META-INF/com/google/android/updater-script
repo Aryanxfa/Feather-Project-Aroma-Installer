@@ -50,16 +50,20 @@ run_program("/tmp/busybox", "mount", "-t", "auto", "/product");
 ##################################################
 #AUXY
 ##################################################
-if file_getprop("/tmp/aroma/compatible.prop", "huge_product") == "1" then
-  package_extract_dir("auxy/data/app", "/product/app");
-else 
-  if file_getprop("/tmp/aroma/compatible.prop", "huge_vendor") == "1" then
-    package_extract_dir("auxy/data/app", "/vendor/app");
-  else
-    package_extract_dir("auxy/data/app", "/data/app");
-    set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:apk_data_file:s0");
-    set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:apk_data_file:s0");
-  endif;
+if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "1" then
+    package_extract_dir("auxy/data/app", "/system_root/system/app");
+endif;
+if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "0" then
+    if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "1" then
+        package_extract_dir("auxy/data/app/WebViewGoogle", "/product/app/WebViewGoogle");
+        package_extract_dir("auxy/data/app/TrichromeLibrary", "/product/app/TrichromeLibrary");
+    endif;
+    if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "0" then
+        package_extract_dir("auxy/data/app", "/data/app");
+        set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+        set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+        set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+    endif;
 endif;
 if file_getprop("/tmp/aroma/compatible.prop", "huge_system") == "1" then
   package_extract_dir("auxy/system", "/system_root/system")
