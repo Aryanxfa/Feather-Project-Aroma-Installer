@@ -216,5 +216,6 @@ Changelog v8.0
 - Brighness Recalibrated again
 - Fixed some Debloat issues
 - Standard LMK updated
+- Wallpapers removed to save space
 - Game tools added without game home
 - Wifi Connectivity throttling removed
