@@ -213,7 +213,7 @@ Changelog v8.0
 - Google Play System Update
 - Fixed Work Profile issue
 - A10: QR Scanner fixed
-- A30s: Some Camera Fixes
+- A30s: Portrait Mode Fixed
 - Brighness Recalibrated again
 - Fixed some Debloat issues
 - Standard LMK updated
