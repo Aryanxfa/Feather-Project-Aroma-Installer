@@ -212,6 +212,7 @@ Changelog v8.0
 - Security patch September 2023
 - Google Play System Update
 - Fixed Work Profile issue
+- Fixed applock issue @GalaxyA51user
 - A10: QR Scanner fixed
 - A30s: Portrait Mode Fixed
 - Brighness Recalibrated again
