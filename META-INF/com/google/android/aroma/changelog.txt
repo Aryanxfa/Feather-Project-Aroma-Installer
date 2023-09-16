@@ -208,8 +208,8 @@ Changelog v7.0
 - A30s Patches for FOD
  
 Changelog v8.0
-- Base update S901BXXU6CWH5
-- Security patch August 2023
+- Base update S901BXXS6CWH6
+- Security patch September 2023
 - Google Play System Update
 - A10: QR Scanner fixed
 - A30s: Some Camera Fixes
