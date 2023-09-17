@@ -24,3 +24,6 @@ Changelog v1.1:
 - Camera Fixups
 - Selinux Fixes
 - Off Charging screen resized
+
+Changelog v2.0:
+- Aroma: add custom debloat @Bobert_A30
