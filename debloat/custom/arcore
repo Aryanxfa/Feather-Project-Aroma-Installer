@@ -1,5 +1,4 @@
 #! /tmp/busybox sh
-
 rm -rf /system_root/system/app/ARCore
 rm -rf /system_root/system/app/ARDrawing
 rm -rf /system_root/system/app/ARZone

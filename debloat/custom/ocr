@@ -1,4 +1,3 @@
 #! /tmp/busybox sh
-
 /tmp/busybox sed -i "s/OCR_VERSION>V2/OCR_VERSION>None/g" /system_root/system/etc/floating_feature.xml
 rm -rf /system_root/system/app/OCRDataProvider

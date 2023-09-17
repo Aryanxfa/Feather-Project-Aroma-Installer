@@ -1,5 +1,4 @@
 #! /tmp/busybox sh
-
 rm -rf /system_root/system/priv-app/GalaxyApps_OPEN
 rm -rf /system_root/system/priv-app/HashTagService
 rm -rf /system_root/system/priv-app/MateAgent
