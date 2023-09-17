@@ -277,23 +277,49 @@ endif;
 ##################################################
 if file_getprop("/tmp/aroma/debloat.prop", "selected") == "2" then
     ui_print("@>Debloating with Light Mode...");
-    package_extract_file("debloat/light", "tmp/dblist");
+    package_extract_file("debloat/light", "/tmp/nukeengine.sh");
     run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat.prop", "selected") == "3" then
-    ui_print("@>Debloating with Heavy Mode...");
-    package_extract_file("debloat/heavy", "tmp/dblist");
+    ui_print("@>Debloating with Lain's List...");
+    package_extract_file("debloat/lain", "/tmp/nukeengine.sh");
     run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat.prop", "selected") == "4" then
-    ui_print("@>Debloating with Lain's List...");
-    package_extract_file("debloat/lain", "tmp/dblist");
+    ui_print("@>Debloating with Sanchet's List...");
+    package_extract_file("debloat/sanchet", "/tmp/nukeengine.sh");
     run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat.prop", "selected") == "5" then
-    ui_print("@>Debloating with Sanchet's List...");
-    package_extract_file("debloat/sanchet", "tmp/dblist");
-    run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    ui_print("@>Debloating with Custom List...");
+    if file_getprop("/tmp/aroma/debloat_v2.prop", "quickshare") == "1" then
+      package_extract_file("debloat/custom/quickshare", "/tmp/nukeengine.sh");
+      run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    endif;
+    if file_getprop("/tmp/aroma/debloat_v2.prop", "bixby") == "1" then
+      package_extract_file("debloat/custom/bixby", "/tmp/nukeengine.sh");
+      run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    endif;
+    if file_getprop("/tmp/aroma/debloat_v2.prop", "arcore") == "1" then
+      package_extract_file("debloat/custom/arcore", "/tmp/nukeengine.sh");
+      run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    endif;
+    if file_getprop("/tmp/aroma/debloat_v2.prop", "ocr") == "1" then
+      package_extract_file("debloat/custom/ocr", "/tmp/nukeengine.sh");
+      run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    endif;
+    if file_getprop("/tmp/aroma/debloat_v2.prop", "samaccount") == "1" then
+      package_extract_file("debloat/custom/samaccount", "/tmp/nukeengine.sh");
+      run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    endif;
+    if file_getprop("/tmp/aroma/debloat_v2.prop", "weather") == "1" then
+      package_extract_file("debloat/custom/weather", "/tmp/nukeengine.sh");
+      run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    endif;
+    if file_getprop("/tmp/aroma/debloat_v2.prop", "wellbeing") == "1" then
+      package_extract_file("debloat/custom/wellbeing", "/tmp/nukeengine.sh");
+      run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    endif;
 endif;
 ##################################################
 set_progress(0.96);

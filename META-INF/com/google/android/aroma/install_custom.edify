@@ -49,6 +49,9 @@ menubox(
     "Sanchet's Debloat", "Removes Above and dual messenger",                                     "@none",
     "Manual Debloat",    "Customise your own debloat",               "@none"
 );
+if prop("debloat.prop","selected") == "5" then
+  include("debloater.edify");
+endif;
 
 ###############################################
 #KERNEL
