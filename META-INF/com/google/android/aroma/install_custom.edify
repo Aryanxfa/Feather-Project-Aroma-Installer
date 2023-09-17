@@ -25,7 +25,7 @@ form(
       
     "blur",     "UserInterface",        "",                                            "group",
       "1",     "Enable Live Blur UI",       "Flagship blurs that's realistic and looks good",                      "select",
-      "2",     "Enable Static blur UI",       "Midrange/Low blurs that's you have seen also noticed in stock",     "select",
+      "2",     "Enable Static blur UI",       "Static blurs as seen in stock (causes issue with dex)",     "select",
       
     "group6",     "Miscellaneous",        "",                                           "group",
       "knox",     "Remove Knox apps support",       "Will remove Knox component",       "check",
