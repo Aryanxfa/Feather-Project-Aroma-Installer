@@ -1,5 +1,4 @@
 #! /tmp/busybox sh
-
 /tmp/busybox sed -i "s/SUPPORT_BIXBY>TRUE/SUPPORT_BIXBY>FALSE/g" /system_root/system/etc/floating_feature.xml
 rm -rf /system_root/system/app/BixbyWakeup
 rm -rf /system_root/system/app/VisionIntelligence3.7

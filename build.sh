@@ -18,15 +18,6 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
-# Format DBList
-db_list=$(find debloat)
-echo $db_list
-for file in $db_list; do
-    if [ -f "$file" ]; then
-        ./validatedblist.sh "$file"
-    fi
-done
-
 # Pull overlays
 for device in "${supported_devices[@]}"; do
     mkdir -p device/${device}/overlay/
