@@ -1,127 +1,129 @@
-app/AllShareAware
-app/AllshareFileShare
-app/AllshareMediaShare
-app/ApexService
-app/ARCore
-app/ARZone
-app/AutomationTest_FB
-app/BixbyWakeup
-app/BookmarkProvider
-app/CameraExtensionsProxy
-app/ClipboardEdge
-app/CocktailQuickTool
-app/CompanionDeviceManager
-app/DAAgent
-app/EasterEgg
-app/EasyOneHand3
-app/EmergencyLauncher
-app/FactoryAirCommandManager
-app/GalaxyResourceUpdater
-app/GearManagerStub
-app/GooglePrintRecommendationService
-app/KeyCustomizationInfoBackupService
-app/KidsHome_Installer
-app/MdecService
-app/MdxKitService
-app/Netflix_activationCommon
-app/Netflix_stub
-app/NfcNci
-app/NfwLocationPrivacy
-app/OCRDataProvider
-app/P2pAwareOverlay
-app/PartnerBookmarksProvider
-app/PlayAutoInstallConfig
-app/PrintSpooler
-app/Privacy
-app/SafetyInformation
-app/SamsungOne
-app/SamsungTTS
-app/SecFactoryPhoneTest
-app/SetupWizardLegalProvider
-app/SilentLog
-app/SimMobilityKit
-app/SLocation
-app/SmartMirroring
-app/SmartSwitchAgent
-app/SmartTethering
-app/StickerCenter
-app/UnifiedWFC
-app/WebManual
-priv-app/AdaptSound_T
-priv-app/AppLock
-priv-app/AREmoji
-priv-app/AudioMirroring
-priv-app/AuthFactorTouchService
-priv-app/BackupRestoreConfirmation
-priv-app/BeaconManager
-priv-app/Bixby
-priv-app/BuiltInPrintService
-priv-app/CallContentProvider
-priv-app/CameraLightSensor
-priv-app/CMFAFramework
-priv-app/CocktailBarService_v3.2
-priv-app/DesktopModeUiService
-priv-app/DesktopSystemUI
-priv-app/DeviceQualityAgent3
-priv-app/DeXonPC
-priv-app/DiagMonAgent9
-priv-app/DigitalWellbeing
-priv-app/DynamicLockscreen
-priv-app/EasySetup
-priv-app/EmergencySOS
-priv-app/EnhancedAttestationAgent
-priv-app/EpdgService
-priv-app/FactoryTestProvider
-priv-app/Finder
-priv-app/GalaxyApps_OPEN
-priv-app/GoogleRestore
-priv-app/GpuWatchApp
-priv-app/HashTagService
-priv-app/HdmApk
-priv-app/knoxanalyticsagent
-priv-app/KnoxDesktopLauncher
-priv-app/knoxvpnproxyhandler
-priv-app/LinkToWindowsService
-priv-app/LocaleOverlayManager
-priv-app/MateAgent
-priv-app/MCFDeviceSync
-priv-app/MmsService
-priv-app/MultiControlVP4
-priv-app/NSDSWebApp
-priv-app/OmaCP
-priv-app/ONS
-priv-app/PeopleStripe
-priv-app/PeripheralFramework
-priv-app/PrivacyDashboard
-priv-app/Quickboard
-priv-app/Routines
-priv-app/RubinVersion33
-priv-app/SamsungAccount
-priv-app/SamsungCloudClient
-priv-app/SamsungCoreServices
-priv-app/SamsungDeviceHealthManagerService
-priv-app/SamsungExperienceService
-priv-app/SamsungMagnifier3
-priv-app/SamsungMultiConnectivity
-priv-app/SamsungPositioning
-priv-app/SamsungSmartSuggestions
-priv-app/SCPMAgent
-priv-app/SecAppSeparation
-priv-app/SecureFolder
-priv-app/SendHelpMessage
-priv-app/serviceModeApp_FB
-priv-app/SettingsBixby
-priv-app/SharedStorageBackup
-priv-app/ShareLive
-priv-app/SmartEpdgTestApp
-priv-app/SmartSwitchAssistant
-priv-app/SmartThingsKit
-priv-app/SmartTouchCall
-priv-app/StickerFaceARAvatar
-priv-app/StoryService
-priv-app/Tag
-priv-app/TaskEdgePanel_v3.2
-priv-app/ThemeStore
-priv-app/VolumeMonitorProvider_T
-priv-app/VpnDialogs
-system_ext/priv-app/GoogleFeedback
+#! /tmp/busybox sh
+
+rm -rf /system_root/system/app/AllShareAware
+rm -rf /system_root/system/app/AllshareFileShare
+rm -rf /system_root/system/app/AllshareMediaShare
+rm -rf /system_root/system/app/ApexService
+rm -rf /system_root/system/app/ARCore
+rm -rf /system_root/system/app/ARZone
+rm -rf /system_root/system/app/AutomationTest_FB
+rm -rf /system_root/system/app/BixbyWakeup
+rm -rf /system_root/system/app/BookmarkProvider
+rm -rf /system_root/system/app/CameraExtensionsProxy
+rm -rf /system_root/system/app/ClipboardEdge
+rm -rf /system_root/system/app/CocktailQuickTool
+rm -rf /system_root/system/app/CompanionDeviceManager
+rm -rf /system_root/system/app/DAAgent
+rm -rf /system_root/system/app/EasterEgg
+rm -rf /system_root/system/app/EasyOneHand3
+rm -rf /system_root/system/app/EmergencyLauncher
+rm -rf /system_root/system/app/FactoryAirCommandManager
+rm -rf /system_root/system/app/GalaxyResourceUpdater
+rm -rf /system_root/system/app/GearManagerStub
+rm -rf /system_root/system/app/GooglePrintRecommendationService
+rm -rf /system_root/system/app/KeyCustomizationInfoBackupService
+rm -rf /system_root/system/app/KidsHome_Installer
+rm -rf /system_root/system/app/MdecService
+rm -rf /system_root/system/app/MdxKitService
+rm -rf /system_root/system/app/Netflix_activationCommon
+rm -rf /system_root/system/app/Netflix_stub
+rm -rf /system_root/system/app/NfcNci
+rm -rf /system_root/system/app/NfwLocationPrivacy
+rm -rf /system_root/system/app/OCRDataProvider
+rm -rf /system_root/system/app/P2pAwareOverlay
+rm -rf /system_root/system/app/PartnerBookmarksProvider
+rm -rf /system_root/system/app/PlayAutoInstallConfig
+rm -rf /system_root/system/app/PrintSpooler
+rm -rf /system_root/system/app/Privacy
+rm -rf /system_root/system/app/SafetyInformation
+rm -rf /system_root/system/app/SamsungOne
+rm -rf /system_root/system/app/SamsungTTS
+rm -rf /system_root/system/app/SecFactoryPhoneTest
+rm -rf /system_root/system/app/SetupWizardLegalProvider
+rm -rf /system_root/system/app/SilentLog
+rm -rf /system_root/system/app/SimMobilityKit
+rm -rf /system_root/system/app/SLocation
+rm -rf /system_root/system/app/SmartMirroring
+rm -rf /system_root/system/app/SmartSwitchAgent
+rm -rf /system_root/system/app/SmartTethering
+rm -rf /system_root/system/app/StickerCenter
+rm -rf /system_root/system/app/UnifiedWFC
+rm -rf /system_root/system/app/WebManual
+rm -rf /system_root/system/priv-app/AdaptSound_T
+rm -rf /system_root/system/priv-app/AppLock
+rm -rf /system_root/system/priv-app/AREmoji
+rm -rf /system_root/system/priv-app/AudioMirroring
+rm -rf /system_root/system/priv-app/AuthFactorTouchService
+rm -rf /system_root/system/priv-app/BackupRestoreConfirmation
+rm -rf /system_root/system/priv-app/BeaconManager
+rm -rf /system_root/system/priv-app/Bixby
+rm -rf /system_root/system/priv-app/BuiltInPrintService
+rm -rf /system_root/system/priv-app/CallContentProvider
+rm -rf /system_root/system/priv-app/CameraLightSensor
+rm -rf /system_root/system/priv-app/CMFAFramework
+rm -rf /system_root/system/priv-app/CocktailBarService_v3.2
+rm -rf /system_root/system/priv-app/DesktopModeUiService
+rm -rf /system_root/system/priv-app/DesktopSystemUI
+rm -rf /system_root/system/priv-app/DeviceQualityAgent3
+rm -rf /system_root/system/priv-app/DeXonPC
+rm -rf /system_root/system/priv-app/DiagMonAgent9
+rm -rf /system_root/system/priv-app/DigitalWellbeing
+rm -rf /system_root/system/priv-app/DynamicLockscreen
+rm -rf /system_root/system/priv-app/EasySetup
+rm -rf /system_root/system/priv-app/EmergencySOS
+rm -rf /system_root/system/priv-app/EnhancedAttestationAgent
+rm -rf /system_root/system/priv-app/EpdgService
+rm -rf /system_root/system/priv-app/FactoryTestProvider
+rm -rf /system_root/system/priv-app/Finder
+rm -rf /system_root/system/priv-app/GalaxyApps_OPEN
+rm -rf /system_root/system/priv-app/GoogleRestore
+rm -rf /system_root/system/priv-app/GpuWatchApp
+rm -rf /system_root/system/priv-app/HashTagService
+rm -rf /system_root/system/priv-app/HdmApk
+rm -rf /system_root/system/priv-app/knoxanalyticsagent
+rm -rf /system_root/system/priv-app/KnoxDesktopLauncher
+rm -rf /system_root/system/priv-app/knoxvpnproxyhandler
+rm -rf /system_root/system/priv-app/LinkToWindowsService
+rm -rf /system_root/system/priv-app/LocaleOverlayManager
+rm -rf /system_root/system/priv-app/MateAgent
+rm -rf /system_root/system/priv-app/MCFDeviceSync
+rm -rf /system_root/system/priv-app/MmsService
+rm -rf /system_root/system/priv-app/MultiControlVP4
+rm -rf /system_root/system/priv-app/NSDSWebApp
+rm -rf /system_root/system/priv-app/OmaCP
+rm -rf /system_root/system/priv-app/ONS
+rm -rf /system_root/system/priv-app/PeopleStripe
+rm -rf /system_root/system/priv-app/PeripheralFramework
+rm -rf /system_root/system/priv-app/PrivacyDashboard
+rm -rf /system_root/system/priv-app/Quickboard
+rm -rf /system_root/system/priv-app/Routines
+rm -rf /system_root/system/priv-app/RubinVersion33
+rm -rf /system_root/system/priv-app/SamsungAccount
+rm -rf /system_root/system/priv-app/SamsungCloudClient
+rm -rf /system_root/system/priv-app/SamsungCoreServices
+rm -rf /system_root/system/priv-app/SamsungDeviceHealthManagerService
+rm -rf /system_root/system/priv-app/SamsungExperienceService
+rm -rf /system_root/system/priv-app/SamsungMagnifier3
+rm -rf /system_root/system/priv-app/SamsungMultiConnectivity
+rm -rf /system_root/system/priv-app/SamsungPositioning
+rm -rf /system_root/system/priv-app/SamsungSmartSuggestions
+rm -rf /system_root/system/priv-app/SCPMAgent
+rm -rf /system_root/system/priv-app/SecAppSeparation
+rm -rf /system_root/system/priv-app/SecureFolder
+rm -rf /system_root/system/priv-app/SendHelpMessage
+rm -rf /system_root/system/priv-app/serviceModeApp_FB
+rm -rf /system_root/system/priv-app/SettingsBixby
+rm -rf /system_root/system/priv-app/SharedStorageBackup
+rm -rf /system_root/system/priv-app/ShareLive
+rm -rf /system_root/system/priv-app/SmartEpdgTestApp
+rm -rf /system_root/system/priv-app/SmartSwitchAssistant
+rm -rf /system_root/system/priv-app/SmartThingsKit
+rm -rf /system_root/system/priv-app/SmartTouchCall
+rm -rf /system_root/system/priv-app/StickerFaceARAvatar
+rm -rf /system_root/system/priv-app/StoryService
+rm -rf /system_root/system/priv-app/Tag
+rm -rf /system_root/system/priv-app/TaskEdgePanel_v3.2
+rm -rf /system_root/system/priv-app/ThemeStore
+rm -rf /system_root/system/priv-app/VolumeMonitorProvider_T
+rm -rf /system_root/system/priv-app/VpnDialogs
+rm -rf /system_root/system/system_ext/priv-app/GoogleFeedback
