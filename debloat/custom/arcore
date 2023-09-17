@@ -1,0 +1,10 @@
+#! /tmp/busybox sh
+
+rm -rf /system_root/system/app/ARCore
+rm -rf /system_root/system/app/ARDrawing
+rm -rf /system_root/system/app/ARZone
+rm -rf /system_root/system/priv-app/AREmoji/AREmoji.apk
+rm -rf /system_root/system/priv-app/AREmojiEditor/AREmojiEditor.apk
+rm -rf /system_root/system/priv-app/AutoDoodle/AutoDoodle.apk
+rm -rf /system_root/system/priv-app/AvatarEmojiSticker/AvatarEmojiSticker.apk
+rm -rf /system_root/system/priv-app/StickerFaceARAvatar

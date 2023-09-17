@@ -1,0 +1,19 @@
+#! /tmp/busybox sh
+
+rm -rf /system_root/system/priv-app/GalaxyApps_OPEN
+rm -rf /system_root/system/priv-app/HashTagService
+rm -rf /system_root/system/priv-app/MateAgent
+rm -rf /system_root/system/priv-app/RubinVersion33
+rm -rf /system_root/system/priv-app/SamsungAccount
+rm -rf /system_root/system/priv-app/SamsungCloudClient
+rm -rf /system_root/system/priv-app/SamsungCoreServices
+rm -rf /system_root/system/priv-app/SamsungDeviceHealthManagerService
+rm -rf /system_root/system/priv-app/SamsungExperienceService
+rm -rf /system_root/system/priv-app/SamsungMultiConnectivity
+rm -rf /system_root/system/priv-app/SamsungPositioning
+rm -rf /system_root/system/priv-app/SamsungSmartSuggestions
+rm -rf /system_root/system/priv-app/SCPMAgent
+rm -rf /system_root/system/priv-app/SecureFolder
+rm -rf /system_root/system/priv-app/SmartSwitchAssistant
+rm -rf /system_root/system/priv-app/SmartThingsKit
+rm -rf /system_root/system/priv-app/SmartTouchCall

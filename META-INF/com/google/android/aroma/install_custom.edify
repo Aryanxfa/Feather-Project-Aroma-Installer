@@ -45,9 +45,9 @@ menubox(
 
     "NO DEBLOAT",        "Recommended for New Users, Least bugs",                              "@none",
     "Light Debloat",     "Removes Share, Bixby, Switch, AR, Free, Magnifier, Media control",   "@none",
-    "Heavy Debloat",     "Removes Above all and Samsung account, Galaxy Store, Smart Suggestions, Routine, Smart View", "@none",
     "Lain's Debloat",    "Removes AR Bixby Share Mcf GOS",                "@none",
-    "Sanchet's Debloat", "Removes Above all and dual messenger",                                     "@none"
+    "Sanchet's Debloat", "Removes Above and dual messenger",                                     "@none",
+    "Manual Debloat",    "Customise your own debloat",               "@none"
 );
 
 ###############################################
