@@ -212,7 +212,6 @@ Changelog v8.0
 - Security patch September 2023
 - Google Play System Update
 - Fixed Work Profile issue
-- Fixed applock issue @GalaxyA51user
 - Aroma: add custom debloat @Bobert_A30
 - A10: QR Scanner fixed
 - A30s: Portrait Mode Fixed
@@ -222,3 +221,7 @@ Changelog v8.0
 - Wallpapers removed to save space
 - Game tools added without game home
 - Wifi Connectivity throttling removed
+
+Changelog v8.0.1
+- Kernel updated to Eureka R14
+- a40: update corners @GalaxyA51user
