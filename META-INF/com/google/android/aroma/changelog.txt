@@ -26,4 +26,7 @@ Changelog v1.1:
 - Off Charging screen resized
 
 Changelog v2.0:
+- Base update A135FXXU5CWH1
+- Security patch February 2023
+- GPS fixed
 - Aroma: add custom debloat @Bobert_A30
