@@ -27,6 +27,6 @@ Changelog v1.1:
 
 Changelog v2.0:
 - Base update A135FXXU5CWH1
-- Security patch February 2023
-- GPS fixed
+- Security patch July 2023
+- GPS issue fixed
 - Aroma: add custom debloat @Bobert_A30
