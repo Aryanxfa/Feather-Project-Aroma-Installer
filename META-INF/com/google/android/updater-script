@@ -4,7 +4,7 @@ ui_print("  ROM    : FEATHER PROJECT         ");
 ui_print("  OS     : OneUI 5.1 | Android 13  ");
 ui_print("  Version : A13_v2.0               ");
 ui_print("  Security: July 2023              ");
-ui_print("  KERNEL  : Eureka 14.0            ");
+ui_print("  KERNEL  : Eureka 13.0            ");
 ui_print("  DTB    : 5, Stable v2            ");
 ui_print("     -> Big cores: 520 - 2080      ");
 ui_print("     -> Little cores: 546 - 1690   ");

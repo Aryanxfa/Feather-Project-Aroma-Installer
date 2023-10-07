@@ -4,7 +4,7 @@
 # To be used when ones images are ready
 # Call with the format ./build.sh FeatherProject_S22_T_v0.7.zip
 
-supported_devices=("a10" "a20" "a20e" "a30" "a30s" "a40")
+supported_devices=("a10" "a20" "a20e")
 
 if [ -z "$1" ]; then
     echo "Filename not provided"
