@@ -26,8 +26,7 @@ form(
     "group6",     "Miscellaneous",        "",                                           "group",
       "knox",     "Remove Knox apps support",       "Will remove Knox component",       "check",
       "nfc",      "Remove NFC supports",            "Will remove NFC app",              "check",
-      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",  "check",
-      "bootani",  "AOSP Bootanimation",  "Enables support for AOSP bootanimation zip",    "check" 
+      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",  "check"
 );
 
 ###############################################
