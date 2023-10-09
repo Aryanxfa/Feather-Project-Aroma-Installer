@@ -2,7 +2,7 @@
 ui_print("===================================");
 ui_print("  ROM    : FEATHER PROJECT         ");
 ui_print("  OS     : OneUI 5.1 | Android 13  ");
-ui_print("  Version : A13_v2.0               ");
+ui_print("  Version : A13_v2.1               ");
 ui_print("  Security: July 2023              ");
 ui_print("  KERNEL  : Eureka 13.0            ");
 ui_print("  DTB    : 5, Stable v2            ");

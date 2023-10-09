@@ -28,5 +28,12 @@ Changelog v1.1:
 Changelog v2.0:
 - Base update A135FXXU5CWH1
 - Security patch July 2023
+- Update kernel to R14 
 - GPS issue fixed
 - Aroma: add custom debloat @Bobert_A30
+
+Changelog v2.1:
+- Selinux fixes
+- Streamlined system
+- Kernel downgraded to R13
+- Add compatiblity for R8 kernel
