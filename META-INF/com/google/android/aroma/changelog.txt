@@ -225,3 +225,12 @@ Changelog v8.0
 Changelog v8.0.1
 - Kernel updated to Eureka R14
 - a40: update corners @GalaxyA51user
+
+Changelog v9.0 Beta
+- Base update S901BXXS6CWI1
+- Security patch October 2023
+- Kernel updated to Eureka R14.2
+- Camera recording pause issue fixed
+- Some selinux patches
+- Animations improved
+- Dolby Eac3 enabled
