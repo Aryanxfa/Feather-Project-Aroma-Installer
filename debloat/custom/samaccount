@@ -6,7 +6,6 @@ rm -rf /system_root/system/priv-app/RubinVersion33
 rm -rf /system_root/system/priv-app/SamsungAccount
 rm -rf /system_root/system/priv-app/SamsungCloudClient
 rm -rf /system_root/system/priv-app/SamsungCoreServices
-rm -rf /system_root/system/priv-app/SamsungDeviceHealthManagerService
 rm -rf /system_root/system/priv-app/SamsungExperienceService
 rm -rf /system_root/system/priv-app/SamsungMultiConnectivity
 rm -rf /system_root/system/priv-app/SamsungPositioning
