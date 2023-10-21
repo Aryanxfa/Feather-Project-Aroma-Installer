@@ -296,6 +296,14 @@ if file_getprop("/tmp/aroma/debloat.prop", "selected") == "5" then
       package_extract_file("debloat/custom/quickshare", "/tmp/nukeengine.sh");
       run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
     endif;
+    if file_getprop("/tmp/aroma/debloat_v2.prop", "basicbloats") == "1" then
+      package_extract_file("debloat/custom/basicbloats", "/tmp/nukeengine.sh");
+      run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    endif;
+    if file_getprop("/tmp/aroma/debloat_v2.prop", "dex") == "1" then
+      package_extract_file("debloat/custom/dex", "/tmp/nukeengine.sh");
+      run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
+    endif;
     if file_getprop("/tmp/aroma/debloat_v2.prop", "bixby") == "1" then
       package_extract_file("debloat/custom/bixby", "/tmp/nukeengine.sh");
       run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
