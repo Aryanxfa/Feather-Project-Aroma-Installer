@@ -234,3 +234,13 @@ Changelog v9.0 Beta
 - Some selinux patches
 - Animations improved
 - Dolby Eac3 enabled
+
+Changelog v9.1
+- Eureka Kernel for FP R14.3
+- Kernel SU updated to v0.7.0
+- Fixed Kernel SU module Install
+- Aroma: replace Magisk with KSU @bobertA30
+- Some debloat improvements by @moolishu
+- Some USB fixes
+- Animations improved
+- Some selinux patches

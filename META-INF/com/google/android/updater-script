@@ -2,9 +2,9 @@
 ui_print("===================================");
 ui_print("  ROM    : FEATHER PROJECT         ");
 ui_print("  OS     : OneUI 5.1 | Android 13  ");
-ui_print("  Version : S22_v9.0               ");
+ui_print("  Version : S22_v9.1               ");
 ui_print("  Security: October 2023           ");
-ui_print("  KERNEL  : Eureka 14.2            ");
+ui_print("  KERNEL  : Eureka 14.3 for FP     ");
 ui_print("  DTB    : 5, Stable v2            ");
 ui_print("     -> Big cores: 520 - 2080      ");
 ui_print("     -> Little cores: 546 - 1690   ");
@@ -348,7 +348,7 @@ ifelse(is_mounted("/product"), unmount("/product"));
 #Kernel
 ##################################################
 if file_getprop("/tmp/aroma/kernel.prop","selected") == "1" then
-  ui_print("@>Installing Eureka KernelSU...");
+  ui_print("@>Installing Eureka Kernel...");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");  
