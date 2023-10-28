@@ -59,7 +59,7 @@ endif;
 menubox(
     "Kernel Option",
     "Select your Kernel type, installs Eureka kernel and DTB 5",
-    "@kern", 
+    "@su", 
     "kernel.prop",
 
     "Eureka KernelSU (default)",      "Pre-rooted hiddenly with EurekaKernel KSU.",                                   "@eksu",
