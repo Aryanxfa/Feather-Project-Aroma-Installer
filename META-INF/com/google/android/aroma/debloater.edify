@@ -4,7 +4,7 @@ form(
     "@nuke",
     "debloat_v2.prop",
 
-    "basicbloats",  "Basic Debloats", "Basic Debloats for more stable experience"	     "check",
+    "basicbloats",  "Basic Debloats", "Basic Debloats for more stable experience",	     "check",
     "quickshare",  "QuickShare",       "QuickShare for file sharing",                        "check",
     "dex",	"Samsung Dex",		"Samsung's Windows-Like UI",			     "check",
     "arcore",      "AR Core",          "App that uses AR for Fun, Stickers, emojji etc",     "check",
