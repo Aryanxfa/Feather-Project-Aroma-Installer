@@ -348,13 +348,13 @@ ifelse(is_mounted("/product"), unmount("/product"));
 #Kernel
 ##################################################
 if file_getprop("/tmp/aroma/kernel.prop","selected") == "1" then
-  ui_print("Installing Eureka KernelSU...");
+  ui_print("@>Installing Eureka KernelSU...");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/boot.img", "/dev/block/platform/13500000.dwmmc0/by-name/boot");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtb.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtb");
   package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/dtbo.img", "/dev/block/platform/13500000.dwmmc0/by-name/dtbo");  
 endif;
 if file_getprop("/tmp/aroma/kernel.prop","selected") == "2" then
-  ui_print("Skipping Kernel...");
+  ui_print("@>Skipping Kernel...");
 endif;
 ##################################################
 ui_print(" ");
