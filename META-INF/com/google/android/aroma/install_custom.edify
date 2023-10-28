@@ -57,12 +57,11 @@ endif;
 #KERNEL
 ###############################################
 menubox(
-    "Root Solution",
+    "Kernel Option",
     "Select your Kernel type, installs Eureka kernel and DTB 5",
     "@su", 
     "kernel.prop",
 
-    "Magisk",       "Recommend for most users want root with stable.",          "@magisk",
-    "Vanilla",      "Non rooted Eureka Kernel.",                                   "@ekm",
+    "Eureka KernelSU (default)",      "Pre-rooted hiddenly with EurekaKernel KSU.",                                   "@eksu",
     "Skip Kernel",  "Skip Changing Kernel at all. Use existing Kernel",            "@skip"
 );
