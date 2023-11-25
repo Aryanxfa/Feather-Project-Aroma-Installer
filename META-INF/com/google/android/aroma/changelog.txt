@@ -244,3 +244,11 @@ Changelog v9.1
 - Some USB fixes
 - Animations improved
 - Some selinux patches
+
+Changelog v10.0
+- Kernel updated to Eureka R15
+- Kernel SU updated to v0.7.1
+- MTP / USB configs updated
+- Animations improved
+- Some selinux patches
+- Ships with Full Enforcing
