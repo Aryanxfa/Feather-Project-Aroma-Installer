@@ -1,7 +1,9 @@
-on fs
+on late-fs
     wait /dev/block/by-name/omr
-    mount ext4 /dev/block/by-name/omr /omr nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
+    mkdir /metadata/omr 0755 radio system
+    mount none /metadata/omr /omr bind
     chown radio system /omr
+    restorecon_recursive /omr
     chmod 0775 /omr
 on property:vendor.security.vaultkeeper.native=1
     start scs
