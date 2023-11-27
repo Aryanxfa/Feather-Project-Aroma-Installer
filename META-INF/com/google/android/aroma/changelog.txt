@@ -251,4 +251,5 @@ Changelog v10.0
 - MTP / USB configs updated
 - Animations improved
 - Some selinux patches
+- Full Android Auto Support
 - Ships with Full Enforcing
