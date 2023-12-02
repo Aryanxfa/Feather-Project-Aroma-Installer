@@ -260,7 +260,9 @@ endif;
 if file_getprop("/tmp/aroma/mods.prop","brightness") == "1" then
   ui_print("@>Removing extended brightness...");
   delete_recursive("/vendor/etc/init/fp_aospbrightness.rc");
+endif;
 
+# Dex
 if file_getprop("/tmp/aroma/mods.prop","dex") == "1" then
   ui_print("@>Enabling Dex on Device...");
   run_program("/tmp/busybox", "sed", "-i", "s/DEX_MODE>/DEX_MODE>standalone,/g", "/system_root/system/etc/floating_feature.xml");
