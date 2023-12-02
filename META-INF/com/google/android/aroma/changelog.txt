@@ -248,6 +248,8 @@ Changelog v9.1
 Changelog v10.0
 - Kernel updated to Eureka R15
 - Kernel SU updated to v0.7.1
+- Full Android Auto Support Added
+- Extra Brightness mode added
 - MTP / USB configs updated
 - Animations improved
 - Some selinux patches
