@@ -52,6 +52,7 @@ run_program("/tmp/busybox", "mount", "-t", "auto", "/product");
 ##################################################
 if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "1" then
     package_extract_dir("auxy/data/app", "/system_root/system/app");
+    delete_recursive("/product/app/WebViewGoogle");
 endif;
 if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "0" then
     if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "1" then
