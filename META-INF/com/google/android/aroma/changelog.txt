@@ -13,9 +13,12 @@ Initial Release S901BXXU6DWK4
 Changelog v0.2:
 - using alternate audio policy for fixing audio
 - internal fixups
+- Added FM
 - Added Samsung camera
 - Added NFC Support
 - Secure Folder Patch
 - BT Library Patched
 - BT Media and Calls fixed
-
+- Add Aod fix
+- FOD animation removed
+- Internal error fixed
