@@ -5,7 +5,7 @@ OneUI 6.0 S22 port
 
 Bugs
 - Face Unlock
-- Moving apps to Sdcard
+- Dex
 
 Changelog Alpha 1:
 Initial Release S901BXXU6DWK4
