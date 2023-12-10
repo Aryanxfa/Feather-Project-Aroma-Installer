@@ -35,5 +35,5 @@ Changelog Alpha 4:
 - OCR fixed
 - Added CSC
 - Added Fun mode @SzCs92
-- a30 a40: camera crash fixed
+- a30 a30s a40: camera crash fixed
 - Added fix for audio @Pandino19
