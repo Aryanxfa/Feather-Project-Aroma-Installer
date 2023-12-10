@@ -1,4 +1,4 @@
-#S22 #a20 #T #OneUI5
+#S22 #a20 #T #OneUI6
 
 OneUI 6.0 S22 port
 
@@ -7,10 +7,10 @@ Bugs
 - Face Unlock
 - Moving apps to Sdcard
 
-Changelog v0.1:
+Changelog Alpha 1:
 Initial Release S901BXXU6DWK4
 
-Changelog v0.2:
+Changelog Alpha 2:
 - using alternate audio policy for fixing audio
 - internal fixups
 - Added FM
@@ -22,3 +22,12 @@ Changelog v0.2:
 - Add Aod fix
 - FOD animation removed
 - Internal error fixed
+
+Changelog Alpha 3:
+- Added Samsung Camera
+
+Changelog Alpha 4:
+- Camera fixups
+- Portrait lag reduced
+- Clipper fixed
+- OCR fixed

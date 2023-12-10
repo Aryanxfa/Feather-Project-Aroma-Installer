@@ -12,13 +12,11 @@
 >Credits and huge thanks:
 --------------------------------------
 @Roynatech & @chatur2709 for Kernel
-@kevios12 & @neel0210 for oneui4
 @amarullz for Aroma Installer
 @MrWaehere for CRB Kitchen
 @ianmacd for multidisabler
 @ricci206 for Secure Folder patch
 @3arthur6 For Bluetooth lib patcher
-@TBM13 For raw capture libs
 
 You do this at your own risk! 
 
