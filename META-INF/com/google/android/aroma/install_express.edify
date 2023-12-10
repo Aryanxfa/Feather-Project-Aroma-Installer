@@ -4,7 +4,7 @@
 
 writetmpfile(
   "mods.prop",
-  "selected.0=0\n"
+  "blur=2\n"
 );
 writetmpfile(
   "debloat.prop",
