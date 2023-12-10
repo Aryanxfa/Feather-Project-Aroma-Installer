@@ -1,10 +1,10 @@
 # Dedicated to the all mighty Bandi Chod
 ui_print("===================================");
 ui_print("  ROM    : FEATHER PROJECT         ");
-ui_print("  OS     : OneUI 5.1 | Android 13  ");
-ui_print("  Version : S22_v9.1               ");
-ui_print("  Security: October 2023           ");
-ui_print("  KERNEL  : Eureka 14.3 for FP     ");
+ui_print("  OS     : OneUI 6.0 | Android 14  ");
+ui_print("  Version : S22_Alpha 4            ");
+ui_print("  Security: November 2023          ");
+ui_print("  KERNEL  : Eureka 15.0            ");
 ui_print("  DTB    : 5, Stable v2            ");
 ui_print("     -> Big cores: 520 - 2080      ");
 ui_print("     -> Little cores: 546 - 1690   ");
