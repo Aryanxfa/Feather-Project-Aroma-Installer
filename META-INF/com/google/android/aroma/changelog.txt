@@ -29,6 +29,11 @@ Changelog Alpha 3:
 Changelog Alpha 4:
 - Switch to default static Blur
 - Portrait lag reduced
+- Repacked kernel
 - Camera fixups
 - Clipper fixed
 - OCR fixed
+- Added CSC
+- Added Fun mode @SzCs92
+- a30 a40: camera crash fixed
+- Added fix for audio @Pandino19
