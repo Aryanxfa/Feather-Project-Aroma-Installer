@@ -21,14 +21,11 @@
     <local name="BACK_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="4608x3456" />
 
     <!-- Capture resolution - FRONT -->
-    <local name="FRONT_CAMERA_RESOLUTION_FULL_RATIO" value="4032x1860" />
-    <local name="FRONT_CAMERA_RESOLUTION_4BY3_LARGE" value="5760x4312" />
-    <local name="FRONT_CAMERA_RESOLUTION_16BY9_LARGE" value="4032x2268" />
-    <local name="FRONT_CAMERA_RESOLUTION_1BY1_LARGE" value="3024x3024" />
-    <local name="FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="4032x3024" />
-
-    <!-- Capture resolution - SUPER -->
-    <local name="FRONT_CAMERA_RESOLUTION_SUPER_RESOLUTION" value="5760x4312" />
+    <local name="FRONT_CAMERA_RESOLUTION_FULL_RATIO" value="2336X1080" />
+    <local name="FRONT_CAMERA_RESOLUTION_4BY3_LARGE" value="4688X3516" />
+    <local name="FRONT_CAMERA_RESOLUTION_16BY9_LARGE" value="1920x1080" />
+    <local name="FRONT_CAMERA_RESOLUTION_1BY1_LARGE" value="1088X1088" />
+    <local name="FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="1920x1080" />
 
     <!-- Capture resolution - BACK ULTRA_WIDE -->
     <local name="BACK_WIDE_CAMERA_RESOLUTION_4BY3_LARGE" value="2576x1932" />
@@ -113,7 +110,7 @@
     <local name="SUPPORT_MOTION_PHOTO" value="true" />
     <local name="SUPPORT_HEIF_FORMAT" value="true" />
     <local name="SUPPORT_ADVANCED_RECORDING_OPTIONS" value="false" />
-    <local name="SUPPORT_SENSOR_CROP" value="true" />
+    <local name="SUPPORT_SENSOR_CROP" value="false" />
 
     <!-- Notch Animation -->
     <local name="DISPLAY_CUTOUT_ANIMATION_INFO" num-of-display-cutout="1" display-cutout-0-type="2" display-cutout-0-left="166" display-cutout-0-top="0" display-cutout-0-right="239" display-cutout-0-bottom="40" />
@@ -180,7 +177,7 @@
 
     <!--Support
     to use post processing picture -->
-    <local name="SUPPORT_TO_USE_PPP" value="false" />
+    <local name="SUPPORT_TO_USE_PPP" value="true" />
 
     <!--Video
     beauty low performance -->
