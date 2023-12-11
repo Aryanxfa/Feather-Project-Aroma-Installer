@@ -113,7 +113,7 @@
     <local name="SUPPORT_SENSOR_CROP" value="false" />
 
     <!-- Notch Animation -->
-    <local name="DISPLAY_CUTOUT_ANIMATION_INFO" num-of-display-cutout="1" display-cutout-0-type="2" display-cutout-0-left="166" display-cutout-0-top="0" display-cutout-0-right="239" display-cutout-0-bottom="40" />
+    <local name="DISPLAY_CUTOUT_ANIMATION_INFO" num-of-display-cutout="1" display-cutout-0-type="2" display-cutout-0-left="146" display-cutout-0-top="0" display-cutout-0-right="213" display-cutout-0-bottom="40" />
     <local name="DISPLAY_CUTOUT_POSITION" value="1" />
 
     <!-- Seamless camera switching related features -->
