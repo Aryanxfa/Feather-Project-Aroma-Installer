@@ -197,10 +197,6 @@
     <local name="SUPPORT_AUTO_HDR_MENU" value="true" />
     <local name="QOS_TO_ROS_UPGRADE_SHOOTING_MODE_ORDER" value="true" />
 
-    <!-- Guide Line percentage -->
-    <local name="TOP_GUIDE_LINE" value="0.115" />
-    <local name="BOTTOM_GUIDE_LINE" value="0.730" />
-
     <local name="SUPPORT_AUTO_WATERMARK" value="true" />
     <local name="CAMERA_AUTO_WATERMARK_NUMBER_OF_CAMERAS" value="2" />
     <local name="SUPPORT_CAMERA_AUTO_WATERMARK_MODEL_NAME" value="Galaxy A20e" />

@@ -164,9 +164,6 @@
     to use post processing picture -->
     <local name="SUPPORT_TO_USE_PPP" value="false" />
 
-    <!-- Guide Line percentage -->
-    <local name="TOP_GUIDE_LINE" value="0.125" />
-
     <!-- Pro video features -->
     <local name="SUPPORT_PRO_VIDEO_RESOLUTION_SETTING" value="true"/>
     <local name="SUPPORT_HISTOGRAM" value="true"/>

@@ -184,9 +184,6 @@
     <local name="SUPPORT_FRONT_LOW_PERFORMANCE_VIDEO_BEAUTY" value="true" />
     <local name="SUPPORT_BACK_LOW_PERFORMANCE_VIDEO_BEAUTY" value="true" />
 
-    <!-- Guide Line percentage -->
-    <local name="TOP_GUIDE_LINE" value="0.125" />
-
     <!-- Pro video features -->
     <local name="SUPPORT_PRO_VIDEO_RESOLUTION_SETTING" value="true"/>
     <local name="SUPPORT_HISTOGRAM" value="true"/>
