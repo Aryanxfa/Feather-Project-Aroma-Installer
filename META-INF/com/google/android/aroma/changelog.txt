@@ -49,3 +49,5 @@ Changelog v0.1:
 - Vendor upgrade 
 - a30: camera crash fixed
 - Overall stability improved
+- Fix Widevine
+- Fix Wifi
