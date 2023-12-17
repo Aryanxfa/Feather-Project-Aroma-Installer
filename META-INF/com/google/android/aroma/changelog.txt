@@ -5,6 +5,7 @@ OneUI 6.0 S22 port
 
 Bugs
 - Face Unlock
+- Proximity
 - Dex
 
 Changelog Alpha 1:
@@ -37,3 +38,14 @@ Changelog Alpha 4:
 - Added Fun mode @SzCs92
 - a30 a30s a40: camera crash fixed
 - Added fix for audio @Pandino19
+
+Changelog v0.1:
+- Base update to S901BXXS7DWL1
+- Security patch December 2023
+- Switch to default live Blur
+- Fun mode removed
+- Camera fixups
+- Overlay fixups
+- Vendor upgrade 
+- a30: camera crash fixed
+- Overall stability improved
