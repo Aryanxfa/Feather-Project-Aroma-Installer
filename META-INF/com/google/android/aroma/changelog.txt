@@ -39,7 +39,7 @@ Changelog Alpha 4:
 - a30 a30s a40: camera crash fixed
 - Added fix for audio @Pandino19
 
-Changelog v0.1:
+Changelog Alpha 5/6:
 - Base update to S901BXXS7DWL1
 - Security patch December 2023
 - Switch to default live Blur
@@ -51,3 +51,11 @@ Changelog v0.1:
 - Overall stability improved
 - Fix Widevine
 - Fix Wifi
+
+Changelog Alpha 7:
+- Camera fixups
+- Video fixups
+- Vendor updates
+- Aroma mods updated
+- Overlay adjustments
+
