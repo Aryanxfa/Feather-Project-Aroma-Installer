@@ -5,7 +5,6 @@ OneUI 6.0 S22 port
 
 Bugs
 - Face Unlock
-- Proximity
 - Dex
 
 Changelog Alpha 1:
@@ -58,4 +57,14 @@ Changelog Alpha 7:
 - Vendor updates
 - Aroma mods updated
 - Overlay adjustments
+
+Changelog Beta 1:
+- Added AppLock
+- Updated Wallpapers
+
+Changelog Beta 2:
+- Fixed Proximity
+- Fixed Camera Recorder
+- Fixed Video Issue
+- Fixed Fingerprint
 
