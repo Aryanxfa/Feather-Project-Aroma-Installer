@@ -94,11 +94,12 @@ device_alt="a10"
 if is_substring "$device" "$bootloader"; then
     echo "    -> Bootloader  : $bootloader"
     echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
+    echo "    -> <b><#ff5722>UNOFFICIAL SUPPORT ONLY</#>"
     append_to_file "device_id=$device"
     append_to_file "device_id_alt=$device_alt"
     append_to_file "is_7904=0"
     device_supported="1"
-    exit 2
+    exit 1
 fi
 
 device="A205"

@@ -78,14 +78,9 @@ textbox(
         "<b><#00ff00>   DEVICE COMPATIBLE</#>"+
         "\n   Press Next to continue..."
     else
-        if(getvar("resexec_retstatus")==2) then
-            "<b><#ff5722>   UNOFFICIAL SUPPORT ONLY</#>\n"+
-            "\n   Press Next to continue anyway..."
-        else
-            "<b><#ff0000>   DEVICE INCOMPATIBLE</#>\n"+
-            "<b><#ff0000>            OR        </#>\n"+
-            "<b><#ff0000>   UNSUPPORTED RECOVERY</#>"
-        endif;
+        "<b><#ff0000>   DEVICE INCOMPATIBLE</#>\n"+
+        "<b><#ff0000>            OR        </#>\n"+
+        "<b><#ff0000>   UNSUPPORTED RECOVERY</#>"    
     endif;
 );
 if(getvar("resexec_retstatus")!=1) then
