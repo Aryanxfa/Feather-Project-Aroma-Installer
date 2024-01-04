@@ -2,7 +2,7 @@
 ui_print("===================================");
 ui_print("  ROM    : FEATHER PROJECT         ");
 ui_print("  OS     : OneUI 6.0 | Android 14  ");
-ui_print("  Version : S22_v0.1               ");
+ui_print("  Version : S22_v1.0               ");
 ui_print("  Security: December 2023          ");
 ui_print("  KERNEL  : Eureka 15.0            ");
 ui_print("  DTB    : 5, Stable v2            ");
@@ -47,6 +47,9 @@ run_program("/tmp/busybox", "sh", "/tmp/system-resize.sh");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/system_root");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/vendor");
 run_program("/tmp/busybox", "mount", "-t", "auto", "/product");
+run_program("/tmp/busybox", "mount", "-o", "rw,remount", "/system_root");
+run_program("/tmp/busybox", "mount", "-o", "rw,remount", "/vendor");
+run_program("/tmp/busybox", "mount", "-o", "rw,remount", "/product");
 ##################################################
 #AUXY
 ##################################################

@@ -68,3 +68,7 @@ Changelog Beta 2:
 - Fixed Video Issue
 - Fixed Fingerprint
 
+Changelog V1.0:
+- Performance Tuning
+- Fix Adaptive Brightness
+- Minor bug fixes
