@@ -71,4 +71,8 @@ Changelog Beta 2:
 Changelog V1.0:
 - Performance Tuning
 - Fix Adaptive Brightness
-- Minor bug fixes
+- Radio bug fixes
+- Selinux Patches
+- Switch to R15 Enforcing
+- Removed Debloater for Testing
+- More Minor Bugfixes 
