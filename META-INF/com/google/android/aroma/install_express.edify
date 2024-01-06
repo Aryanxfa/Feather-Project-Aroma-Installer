@@ -7,7 +7,7 @@ writetmpfile(
   "selected.0=0\n"
 );
 writetmpfile(
-  "debloat.prop",
+  "debloat_v2.prop",
   "selected.0=0\n"
 );
 writetmpfile(
