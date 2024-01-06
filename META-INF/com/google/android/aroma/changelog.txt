@@ -74,5 +74,5 @@ Changelog V1.0:
 - Radio bug fixes
 - Selinux Patches
 - Switch to R15 Enforcing
-- Removed Debloater for Testing
+- Debloater updated
 - More Minor Bugfixes 
