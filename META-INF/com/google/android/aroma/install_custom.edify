@@ -37,21 +37,7 @@ form(
 ###############################################
 #DEBLOAT MENU
 ###############################################
-menubox(
-    "Nuke Engine",
-    "Select your Preferred Debloat",
-    "@nuke",
-    "debloat.prop",
-
-    "NO DEBLOAT",        "Recommended for New Users, Least bugs",                              "@none",
-    "Light Debloat",     "Removes Share, Bixby, Switch, AR, Free, Magnifier, Media control",   "@none",
-    "Lain's Debloat",    "Removes AR Bixby Share Mcf GOS",                "@none",
-    "Sanchet's Debloat", "Removes Above and dual messenger",                                     "@none",
-    "Manual Debloat",    "Customise your own debloat",               "@none"
-);
-if prop("debloat.prop","selected") == "5" then
-  include("debloater.edify");
-endif;
+include("debloater.edify");
 
 ###############################################
 #KERNEL
