@@ -28,7 +28,6 @@ form(
       "2",     "Enable Static blur UI",       "Static blurs as seen in stock (causes issue with dex)",     "select",
       
     "group6",     "Miscellaneous",        "",                                           "group",
-      "knox",     "Remove Knox apps support",       "Will remove Knox component",       "check",
       "nfc",      "Remove NFC supports",            "Will remove NFC app",              "check",
       "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",  "check",
       "dex",     "Dex on Device",       "The Dex mode will open on the device itself",  "check",

@@ -243,17 +243,6 @@ if file_getprop("/tmp/aroma/mods.prop","blur") == "2" then
   set_metadata("/system_root/system/bin/surfaceflinger", "uid", 0, "gid", 2000, "fmode", 0755, "selabel", "u:object_r:surfaceflinger_exec:s0");
 endif;
 
-# Knox
-if file_getprop("/tmp/aroma/mods.prop","knox") == "1" then
-  ui_print("@>Removing KNOX app support...");
-  delete_recursive("/system_root/system/priv-app/KLMSAgent");
-  delete_recursive("/system_root/system/priv-app/knoxanalyticsagent");
-  delete_recursive("/system_root/system/priv-app/KnoxCore");
-  delete_recursive("/system_root/system/priv-app/KnoxPushManager");
-  delete_recursive("/system_root/system/priv-app/knoxvpnproxyhandler");
-  delete_recursive("/system_root/system/priv-app/KPECore");
-endif;
-
 # NFC
 if file_getprop("/tmp/aroma/mods.prop", "nfc") == "1" then
     ui_print("@>Removing NFC...");
