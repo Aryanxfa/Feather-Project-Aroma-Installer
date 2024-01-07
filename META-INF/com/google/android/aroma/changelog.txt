@@ -74,5 +74,6 @@ Changelog V1.0:
 - Radio bug fixes
 - Selinux Patches
 - Switch to R15 Enforcing
+- a30s still Permissive
 - Debloater updated
 - More Minor Bugfixes 
