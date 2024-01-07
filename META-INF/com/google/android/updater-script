@@ -274,40 +274,48 @@ endif;
 ##################################################
 #DEBLOAT
 ##################################################
-ui_print("@>Debloating with Custom List...");
 if file_getprop("/tmp/aroma/debloat_v2.prop", "quickshare") == "1" then
+  ui_print("@>Debloating Quickshare...");
   package_extract_file("debloat/quickshare", "/tmp/nukeengine.sh");
   run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat_v2.prop", "basicbloats") == "1" then
+  ui_print("@>Debloating Basic Bloats...");
   package_extract_file("debloat/basicbloats", "/tmp/nukeengine.sh");
   run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat_v2.prop", "dex") == "1" then
+  ui_print("@>Debloating Dex...");
   package_extract_file("debloat/dex", "/tmp/nukeengine.sh");
   run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat_v2.prop", "bixby") == "1" then
+  ui_print("@>Debloating Bixby...");
   package_extract_file("debloat/bixby", "/tmp/nukeengine.sh");
   run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat_v2.prop", "arcore") == "1" then
+  ui_print("@>Debloating ARCore...");
   package_extract_file("debloat/arcore", "/tmp/nukeengine.sh");
   run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat_v2.prop", "ocr") == "1" then
+  ui_print("@>Debloating OCR...");
   package_extract_file("debloat/ocr", "/tmp/nukeengine.sh");
   run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat_v2.prop", "samaccount") == "1" then
+  ui_print("@>Debloating Samsung Account...");
   package_extract_file("debloat/samaccount", "/tmp/nukeengine.sh");
   run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat_v2.prop", "weather") == "1" then
+  ui_print("@>Debloating Weather...");
   package_extract_file("debloat/weather", "/tmp/nukeengine.sh");
   run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
 if file_getprop("/tmp/aroma/debloat_v2.prop", "wellbeing") == "1" then
+  ui_print("@>Debloating Wellbeing...");
   package_extract_file("debloat/wellbeing", "/tmp/nukeengine.sh");
   run_program("/tmp/busybox","sh","/tmp/nukeengine.sh");
 endif;
