@@ -20,11 +20,11 @@
     <local name="BACK_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="4608x3456" />
 
     <!-- Capture resolution - FRONT -->
-    <local name="FRONT_CAMERA_RESOLUTION_FULL_RATIO" value="2336X1080" />
-    <local name="FRONT_CAMERA_RESOLUTION_4BY3_LARGE" value="4688X3516" />
-    <local name="FRONT_CAMERA_RESOLUTION_16BY9_LARGE" value="1920x1080" />
-    <local name="FRONT_CAMERA_RESOLUTION_1BY1_LARGE" value="1088X1088" />
-    <local name="FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="1920x1080" />
+    <local name="FRONT_CAMERA_RESOLUTION_FULL_RATIO" value="4032x1860" />
+    <local name="FRONT_CAMERA_RESOLUTION_4BY3_LARGE" value="4032x3024" />
+    <local name="FRONT_CAMERA_RESOLUTION_16BY9_LARGE" value="4032x2268" />
+    <local name="FRONT_CAMERA_RESOLUTION_1BY1_LARGE" value="3024x3024" />
+    <local name="FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="4032x3024" />
 
     <!-- Capture resolution - BACK ULTRA_WIDE -->
     <local name="BACK_WIDE_CAMERA_RESOLUTION_4BY3_LARGE" value="2576x1932" />
