@@ -49,6 +49,12 @@
     <!-- Presentative camcorder -->
     <local name="REPRESENTATIVE_CAMCORDER_RESOLUTION_FOR_FULL_RATIO" value="2336x1080" />
 
+    <!-- Camera preview-size features -->
+    <local name="REAL_PREVIEW_SIZE_19DOT5_9" value="1568x720" />
+    <local name="REAL_PREVIEW_SIZE_1_1" value="720x720" />
+    <local name="REAL_PREVIEW_SIZE_16_9" value="1280x720" />
+    <local name="REAL_PREVIEW_SIZE_4_3" value="960x720" />
+
     <!-- Recording resolution - FRONT -->
     <local name="FRONT_CAMERA_RECORDING_DEFAULT_RESOLUTION" value="1920x1080" />
     <local name="FRONT_CAMERA_RECORDING_MIN_RESOLUTION" value="640x480" />
@@ -58,10 +64,10 @@
     <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1440X1440" value="true" hdr="false" hdr10="false" preview-size="1088x1088" snapshot-support="true" snapshot-size="3456x3456" vdis="false" effect="true" object-tracking="false" external-storage-support="true" />
 
     <!-- Live focus Resolutions - FRONT -->
-    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_FULL_RATIO" value="3264x1504" />
-    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_16BY9_LARGE" value="3264x1836" />
-    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_1BY1_LARGE" value="2448x2448" />
-    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_4BY3_LARGE" value="3264x2448" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_FULL_RATIO" value="3824x1764" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_16BY9_LARGE" value="3824x2152" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_1BY1_LARGE" value="2864x2864" />
+    <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_RESOLUTION_4BY3_LARGE" value="3824x2868" />
 
     <!-- Live focus Sensor crop Resolutions - FRONT -->
     <local name="FRONT_LIVE_FOCUS_LOW_PERFORMANCE_CAMERA_SENSOR_CROP_RESOLUTION_FULL_RATIO" value="2608x1204" />
