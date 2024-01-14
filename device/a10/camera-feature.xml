@@ -77,6 +77,7 @@
 
     <!-- Front dynamic FOV features -->
     <local name="SUPPORT_FRONT_CAMERA_DYNAMIC_FOV" value="false" />
+    <local name="SUPPORT_LIVE_FOCUS_FRONT_WIDE_ANGLE" value="false" />
 
     <!-- Quick launch features -->
     <local name="CAMERA_QUICK_LAUNCH_USING_POWER_KEY" value="true" />

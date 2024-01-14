@@ -85,6 +85,7 @@
 
     <!-- Front dynamic FOV features -->
     <local name="SUPPORT_FRONT_CAMERA_DYNAMIC_FOV" value="false" />
+    <local name="SUPPORT_LIVE_FOCUS_FRONT_WIDE_ANGLE" value="false" />
 
     <local name="SUPPORT_SENSOR_CROP" value="true"/>
 
