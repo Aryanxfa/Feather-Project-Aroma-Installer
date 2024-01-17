@@ -77,3 +77,11 @@ Changelog V1.0:
 - a30s still Permissive
 - Debloater updated
 - More Minor Bugfixes 
+
+Changelog V1.1:
+- Base update to S901BXXS7DWL3
+- Security patch January 2024
+- Performance Tuning
+- Fix Fingerprint Gestures
+- a40: Front camera improved 
+- a30s: 0.5x camera fixed 
