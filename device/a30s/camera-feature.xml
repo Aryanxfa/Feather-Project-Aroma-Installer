@@ -50,8 +50,6 @@
     <local name="REPRESENTATIVE_CAMCORDER_RESOLUTION_FOR_FULL_RATIO" value="2336x1080" />
 
     <!-- Camera preview-size features -->
-    <local name="REAL_PREVIEW_SIZE_19DOT5_9" value="1568x720" />
-    <local name="REAL_PREVIEW_SIZE_1_1" value="720x720" />
     <local name="REAL_PREVIEW_SIZE_16_9" value="1280x720" />
     <local name="REAL_PREVIEW_SIZE_4_3" value="960x720" />
 
