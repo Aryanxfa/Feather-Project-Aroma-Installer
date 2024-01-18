@@ -147,7 +147,7 @@ if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A307" then
     set_metadata("/vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     set_metadata("/vendor/lib64/libHprFace_GAE_api.camera.samsung.so", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:same_process_hal_file:s0");
     run_program("/tmp/busybox", "sed", "-i", "s/VENDOR_LIB_INFO>/VENDOR_LIB_INFO>dual_bokeh.samsung.v1,/g", "/system_root/system/etc/floating_feature.xml");
-    run_program("/tmp/busybox", "sed", "-i", "s/capacitive_powerkey_phone/optical_display_phone/g", "/system_root/system/etc/floating_feature.xml");
+    run_program("/tmp/busybox", "sed", "-i", "s/capacitive_powerkey_side/optical_display_phone/g", "/system_root/system/etc/floating_feature.xml");
 endif;
 if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A405" then
     ui_print("@>Detected Device: Galaxy A40");
