@@ -85,3 +85,10 @@ Changelog V1.1:
 - Fix Fingerprint Gestures
 - a40: Front camera improved 
 - a30s: 0.5x camera fixed 
+
+Changelog V2.0:
+- Fixed Samsung Dex
+- Fixed Samsung Smart View
+- Overlay adjusted for more icons
+- a30s: fingerprint issue 
+- Minor Audio fixes
