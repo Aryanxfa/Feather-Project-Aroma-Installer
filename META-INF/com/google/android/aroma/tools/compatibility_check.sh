@@ -45,21 +45,21 @@ echo "    -> System : $system_size_mb MB"
 echo "    -> Vendor : $vendor_size_mb MB"
 echo "    -> Product : $product_size_mb MB"
 
-if [ "$system_size" -ge 4320133120 ]; then
+if [ "$system_size" -ge 3496431616 ]; then
     append_to_file "system_compatible=1"
 else
     append_to_file "system_compatible=0"
     echo "    -> <#ff0000>System is Insufficient</#>"
     exit 55
 fi
-if [ "$vendor_size" -ge 545259520 ]; then
+if [ "$vendor_size" -ge 361496576 ]; then
     append_to_file "vendor_compatible=1"
 else
     append_to_file "vendor_compatible=0"
     echo "    -> <#ff0000>Vendor is Insufficient</#>"
     exit 55
 fi
-if [ "$product_size" -ge 209715200 ]; then
+if [ "$product_size" -ge 83886080 ]; then
     append_to_file "product_compatible=1"
 else
     append_to_file "product_compatible=0"
@@ -94,7 +94,7 @@ device_alt="a10"
 if is_substring "$device" "$bootloader"; then
     echo "    -> Bootloader  : $bootloader"
     echo "    -> <#00ff00>Detected as : Galaxy $device </#>"
-    echo "    -> <b><#ff5722>UNOFFICIAL SUPPORT ONLY</#>"
+    # echo "    -> <b><#ff5722>UNOFFICIAL SUPPORT ONLY</#>"
     append_to_file "device_id=$device"
     append_to_file "device_id_alt=$device_alt"
     append_to_file "is_7904=0"
