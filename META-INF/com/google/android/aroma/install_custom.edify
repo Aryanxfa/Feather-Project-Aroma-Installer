@@ -23,15 +23,9 @@ form(
       "1",     "Light LMK",           "Allow heavy multi-tasking",                     "select",
       "2",     "Standard LMk",        "Allow UI more responsive",                      "select",
       
-    "blur",     "UserInterface",        "",                                            "group",
-      "1",     "Enable Live Blur UI",       "Flagship blurs that's realistic and looks good",                      "select",
-      "2",     "Enable Static blur UI",       "Static blurs as seen in stock (causes issue with dex)",     "select",
-      
     "group6",     "Miscellaneous",        "",                                           "group",
       "nfc",      "Remove NFC supports",            "Will remove NFC app",              "check",
-      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",  "check",
-      "dex",     "Dex on Device",       "The Dex mode will open on the device itself",  "check",
-      "bootani",  "AOSP Bootanimation",  "Enables support for AOSP bootanimation zip",    "check" 
+      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",  "check"
 );
 
 ###############################################
