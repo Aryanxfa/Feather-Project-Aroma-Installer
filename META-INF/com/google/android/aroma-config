@@ -6,7 +6,7 @@ ini_set("rom_name",             "Feather Project");
 ini_set("rom_version",          "A13_v1.0");
 ini_set("rom_author",           "Raptor 9");
 ini_set("rom_device",           "Exynos 7884B/7904");
-ini_set("rom_date",             "10/February/2024");
+ini_set("rom_date",             "16/February/2024");
 
 # Show splash screen
 #splash(2000, "coolest_splash");
