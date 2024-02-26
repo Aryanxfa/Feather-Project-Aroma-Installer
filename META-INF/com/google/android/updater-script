@@ -90,8 +90,8 @@ package_extract_dir("device/"+file_getprop("/tmp/aroma/compatible.prop", "device
 package_extract_dir("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/lib/", "/vendor/lib/");
 package_extract_dir("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/lib64/", "/vendor/lib64/");
 package_extract_dir("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/tee/", "/vendor/tee/");
+package_extract_dir("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/overlay/", "/vendor/overlay/");
 package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/camera-feature.xml", "/system_root/system/cameradata/camera-feature.xml");
-package_extract_file("device/"+file_getprop("/tmp/aroma/compatible.prop", "device_id_alt")+"/overlay/framework-res__auto_generated_rro_vendor.apk", "/vendor/overlay/framework-res__auto_generated_rro_vendor.apk");
 
 if file_getprop("/tmp/aroma/compatible.prop", "device_id") == "A105" then
     ui_print("@>Detected Device: Galaxy A10");
@@ -158,6 +158,7 @@ endif;
 set_metadata_recursive("/vendor/tee/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:tee_file:s0");
 set_metadata_recursive("/vendor/etc/wifi/", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_configs_file:s0");
 set_metadata_recursive("/vendor/firmware", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_fw_file:s0");
+set_metadata_recursive("/vendor/overlay", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:vendor_overlay_file:s0");
 
 ##################################################
 #CSC
