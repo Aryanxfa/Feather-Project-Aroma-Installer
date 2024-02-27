@@ -8,6 +8,7 @@
     <local name="SHOOTING_MODE_PANORAMA" back="PANORAMA" enable="true" more="true" order="6" preview-size="1920x1080" capture-size="2576x1932"/>
     <local name="SHOOTING_MODE_QR" back="QR" enable="true" more="false" order="100" preview-size="2336x1080" />
     <local name="SHOOTING_MODE_PRO_VIDEO" back="PRO_VIDEO" front="PRO_VIDEO" enable="true" more="true" order="9" />
+    <local name="SHOOTING_MODE_FOOD" back="FOOD" enable="true" more="true" order="7" />
     <local name="SHOOTING_MODE_NIGHT" back="NIGHT" front="NIGHT" enable="true" more="true" order="10" />
 
     <!-- Capture resolution - BACK -->

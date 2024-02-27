@@ -10,6 +10,7 @@
     <local name="SHOOTING_MODE_HYPER_LAPSE" back="HYPER_LAPSE" enable="true" more="true" order="7" preview-size="1920x1080" capture-size="1920x1080" info="2" />
     <local name="SHOOTING_MODE_QR" back="QR" enable="true" more="false" order="100" preview-size="2336x1080" />
     <local name="SHOOTING_MODE_PRO_VIDEO" back="PRO_VIDEO" front="PRO_VIDEO" enable="true" more="true" order="8"/>
+    <local name="SHOOTING_MODE_FOOD" back="FOOD" enable="true" more="true" order="7" />
     <local name="SHOOTING_MODE_NIGHT" back="NIGHT" front="NIGHT" enable="true" more="true" order="9"/>
 
     <!-- Capture resolution - BACK -->
