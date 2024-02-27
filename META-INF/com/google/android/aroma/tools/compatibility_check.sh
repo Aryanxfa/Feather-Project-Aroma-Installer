@@ -45,7 +45,7 @@ echo "    -> System : $system_size_mb MB"
 echo "    -> Vendor : $vendor_size_mb MB"
 echo "    -> Product : $product_size_mb MB"
 
-if [ "$system_size" -ge 4320133120 ]; then
+if [ "$system_size" -ge 4303355904 ]; then
     append_to_file "system_compatible=1"
 else
     append_to_file "system_compatible=0"
