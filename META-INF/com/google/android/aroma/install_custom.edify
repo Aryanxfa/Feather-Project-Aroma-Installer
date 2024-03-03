@@ -11,27 +11,27 @@ form(
     "Choose a/some mod(s) to apply to ROM",
     "@install_custom",
     "mods.prop",
-    "sound",     "Sound",             "",                                              "group",
-      "1",     "Mono",                "Stock sound config, only main speaker",         "select",
-      "2",     "Stereo",              "Use earpiece as secondary speaker.",            "select",
+    "sound",     "Sound",               "",                                              "group",
+      "1",       "Mono",                "Stock sound config (default)",                  "select",
+      "2",       "Stereo",              "Use earpiece as secondary speaker.",            "select",
       
-    "throttle",     "Throttling",        "",                                           "group",
-      "1",     "Little to 1352",      "Less heat similar performance",                 "select",
-      "2",     "Remove throttle",     "Revert ^option above^",                         "select",
+    "throttle",  "Throttling",          "",                                              "group",
+      "1",       "Little to 1352",      "Less heat similar performance",                 "select",
+      "2",       "Remove throttle",     "Revert ^option above^",                         "select",
       
-    "lmk",     "LMK - LowMemoryKiller",        "",                                     "group",
-      "1",     "Light LMK",           "Allow heavy multi-tasking",                     "select",
-      "2",     "Standard LMk",        "Allow UI more responsive",                      "select",
+    "lmk",       "LowMemoryKiller",     "",                                              "group",
+      "1",       "Light LMK",           "Allow heavy multi-tasking",                     "select",
+      "2",       "Standard LMk",        "Allow UI more responsive (default)",            "select",
       
-    "blur",     "UserInterface",        "",                                            "group",
-      "1",     "Enable Live Blur UI",       "Flagship blurs that's realistic and looks good",                      "select",
-      "2",     "Enable Static blur UI",       "Static blurs as seen in stock (causes issue with dex)",     "select",
+    "blur",      "Blur Effect",         "",                                              "group",
+      "1",       "Use Live blur",       "Flagship Live blur for good looks (default)",   "select",
+      "2",       "Use Static blur",     "Static blur as in stock (breaks A30s FOD)",     "select",
       
-    "group6",     "Miscellaneous",        "",                                           "group",
-      "nfc",      "Remove NFC supports",            "Will remove NFC app",              "check",
-      "brightness",     "Remove extended brightness",       "The display will have lower Brightness than normally",  "check",
-      "dex",     "Dex on Device",       "The Dex mode will open on the device itself",  "check",
-      "bootani",  "AOSP Bootanimation",  "Enables support for AOSP bootanimation zip",    "check" 
+    "group6",    "Miscellaneous",              "",                                                      "group",
+     "nfc",         "Remove NFC supports",     "Will remove NFC app",                                   "check",
+     "brightness",  "Reduce Brightness Range", "For aftermarket LCD flicker at high/low brightness. ",  "check",
+     "dex",         "Dex on Device",           "The Dex mode will open on the device itself",           "check",
+     "bootani",     "AOSP BootAnimation",      "Enables support for AOSP bootanimation zip",            "check" 
 );
 
 ###############################################
@@ -48,6 +48,6 @@ menubox(
     "@su", 
     "kernel.prop",
 
-    "Eureka KernelSU (default)",      "Pre-rooted hiddenly with EurekaKernel KSU.",                                   "@eksu",
-    "Skip Kernel",  "Skip Changing Kernel at all. Use existing Kernel",            "@skip"
+    "Eureka KernelSU (default)",      "Pre-rooted with EurekaKernel KSU.",                           "@eksu",
+    "Skip Kernel",                    "Skip Changing Kernel at all. Use existing Kernel",            "@skip"
 );
