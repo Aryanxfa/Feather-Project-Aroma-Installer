@@ -1,5 +1,6 @@
 *.zip
 system/*/*
+auxy/*
 META-INF/scripts/xbin/*
 mods/keys/*
 device/*/overlay
