@@ -92,3 +92,16 @@ Changelog V2.0:
 - Overlay adjusted for more icons
 - a30s: fingerprint issue 
 - Minor Audio fixes
+
+Changelog V2.1:
+- Base update S901BXXS7DXAC
+- Security patch February 2024
+- Google play system update January 2024
+- a30 a40: Fixed Offline charging animation
+- Reduced system requirement for A205FN
+- a40: Add Camera Stabilization
+- Add Camera Food mode
+- Smoothness improved
+- AppLock issues resolved
+- GPU Watch fixed (use with permissive)
+
