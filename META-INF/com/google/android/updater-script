@@ -53,21 +53,25 @@ run_program("/tmp/busybox", "mount", "-o", "rw,remount", "/product");
 ##################################################
 #AUXY
 ##################################################
-if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "1" then
-    package_extract_dir("auxy/data/app", "/system_root/system/app");
-    delete_recursive("/product/app/WebViewGoogle");
-endif;
-if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "0" then
-    if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "1" then
-        package_extract_dir("auxy/data/app/WebViewGoogle", "/product/app/WebViewGoogle");
-        package_extract_dir("auxy/data/app/TrichromeLibrary", "/product/app/TrichromeLibrary");
-    endif;
-    if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "0" then
-        package_extract_dir("auxy/data/app", "/data/app");
-        set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
-        set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
-        set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
-    endif;
+if file_getprop("/tmp/aroma/configs.prop", "selected") == "3" then
+  run_program("/tmp/busybox", "sleep", "1");
+else
+  if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "1" then
+      package_extract_dir("auxy/app", "/system_root/system/app");
+      delete_recursive("/product/app/WebViewGoogle");
+  endif;
+  if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "0" then
+      if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "1" then
+          package_extract_dir("auxy/app/WebViewGoogle", "/product/app/WebViewGoogle");
+          package_extract_dir("auxy/app/TrichromeLibrary", "/product/app/TrichromeLibrary");
+      endif;
+      if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "0" then
+          package_extract_dir("auxy/app", "/data/app");
+          set_metadata_recursive("/data/app/Chrome", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+          set_metadata_recursive("/data/app/WebViewGoogle", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+          set_metadata_recursive("/data/app/TrichromeLibrary", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0755, "selabel", "u:object_r:apk_data_file:s0");
+      endif;
+  endif;
 endif;
 ##################################################
 #DEVICE
