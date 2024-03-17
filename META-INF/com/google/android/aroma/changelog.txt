@@ -105,7 +105,9 @@ Changelog V2.1:
 - AppLock issues resolved
 - GPU Watch fixed (use with permissive)
 
-Changelog V2.2:
+Changelog V2.2.1:
 - Base update S901BXXS7DXBD
 - Security patch March 2024
+- Eureka Kernel R15.1.1
+- a30: AOD Brightness increased
 - Wifi Hotspot issue resolved
