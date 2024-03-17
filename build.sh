@@ -35,7 +35,4 @@ if [[ "$lowercase_arg" == *"patch"* ]]; then
     adb shell twrp install /sdcard/$1
 else
     zip -v -r $1 META-INF/com META-INF/scripts/bin mods img device auxy csc debloat featherproject.keys META-INF/scripts/xbin
-
-    zipalign -v 4 $1 $1.aligned
-    mv $1.aligned $1
 fi
