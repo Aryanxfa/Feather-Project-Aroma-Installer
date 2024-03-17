@@ -105,3 +105,7 @@ Changelog V2.1:
 - AppLock issues resolved
 - GPU Watch fixed (use with permissive)
 
+Changelog V2.2:
+- Base update S901BXXS7DXBD
+- Security patch March 2024
+- Wifi Hotspot issue resolved
