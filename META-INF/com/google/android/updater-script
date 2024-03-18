@@ -59,11 +59,13 @@ else
   if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "1" then
       package_extract_dir("auxy/app", "/system_root/system/app");
       delete_recursive("/product/app/WebViewGoogle");
+      set_metadata_recursive("/system_root/system/app", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:system_file:s0");
   endif;
   if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_system") == "0" then
       if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "1" then
           package_extract_dir("auxy/app/WebViewGoogle", "/product/app/WebViewGoogle");
           package_extract_dir("auxy/app/TrichromeLibrary", "/product/app/TrichromeLibrary");
+          set_metadata_recursive("/product/app", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "selabel", "u:object_r:system_file:s0");
       endif;
       if file_getprop("/tmp/aroma/compatible.prop", "auxy_to_product") == "0" then
           package_extract_dir("auxy/app", "/data/app");
